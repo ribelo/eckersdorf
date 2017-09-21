@@ -1,0 +1,1933 @@
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.865 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.694 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:18  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m      (let [][0m
+  [36m21[0m  [36m           (fn [][0m
+  [36m22[0m  [36m               [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m                [ant/layout_sider]])))[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.749 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.675 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:18  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m      (let [][0m
+  [36m21[0m  [36m           (fn [][0m
+  [36m22[0m  [36m               [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m                [ant/layout_sider {}]])))[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.747 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.659 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.486 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/view/ui.cljs   line:23  column:49  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m21[0m  [36m(fn [][0m
+  [36m22[0m  [36m    [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m     [ant/layout_sider {:collapsible}]])))[0m
+  [0m  [0m  [33m                                     ^--- Map literal must contain an even number of forms[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.442 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/view/ui.cljs   line:23  column:49  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m21[0m  [36m(fn [][0m
+  [36m22[0m  [36m    [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m     [ant/layout_sider {:collapsible}]])))[0m
+  [0m  [0m  [33m                                     ^--- Map literal must contain an even number of forms[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:18  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m      (let [][0m
+  [36m21[0m  [36m           (fn [][0m
+  [36m22[0m  [36m               [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m                [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                                   :collapsed false}]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.77 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.655 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:18  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m      (let [][0m
+  [36m21[0m  [36m           (fn [][0m
+  [36m22[0m  [36m               [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m                [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                                   :collapsed false}[0m
+  [36m25[0m  [36m                 [ant/menu {:theme :dark}]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.697 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.64 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:18  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m      (let [][0m
+  [36m21[0m  [36m           (fn [][0m
+  [36m22[0m  [36m               [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m                [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                                   :collapsed false}[0m
+  [36m25[0m  [36m                 [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m                            :mode :inline}]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.674 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   false}[0m
+  [36m25[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m                   :mode  :inline}[0m
+  [36m27[0m  [36m         [ant/menu_item {:key 1}]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:27  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m23[0m  [36m[ant/layout_sider {:collapsible true[0m
+  [36m24[0m  [36m                   :collapsed   false}[0m
+  [36m25[0m  [36m [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m            :mode  :inline}[0m
+  [33m27[0m  [1m  [ant/menu_item {:key 1}]]]])))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.683 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.604 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   false}[0m
+  [36m25[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m                   :mode  :inline}[0m
+  [36m27[0m  [36m         [ant/menu_item {:key 1}[0m
+  [36m28[0m  [36m          [ant/icon {}]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:27  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m23[0m  [36m[ant/layout_sider {:collapsible true[0m
+  [36m24[0m  [36m                   :collapsed   false}[0m
+  [36m25[0m  [36m [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m            :mode  :inline}[0m
+  [33m27[0m  [1m  [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m28[0m  [36m   [ant/icon {}]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.691 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.613 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   false}[0m
+  [36m25[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m                   :mode  :inline}[0m
+  [36m27[0m  [36m         [ant/menu_item {:key 1}[0m
+  [36m28[0m  [36m          [ant/icon {:type :pie-chart}]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:27  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m23[0m  [36m[ant/layout_sider {:collapsible true[0m
+  [36m24[0m  [36m                   :collapsed   false}[0m
+  [36m25[0m  [36m [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m            :mode  :inline}[0m
+  [33m27[0m  [1m  [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m28[0m  [36m   [ant/icon {:type :pie-chart}]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.726 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.633 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   false}[0m
+  [36m25[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m                   :mode  :inline}[0m
+  [36m27[0m  [36m         [ant/menu_item {:key 1}[0m
+  [36m28[0m  [36m          [ant/icon {:type :pie-chart}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:27  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m23[0m  [36m[ant/layout_sider {:collapsible true[0m
+  [36m24[0m  [36m                   :collapsed   false}[0m
+  [36m25[0m  [36m [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m            :mode  :inline}[0m
+  [33m27[0m  [1m  [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m28[0m  [36m   [ant/icon {:type :pie-chart}[0m
+  [36m29[0m  [36m    ]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.673 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.612 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   false}[0m
+  [36m25[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m                   :mode  :inline}[0m
+  [36m27[0m  [36m         [ant/menu_item {:key 1}[0m
+  [36m28[0m  [36m          [ant/icon {:type :pie-chart}][0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:27  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m23[0m  [36m[ant/layout_sider {:collapsible true[0m
+  [36m24[0m  [36m                   :collapsed   false}[0m
+  [36m25[0m  [36m [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m            :mode  :inline}[0m
+  [33m27[0m  [1m  [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m28[0m  [36m   [ant/icon {:type :pie-chart}][0m
+  [36m29[0m  [36m   [:span]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.675 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.613 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   false}[0m
+  [36m25[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m                   :mode  :inline}[0m
+  [36m27[0m  [36m         [ant/menu_item {:key 1}[0m
+  [36m28[0m  [36m          [ant/icon {:type :pie-chart}][0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:27  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m23[0m  [36m[ant/layout_sider {:collapsible true[0m
+  [36m24[0m  [36m                   :collapsed   false}[0m
+  [36m25[0m  [36m [ant/menu {:theme :dark[0m
+  [36m26[0m  [36m            :mode  :inline}[0m
+  [33m27[0m  [1m  [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m28[0m  [36m   [ant/icon {:type :pie-chart}][0m
+  [36m29[0m  [36m   [:span "Option 1"]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.681 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.635 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.79 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/app.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.607 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/view/db.cljs   line:8  column:27  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m6[0m  [36m:view/scrolling-up?   false[0m
+  [36m7[0m  [36m:view/scrolling-down? false[0m
+  [33m8[0m  [1m:view/sider-colapsed? })[0m
+  [0m [0m  [33m                       ^--- Map literal must contain an even number of forms[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/view/db.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.726 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/db.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.615 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.607 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/db.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.858 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.64 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/events.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.628 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.703 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/subs.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.423 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/view/ui.cljs   line:25  column:40  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m23[0m  [36m[ant/layout_sider {:collapsible true[0m
+  [36m24[0m  [36m                   :collapsed   @sider-collapsed?[0m
+  [33m25[0m  [1m                   :on-collapse}[0m
+  [0m  [0m  [33m                                ^--- Map literal must contain an even number of forms[0m
+  [36m26[0m  [36m [ant/menu {:theme :dark[0m
+  [36m27[0m  [36m            :mode  :inline}[0m
+  [36m28[0m  [36m  [ant/menu_item {:key 1}[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.582 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [sider-collapsed? (rf/subscribe [:view/sider-collapsed?])][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                          :on-collapse #(rf/dispatch [:view/sider-toggle])}[0m
+  [36m26[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m27[0m  [36m                   :mode  :inline}[0m
+  [36m28[0m  [36m         [ant/menu_item {:key 1}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:28  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m24[0m  [36m                  :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                  :on-collapse #(rf/dispatch [:view/sider-toggle])}[0m
+  [36m26[0m  [36m[ant/menu {:theme :dark[0m
+  [36m27[0m  [36m           :mode  :inline}[0m
+  [33m28[0m  [1m [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m29[0m  [36m  [ant/icon {:type :pie-chart}][0m
+  [36m30[0m  [36m  [:span "Option 1"]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.729 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.586 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [sider-collapsed? (rf/subscribe [:view/sider-collapsed?])][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                          :on-collapse #(println "click!")}[0m
+  [36m26[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m27[0m  [36m                   :mode  :inline}[0m
+  [36m28[0m  [36m         [ant/menu_item {:key 1}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:28  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m24[0m  [36m                  :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                  :on-collapse #(println "click!")}[0m
+  [36m26[0m  [36m[ant/menu {:theme :dark[0m
+  [36m27[0m  [36m           :mode  :inline}[0m
+  [33m28[0m  [1m [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m29[0m  [36m  [ant/icon {:type :pie-chart}][0m
+  [36m30[0m  [36m  [:span "Option 1"]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.727 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.561 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [sider-collapsed? (rf/subscribe [:view/sider-collapsed?])][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                          :on-collapse #(rf/dispatch [:view/sider-toggle])}[0m
+  [36m26[0m  [36m        [ant/menu {:theme :dark[0m
+  [36m27[0m  [36m                   :mode  :inline}[0m
+  [36m28[0m  [36m         [ant/menu_item {:key 1}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:28  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m24[0m  [36m                  :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                  :on-collapse #(rf/dispatch [:view/sider-toggle])}[0m
+  [36m26[0m  [36m[ant/menu {:theme :dark[0m
+  [36m27[0m  [36m           :mode  :inline}[0m
+  [33m28[0m  [1m [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m29[0m  [36m  [ant/icon {:type :pie-chart}][0m
+  [36m30[0m  [36m  [:span "Option 1"]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.787 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.573 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/events.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [sider-collapsed? (rf/subscribe [:view/sider-collapsed?])][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                          :on-collapse (fn [][0m
+  [36m26[0m  [36m                                         (println "sex")[0m
+  [36m27[0m  [36m                                         (rf/dispatch [:view/sider-toggle]))}[0m
+  [36m28[0m  [36m        [ant/menu {:theme :dark[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:30  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m26[0m  [36m                                 (println "sex")[0m
+  [36m27[0m  [36m                                 (rf/dispatch [:view/sider-toggle]))}[0m
+  [36m28[0m  [36m[ant/menu {:theme :dark[0m
+  [36m29[0m  [36m           :mode  :inline}[0m
+  [33m30[0m  [1m [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m31[0m  [36m  [ant/icon {:type :pie-chart}][0m
+  [36m32[0m  [36m  [:span "Option 1"]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.705 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:23  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout_sider[0m
+
+  [36m19[0m  [36m(defn page [][0m
+  [36m20[0m  [36m  (let [sider-collapsed? (rf/subscribe [:view/sider-collapsed?])][0m
+  [36m21[0m  [36m    (fn [][0m
+  [36m22[0m  [36m      [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m23[0m  [1m       [ant/layout_sider {:collapsible true[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var antizer.reagent/layout_sider[0m
+  [36m24[0m  [36m                          :collapsed   @sider-collapsed?[0m
+  [36m25[0m  [36m                          :on-collapse (fn [][0m
+  [36m26[0m  [36m                                         (println "sex11")[0m
+  [36m27[0m  [36m                                         (rf/dispatch [:view/sider-toggle]))}[0m
+  [36m28[0m  [36m        [ant/menu {:theme :dark[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:30  column:11  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/menu_item[0m
+
+  [36m26[0m  [36m                                 (println "sex11")[0m
+  [36m27[0m  [36m                                 (rf/dispatch [:view/sider-toggle]))}[0m
+  [36m28[0m  [36m[ant/menu {:theme :dark[0m
+  [36m29[0m  [36m           :mode  :inline}[0m
+  [33m30[0m  [1m [ant/menu_item {:key 1}[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var antizer.reagent/menu_item[0m
+  [36m31[0m  [36m  [ant/icon {:type :pie-chart}][0m
+  [36m32[0m  [36m  [:span "Option 1"]]]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.589 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.727 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.741 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.681 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.687 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.677 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:38  column:10  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout-fotter[0m
+
+  [36m34[0m  [36m[ant/layout-header[0m
+  [36m35[0m  [36m "header"][0m
+  [36m36[0m  [36m[ant/layout-content[0m
+  [36m37[0m  [36m "content"][0m
+  [33m38[0m  [1m[ant/layout-fotter[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var antizer.reagent/layout-fotter[0m
+  [36m39[0m  [36m "fotter"]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.734 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.641 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:38  column:10  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout-fotter[0m
+
+  [36m34[0m  [36m[ant/layout-header[0m
+  [36m35[0m  [36m "header"][0m
+  [36m36[0m  [36m[ant/layout-content[0m
+  [36m37[0m  [36m "content"][0m
+  [33m38[0m  [1m[ant/layout-fotter[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var antizer.reagent/layout-fotter[0m
+  [36m39[0m  [36m "footer"]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.695 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.62 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/view/ui.cljs   line:38  column:10  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/layout-fotter[0m
+
+  [36m34[0m  [36m[ant/layout-header[0m
+  [36m35[0m  [36m [:div "header"]][0m
+  [36m36[0m  [36m[ant/layout-content[0m
+  [36m37[0m  [36m "content"][0m
+  [33m38[0m  [1m[ant/layout-fotter[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var antizer.reagent/layout-fotter[0m
+  [36m39[0m  [36m "footer"]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.692 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.589 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.654 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.611 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.664 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.565 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.663 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.565 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.662 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.609 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.638 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.572 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.664 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.687 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/db.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.92 seconds.[0m
+[36m----  Could not Analyze  src/cljs/eckersdorf/login/ui.cljs  ----[0m
+
+  [1mNo such namespace: cljsjs.material-ui, could not locate cljsjs/material_ui.cljs, cljsjs/material_ui.cljc, or JavaScript source providing "cljsjs.material-ui" [0m
+
+[36m----  Analysis Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 1.786 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.748 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/events.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.804 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.634 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.629 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/db.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.637 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/subs.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.629 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.675 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/subs.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.221 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.593 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/db/events.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.707 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.68 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.57 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.707 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.573 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.699 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.592 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.424 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/view/ui.cljs   line:21  column:57  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m19[0m  [36m                  :on-collapse (fn [][0m
+  [36m20[0m  [36m                                 (rf/dispatch [:view/sider-toggle]))[0m
+  [33m21[0m  [1m                  {:style {:min-height "100vh"}}}[0m
+  [0m  [0m  [33m                                                 ^--- Map literal must contain an even number of forms[0m
+  [36m22[0m  [36m[ant/menu {:theme :dark[0m
+  [36m23[0m  [36m           :mode  :inline}[0m
+  [36m24[0m  [36m [ant/menu-item {:key 1}[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.447 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/view/ui.cljs   line:21  column:57  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m19[0m  [36m                  :on-collapse (fn [][0m
+  [36m20[0m  [36m                                 (rf/dispatch [:view/sider-toggle]))[0m
+  [33m21[0m  [1m                  {:style {:min-height "100vh"}}}[0m
+  [0m  [0m  [33m                                                 ^--- Map literal must contain an even number of forms[0m
+  [36m22[0m  [36m[ant/menu {:theme :dark[0m
+  [36m23[0m  [36m           :mode  :inline}[0m
+  [36m24[0m  [36m [ant/menu-item {:key 1}[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/view/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.704 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.586 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.67 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.667 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.563 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:129  column:8  ----[0m
+
+  [1mNo such namespace: antd, could not locate antd.cljs, antd.cljc, or JavaScript source providing "antd"[0m
+
+  [36m125[0m  [36m    show-password? (r/atom false)[0m
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [33m129[0m  [1m  [antd/layout {:style {:min-height "100vh"}}[0m
+  [0m   [0m  [33m   ^--- No such namespace: antd, could not locate antd.cljs, antd.cljc, or JavaScript source providing "antd"[0m
+  [36m130[0m  [36m   [antd/content[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:129  column:8  ----[0m
+
+  [1mUse of undeclared Var antd/layout[0m
+
+  [36m125[0m  [36m    show-password? (r/atom false)[0m
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [33m129[0m  [1m  [antd/layout {:style {:min-height "100vh"}}[0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var antd/layout[0m
+  [36m130[0m  [36m   [antd/content[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:130  column:9  ----[0m
+
+  [1mNo such namespace: antd, could not locate antd.cljs, antd.cljc, or JavaScript source providing "antd"[0m
+
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [36m129[0m  [36m  [antd/layout {:style {:min-height "100vh"}}[0m
+  [33m130[0m  [1m   [antd/content[0m
+  [0m   [0m  [33m    ^--- No such namespace: antd, could not locate antd.cljs, antd.cljc, or JavaScript source providing "antd"[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:130  column:9  ----[0m
+
+  [1mUse of undeclared Var antd/content[0m
+
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [36m129[0m  [36m  [antd/layout {:style {:min-height "100vh"}}[0m
+  [33m130[0m  [1m   [antd/content[0m
+  [0m   [0m  [33m    ^--- Use of undeclared Var antd/content[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.647 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.664 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.575 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:129  column:8  ----[0m
+
+  [1mNo such namespace: ant, could not locate ant.cljs, ant.cljc, or JavaScript source providing "ant"[0m
+
+  [36m125[0m  [36m    show-password? (r/atom false)[0m
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [33m129[0m  [1m  [ant/layout {:style {:min-height "100vh"}}[0m
+  [0m   [0m  [33m   ^--- No such namespace: ant, could not locate ant.cljs, ant.cljc, or JavaScript source providing "ant"[0m
+  [36m130[0m  [36m   [ant/content[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:129  column:8  ----[0m
+
+  [1mUse of undeclared Var ant/layout[0m
+
+  [36m125[0m  [36m    show-password? (r/atom false)[0m
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [33m129[0m  [1m  [ant/layout {:style {:min-height "100vh"}}[0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var ant/layout[0m
+  [36m130[0m  [36m   [ant/content[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:130  column:9  ----[0m
+
+  [1mNo such namespace: ant, could not locate ant.cljs, ant.cljc, or JavaScript source providing "ant"[0m
+
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [36m129[0m  [36m  [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m130[0m  [1m   [ant/content[0m
+  [0m   [0m  [33m    ^--- No such namespace: ant, could not locate ant.cljs, ant.cljc, or JavaScript source providing "ant"[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:130  column:9  ----[0m
+
+  [1mUse of undeclared Var ant/content[0m
+
+  [36m126[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m127[0m  [36m                                         (empty? @password)))][0m
+  [36m128[0m  [36m(fn [][0m
+  [36m129[0m  [36m  [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m130[0m  [1m   [ant/content[0m
+  [0m   [0m  [33m    ^--- Use of undeclared Var ant/content[0m
+  [36m131[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.774 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.585 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:131  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.reagent/content[0m
+
+  [36m127[0m  [36m    disabled-login-button? (reaction (or (empty? @email-address)[0m
+  [36m128[0m  [36m                                         (empty? @password)))][0m
+  [36m129[0m  [36m(fn [][0m
+  [36m130[0m  [36m  [ant/layout {:style {:min-height "100vh"}}[0m
+  [33m131[0m  [1m   [ant/content[0m
+  [0m   [0m  [33m    ^--- Use of undeclared Var antizer.reagent/content[0m
+  [36m132[0m  [36m    "zaloguj się"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.779 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.614 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.685 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.585 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.661 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.595 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.661 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.577 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.682 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.589 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.713 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.683 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.568 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.404 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/login/ui.cljs   line:135  column:15  ----[0m
+
+  [1mInvalid token: ant/[0m
+
+  [36m133[0m  [36m           :align-items     :center[0m
+  [36m134[0m  [36m           :style           {:min-height "100vh"}}[0m
+  [33m135[0m  [1m[ant/]]]])))[0m
+  [0m   [0m  [33m     ^--- Invalid token: ant/[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.459 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/login/ui.cljs   line:135  column:15  ----[0m
+
+  [1mInvalid token: ant/[0m
+
+  [36m133[0m  [36m           :align-items     :center[0m
+  [36m134[0m  [36m           :style           {:min-height "100vh"}}[0m
+  [33m135[0m  [1m[ant/]]]])))[0m
+  [0m   [0m  [33m     ^--- Invalid token: ant/[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:135  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m131[0m  [36m[ant/layout-content[0m
+  [36m132[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m133[0m  [36m             :align-items     :center[0m
+  [36m134[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m135[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m136[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.708 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.564 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:139  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m135[0m  [36m[ant/layout-content[0m
+  [36m136[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m137[0m  [36m             :align-items     :center[0m
+  [36m138[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m139[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m140[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.671 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.612 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:139  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m135[0m  [36m[ant/layout-content[0m
+  [36m136[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m137[0m  [36m             :align-items     :center[0m
+  [36m138[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m139[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m140[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.706 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.655 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:140  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m136[0m  [36m[ant/layout-content[0m
+  [36m137[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m138[0m  [36m             :align-items     :center[0m
+  [36m139[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m140[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m141[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.67 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.625 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:140  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m136[0m  [36m[ant/layout-content[0m
+  [36m137[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m138[0m  [36m             :align-items     :center[0m
+  [36m139[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m140[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m141[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.687 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:141  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m137[0m  [36m[ant/layout-content[0m
+  [36m138[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m139[0m  [36m             :align-items     :center[0m
+  [36m140[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m141[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m142[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.692 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.616 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:142  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m138[0m  [36m[ant/layout-content[0m
+  [36m139[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m140[0m  [36m             :align-items     :center[0m
+  [36m141[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m142[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m143[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.663 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.641 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:142  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m138[0m  [36m[ant/layout-content[0m
+  [36m139[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m140[0m  [36m             :align-items     :center[0m
+  [36m141[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m142[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m143[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.677 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.605 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:143  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m139[0m  [36m[ant/layout-content[0m
+  [36m140[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m141[0m  [36m             :align-items     :center[0m
+  [36m142[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m143[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m144[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.672 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.611 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:126  column:9  ----[0m
+
+  [1mWrong number of args (1) passed to antizer.reagent/decorate-field[0m
+
+  [36m122[0m  [36m  (fn [][0m
+  [36m123[0m  [36m    (let [form (ant/get-form)][0m
+  [36m124[0m  [36m      [ant/form {:layout :vertical}[0m
+  [36m125[0m  [36m       [ant/form-item {:label "Imię"}[0m
+  [33m126[0m  [1m        (ant/decorate-field form )]])))[0m
+  [0m   [0m  [33m        ^--- Wrong number of args (1) passed to antizer.reagent/decorate-field[0m
+  [36m127[0m  [36m[0m
+  [36m128[0m  [36m[0m
+  [36m129[0m  [36m(defn login-page [][0m
+  [36m130[0m  [36m  (let [email-address (rf/subscribe [:login/email-address])[0m
+  [36m131[0m  [36m        password (rf/subscribe [:login/password])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:143  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m139[0m  [36m[ant/layout-content[0m
+  [36m140[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m141[0m  [36m             :align-items     :center[0m
+  [36m142[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m143[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m144[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.69 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.617 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:126  column:9  ----[0m
+
+  [1mWrong number of args (2) passed to antizer.reagent/decorate-field[0m
+
+  [36m122[0m  [36m  (fn [][0m
+  [36m123[0m  [36m    (let [form (ant/get-form)][0m
+  [36m124[0m  [36m      [ant/form {:layout :vertical}[0m
+  [36m125[0m  [36m       [ant/form-item {:label "Imię"}[0m
+  [33m126[0m  [1m        (ant/decorate-field form :name )]])))[0m
+  [0m   [0m  [33m        ^--- Wrong number of args (2) passed to antizer.reagent/decorate-field[0m
+  [36m127[0m  [36m[0m
+  [36m128[0m  [36m[0m
+  [36m129[0m  [36m(defn login-page [][0m
+  [36m130[0m  [36m  (let [email-address (rf/subscribe [:login/email-address])[0m
+  [36m131[0m  [36m        password (rf/subscribe [:login/password])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:143  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m139[0m  [36m[ant/layout-content[0m
+  [36m140[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m141[0m  [36m             :align-items     :center[0m
+  [36m142[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m143[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m144[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.688 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.61 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.411 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/login/ui.cljs   line:126  column:60  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m124[0m  [36m      [ant/form {:layout :vertical}[0m
+  [36m125[0m  [36m       [ant/form-item {:label "Imię"}[0m
+  [33m126[0m  [1m        (ant/decorate-field form :name {:rules [{:required}]})]])))[0m
+  [0m   [0m  [33m                                                           ^--- Map literal must contain an even number of forms[0m
+  [36m127[0m  [36m[0m
+  [36m128[0m  [36m[0m
+  [36m129[0m  [36m(defn login-page [][0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.625 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:143  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m139[0m  [36m[ant/layout-content[0m
+  [36m140[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m141[0m  [36m             :align-items     :center[0m
+  [36m142[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m143[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m144[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.725 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.572 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:144  column:10  ----[0m
+
+  [1mWrong number of args (0) passed to antizer.reagent/create-form[0m
+
+  [36m140[0m  [36m[ant/layout-content[0m
+  [36m141[0m  [36m [flex/hbox {:justify-content :center[0m
+  [36m142[0m  [36m             :align-items     :center[0m
+  [36m143[0m  [36m             :style           {:min-height "100vh"}}[0m
+  [33m144[0m  [1m  (ant/create-form[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to antizer.reagent/create-form[0m
+  [36m145[0m  [36m    )]]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.68 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.61 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.668 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.562 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.65 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.561 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.64 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.64 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.561 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.653 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.565 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.658 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.554 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.655 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.573 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.712 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.589 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.677 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.594 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.69 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.703 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.698 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.586 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.699 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.658 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.691 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.584 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.691 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.587 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.693 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.635 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.676 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.596 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.661 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.575 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.649 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.576 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.653 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.594 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.663 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.673 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.616 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.694 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.61 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.664 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.681 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.615 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.665 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.586 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.68 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.582 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.672 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.6 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.684 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.604 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.671 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.575 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.421 seconds.[0m
+[36m----  Could not Analyze  src/cljs/eckersdorf/login/ui.cljs   line:125  column:8  ----[0m
+
+  [1mUnknown dot form of (. nil setFieldsValue nil) with classification [:cljs.analyzer/error :cljs.analyzer/symbol ()][0m
+
+  [36m123[0m  [36m(fn [][0m
+  [36m124[0m  [36m (let [form (ant/get-form)][0m
+  [33m125[0m  [1m   (.setFieldsValue)[0m
+  [0m   [0m  [33m   ^--- Unknown dot form of (. nil setFieldsValue nil) with classification [:cljs.analyzer/error :cljs.analyzer/symbol ()][0m
+  [36m126[0m  [36m   [ant/form {:inline true}[0m
+  [36m127[0m  [36m    [ant/form-item {:label "email"}[0m
+  [36m128[0m  [36m     (ant/decorate-field form "email" {:rules [{:required :true[0m
+
+[36m----  Analysis Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.599 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.674 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.589 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.681 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.621 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.656 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.439 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/login/ui.cljs   line:125  column:13  ----[0m
+
+  [1mInvalid token: ant/[0m
+
+  [36m123[0m  [36m(fn [][0m
+  [36m124[0m  [36m (let [form (ant/get-form)][0m
+  [33m125[0m  [1m   (ant/)[0m
+  [0m   [0m  [33m        ^--- Invalid token: ant/[0m
+  [36m126[0m  [36m   [ant/form {:inline true}[0m
+  [36m127[0m  [36m    [ant/form-item {:label "email"}[0m
+  [36m128[0m  [36m     (ant/decorate-field form "email" {:rules [{:required :true[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.607 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:126  column:9  ----[0m
+
+  [1mUse of undeclared Var antizer.core/set[0m
+
+  [36m122[0m  [36m(defn login-form [][0m
+  [36m123[0m  [36m  (ant/create-form[0m
+  [36m124[0m  [36m    (fn [][0m
+  [36m125[0m  [36m     (let [form (ant/get-form)][0m
+  [33m126[0m  [1m       (antd/set)[0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var antizer.core/set[0m
+  [36m127[0m  [36m       [ant/form {:inline true}[0m
+  [36m128[0m  [36m        [ant/form-item {:label "email"}[0m
+  [36m129[0m  [36m         (ant/decorate-field form "email" {:rules [{:required :true[0m
+  [36m130[0m  [36m                                                    :message  "wprowadź adres email"}]}[0m
+  [36m131[0m  [36m           [ant/input])]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.7 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:125  column:8  ----[0m
+
+  [1mWrong number of args (0) passed to :setFieldsValue[0m
+
+  [36m121[0m  [36m(defn login-form [][0m
+  [36m122[0m  [36m  (ant/create-form[0m
+  [36m123[0m  [36m    (fn [][0m
+  [36m124[0m  [36m     (let [form (ant/get-form)][0m
+  [33m125[0m  [1m       (:setFieldsValue)[0m
+  [0m   [0m  [33m       ^--- Wrong number of args (0) passed to :setFieldsValue[0m
+  [36m126[0m  [36m       [ant/form {:inline true}[0m
+  [36m127[0m  [36m        [ant/form-item {:label "email"}[0m
+  [36m128[0m  [36m         (ant/decorate-field form "email" {:rules [{:required :true[0m
+  [36m129[0m  [36m                                                    :message  "wprowadź adres email"}]}[0m
+  [36m130[0m  [36m           [ant/input])]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.67 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.606 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.649 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.567 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.722 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.585 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.658 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.593 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.665 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.575 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.673 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.7 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.603 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.868 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.665 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.676 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.6 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.656 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:131  column:12  ----[0m
+
+  [1mUse of undeclared Var eckersdorf.login.ui/input[0m
+
+  [36m127[0m  [36m    (fn [][0m
+  [36m128[0m  [36m      (let [form (ant/get-form)][0m
+  [36m129[0m  [36m        [ant/form {:inline true}[0m
+  [36m130[0m  [36m         [ant/form-item {:label "email"}[0m
+  [33m131[0m  [1m          [input]]]))[0m
+  [0m   [0m  [33m           ^--- Use of undeclared Var eckersdorf.login.ui/input[0m
+  [36m132[0m  [36m    :options {:onValuesChange (fn [a b] (println b))}))[0m
+  [36m133[0m  [36m[0m
+  [36m134[0m  [36m(defn login-form1 [][0m
+  [36m135[0m  [36m  (ant/create-form[0m
+  [36m136[0m  [36m    (fn [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.709 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.602 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.668 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.597 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.725 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.596 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.68 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.58 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.661 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.599 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.719 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.619 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.682 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.63 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.689 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.593 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.698 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.585 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.703 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.619 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.684 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.605 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.69 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.684 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.589 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.802 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.593 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.675 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.575 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.662 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.573 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.668 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.585 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.667 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.677 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.664 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.685 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.667 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.575 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.655 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.681 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.668 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.587 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.674 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.665 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.604 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.662 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.652 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.573 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.715 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.662 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.567 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.705 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.662 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.58 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.567 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.646 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.667 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.603 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.707 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.605 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.689 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.596 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.671 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.582 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.671 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.619 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.689 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.588 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.679 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.592 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:135  column:71  ----[0m
+
+  [1mUse of undeclared Var eckersdorf.login.ui/value[0m
+
+  [36m131[0m  [36m                            ((:setFieldsValue form) (clj->js {"email" "sex"})))}])][0m
+  [36m132[0m  [36m[ant/form-item {:label "hasło"}[0m
+  [36m133[0m  [36m (ant/decorate-field form "blabla" {:rules [{:required      :true[0m
+  [36m134[0m  [36m                                             :message       "wprowadź adres email"[0m
+  [33m135[0m  [1m                                             :initial-value @value}]}[0m
+  [0m   [0m  [33m                                                             ^--- Use of undeclared Var eckersdorf.login.ui/value[0m
+  [36m136[0m  [36m   [ant/input {:on-change (fn [x] (println (-> x .-target .-value))[0m
+  [36m137[0m  [36m                            (reset! value (str "hahaha " (-> x .-target .-value))))}])][0m
+  [36m138[0m  [36m[flex/hbox {:justify-content :center}[0m
+  [36m139[0m  [36m [ant/form-item[0m
+  [36m140[0m  [36m  [ant/button "zaloguj"]]]]))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/eckersdorf/login/ui.cljs   line:137  column:46  ----[0m
+
+  [1mUse of undeclared Var eckersdorf.login.ui/value[0m
+
+  [36m133[0m  [36m          (ant/decorate-field form "blabla" {:rules [{:required      :true[0m
+  [36m134[0m  [36m                                                      :message       "wprowadź adres email"[0m
+  [36m135[0m  [36m                                                      :initial-value @value}]}[0m
+  [36m136[0m  [36m            [ant/input {:on-change (fn [x] (println (-> x .-target .-value))[0m
+  [33m137[0m  [1m                                     (reset! value (str "hahaha " (-> x .-target .-value))))}])][0m
+  [0m   [0m  [33m                                             ^--- Use of undeclared Var eckersdorf.login.ui/value[0m
+  [36m138[0m  [36m         [flex/hbox {:justify-content :center}[0m
+  [36m139[0m  [36m          [ant/form-item[0m
+  [36m140[0m  [36m           [ant/button "zaloguj"]]]]))))[0m
+  [36m141[0m  [36m[0m
+  [36m142[0m  [36m(defn login-form1 [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.706 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.598 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.691 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.616 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.673 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.657 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.68 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.704 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.594 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.733 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.599 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/init.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.691 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.577 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.43 seconds.[0m
+[36m----  Could not Read  src/cljs/eckersdorf/login/ui.cljs   line:137  column:44  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m135[0m  [36m   [ant/input {:type      :password[0m
+  [36m136[0m  [36m               :on-change (fn [e] (rf/dispatch [:login/set-password! (-> e .-target .-value)]))[0m
+  [33m137[0m  [1m               :validate-status}])][0m
+  [0m   [0m  [33m                                ^--- Map literal must contain an even number of forms[0m
+  [36m138[0m  [36m[flex/hbox {:justify-content :center}[0m
+  [36m139[0m  [36m [ant/form-item[0m
+  [36m140[0m  [36m  [ant/button {:on-click #(rf/subscribe [:login/request-login])}[0m
+
+[36m----  Reader Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.603 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.421 seconds.[0m
+[36m----  Could not Analyze  src/cljs/eckersdorf/login/ui.cljs   line:137  column:44  ----[0m
+
+  [1mToo few arguments to if at line 137 /home/huxley/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/ui.cljs[0m
+
+  [36m135[0m  [36m   [ant/input {:type      :password[0m
+  [36m136[0m  [36m               :on-change (fn [e] (rf/dispatch [:login/set-password! (-> e .-target .-value)]))[0m
+  [33m137[0m  [1m               :validate-status (if (false? @invalid-password?))}])][0m
+  [0m   [0m  [33m                                ^--- Too few arguments to if at line 137 /home/huxley/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/ui.cljs[0m
+  [36m138[0m  [36m[flex/hbox {:justify-content :center}[0m
+  [36m139[0m  [36m [ant/form-item[0m
+  [36m140[0m  [36m  [ant/button {:on-click #(rf/subscribe [:login/request-login])}[0m
+
+[36m----  Analysis Error : Please see src/cljs/eckersdorf/login/ui.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.679 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.586 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.683 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.58 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.698 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.585 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.697 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.57 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.674 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.696 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.598 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.718 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.621 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.722 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.597 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.696 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.62 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.703 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.61 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.668 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/login/ui.js

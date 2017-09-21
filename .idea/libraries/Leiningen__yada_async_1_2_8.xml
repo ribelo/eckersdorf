@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: yada/async:1.2.8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/yada/async/1.2.8/async-1.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

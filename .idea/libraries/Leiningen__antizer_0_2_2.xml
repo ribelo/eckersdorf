@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: antizer:0.2.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/antizer/antizer/0.2.2/antizer-0.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

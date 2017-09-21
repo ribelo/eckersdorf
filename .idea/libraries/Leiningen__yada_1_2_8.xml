@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: yada:1.2.8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/yada/yada/1.2.8/yada-1.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
