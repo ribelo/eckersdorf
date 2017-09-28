@@ -4,10 +4,9 @@
             [schema.core :as schema]
             [yada.yada :as yada]
             [monger.collection :as mc]
-            [eckersdorf.db.users :as db.users]
             [eckersdorf.routes.services.users :as services.users]
-            [eckersdorf.db.workers :as db.workers]
             [eckersdorf.routes.services.workers :as services.workers]
+            [eckersdorf.routes.services.workplaces :as services.workplaces]
             [taoensso.timbre :as timbre]
             [taoensso.encore :as encore :refer [assoc-some]]
             [manifold.deferred :as d]
@@ -23,4 +22,5 @@
     ["/1.0"
      [
       (services.users/users-routes db)
+      (services.workplaces/workplaces-routes db)
       (services.workers/workers-routes db)]]]])

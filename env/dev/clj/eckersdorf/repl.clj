@@ -13,6 +13,7 @@
             [eckersdorf.db.users :as users]
             [eckersdorf.db.timetable :as timetable]
             [eckersdorf.db.workers :as db.workers]
+            [eckersdorf.db.workplaces :as db.workplaces]
             [cuerdas.core :as str]
             [clojure.spec.alpha :as s]
             [buddy.sign.jwt :as jwt]
@@ -84,4 +85,16 @@
 (timetable/create-timetable-collection tmp-db)
 (timetable/reset-timetable-collection tmp-db)
 
-(s/valid? (s/keys :req [:a/a]) {:a/c 2})
+(db.workplaces/create-workplaces-collection tmp-db)
+
+(db.workplaces/create-workplace tmp-db
+                                {:workplace/name "wilków kopernika"
+                                 :workplace/type "dc"
+                                 :workplace/email-address "s-1@teas.com.pl"
+                                 :workplace/address {:address/street-name "kopernika"
+                                                     :address/street-number "1"
+                                                     :address/house-number nil
+                                                     :address/zip-code "59-516"
+                                                     :address/city "wilków"}})
+
+(db.workplaces/workplaces-list tmp-db)

@@ -60,6 +60,7 @@
                                           :workplace/address
                                           :workplace/type]
                                     :opt [:workplace/id]))
+(s/def :workplace/workplaces (s/* :workplace/workplace))
 
 
 (s/def :worker/id :mongo/object-id)

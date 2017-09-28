@@ -29,10 +29,10 @@ return cljs.core.contains_QMARK_.call(null,cljs.core.set.call(null,new cljs.core
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315),(function (db,_){
 return cljs.core.contains_QMARK_.call(null,cljs.core.set.call(null,new cljs.core.Keyword("user","roles","user/roles",130427029).cljs$core$IFn$_invoke$arity$1(db)),"moderator");
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","admin-or-moderator?","user/admin-or-moderator?",1276690555),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","admin?","user/admin?",-380045250)], null),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315)], null),(function (p__39693,_){
-var vec__39694 = p__39693;
-var admin_QMARK_ = cljs.core.nth.call(null,vec__39694,(0),null);
-var moderator_QMARK_ = cljs.core.nth.call(null,vec__39694,(1),null);
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","admin-or-moderator?","user/admin-or-moderator?",1276690555),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","admin?","user/admin?",-380045250)], null),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315)], null),(function (p__39794,_){
+var vec__39795 = p__39794;
+var admin_QMARK_ = cljs.core.nth.call(null,vec__39795,(0),null);
+var moderator_QMARK_ = cljs.core.nth.call(null,vec__39795,(1),null);
 var or__30249__auto__ = admin_QMARK_;
 if(cljs.core.truth_(or__30249__auto__)){
 return or__30249__auto__;
@@ -47,4 +47,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","logged-in?","user/
 return !((token == null));
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1506535793353
+//# sourceMappingURL=subs.js.map?rel=1506628640021
