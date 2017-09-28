@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15e23457-2cef-4f86-8996-e706ca63f8e3" name="Default" comment="" />
+    <list default="true" id="15e23457-2cef-4f86-8996-e706ca63f8e3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workplaces.clj" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/core.clj" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/users.clj" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workers.clj" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/db.cljs" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/events.cljs" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/ui.cljs" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/subs.cljs" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/ui.cljs" />
+      <change type="DELETED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services.clj" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/ui.cljs" afterPath="" />
+      <change type="MOVED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/db.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/db.cljs" />
+      <change type="MOVED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/events.cljs" />
+      <change type="MOVED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/subs.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/subs.cljs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figwheel_server.log" afterPath="$PROJECT_DIR$/figwheel_server.log" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/.idea/workspace.xml" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/figwheel_server.log" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/figwheel_server.log" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.clj" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.clj" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/users.clj" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/users.clj" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/init.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/init.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,41 +41,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/events.cljs">
+      <file leaf-file-name="repl.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="505">
+              <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs">
+      <file leaf-file-name="timetable.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subs.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/subs.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="621">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,8 +64,28 @@
       <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="184">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/users.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,38 +94,38 @@
       <file leaf-file-name="specs.cljc" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="-391">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui.cljs" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/ui.cljs">
+      <file leaf-file-name="workplaces.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workplaces.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="133" column="91" lean-forward="false" selection-start-line="133" selection-start-column="91" selection-end-line="133" selection-end-column="91" />
+            <state relative-caret-position="-768">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services.clj">
+      <file leaf-file-name="workers.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workers.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="135" column="89" lean-forward="true" selection-start-line="135" selection-start-column="89" selection-end-line="135" selection-end-column="89" />
+            <state relative-caret-position="460">
+              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repl.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj">
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            <state relative-caret-position="92">
+              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -107,8 +134,8 @@
       <file leaf-file-name="ui.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="14" />
+            <state relative-caret-position="574">
+              <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -119,8 +146,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="ClojureScript Namespace" />
         <option value="CLJC Namespace" />
+        <option value="ClojureScript Namespace" />
         <option value="Clojure Namespace" />
       </list>
     </option>
@@ -146,6 +173,11 @@
       <find>postman</find>
       <find>phone</find>
       <find>add-user</find>
+      <find>eckersdorf.login.</find>
+      <find>users.db</find>
+      <find>list</find>
+      <find>services</find>
+      <find>sex</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -155,7 +187,11 @@
       <replace>:login/set-password!</replace>
       <replace>:login/set-invalid-password!</replace>
       <replace>eckersdorf</replace>
+      <replace>eckersdorf.user.login.</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/data/code/Clojure/eckersdorf" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -165,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/config.edn" />
         <option value="$PROJECT_DIR$/src/cljs/eckersdorf/core.cljs" />
         <option value="$PROJECT_DIR$/src/clj/eckersdorf/config.clj" />
         <option value="$PROJECT_DIR$/src/clj/eckersdorf/core.clj" />
@@ -181,7 +216,6 @@
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/schnapsidee/repl.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/core.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/project.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/core.cljs" />
@@ -189,17 +223,35 @@
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/subs.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/db.cljs" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/db.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/events.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/subs.cljs" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/init.cljs" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/ui.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/ui.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/db.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/events.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/subs.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/figwheel_server.log" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/db.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/events.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/subs.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/ui.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/init.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/worker.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/users.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/core.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workers.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workplace.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/users.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workers.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workplaces.clj" />
       </list>
     </option>
   </component>
@@ -288,6 +340,9 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -303,6 +358,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -403,12 +462,29 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="clj" type="462c0819:PsiDirectoryNode" />
               <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clj" type="462c0819:PsiDirectoryNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
               <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clj" type="462c0819:PsiDirectoryNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cljc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -445,6 +521,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cljs" type="462c0819:PsiDirectoryNode" />
               <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cljs" type="462c0819:PsiDirectoryNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -459,10 +544,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,6 +560,8 @@
     <property name="cursive.last.file.extension./home/huxley/code/Clojure/eckersdorf/src/cljc" value="cljc" />
     <property name="cursive.last.file.extension./home/huxley/code/Clojure/eckersdorf/src" value="clj" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="cursive.last.file.extension./home/huxley/data/code/Clojure/eckersdorf/src/cljs" value="cljs" />
+    <property name="cursive.last.file.extension./home/huxley/data/code/Clojure/eckersdorf/src/clj" value="clj" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -492,7 +575,7 @@
       <recent name="$USER_HOME$/data/code/Clojure/eckersdorf/resources" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1506034091916">{:repl-history {:ide [], :local [], :remote [{:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr]))&quot;, :offset 813, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 851, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timbre/merge-config! {:level :info})&quot;, :offset 37, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def repl-system nil)&quot;, :offset 21, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def tmp-db nil)&quot;, :offset 16, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn init-system []\n  (alter-var-root #'repl-system (constantly (system/new-system))))&quot;, :offset 87, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn start-system []\n  (alter-var-root #'repl-system component/start-system)\n  (alter-var-root #'tmp-db (fn [_] (:db (:mongo repl-system)))))&quot;, :offset 142, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn stop-system []\n  (alter-var-root #'repl-system\n                  (fn [s] (when s (component/stop-system s)))))&quot;, :offset 116, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn go-system []\n  (init-system)\n  (start-system))&quot;, :offset 52, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn reset-system []\n  (stop-system)\n  (init-system)\n  (start-system))&quot;, :offset 71, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(go-system)&quot;, :offset 11, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(stop-system)&quot;, :offset 13, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(reset-system)&quot;, :offset 14, :ns &quot;eckersdorf.repl&quot;}]}}</component>
+  <component name="ReplState" timestamp="1506546165091">{:repl-history {:ide [], :local [{:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 851, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.db.timetable\n  (:refer-clojure :exclude [update])\n  (:require [clojure.spec.alpha :as s]\n            [taoensso.timbre :as timbre]\n            [taoensso.encore :as encore]\n            [clj-time.core :as t]\n            [monger.core :as mg]\n            [monger.collection :as mc]\n            [monger.operators :refer :all]\n            [monger.query :as mq]\n            [monger.result :as mr]\n            [monger.internal.pagination :refer [offset-for]]\n            [cheshire.core :as json]\n            [cuerdas.core :as str]\n            [buddy.hashers :as hashers]\n            [buddy.sign.jwt :as jwt])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 653, :ns &quot;eckersdorf.db.timetable&quot;} {:command &quot;(defn create-timetable-collection [db]\n  (when-not (mc/exists? db \&quot;timetable\&quot;)\n    (mc/create db \&quot;timetable\&quot; {})\n    (mc/create-index db \&quot;timetable\&quot; {:user/email-address 1} {:unique true})\n    (mc/create-index db \&quot;timetable\&quot; {:product/second-name 1})\n    (mc/create-index db \&quot;timetable\&quot; {:user/expire-at 1} {:expireAfterSeconds 0})))&quot;, :offset 333, :ns &quot;eckersdorf.db.timetable&quot;} {:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [clj.eckersdorf.db.timetable :as timetable]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 907, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timetable/create-timetable-collection tmp-db)&quot;, :offset 46, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn drop-timetable-collection [db]\n  (mc/remove db \&quot;timetable\&quot;))&quot;, :offset 66, :ns &quot;eckersdorf.db.timetable&quot;} {:command &quot;(defn reset-timetable-collection [db]\n  (drop-timetable-collection db)\n  (create-timetable-collection db))&quot;, :offset 106, :ns &quot;eckersdorf.db.timetable&quot;} {:command &quot;(defn create-timetable-collection [db]\n  (when-not (mc/exists? db \&quot;timetable\&quot;)\n    (mc/create db \&quot;timetable\&quot; {})\n    (mc/create-index db \&quot;timetable\&quot; {:timetable/workplace 1} {:unique true})\n    (mc/create-index db \&quot;timetable\&quot; {:timetable/datetime 1})\n    (mc/create-index db \&quot;timetable\&quot; {:timetable/worker 1})))&quot;, :offset 311, :ns &quot;eckersdorf.db.timetable&quot;} {:command &quot;(timetable/reset-timetable-collection tmp-db)&quot;, :offset 45, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/+ number? pos?)&quot;, :offset 18, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [eckersdorf.db.timetable :as timetable]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 903, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timbre/merge-config! {:level :info})&quot;, :offset 37, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def repl-system nil)&quot;, :offset 21, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def tmp-db nil)&quot;, :offset 16, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn init-system []\n  (alter-var-root #'repl-system (constantly (system/new-system))))&quot;, :offset 87, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn start-system []\n  (alter-var-root #'repl-system component/start-system)\n  (alter-var-root #'tmp-db (fn [_] (:db (:mongo repl-system)))))&quot;, :offset 142, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn stop-system []\n  (alter-var-root #'repl-system\n                  (fn [s] (when s (component/stop-system s)))))&quot;, :offset 116, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn go-system []\n  (init-system)\n  (start-system))&quot;, :offset 52, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn reset-system []\n  (stop-system)\n  (init-system)\n  (start-system))&quot;, :offset 71, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(go-system)&quot;, :offset 11, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/+ number? pos?) 1)&quot;, :offset 31, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/*  number? pos?) 1)&quot;, :offset 32, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/*  number?) 1)&quot;, :offset 27, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/*  number?) [1 \&quot;a\&quot;])&quot;, :offset 33, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/*  number?) [1])&quot;, :offset 29, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/*  number?) [1 1])&quot;, :offset 31, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/*  number?) [])&quot;, :offset 28, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/+  number?) [])&quot;, :offset 28, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/&amp;  number?) [])&quot;, :offset 28, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/&amp;  number? pos?) [])&quot;, :offset 33, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/&amp;  number? pos?) 1)&quot;, :offset 32, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/&amp;  number?) 1)&quot;, :offset 27, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? number? 1)&quot;, :offset 20, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/nilable number?) 1)&quot;, :offset 32, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/nilable number?) \&quot;a\&quot;)&quot;, :offset 34, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/nilable number?) nil)&quot;, :offset 34, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/keys :req [:a/a]) {:a/a 1})&quot;, :offset 40, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/keys :req [:a/a]) {:a/a 2})&quot;, :offset 40, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(s/valid? (s/keys :req [:a/a]) {:a/c 2})&quot;, :offset 40, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(db.workers/create-worker tmp-db {:worker/first-name \&quot;anna\&quot;\n                                  :worker/last-name \&quot;szlęzak\&quot;\n                                  :worker/email-address \&quot;a.szlezak@teas.com.pl\&quot;})&quot;, :offset 203, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(db.workers/create-worker tmp-db {:worker/first-name \&quot;anna\&quot;\n                                  :worker/last-name \&quot;szlęzak\&quot;\n                                  :worker/email-address \&quot;a.szlezak@teas.com.pl\&quot;\n                                  :worker/phone-number nil\n                                  :worker/workplace nil\n                                  })&quot;, :offset 353, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(db.workers/create-worker tmp-db {:worker/first-name \&quot;anna\&quot;\n                                  :worker/last-name \&quot;szlęzak\&quot;\n                                  :worker/email-address \&quot;a.szlezak@teas.com.pl\&quot;\n                                  :worker/phone-number nil\n                                  :worker/workplace nil\n                                  :worker/address\n                                  })&quot;, :offset 403, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(db.workers/create-worker tmp-db {:worker/first-name \&quot;anna\&quot;\n                                  :worker/last-name \&quot;szlęzak\&quot;\n                                  :worker/email-address \&quot;a.szlezak@teas.com.pl\&quot;\n                                  :worker/phone-number nil\n                                  :worker/workplace nil\n                                  :worker/address nil\n                                  })&quot;, :offset 407, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn workers-list\n  ([db opts]\n   {:post [(s/valid? (s/* :worker/worker) %)]}\n   (mc/find-maps db \&quot;workers\&quot; opts))\n  ([db]\n   (workers-list db {})))&quot;, :offset 149, :ns &quot;eckersdorf.db.workers&quot;} {:command &quot;(db.workers/workers-list tmp-db)&quot;, :offset 32, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(db.workers/workers-list tmp-db {:worker/first-name \&quot;rafał\&quot;})&quot;, :offset 61, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(db.workers/workers-list tmp-db {:worker/first-name \&quot;anna\&quot;})&quot;, :offset 60, :ns &quot;eckersdorf.repl&quot;} {:command &quot;services-routes&quot;, :offset 15, :ns &quot;eckersdorf.routes.services.core&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada/resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         \&quot;lala\&quot;)}}})]\n    [\&quot;/add\&quot; (yada.resource\n              {:methods\n               {:post\n                {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n                 :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n                 :parameters {:body {:email-address schema/Str\n                                     :password      schema/Str\n                                     :first-name    schema/Str\n                                     :last-name     schema/Str}}\n                 :response   (fn [ctx]\n                               (let [{:keys [email-address password first-name\n                                             last-name]} (get-in ctx [:parameters :body])]\n                                 (if-not (db.users/find-user-by-email-address db email-address)\n                                   (let [user (db.users/create-user db {:user/first-name    first-name\n                                                                        :user/last-name     last-name\n                                                                        :user/password      password\n                                                                        :user/email-address email-address})]\n                                     ;(postman/send-activation-email user)\n                                     (dissoc user :user/password))\n                                   (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]]])&quot;, :offset 1662, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(ns eckersdorf.routes.services.workers\n  (:require [clojure.spec.alpha :as s]\n            [clojure.core.async :refer [go]]\n            [schema.core :as schema]\n            [yada.yada :as yada]\n            [monger.collection :as mc]\n            [eckersdorf.db.users :as db.users]\n            [eckersdorf.routes.services.users :as services.users]\n            [taoensso.timbre :as timbre]\n            [taoensso.encore :as encore :refer [assoc-some]]\n            [manifold.deferred :as d]\n            [cuerdas.core :as str]\n            [hiccup.core :as hiccup]\n            [yada.jwt :as jwt]\n            ))&quot;, :offset 602, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada.resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         \&quot;lala\&quot;)}}})]\n    [\&quot;/add\&quot; (yada.resource\n              {:methods\n               {:post\n                {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n                 :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n                 :parameters {:body {:email-address schema/Str\n                                     :password      schema/Str\n                                     :first-name    schema/Str\n                                     :last-name     schema/Str}}\n                 :response   (fn [ctx]\n                               (let [{:keys [email-address password first-name\n                                             last-name]} (get-in ctx [:parameters :body])]\n                                 (if-not (db.users/find-user-by-email-address db email-address)\n                                   (let [user (db.users/create-user db {:user/first-name    first-name\n                                                                        :user/last-name     last-name\n                                                                        :user/password      password\n                                                                        :user/email-address email-address})]\n                                     ;(postman/send-activation-email user)\n                                     (dissoc user :user/password))\n                                   (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]]])&quot;, :offset 1662, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada/resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         \&quot;lala\&quot;)}}})]\n    [\&quot;/add\&quot; (yada/resource\n              {:methods\n               {:post\n                {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n                 :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n                 :parameters {:body {:email-address schema/Str\n                                     :password      schema/Str\n                                     :first-name    schema/Str\n                                     :last-name     schema/Str}}\n                 :response   (fn [ctx]\n                               (let [{:keys [email-address password first-name\n                                             last-name]} (get-in ctx [:parameters :body])]\n                                 (if-not (db.users/find-user-by-email-address db email-address)\n                                   (let [user (db.users/create-user db {:user/first-name    first-name\n                                                                        :user/last-name     last-name\n                                                                        :user/password      password\n                                                                        :user/email-address email-address})]\n                                     ;(postman/send-activation-email user)\n                                     (dissoc user :user/password))\n                                   (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]]])&quot;, :offset 1662, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn services-routes [db]\n  [\&quot;/api\&quot;\n   [\n    [\&quot;/1.0\&quot;\n     [\n      (services.users/users-routes db)\n      (services.workers/workers-routes db)]]]])&quot;, :offset 147, :ns &quot;eckersdorf.routes.services.core&quot;} {:command &quot;(ns eckersdorf.routes.services.core\n  (:require [clojure.spec.alpha :as s]\n            [clojure.core.async :refer [go]]\n            [schema.core :as schema]\n            [yada.yada :as yada]\n            [monger.collection :as mc]\n            [eckersdorf.db.users :as db.users]\n            [eckersdorf.routes.services.users :as services.users]\n            [eckersdorf.db.workers :as db.workers]\n            [eckersdorf.routes.services.workers :as services.workers]\n            [taoensso.timbre :as timbre]\n            [taoensso.encore :as encore :refer [assoc-some]]\n            [manifold.deferred :as d]\n            [cuerdas.core :as str]\n            [hiccup.core :as hiccup]\n            [yada.jwt :as jwt]\n            ))&quot;, :offset 720, :ns &quot;eckersdorf.routes.services.core&quot;} {:command &quot;(remove-ns 'services)&quot;, :offset 21, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(remove-ns 'eckersdorf.routes.services)&quot;, :offset 39, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(find-ns 'services)&quot;, :offset 19, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(find-ns 'eckersdorf.routes.services.core)&quot;, :offset 42, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(ns-unalias 'eckersdorf.routes.core 'services)&quot;, :offset 46, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(find-ns 'eckersdorf.routes.services)&quot;, :offset 37, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(find-ns 'eckersdorf.routes.core)&quot;, :offset 33, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(ns-unalias (find-ns 'eckersdorf.routes.core) 'services)&quot;, :offset 56, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(ns eckersdorf.routes.core\n  (:require [yada.yada :as yada]\n            [yada.resources.classpath-resource :refer [new-classpath-resource]]\n            [eckersdorf.layout :as layout]\n            [eckersdorf.routes.services.core :as services]\n            [schema.core :as schema]))&quot;, :offset 280, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(defn new-routes [{:keys [db]}]\n  [\&quot;\&quot;\n   [\n    [\&quot;/\&quot; (yada/resource\n           {:id       :eckersdorf/main-page\n            :produces #{\&quot;text/html\&quot;}\n            :methods  {:get {:response (layout/home-page)}}})]\n    (services/services-routes db)\n    [\&quot;\&quot; (new-classpath-resource \&quot;public\&quot;)]\n\n    ]])&quot;, :offset 296, :ns &quot;eckersdorf.routes.core&quot;} {:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [eckersdorf.db.timetable :as timetable]\n            [eckersdorf.db.workers :as db.workers]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 954, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.routes.services.workers\n  (:require [clojure.spec.alpha :as s]\n            [clojure.core.async :refer [go]]\n            [schema.core :as schema]\n            [yada.yada :as yada]\n            [monger.collection :as mc]\n            [eckersdorf.db.workers :as eckersdorf.db.workers]\n            [taoensso.timbre :as timbre]\n            [taoensso.encore :as encore :refer [assoc-some]]\n            [manifold.deferred :as d]\n            [cuerdas.core :as str]\n            [hiccup.core :as hiccup]\n            [yada.jwt :as jwt]\n            ))&quot;, :offset 551, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(ns eckersdorf.routes.services.workers\n  (:require [clojure.spec.alpha :as s]\n            [clojure.core.async :refer [go]]\n            [schema.core :as schema]\n            [yada.yada :as yada]\n            [monger.collection :as mc]\n            [eckersdorf.db.workers :as eckersdorf.db.workers]\n            [taoensso.timbre :as timbre]\n            [taoensso.encore :as encore :refer [assoc-some]]\n            [manifold.deferred :as d]\n            [cuerdas.core :as str]\n            [hiccup.core :as hiccup]\n            [yada.jwt :as jwt]\n            [eckersdorf.db.workers :as db.workers]))&quot;, :offset 589, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada/resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         (db.workers/workers-list db))}}})]\n    [\&quot;/add\&quot; (yada/resource\n              {:methods\n               {:post\n                {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n                 :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n                 :parameters {:body {:email-address schema/Str\n                                     :password      schema/Str\n                                     :first-name    schema/Str\n                                     :last-name     schema/Str}}\n                 :response   (fn [ctx]\n                               (let [{:keys [email-address password first-name\n                                             last-name]} (get-in ctx [:parameters :body])]\n                                 (if-not (db.users/find-user-by-email-address db email-address)\n                                   (let [user (db.users/create-user db {:user/first-name    first-name\n                                                                        :user/last-name     last-name\n                                                                        :user/password      password\n                                                                        :user/email-address email-address})]\n                                     ;(postman/send-activation-email user)\n                                     (dissoc user :user/password))\n                                   (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]]])&quot;, :offset 1684, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada/resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         (println (get-in ctx [:parameters :body]))\n                         (db.workers/workers-list db))}}})]\n    ;[\&quot;/add\&quot; (yada/resource\n    ;          {:methods\n    ;           {:post\n    ;            {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n    ;             :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n    ;             :parameters {:body {:email-address schema/Str\n    ;                                 :password      schema/Str\n    ;                                 :first-name    schema/Str\n    ;                                 :last-name     schema/Str}}\n    ;             :response   (fn [ctx]\n    ;                           (let [{:keys [email-address password first-name\n    ;                                         last-name]} (get-in ctx [:parameters :body])]\n    ;                             (if-not (db.users/find-user-by-email-address db email-address)\n    ;                               (let [user (db.users/create-user db {:user/first-name    first-name\n    ;                                                                    :user/last-name     last-name\n    ;                                                                    :user/password      password\n    ;                                                                    :user/email-address email-address})]\n    ;                                 ;(postman/send-activation-email user)\n    ;                                 (dissoc user :user/password))\n    ;                               (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]\n    ]])&quot;, :offset 1777, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada/resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         (println ctx)\n                         (db.workers/workers-list db))}}})]\n    ;[\&quot;/add\&quot; (yada/resource\n    ;          {:methods\n    ;           {:post\n    ;            {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n    ;             :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n    ;             :parameters {:body {:email-address schema/Str\n    ;                                 :password      schema/Str\n    ;                                 :first-name    schema/Str\n    ;                                 :last-name     schema/Str}}\n    ;             :response   (fn [ctx]\n    ;                           (let [{:keys [email-address password first-name\n    ;                                         last-name]} (get-in ctx [:parameters :body])]\n    ;                             (if-not (db.users/find-user-by-email-address db email-address)\n    ;                               (let [user (db.users/create-user db {:user/first-name    first-name\n    ;                                                                    :user/last-name     last-name\n    ;                                                                    :user/password      password\n    ;                                                                    :user/email-address email-address})]\n    ;                                 ;(postman/send-activation-email user)\n    ;                                 (dissoc user :user/password))\n    ;                               (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]\n    ]])&quot;, :offset 1748, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada/resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         (let [opts (or (get-in ctx [:parameters :query]) {})]\n                           (db.workers/workers-list db opts)))}}})]\n    ;[\&quot;/add\&quot; (yada/resource\n    ;          {:methods\n    ;           {:post\n    ;            {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n    ;             :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n    ;             :parameters {:body {:email-address schema/Str\n    ;                                 :password      schema/Str\n    ;                                 :first-name    schema/Str\n    ;                                 :last-name     schema/Str}}\n    ;             :response   (fn [ctx]\n    ;                           (let [{:keys [email-address password first-name\n    ;                                         last-name]} (get-in ctx [:parameters :body])]\n    ;                             (if-not (db.users/find-user-by-email-address db email-address)\n    ;                               (let [user (db.users/create-user db {:user/first-name    first-name\n    ;                                                                    :user/last-name     last-name\n    ;                                                                    :user/password      password\n    ;                                                                    :user/email-address email-address})]\n    ;                                 ;(postman/send-activation-email user)\n    ;                                 (dissoc user :user/password))\n    ;                               (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]\n    ]])&quot;, :offset 1796, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(map (fn [[k v]\n          k]) {:a 1 :b 2})&quot;, :offset 42, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(map (fn [[k v]]\n       k) {:a 1 :b 2})&quot;, :offset 39, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(map (fn [[k v]]\n       [k v]) {:a 1 :b 2})&quot;, :offset 43, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(map (fn [[k v]]\n       [k v]) {:a 1 :b {:c 3}})&quot;, :offset 48, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(reduce (fn [r [k v]]\n       (assoc r k (inc v))) {:a 1 :b 2})&quot;, :offset 62, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(reduce (fn [r [k v]]\n       (assoc r k (inc v))) { } {:a 1 :b 2})&quot;, :offset 66, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(reduce (fn [r [k v]]\n       (assoc r k (inc v))) {} {})&quot;, :offset 56, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(defn workers-routes [db]\n  [\&quot;/workers\&quot;\n   [\n    [\&quot;\&quot; (yada/resource\n          {:methods\n           {:get\n            {:produces #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n             :response (fn [ctx]\n                         (let [opts (-&gt;&gt; (get-in ctx [:parameters :query])\n                                         (reduce (fn [r [k v]]\n                                                   (assoc r k {\&quot;$regex\&quot; v\n                                                               \&quot;$options\&quot; \&quot;i\&quot;})) {}))]\n                           (db.workers/workers-list db opts)))}}})]\n    ;[\&quot;/add\&quot; (yada/resource\n    ;          {:methods\n    ;           {:post\n    ;            {:produces   #{\&quot;application/json\&quot; \&quot;text/plain\&quot;}\n    ;             :consumes   \&quot;application/x-www-form-urlencoded\&quot;\n    ;             :parameters {:body {:email-address schema/Str\n    ;                                 :password      schema/Str\n    ;                                 :first-name    schema/Str\n    ;                                 :last-name     schema/Str}}\n    ;             :response   (fn [ctx]\n    ;                           (let [{:keys [email-address password first-name\n    ;                                         last-name]} (get-in ctx [:parameters :body])]\n    ;                             (if-not (db.users/find-user-by-email-address db email-address)\n    ;                               (let [user (db.users/create-user db {:user/first-name    first-name\n    ;                                                                    :user/last-name     last-name\n    ;                                                                    :user/password      password\n    ;                                                                    :user/email-address email-address})]\n    ;                                 ;(postman/send-activation-email user)\n    ;                                 (dissoc user :user/password))\n    ;                               (assoc (:response ctx) :status 500 :body {:error \&quot;user exists\&quot;}))))}}})]\n    ]])&quot;, :offset 2016, :ns &quot;eckersdorf.routes.services.workers&quot;} {:command &quot;(reset-system)&quot;, :offset 14, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.db.workplaces\n  (:refer-clojure :exclude [update])\n  (:require [clojure.spec.alpha :as s]\n            [taoensso.timbre :as timbre]\n            [taoensso.encore :as encore]\n            [clj-time.core :as t]\n            [monger.core :as mg]\n            [monger.collection :as mc]\n            [monger.operators :refer :all]\n            [monger.query :as mq]\n            [monger.result :as mr]\n            [monger.internal.pagination :refer [offset-for]]\n            [cheshire.core :as json]\n            [cuerdas.core :as str]\n            [buddy.hashers :as hashers]\n            [buddy.sign.jwt :as jwt])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 654, :ns &quot;eckersdorf.db.workplaces&quot;}], :remote [{:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr]))&quot;, :offset 813, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 851, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timbre/merge-config! {:level :info})&quot;, :offset 37, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def repl-system nil)&quot;, :offset 21, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def tmp-db nil)&quot;, :offset 16, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn init-system []\n  (alter-var-root #'repl-system (constantly (system/new-system))))&quot;, :offset 87, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn start-system []\n  (alter-var-root #'repl-system component/start-system)\n  (alter-var-root #'tmp-db (fn [_] (:db (:mongo repl-system)))))&quot;, :offset 142, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn stop-system []\n  (alter-var-root #'repl-system\n                  (fn [s] (when s (component/stop-system s)))))&quot;, :offset 116, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn go-system []\n  (init-system)\n  (start-system))&quot;, :offset 52, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn reset-system []\n  (stop-system)\n  (init-system)\n  (start-system))&quot;, :offset 71, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(go-system)&quot;, :offset 11, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(stop-system)&quot;, :offset 13, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(reset-system)&quot;, :offset 14, :ns &quot;eckersdorf.repl&quot;}]}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -790,6 +873,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -833,15 +923,15 @@
       <workItem from="1505739787968" duration="1707000" />
       <workItem from="1505905946816" duration="599000" />
       <workItem from="1506018703148" duration="14441000" />
+      <workItem from="1506535036411" duration="9718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19849000" />
+    <option name="totallyTimeSpent" value="29567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="3" width="2564" height="1079" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -850,16 +940,16 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13961814" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.099443115" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0823389" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08830549" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -888,126 +978,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/nrepl.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/server.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/system.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/db/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/db/users.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cljc/eckersdorf/db/specs.cljc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/config.edn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cljs/eckersdorf/core.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/config.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/db/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/nrepl.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/db/users.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/server.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/system.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
           <caret line="48" column="78" lean-forward="false" selection-start-line="48" selection-start-column="78" selection-end-line="48" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,15 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/nrepl.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,15 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1172">
           <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,7 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-437">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,7 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,98 +1140,234 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/init.cljs">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="805">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/db.cljs">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/db.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="230">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/events.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="74" column="48" lean-forward="false" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/subs.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/ui.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/db.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/events.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/subs.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/core.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/subs.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/events.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/init.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="268">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/spec.alpha/0.1.123/spec.alpha-0.1.123.jar!/clojure/spec/alpha.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="1812" column="10" lean-forward="false" selection-start-line="1812" selection-start-column="10" selection-end-line="1812" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/nrepl.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/ui.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/figwheel_server.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="1796" column="92" lean-forward="false" selection-start-line="1796" selection-start-column="92" selection-end-line="1796" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/worker.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="135" column="89" lean-forward="true" selection-start-line="135" selection-start-column="89" selection-end-line="135" selection-end-column="89" />
+        <state relative-caret-position="23">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/users.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workers.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="28" column="73" lean-forward="true" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="14" />
+        <state relative-caret-position="574">
+          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/ui.cljs">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="133" column="91" lean-forward="false" selection-start-line="133" selection-start-column="91" selection-end-line="133" selection-end-column="91" />
+        <state relative-caret-position="505">
+          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workers.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/users.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workplaces.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>

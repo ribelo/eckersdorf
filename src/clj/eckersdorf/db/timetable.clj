@@ -1,4 +1,4 @@
-(ns clj.eckersdorf.db.timetable
+(ns eckersdorf.db.timetable
   (:refer-clojure :exclude [update])
   (:require [clojure.spec.alpha :as s]
             [taoensso.timbre :as timbre]
@@ -20,6 +20,18 @@
 (defn create-timetable-collection [db]
   (when-not (mc/exists? db "timetable")
     (mc/create db "timetable" {})
-    (mc/create-index db "timetable" {:user/email-address 1} {:unique true})
-    (mc/create-index db "timetable" {:product/second-name 1})
-    (mc/create-index db "timetable" {:user/expire-at 1} {:expireAfterSeconds 0})))
+    (mc/create-index db "timetable" {:timetable/workplace 1} {:unique true})
+    (mc/create-index db "timetable" {:timetable/datetime 1})
+    (mc/create-index db "timetable" {:timetable/worker 1})))
+
+
+(defn drop-timetable-collection [db]
+  (mc/remove db "timetable"))
+
+
+(defn reset-timetable-collection [db]
+  (drop-timetable-collection db)
+  (create-timetable-collection db))
+
+
+

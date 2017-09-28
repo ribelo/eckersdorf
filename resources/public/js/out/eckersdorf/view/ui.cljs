@@ -8,12 +8,13 @@
             [eckersdorf.routes.core :as router]
             [eckersdorf.util :refer [css-transition]]
             [eckersdorf.flex :as flex]
-            [eckersdorf.login.ui :as login.ui]))
+            [eckersdorf.user.login.ui :as login.ui]))
 
 
 
 (defn sider []
-  (let [sider-collapsed? (rf/subscribe [:view/sider-collapsed?])]
+  (let [sider-collapsed? (rf/subscribe [:view/sider-collapsed?])
+        personal-data (rf/subscribe [:user/personal-data])]
     (fn []
       [ant/layout-sider {:collapsible true
                          :collapsed   @sider-collapsed?
@@ -22,19 +23,28 @@
                          :style       {:min-height :inherit}}
        [ant/menu {:theme :dark
                   :mode  :inline}
+        [ant/menu-item {:key 0}
+         [ant/icon {:type :meh-o}]
+         [:span (str
+                  (str/title (:user/first-name @personal-data)) " "
+                  (str/title (:user/last-name @personal-data)))]]
+        [:br]
         [ant/menu-item {:key 1}
+         [ant/icon {:type :usergroup-add}]
+         [:span "Pracownicy"]]
+        [ant/menu-item {:key 2}
          [ant/icon {:type :calendar}]
          [:span "Harmonogram Pracy"]]]])))
 
 
 
 (defn page []
-  (let []
+  (let [logged? (rf/subscribe [:user/logged-in?])]
     (fn []
-      ;[ant/layout {:style {:min-height "100vh"}}
-      ; [sider]
-      ; [ant/layout
-      ;  [ant/layout-content
-      ;   ]]]
-      [login.ui/login-page]
+      (if-not @logged?
+        [login.ui/login-page]
+        [ant/layout {:style {:min-height "100vh"}}
+         [sider]
+         [ant/layout
+          [ant/layout-content]]])
       )))

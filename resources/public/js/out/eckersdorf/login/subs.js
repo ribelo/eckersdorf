@@ -1,5 +1,5 @@
 // Compiled by ClojureScript 1.9.908 {}
-goog.provide('eckersdorf.login.subs');
+goog.provide('eckersdorf.user.login.subs');
 goog.require('cljs.core');
 goog.require('re_frame.core');
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword("login","email-address","login/email-address",-870577041),(function (db,_){
@@ -15,4 +15,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("login","error","login/err
 return new cljs.core.Keyword("login","error","login/error",-1153937795).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1506028228203
+//# sourceMappingURL=subs.js.map?rel=1506535792503

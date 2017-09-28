@@ -25,6 +25,15 @@
     (mc/create-index db "users" {:user/expire-at 1} {:expireAfterSeconds 0})))
 
 
+(defn drop-users-collection [db]
+  (mc/remove db "users"))
+
+
+(defn reset-users-collection [db]
+  (drop-users-collection db)
+  (create-users-collection db))
+
+
 (defmulti find-user-by-id (fn [_ id] (type id)))
 
 (defmethod find-user-by-id ObjectId [db ^ObjectId id]

@@ -30,19 +30,6 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 
 ;})(invalid_password_QMARK_))
 })());
 });
-eckersdorf.login.ui.login_form1 = (function eckersdorf$login$ui$login_form1(){
-return antizer.reagent.create_form.call(null,(function (){
-var form = antizer.reagent.get_form.call(null);
-var input = reagent.core.as_element.call(null,antizer.reagent.decorate_field.call(null,form,"email",new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"rules","rules",1198912366),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"required","required",1807647006),new cljs.core.Keyword(null,"true","true",-1114210334),new cljs.core.Keyword(null,"message","message",-406056002),"wprowad\u017A adres email"], null)], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input], null)));
-new cljs.core.Keyword(null,"setFieldsValue","setFieldsValue",-1766311422).cljs$core$IFn$_invoke$arity$1(form).call(null,new cljs.core.PersistentArrayMap(null, 1, ["email","sex"], null));
-
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"inline","inline",1399884222),true], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"label","label",1718410804),"email"], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input], null)], null)], null);
-}),new cljs.core.Keyword(null,"options","options",99638489),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"onValuesChange","onValuesChange",-366310367),(function (a,b){
-return cljs.core.println.call(null,b);
-}),new cljs.core.Keyword(null,"setFieldsValue","setFieldsValue",-1766311422),(function (){
-return new cljs.core.PersistentArrayMap(null, 1, ["email","sex"], null);
-})], null));
-});
 eckersdorf.login.ui.login_page = (function eckersdorf$login$ui$login_page(){
 var email_address = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("login","email-address","login/email-address",-870577041)], null));
 var password = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("login","password","login/password",464605936)], null));
@@ -61,4 +48,4 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 ;})(email_address,password,valid_email_QMARK_,invalid_password_QMARK_,show_password_QMARK_,disabled_login_button_QMARK_))
 });
 
-//# sourceMappingURL=ui.js.map?rel=1506034075597
+//# sourceMappingURL=ui.js.map?rel=1506535296971

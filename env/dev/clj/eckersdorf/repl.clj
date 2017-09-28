@@ -11,6 +11,8 @@
             [eckersdorf.routes.core :as routes]
             [eckersdorf.system :as system]
             [eckersdorf.db.users :as users]
+            [eckersdorf.db.timetable :as timetable]
+            [eckersdorf.db.workers :as db.workers]
             [cuerdas.core :as str]
             [clojure.spec.alpha :as s]
             [buddy.sign.jwt :as jwt]
@@ -66,3 +68,20 @@
                             :user/email-address "r.krzywaznia@teas.com.pl"})
 
 (users/correct-user-password? tmp-db "r.krzywaznia@teas.com.pl" "K9aafCv.")
+
+
+(db.workers/create-worker tmp-db {:worker/first-name "anna"
+                                  :worker/last-name "szlęzak"
+                                  :worker/email-address "a.szlezak@teas.com.pl"
+                                  :worker/phone-number nil
+                                  :worker/workplace nil
+                                  :worker/address nil
+                                  })
+
+(db.workers/workers-list tmp-db {:worker/first-name "anna"})
+
+
+(timetable/create-timetable-collection tmp-db)
+(timetable/reset-timetable-collection tmp-db)
+
+(s/valid? (s/keys :req [:a/a]) {:a/c 2})

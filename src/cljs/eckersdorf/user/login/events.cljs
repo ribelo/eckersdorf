@@ -1,4 +1,4 @@
-(ns eckersdorf.login.events
+(ns eckersdorf.user.login.events
   (:require [re-frame.core :as rf]
             [ajax.core :as ajax]
             [cljs-time.core :as t]

@@ -2,7 +2,7 @@
   (:require [yada.yada :as yada]
             [yada.resources.classpath-resource :refer [new-classpath-resource]]
             [eckersdorf.layout :as layout]
-            [eckersdorf.routes.services :as services]
+            [eckersdorf.routes.services.core :as services]
             [schema.core :as schema]))
 
 
@@ -10,10 +10,10 @@
   [""
    [
     ["/" (yada/resource
-           {:id       :pintu/main-page
+           {:id       :eckersdorf/main-page
             :produces #{"text/html"}
             :methods  {:get {:response (layout/home-page)}}})]
-    (services/service-routes db)
+    (services/services-routes db)
     ["" (new-classpath-resource "public")]
 
     ]])

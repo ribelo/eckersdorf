@@ -5,8 +5,8 @@
             [eckersdorf.view.db :refer [view-state]]
             ;[eckersdorf.basket.db :refer [basket-state]]
             [eckersdorf.error.db :refer [error-state]]
-            [eckersdorf.login.db :refer [login-state]]
-            ;[eckersdorf.user.db :refer [user-state]]
+            [eckersdorf.user.db :refer [user-state]]
+            [eckersdorf.user.login.db :refer [login-state]]
             ;[eckersdorf.users.db :refer [users-state]]
             [eckersdorf.process.db :refer [process-state]]
             ;[eckersdorf.registration.db :refer [registration-state]]
@@ -25,7 +25,7 @@
                     ;basket-state
                     error-state
                     login-state
-                    ;user-state
+                    user-state
                     ;users-state
                     process-state
                     ;registration-state
