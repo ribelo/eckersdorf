@@ -6,7 +6,6 @@
             [goog.string :as string]
             [cuerdas.core :as str]
             [eckersdorf.routes.core :as router]
-            [eckersdorf.util :refer [css-transition]]
             [eckersdorf.flex :as flex]
             [eckersdorf.user.login.ui :as login.ui]))
 
@@ -17,7 +16,8 @@
     (fn []
       )))
 
-(clj->js @(rf/subscribe [:workplaces/list]))
+;(clj->js @(rf/subscribe [:workplaces/list]))
+(rf/dispatch [:workplaces/request-list])
 
 (defn workplaces-list []
   (let [workplaces-list (rf/subscribe [:workplaces/list])]
@@ -40,14 +40,28 @@
                                {:title     "numer budynku"
                                 :dataIndex "address.house-number"
                                 :key       "address.house-number"
-                                :render #(or % "brak")}
+                                :render    #(or % "brak")}
                                {:title     "kod pocztowy"
                                 :dataIndex "address.zip-code"
                                 :key       "address.zip-code"}
                                {:title     "miejscowość"
                                 :dataIndex "address.city"
-                                :key       "address.city"}]
-                  :dataSource @workplaces-list}])))
+                                :key       "address.city"}
+                               {:title  "akcje"
+                                :render (fn [_ record _]
+                                          (let [email-address (aget record "email-address")]
+                                            (r/as-element
+                                              [ant/button-group
+                                               [ant/button {:icon     :delete
+                                                            :type     :danger
+                                                            :on-click (fn []
+                                                                        (println "try to delete" email-address))}]
+                                               [ant/button {:icon :edit
+                                                            :on-click (fn []
+                                                                        (println "try to edit" email-address))}]])))}]
+                  :dataSource (map-indexed (fn [i m] (assoc m :id i)) @workplaces-list)
+                  :row-key    "id"
+                  :pagination false}])))
 
 
 (defn page []
@@ -70,7 +84,6 @@
             [:span (str
                      (str/title (:user/first-name @personal-data)) " "
                      (str/title (:user/last-name @personal-data)))]]
-           [:br]
            [ant/menu-item {:key 1}
             [ant/icon {:type :shopping-cart}]
             [:span "Sklepy"]]

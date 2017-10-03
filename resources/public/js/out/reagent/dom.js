@@ -1,38 +1,17 @@
 // Compiled by ClojureScript 1.9.908 {}
 goog.provide('reagent.dom');
 goog.require('cljs.core');
-goog.require('cljsjs.react.dom');
 goog.require('reagent.impl.util');
 goog.require('reagent.impl.template');
 goog.require('reagent.impl.batching');
 goog.require('reagent.ratom');
 goog.require('reagent.debug');
 goog.require('reagent.interop');
+reagent.dom.global$module$react_dom = goog.global.ReactDOM;
 if(typeof reagent.dom.imported !== 'undefined'){
 } else {
 reagent.dom.imported = null;
 }
-reagent.dom.module = (function reagent$dom$module(){
-if(!((reagent.dom.imported == null))){
-return reagent.dom.imported;
-} else {
-if(typeof ReactDOM !== 'undefined'){
-return reagent.dom.imported = ReactDOM;
-} else {
-if(typeof require !== 'undefined'){
-var or__30249__auto__ = reagent.dom.imported = require("react-dom");
-if(cljs.core.truth_(or__30249__auto__)){
-return or__30249__auto__;
-} else {
-throw (new Error("require('react-dom') failed"));
-}
-} else {
-throw (new Error("js/ReactDOM is missing"));
-
-}
-}
-}
-});
 if(typeof reagent.dom.roots !== 'undefined'){
 } else {
 reagent.dom.roots = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
@@ -40,13 +19,13 @@ reagent.dom.roots = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY)
 reagent.dom.unmount_comp = (function reagent$dom$unmount_comp(container){
 cljs.core.swap_BANG_.call(null,reagent.dom.roots,cljs.core.dissoc,container);
 
-return (reagent.dom.module.call(null)["unmountComponentAtNode"])(container);
+return reagent.dom.global$module$react_dom.unmountComponentAtNode.call(null,container);
 });
 reagent.dom.render_comp = (function reagent$dom$render_comp(comp,container,callback){
 var _STAR_always_update_STAR_33294 = reagent.impl.util._STAR_always_update_STAR_;
 reagent.impl.util._STAR_always_update_STAR_ = true;
 
-try{return (reagent.dom.module.call(null)["render"])(comp.call(null),container,((function (_STAR_always_update_STAR_33294){
+try{return reagent.dom.global$module$react_dom.render.call(null,comp.call(null),container,((function (_STAR_always_update_STAR_33294){
 return (function (){
 var _STAR_always_update_STAR_33295 = reagent.impl.util._STAR_always_update_STAR_;
 reagent.impl.util._STAR_always_update_STAR_ = false;
@@ -115,7 +94,7 @@ return reagent.dom.unmount_comp.call(null,container);
  * Returns the root DOM node of a mounted component.
  */
 reagent.dom.dom_node = (function reagent$dom$dom_node(this$){
-return (reagent.dom.module.call(null)["findDOMNode"])(this$);
+return reagent.dom.global$module$react_dom.findDOMNode.call(null,this$);
 });
 reagent.impl.template.find_dom_node = reagent.dom.dom_node;
 /**
@@ -188,4 +167,4 @@ break;
 return "Updated";
 });
 
-//# sourceMappingURL=dom.js.map?rel=1506023156346
+//# sourceMappingURL=dom.js.map?rel=1506985642723

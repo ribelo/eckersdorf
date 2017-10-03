@@ -2,7 +2,7 @@
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+            :url  "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.9.0-alpha19"]
                  [org.clojure/spec.alpha "0.1.123"]
@@ -11,7 +11,7 @@
                  [com.stuartsierra/component "0.3.2"]
                  [aleph "0.4.3"]
                  [manifold "0.1.6"]
-                 [yada "1.2.8" :exclusions [aleph manifold clj-time buddy]]
+                 [yada "1.2.8" :exclusions [commons-fileupload aleph manifold clj-time buddy]]
                  [bidi "2.1.2"]
                  [aero "1.1.2"]
                  ;clojure libraries
@@ -28,24 +28,31 @@
                  [com.draines/postal "2.0.2"]
                  [progrock "0.1.2"]
                  ;clojurescript libraries
-                 [org.clojure/clojurescript "1.9.908" :scope "provided"]
+                 [org.clojure/clojurescript "1.9.908"]
                  [org.clojure/core.async "0.3.443"]
                  [com.cognitect/transit-cljs "0.8.239"]
                  [cljs-ajax "0.7.2"]
-                 [reagent "0.7.0" :exclusions [cljsjs/react cljsjs/react-dom]]
+                 [reagent "0.8.0-alpha1" :exclusions [cljsjs/react cljsjs/react-dom]]
                  [re-frame "0.10.1"]
                  [antizer "0.2.2"]
                  [day8.re-frame/http-fx "0.1.4"]
                  [com.andrewmcveigh/cljs-time "0.5.1"]
                  [kibu/pushy "0.3.8"]
                  [bardo "0.1.2-SNAPSHOT"]]
+  ;:npm {:dependencies [[webpack "1.13.1"]
+  ;                     [react-lazy-load "3.0.12"]
+  ;                     [react-swipeable-views "0.12.0"]]
+  ;      :package      {:scripts {:build "webpack -p"
+  ;                               :watch "webpack -d --watch"}}}
   :jvm-opts ["-server"]
   :min-lein-version "2.5.0"
   :main ^:skip-aot eckersdorf.core
   :source-paths ["src/clj" "src/cljs" "src/cljc"]
   :resource-paths ["resources" "dev-resources"]
   :target-path "target/%s"
-  :plugins [[lein-cljsbuild "1.1.7"]]
+  :plugins [[lein-cljsbuild "1.1.7"]
+            ;[lein-npm "0.6.2"]
+            ]
   :clean-targets ^{:protect false} ["resources/public/js" ".repl"]
   :figwheel {:http-server-root "public"
              :nrepl-port       7002
@@ -53,12 +60,22 @@
              :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
   :profiles {:uberjar {:omit-source  true
                        :prep-tasks   ["compile" ["cljsbuild" "once" "min"]]
-                       :cljsbuild    {:builds {:min {:source-paths ["src/cljc" "src/cljs" "env/prod/cljs"]
-                                                     :compiler     {:output-to        "resources/public/js/app.js"
-                                                                    :optimizations    :advanced
-                                                                    :pretty-print     false
-                                                                    :closure-warnings {:externs-validation :off :non-standard-jsdoc :off}
-                                                                    :externs          ["react/externs/react.js"]}}}}
+                       :cljsbuild    {:builds [{:source-paths ["src/cljc" "src/cljs" "env/prod/cljs"]
+                                                :compiler     {:output-to        "resources/public/js/app.js"
+                                                               :optimizations    :advanced
+                                                               :pretty-print     false
+                                                               :closure-warnings {:externs-validation :off :non-standard-jsdoc :off}
+                                                               :externs          ["react/externs/react.js"]
+
+                                                               :closure-defines  {process.env/NODE_ENV "development"}
+                                                               ;:npm-deps         {
+                                                                                  ;:react "15.6.1"
+                                                                                  ;:react-dom "15.6.1"
+                                                                                  ;:react-lazy-load       "3.0.12"
+                                                                                  ;:react-swipeable-views "0.12.0"
+                                                                                  ;}
+                                                               ;:install-deps     true
+                                                               }}]}
                        :aot          :all
                        :uberjar-name "eckersdorf.jar"
                        :source-paths ["env/prod/clj"]}
@@ -69,13 +86,23 @@
                                                                :optimizations    :advanced
                                                                :pretty-print     false
                                                                :closure-warnings {:externs-validation :off :non-standard-jsdoc :off}
-                                                               :externs          ["react/externs/react.js"]}}]}
+                                                               :externs          ["react/externs/react.js"]
+
+                                                               :closure-defines  {process.env/NODE_ENV "production"}
+                                                               ;:npm-deps         {
+                                                                                  ;:react "15.6.1"
+                                                                                  ;:react-dom "15.6.1"
+                                                                                  ;:react-lazy-load       "3.0.12"
+                                                                                  ;:react-swipeable-views "0.12.0"
+                                                                                  ;}
+                                                               ;:install-deps     true
+                                                               }}]}
 
                        :source-paths ["env/prod/clj" "test/clj"]}
              :dev     {:dependencies [[binaryage/devtools "0.9.4"]
                                       [figwheel-sidecar "0.5.13"]
                                       [com.cemerick/piggieback "0.2.2"]]
-                       :plugins      [[lein-figwheel "0.5.13"]]
+                       :plugins      [[lein-figwheel "0.5.13" :exclusions [org.clojure/clojure]]]
                        :cljsbuild    {:builds [{:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
                                                 :id           "eckersdorf"
                                                 :compiler     {:output-to            "resources/public/js/app.js"
@@ -87,6 +114,14 @@
                                                                :optimizations        :none
                                                                :preloads             [devtools.preload]
                                                                :external-config      {:devtools/config {:features-to-install :all}}
-                                                               :pretty-print         true}}]}
+                                                               :pretty-print         true
+                                                               ;:npm-deps             {
+                                                                                      ;:react "15.6.1"
+                                                                                      ;:react-dom "15.6.1"
+                                                                                      ;:react-lazy-load       "3.0.12"
+                                                                                      ;:react-swipeable-views "0.12.0"
+                                                                                      ;}
+                                                               ;:install-deps         true
+                                                               }}]}
 
                        :source-paths ["env/dev/clj" "test/clj"]}})

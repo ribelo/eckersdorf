@@ -6,6 +6,8 @@ goog.require('reagent.impl.batching');
 goog.require('reagent.ratom');
 goog.require('reagent.interop');
 goog.require('reagent.debug');
+reagent.impl.component.global$module$create_react_class = goog.global.createReactClass;
+reagent.impl.component.global$module$react = goog.global.React;
 reagent.impl.component.shallow_obj_to_map = (function reagent$impl$component$shallow_obj_to_map(o){
 var ks = cljs.core.js_keys.call(null,o);
 var len = ks.length;
@@ -68,7 +70,7 @@ reagent.impl.component.get_children = (function reagent$impl$component$get_child
 var p = (c["props"]);
 var temp__5292__auto__ = (p["argv"]);
 if((temp__5292__auto__ == null)){
-return cljs.core.into.call(null,cljs.core.PersistentVector.EMPTY,(reagent.impl.util.react["Children"]["toArray"])((p["children"])));
+return cljs.core.into.call(null,cljs.core.PersistentVector.EMPTY,reagent.impl.component.global$module$react.Children.toArray.call(null,(p["children"])));
 } else {
 var v = temp__5292__auto__;
 return reagent.impl.component.extract_children.call(null,v);
@@ -456,7 +458,7 @@ if(cljs.core.map_QMARK_.call(null,body)){
 throw (new Error("Assert failed: (map? body)"));
 }
 
-return reagent.impl.util.create_class.call(null,reagent.impl.component.cljsify.call(null,body));
+return reagent.impl.component.global$module$create_react_class.call(null,reagent.impl.component.cljsify.call(null,body));
 });
 reagent.impl.component.component_path = (function reagent$impl$component$component_path(c){
 var elem = (function (){var G__33235 = (function (){var or__30249__auto__ = (function (){var G__33237 = c;
@@ -570,4 +572,4 @@ return reagent.impl.component.as_class.call(null,comp);
 }
 });
 
-//# sourceMappingURL=component.js.map?rel=1506023156196
+//# sourceMappingURL=component.js.map?rel=1506985642569

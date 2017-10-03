@@ -12,4 +12,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("error","description","err
 return cljs.core.get.call(null,db,new cljs.core.Keyword("error","description","error/description",-1591863400));
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1506023647593
+//# sourceMappingURL=subs.js.map?rel=1506985654763

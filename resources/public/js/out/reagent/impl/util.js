@@ -1,33 +1,9 @@
 // Compiled by ClojureScript 1.9.908 {}
 goog.provide('reagent.impl.util');
 goog.require('cljs.core');
-goog.require('cljsjs.react');
-goog.require('cljsjs.create_react_class');
 goog.require('reagent.debug');
 goog.require('reagent.interop');
 goog.require('clojure.string');
-if(typeof reagent.impl.util.react !== 'undefined'){
-} else {
-reagent.impl.util.react = ((typeof React !== 'undefined')?React:((typeof require !== 'undefined')?(function (){var or__30249__auto__ = require("react");
-if(cljs.core.truth_(or__30249__auto__)){
-return or__30249__auto__;
-} else {
-throw (new Error("require('react') failed"));
-}
-})():(function(){throw (new Error("js/React is missing"))})()
-));
-}
-if(typeof reagent.impl.util.create_class !== 'undefined'){
-} else {
-reagent.impl.util.create_class = ((typeof createReactClass !== 'undefined')?createReactClass:((typeof require !== 'undefined')?(function (){var or__30249__auto__ = require("create-react-class");
-if(cljs.core.truth_(or__30249__auto__)){
-return or__30249__auto__;
-} else {
-throw (new Error("require('create-react-class') failed"));
-}
-})():(function(){throw (new Error("js/createReactClass is missing"))})()
-));
-}
 reagent.impl.util.is_client = (typeof window !== 'undefined') && (!(((window["document"]) == null)));
 reagent.impl.util._STAR_non_reactive_STAR_ = false;
 reagent.impl.util.memoize_1 = (function reagent$impl$util$memoize_1(f){
@@ -571,4 +547,4 @@ return (comp["forceUpdate"])();
 }
 });
 
-//# sourceMappingURL=util.js.map?rel=1506023155590
+//# sourceMappingURL=util.js.map?rel=1506985641966

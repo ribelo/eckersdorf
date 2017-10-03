@@ -9,6 +9,7 @@ goog.require('reagent.impl.batching');
 goog.require('reagent.ratom');
 goog.require('reagent.interop');
 goog.require('reagent.debug');
+reagent.impl.template.global$module$react = goog.global.React;
 /**
  * Regular expression that parses a CSS-style id and class
  *           from a tag name.
@@ -330,7 +331,7 @@ var key_33267 = temp__5294__auto___33266;
 (jsprops["key"] = key_33267);
 }
 
-return (reagent.impl.util.react["createElement"])(c,jsprops);
+return reagent.impl.template.global$module$react.createElement.call(null,c,jsprops);
 });
 reagent.impl.template.adapt_react_class = (function reagent$impl$template$adapt_react_class(c){
 var G__33268 = reagent.impl.template.__GT_NativeWrapper.call(null);
@@ -571,15 +572,15 @@ reagent.impl.template.make_element = (function reagent$impl$template$make_elemen
 var G__33290 = (cljs.core.count.call(null,argv) - first_child);
 switch (G__33290) {
 case (0):
-return (reagent.impl.util.react["createElement"])(comp,jsprops);
+return reagent.impl.template.global$module$react.createElement.call(null,comp,jsprops);
 
 break;
 case (1):
-return (reagent.impl.util.react["createElement"])(comp,jsprops,reagent.impl.template.as_element.call(null,cljs.core.nth.call(null,argv,first_child,null)));
+return reagent.impl.template.global$module$react.createElement.call(null,comp,jsprops,reagent.impl.template.as_element.call(null,cljs.core.nth.call(null,argv,first_child,null)));
 
 break;
 default:
-return (reagent.impl.util.react["createElement"]).apply(null,cljs.core.reduce_kv.call(null,((function (G__33290){
+return reagent.impl.template.global$module$react.createElement.apply(null,cljs.core.reduce_kv.call(null,((function (G__33290){
 return (function (a,k,v){
 if((k >= first_child)){
 a.push(reagent.impl.template.as_element.call(null,v));
@@ -593,4 +594,4 @@ return a;
 }
 });
 
-//# sourceMappingURL=template.js.map?rel=1506023156308
+//# sourceMappingURL=template.js.map?rel=1506985642684

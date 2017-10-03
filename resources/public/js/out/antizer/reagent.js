@@ -14,14 +14,14 @@ goog.require('reagent.core');
  */
 antizer.reagent.create_form = (function antizer$reagent$create_form(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34807 = arguments.length;
-var i__31527__auto___34808 = (0);
+var len__31526__auto___42182 = arguments.length;
+var i__31527__auto___42183 = (0);
 while(true){
-if((i__31527__auto___34808 < len__31526__auto___34807)){
-args__31533__auto__.push((arguments[i__31527__auto___34808]));
+if((i__31527__auto___42183 < len__31526__auto___42182)){
+args__31533__auto__.push((arguments[i__31527__auto___42183]));
 
-var G__34809 = (i__31527__auto___34808 + (1));
-i__31527__auto___34808 = G__34809;
+var G__42184 = (i__31527__auto___42183 + (1));
+i__31527__auto___42183 = G__42184;
 continue;
 } else {
 }
@@ -32,19 +32,19 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.create_form.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.create_form.cljs$core$IFn$_invoke$arity$variadic = (function (form,p__34804){
-var map__34805 = p__34804;
-var map__34805__$1 = ((((!((map__34805 == null)))?((((map__34805.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__34805.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__34805):map__34805);
-var options = cljs.core.get.call(null,map__34805__$1,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY);
+antizer.reagent.create_form.cljs$core$IFn$_invoke$arity$variadic = (function (form,p__42179){
+var map__42180 = p__42179;
+var map__42180__$1 = ((((!((map__42180 == null)))?((((map__42180.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42180.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42180):map__42180);
+var options = cljs.core.get.call(null,map__42180__$1,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY);
 return reagent.core.create_element.call(null,goog.object.getValueByKeys(antd,"Form","create").call(null,cljs.core.clj__GT_js.call(null,antizer.core.map_keys__GT_camel_case.call(null,options))).call(null,reagent.core.reactify_component.call(null,form)));
 });
 
 antizer.reagent.create_form.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.create_form.cljs$lang$applyTo = (function (seq34802){
-var G__34803 = cljs.core.first.call(null,seq34802);
-var seq34802__$1 = cljs.core.next.call(null,seq34802);
-return antizer.reagent.create_form.cljs$core$IFn$_invoke$arity$variadic(G__34803,seq34802__$1);
+antizer.reagent.create_form.cljs$lang$applyTo = (function (seq42177){
+var G__42178 = cljs.core.first.call(null,seq42177);
+var seq42177__$1 = cljs.core.next.call(null,seq42177);
+return antizer.reagent.create_form.cljs$core$IFn$_invoke$arity$variadic(G__42178,seq42177__$1);
 });
 
 /**
@@ -67,8 +67,8 @@ return new cljs.core.Keyword(null,"form","form",-1624062471).cljs$core$IFn$_invo
  * https://ant.design/components/form/#getFieldDecorator(id,-options)-parameters
  */
 antizer.reagent.decorate_field = (function antizer$reagent$decorate_field(var_args){
-var G__34811 = arguments.length;
-switch (G__34811) {
+var G__42186 = arguments.length;
+switch (G__42186) {
 case 3:
 return antizer.reagent.decorate_field.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -97,14 +97,14 @@ antizer.reagent.decorate_field.cljs$lang$maxFixedArity = 4;
 
 antizer.reagent.get_field_decorator = (function antizer$reagent$get_field_decorator(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34839 = arguments.length;
-var i__31527__auto___34840 = (0);
+var len__31526__auto___42214 = arguments.length;
+var i__31527__auto___42215 = (0);
 while(true){
-if((i__31527__auto___34840 < len__31526__auto___34839)){
-args__31533__auto__.push((arguments[i__31527__auto___34840]));
+if((i__31527__auto___42215 < len__31526__auto___42214)){
+args__31533__auto__.push((arguments[i__31527__auto___42215]));
 
-var G__34841 = (i__31527__auto___34840 + (1));
-i__31527__auto___34840 = G__34841;
+var G__42216 = (i__31527__auto___42215 + (1));
+i__31527__auto___42215 = G__42216;
 continue;
 } else {
 }
@@ -115,29 +115,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.get_field_decorator.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.get_field_decorator.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldDecorator").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.get_field_decorator.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldDecorator").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.get_field_decorator.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.get_field_decorator.cljs$lang$applyTo = (function (seq34813){
-var G__34814 = cljs.core.first.call(null,seq34813);
-var seq34813__$1 = cljs.core.next.call(null,seq34813);
-return antizer.reagent.get_field_decorator.cljs$core$IFn$_invoke$arity$variadic(G__34814,seq34813__$1);
+antizer.reagent.get_field_decorator.cljs$lang$applyTo = (function (seq42188){
+var G__42189 = cljs.core.first.call(null,seq42188);
+var seq42188__$1 = cljs.core.next.call(null,seq42188);
+return antizer.reagent.get_field_decorator.cljs$core$IFn$_invoke$arity$variadic(G__42189,seq42188__$1);
 });
 
 
 antizer.reagent.get_field_error = (function antizer$reagent$get_field_error(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34842 = arguments.length;
-var i__31527__auto___34843 = (0);
+var len__31526__auto___42217 = arguments.length;
+var i__31527__auto___42218 = (0);
 while(true){
-if((i__31527__auto___34843 < len__31526__auto___34842)){
-args__31533__auto__.push((arguments[i__31527__auto___34843]));
+if((i__31527__auto___42218 < len__31526__auto___42217)){
+args__31533__auto__.push((arguments[i__31527__auto___42218]));
 
-var G__34844 = (i__31527__auto___34843 + (1));
-i__31527__auto___34843 = G__34844;
+var G__42219 = (i__31527__auto___42218 + (1));
+i__31527__auto___42218 = G__42219;
 continue;
 } else {
 }
@@ -148,29 +148,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.get_field_error.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.get_field_error.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldError").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.get_field_error.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldError").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.get_field_error.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.get_field_error.cljs$lang$applyTo = (function (seq34815){
-var G__34816 = cljs.core.first.call(null,seq34815);
-var seq34815__$1 = cljs.core.next.call(null,seq34815);
-return antizer.reagent.get_field_error.cljs$core$IFn$_invoke$arity$variadic(G__34816,seq34815__$1);
+antizer.reagent.get_field_error.cljs$lang$applyTo = (function (seq42190){
+var G__42191 = cljs.core.first.call(null,seq42190);
+var seq42190__$1 = cljs.core.next.call(null,seq42190);
+return antizer.reagent.get_field_error.cljs$core$IFn$_invoke$arity$variadic(G__42191,seq42190__$1);
 });
 
 
 antizer.reagent.get_fields_error = (function antizer$reagent$get_fields_error(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34845 = arguments.length;
-var i__31527__auto___34846 = (0);
+var len__31526__auto___42220 = arguments.length;
+var i__31527__auto___42221 = (0);
 while(true){
-if((i__31527__auto___34846 < len__31526__auto___34845)){
-args__31533__auto__.push((arguments[i__31527__auto___34846]));
+if((i__31527__auto___42221 < len__31526__auto___42220)){
+args__31533__auto__.push((arguments[i__31527__auto___42221]));
 
-var G__34847 = (i__31527__auto___34846 + (1));
-i__31527__auto___34846 = G__34847;
+var G__42222 = (i__31527__auto___42221 + (1));
+i__31527__auto___42221 = G__42222;
 continue;
 } else {
 }
@@ -181,29 +181,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.get_fields_error.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.get_fields_error.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldsError").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.get_fields_error.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldsError").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.get_fields_error.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.get_fields_error.cljs$lang$applyTo = (function (seq34817){
-var G__34818 = cljs.core.first.call(null,seq34817);
-var seq34817__$1 = cljs.core.next.call(null,seq34817);
-return antizer.reagent.get_fields_error.cljs$core$IFn$_invoke$arity$variadic(G__34818,seq34817__$1);
+antizer.reagent.get_fields_error.cljs$lang$applyTo = (function (seq42192){
+var G__42193 = cljs.core.first.call(null,seq42192);
+var seq42192__$1 = cljs.core.next.call(null,seq42192);
+return antizer.reagent.get_fields_error.cljs$core$IFn$_invoke$arity$variadic(G__42193,seq42192__$1);
 });
 
 
 antizer.reagent.get_field_value = (function antizer$reagent$get_field_value(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34848 = arguments.length;
-var i__31527__auto___34849 = (0);
+var len__31526__auto___42223 = arguments.length;
+var i__31527__auto___42224 = (0);
 while(true){
-if((i__31527__auto___34849 < len__31526__auto___34848)){
-args__31533__auto__.push((arguments[i__31527__auto___34849]));
+if((i__31527__auto___42224 < len__31526__auto___42223)){
+args__31533__auto__.push((arguments[i__31527__auto___42224]));
 
-var G__34850 = (i__31527__auto___34849 + (1));
-i__31527__auto___34849 = G__34850;
+var G__42225 = (i__31527__auto___42224 + (1));
+i__31527__auto___42224 = G__42225;
 continue;
 } else {
 }
@@ -214,29 +214,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.get_field_value.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.get_field_value.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldValue").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.get_field_value.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldValue").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.get_field_value.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.get_field_value.cljs$lang$applyTo = (function (seq34819){
-var G__34820 = cljs.core.first.call(null,seq34819);
-var seq34819__$1 = cljs.core.next.call(null,seq34819);
-return antizer.reagent.get_field_value.cljs$core$IFn$_invoke$arity$variadic(G__34820,seq34819__$1);
+antizer.reagent.get_field_value.cljs$lang$applyTo = (function (seq42194){
+var G__42195 = cljs.core.first.call(null,seq42194);
+var seq42194__$1 = cljs.core.next.call(null,seq42194);
+return antizer.reagent.get_field_value.cljs$core$IFn$_invoke$arity$variadic(G__42195,seq42194__$1);
 });
 
 
 antizer.reagent.get_fields_value = (function antizer$reagent$get_fields_value(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34851 = arguments.length;
-var i__31527__auto___34852 = (0);
+var len__31526__auto___42226 = arguments.length;
+var i__31527__auto___42227 = (0);
 while(true){
-if((i__31527__auto___34852 < len__31526__auto___34851)){
-args__31533__auto__.push((arguments[i__31527__auto___34852]));
+if((i__31527__auto___42227 < len__31526__auto___42226)){
+args__31533__auto__.push((arguments[i__31527__auto___42227]));
 
-var G__34853 = (i__31527__auto___34852 + (1));
-i__31527__auto___34852 = G__34853;
+var G__42228 = (i__31527__auto___42227 + (1));
+i__31527__auto___42227 = G__42228;
 continue;
 } else {
 }
@@ -247,29 +247,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.get_fields_value.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.get_fields_value.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldsValue").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.get_fields_value.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"getFieldsValue").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.get_fields_value.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.get_fields_value.cljs$lang$applyTo = (function (seq34821){
-var G__34822 = cljs.core.first.call(null,seq34821);
-var seq34821__$1 = cljs.core.next.call(null,seq34821);
-return antizer.reagent.get_fields_value.cljs$core$IFn$_invoke$arity$variadic(G__34822,seq34821__$1);
+antizer.reagent.get_fields_value.cljs$lang$applyTo = (function (seq42196){
+var G__42197 = cljs.core.first.call(null,seq42196);
+var seq42196__$1 = cljs.core.next.call(null,seq42196);
+return antizer.reagent.get_fields_value.cljs$core$IFn$_invoke$arity$variadic(G__42197,seq42196__$1);
 });
 
 
 antizer.reagent.is_field_touched = (function antizer$reagent$is_field_touched(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34854 = arguments.length;
-var i__31527__auto___34855 = (0);
+var len__31526__auto___42229 = arguments.length;
+var i__31527__auto___42230 = (0);
 while(true){
-if((i__31527__auto___34855 < len__31526__auto___34854)){
-args__31533__auto__.push((arguments[i__31527__auto___34855]));
+if((i__31527__auto___42230 < len__31526__auto___42229)){
+args__31533__auto__.push((arguments[i__31527__auto___42230]));
 
-var G__34856 = (i__31527__auto___34855 + (1));
-i__31527__auto___34855 = G__34856;
+var G__42231 = (i__31527__auto___42230 + (1));
+i__31527__auto___42230 = G__42231;
 continue;
 } else {
 }
@@ -280,29 +280,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.is_field_touched.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.is_field_touched.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"isFieldTouched").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.is_field_touched.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"isFieldTouched").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.is_field_touched.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.is_field_touched.cljs$lang$applyTo = (function (seq34823){
-var G__34824 = cljs.core.first.call(null,seq34823);
-var seq34823__$1 = cljs.core.next.call(null,seq34823);
-return antizer.reagent.is_field_touched.cljs$core$IFn$_invoke$arity$variadic(G__34824,seq34823__$1);
+antizer.reagent.is_field_touched.cljs$lang$applyTo = (function (seq42198){
+var G__42199 = cljs.core.first.call(null,seq42198);
+var seq42198__$1 = cljs.core.next.call(null,seq42198);
+return antizer.reagent.is_field_touched.cljs$core$IFn$_invoke$arity$variadic(G__42199,seq42198__$1);
 });
 
 
 antizer.reagent.is_fields_touched = (function antizer$reagent$is_fields_touched(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34857 = arguments.length;
-var i__31527__auto___34858 = (0);
+var len__31526__auto___42232 = arguments.length;
+var i__31527__auto___42233 = (0);
 while(true){
-if((i__31527__auto___34858 < len__31526__auto___34857)){
-args__31533__auto__.push((arguments[i__31527__auto___34858]));
+if((i__31527__auto___42233 < len__31526__auto___42232)){
+args__31533__auto__.push((arguments[i__31527__auto___42233]));
 
-var G__34859 = (i__31527__auto___34858 + (1));
-i__31527__auto___34858 = G__34859;
+var G__42234 = (i__31527__auto___42233 + (1));
+i__31527__auto___42233 = G__42234;
 continue;
 } else {
 }
@@ -313,29 +313,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.is_fields_touched.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.is_fields_touched.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"isFieldsTouched").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.is_fields_touched.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"isFieldsTouched").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.is_fields_touched.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.is_fields_touched.cljs$lang$applyTo = (function (seq34825){
-var G__34826 = cljs.core.first.call(null,seq34825);
-var seq34825__$1 = cljs.core.next.call(null,seq34825);
-return antizer.reagent.is_fields_touched.cljs$core$IFn$_invoke$arity$variadic(G__34826,seq34825__$1);
+antizer.reagent.is_fields_touched.cljs$lang$applyTo = (function (seq42200){
+var G__42201 = cljs.core.first.call(null,seq42200);
+var seq42200__$1 = cljs.core.next.call(null,seq42200);
+return antizer.reagent.is_fields_touched.cljs$core$IFn$_invoke$arity$variadic(G__42201,seq42200__$1);
 });
 
 
 antizer.reagent.is_field_validating = (function antizer$reagent$is_field_validating(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34860 = arguments.length;
-var i__31527__auto___34861 = (0);
+var len__31526__auto___42235 = arguments.length;
+var i__31527__auto___42236 = (0);
 while(true){
-if((i__31527__auto___34861 < len__31526__auto___34860)){
-args__31533__auto__.push((arguments[i__31527__auto___34861]));
+if((i__31527__auto___42236 < len__31526__auto___42235)){
+args__31533__auto__.push((arguments[i__31527__auto___42236]));
 
-var G__34862 = (i__31527__auto___34861 + (1));
-i__31527__auto___34861 = G__34862;
+var G__42237 = (i__31527__auto___42236 + (1));
+i__31527__auto___42236 = G__42237;
 continue;
 } else {
 }
@@ -346,29 +346,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.is_field_validating.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.is_field_validating.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"isFieldValidating").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.is_field_validating.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"isFieldValidating").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.is_field_validating.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.is_field_validating.cljs$lang$applyTo = (function (seq34827){
-var G__34828 = cljs.core.first.call(null,seq34827);
-var seq34827__$1 = cljs.core.next.call(null,seq34827);
-return antizer.reagent.is_field_validating.cljs$core$IFn$_invoke$arity$variadic(G__34828,seq34827__$1);
+antizer.reagent.is_field_validating.cljs$lang$applyTo = (function (seq42202){
+var G__42203 = cljs.core.first.call(null,seq42202);
+var seq42202__$1 = cljs.core.next.call(null,seq42202);
+return antizer.reagent.is_field_validating.cljs$core$IFn$_invoke$arity$variadic(G__42203,seq42202__$1);
 });
 
 
 antizer.reagent.reset_fields = (function antizer$reagent$reset_fields(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34863 = arguments.length;
-var i__31527__auto___34864 = (0);
+var len__31526__auto___42238 = arguments.length;
+var i__31527__auto___42239 = (0);
 while(true){
-if((i__31527__auto___34864 < len__31526__auto___34863)){
-args__31533__auto__.push((arguments[i__31527__auto___34864]));
+if((i__31527__auto___42239 < len__31526__auto___42238)){
+args__31533__auto__.push((arguments[i__31527__auto___42239]));
 
-var G__34865 = (i__31527__auto___34864 + (1));
-i__31527__auto___34864 = G__34865;
+var G__42240 = (i__31527__auto___42239 + (1));
+i__31527__auto___42239 = G__42240;
 continue;
 } else {
 }
@@ -379,29 +379,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.reset_fields.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.reset_fields.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"resetFields").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.reset_fields.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"resetFields").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.reset_fields.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.reset_fields.cljs$lang$applyTo = (function (seq34829){
-var G__34830 = cljs.core.first.call(null,seq34829);
-var seq34829__$1 = cljs.core.next.call(null,seq34829);
-return antizer.reagent.reset_fields.cljs$core$IFn$_invoke$arity$variadic(G__34830,seq34829__$1);
+antizer.reagent.reset_fields.cljs$lang$applyTo = (function (seq42204){
+var G__42205 = cljs.core.first.call(null,seq42204);
+var seq42204__$1 = cljs.core.next.call(null,seq42204);
+return antizer.reagent.reset_fields.cljs$core$IFn$_invoke$arity$variadic(G__42205,seq42204__$1);
 });
 
 
 antizer.reagent.set_fields = (function antizer$reagent$set_fields(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34866 = arguments.length;
-var i__31527__auto___34867 = (0);
+var len__31526__auto___42241 = arguments.length;
+var i__31527__auto___42242 = (0);
 while(true){
-if((i__31527__auto___34867 < len__31526__auto___34866)){
-args__31533__auto__.push((arguments[i__31527__auto___34867]));
+if((i__31527__auto___42242 < len__31526__auto___42241)){
+args__31533__auto__.push((arguments[i__31527__auto___42242]));
 
-var G__34868 = (i__31527__auto___34867 + (1));
-i__31527__auto___34867 = G__34868;
+var G__42243 = (i__31527__auto___42242 + (1));
+i__31527__auto___42242 = G__42243;
 continue;
 } else {
 }
@@ -412,29 +412,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.set_fields.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.set_fields.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"setFields").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.set_fields.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"setFields").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.set_fields.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.set_fields.cljs$lang$applyTo = (function (seq34831){
-var G__34832 = cljs.core.first.call(null,seq34831);
-var seq34831__$1 = cljs.core.next.call(null,seq34831);
-return antizer.reagent.set_fields.cljs$core$IFn$_invoke$arity$variadic(G__34832,seq34831__$1);
+antizer.reagent.set_fields.cljs$lang$applyTo = (function (seq42206){
+var G__42207 = cljs.core.first.call(null,seq42206);
+var seq42206__$1 = cljs.core.next.call(null,seq42206);
+return antizer.reagent.set_fields.cljs$core$IFn$_invoke$arity$variadic(G__42207,seq42206__$1);
 });
 
 
 antizer.reagent.set_fields_value = (function antizer$reagent$set_fields_value(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34869 = arguments.length;
-var i__31527__auto___34870 = (0);
+var len__31526__auto___42244 = arguments.length;
+var i__31527__auto___42245 = (0);
 while(true){
-if((i__31527__auto___34870 < len__31526__auto___34869)){
-args__31533__auto__.push((arguments[i__31527__auto___34870]));
+if((i__31527__auto___42245 < len__31526__auto___42244)){
+args__31533__auto__.push((arguments[i__31527__auto___42245]));
 
-var G__34871 = (i__31527__auto___34870 + (1));
-i__31527__auto___34870 = G__34871;
+var G__42246 = (i__31527__auto___42245 + (1));
+i__31527__auto___42245 = G__42246;
 continue;
 } else {
 }
@@ -445,29 +445,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.set_fields_value.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.set_fields_value.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"setFieldsValue").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.set_fields_value.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"setFieldsValue").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.set_fields_value.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.set_fields_value.cljs$lang$applyTo = (function (seq34833){
-var G__34834 = cljs.core.first.call(null,seq34833);
-var seq34833__$1 = cljs.core.next.call(null,seq34833);
-return antizer.reagent.set_fields_value.cljs$core$IFn$_invoke$arity$variadic(G__34834,seq34833__$1);
+antizer.reagent.set_fields_value.cljs$lang$applyTo = (function (seq42208){
+var G__42209 = cljs.core.first.call(null,seq42208);
+var seq42208__$1 = cljs.core.next.call(null,seq42208);
+return antizer.reagent.set_fields_value.cljs$core$IFn$_invoke$arity$variadic(G__42209,seq42208__$1);
 });
 
 
 antizer.reagent.validate_fields = (function antizer$reagent$validate_fields(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34872 = arguments.length;
-var i__31527__auto___34873 = (0);
+var len__31526__auto___42247 = arguments.length;
+var i__31527__auto___42248 = (0);
 while(true){
-if((i__31527__auto___34873 < len__31526__auto___34872)){
-args__31533__auto__.push((arguments[i__31527__auto___34873]));
+if((i__31527__auto___42248 < len__31526__auto___42247)){
+args__31533__auto__.push((arguments[i__31527__auto___42248]));
 
-var G__34874 = (i__31527__auto___34873 + (1));
-i__31527__auto___34873 = G__34874;
+var G__42249 = (i__31527__auto___42248 + (1));
+i__31527__auto___42248 = G__42249;
 continue;
 } else {
 }
@@ -478,29 +478,29 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.validate_fields.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.validate_fields.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"validateFields").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.validate_fields.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"validateFields").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.validate_fields.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.validate_fields.cljs$lang$applyTo = (function (seq34835){
-var G__34836 = cljs.core.first.call(null,seq34835);
-var seq34835__$1 = cljs.core.next.call(null,seq34835);
-return antizer.reagent.validate_fields.cljs$core$IFn$_invoke$arity$variadic(G__34836,seq34835__$1);
+antizer.reagent.validate_fields.cljs$lang$applyTo = (function (seq42210){
+var G__42211 = cljs.core.first.call(null,seq42210);
+var seq42210__$1 = cljs.core.next.call(null,seq42210);
+return antizer.reagent.validate_fields.cljs$core$IFn$_invoke$arity$variadic(G__42211,seq42210__$1);
 });
 
 
 antizer.reagent.validate_fields_and_scroll = (function antizer$reagent$validate_fields_and_scroll(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34875 = arguments.length;
-var i__31527__auto___34876 = (0);
+var len__31526__auto___42250 = arguments.length;
+var i__31527__auto___42251 = (0);
 while(true){
-if((i__31527__auto___34876 < len__31526__auto___34875)){
-args__31533__auto__.push((arguments[i__31527__auto___34876]));
+if((i__31527__auto___42251 < len__31526__auto___42250)){
+args__31533__auto__.push((arguments[i__31527__auto___42251]));
 
-var G__34877 = (i__31527__auto___34876 + (1));
-i__31527__auto___34876 = G__34877;
+var G__42252 = (i__31527__auto___42251 + (1));
+i__31527__auto___42251 = G__42252;
 continue;
 } else {
 }
@@ -511,28 +511,28 @@ var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.validate_fields_and_scroll.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
-antizer.reagent.validate_fields_and_scroll.cljs$core$IFn$_invoke$arity$variadic = (function (form__34769__auto__,args__34770__auto__){
-return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"validateFieldsAndScroll").call(null,form__34769__auto__),args__34770__auto__);
+antizer.reagent.validate_fields_and_scroll.cljs$core$IFn$_invoke$arity$variadic = (function (form__42144__auto__,args__42145__auto__){
+return cljs.core.apply.call(null,antizer.core.call_js_func,cljs.core.keyword.call(null,"validateFieldsAndScroll").call(null,form__42144__auto__),args__42145__auto__);
 });
 
 antizer.reagent.validate_fields_and_scroll.cljs$lang$maxFixedArity = (1);
 
-antizer.reagent.validate_fields_and_scroll.cljs$lang$applyTo = (function (seq34837){
-var G__34838 = cljs.core.first.call(null,seq34837);
-var seq34837__$1 = cljs.core.next.call(null,seq34837);
-return antizer.reagent.validate_fields_and_scroll.cljs$core$IFn$_invoke$arity$variadic(G__34838,seq34837__$1);
+antizer.reagent.validate_fields_and_scroll.cljs$lang$applyTo = (function (seq42212){
+var G__42213 = cljs.core.first.call(null,seq42212);
+var seq42212__$1 = cljs.core.next.call(null,seq42212);
+return antizer.reagent.validate_fields_and_scroll.cljs$core$IFn$_invoke$arity$variadic(G__42213,seq42212__$1);
 });
 
 antizer.reagent.message_config = (function antizer$reagent$message_config(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34899 = arguments.length;
-var i__31527__auto___34900 = (0);
+var len__31526__auto___42274 = arguments.length;
+var i__31527__auto___42275 = (0);
 while(true){
-if((i__31527__auto___34900 < len__31526__auto___34899)){
-args__31533__auto__.push((arguments[i__31527__auto___34900]));
+if((i__31527__auto___42275 < len__31526__auto___42274)){
+args__31533__auto__.push((arguments[i__31527__auto___42275]));
 
-var G__34901 = (i__31527__auto___34900 + (1));
-i__31527__auto___34900 = G__34901;
+var G__42276 = (i__31527__auto___42275 + (1));
+i__31527__auto___42275 = G__42276;
 continue;
 } else {
 }
@@ -543,27 +543,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.message_config.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.message_config.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"message.config",args__34765__auto__);
+antizer.reagent.message_config.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"message.config",args__42140__auto__);
 });
 
 antizer.reagent.message_config.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.message_config.cljs$lang$applyTo = (function (seq34878){
-return antizer.reagent.message_config.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34878));
+antizer.reagent.message_config.cljs$lang$applyTo = (function (seq42253){
+return antizer.reagent.message_config.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42253));
 });
 
 
 antizer.reagent.message_error = (function antizer$reagent$message_error(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34902 = arguments.length;
-var i__31527__auto___34903 = (0);
+var len__31526__auto___42277 = arguments.length;
+var i__31527__auto___42278 = (0);
 while(true){
-if((i__31527__auto___34903 < len__31526__auto___34902)){
-args__31533__auto__.push((arguments[i__31527__auto___34903]));
+if((i__31527__auto___42278 < len__31526__auto___42277)){
+args__31533__auto__.push((arguments[i__31527__auto___42278]));
 
-var G__34904 = (i__31527__auto___34903 + (1));
-i__31527__auto___34903 = G__34904;
+var G__42279 = (i__31527__auto___42278 + (1));
+i__31527__auto___42278 = G__42279;
 continue;
 } else {
 }
@@ -574,27 +574,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.message_error.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.message_error.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"message.error",args__34765__auto__);
+antizer.reagent.message_error.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"message.error",args__42140__auto__);
 });
 
 antizer.reagent.message_error.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.message_error.cljs$lang$applyTo = (function (seq34879){
-return antizer.reagent.message_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34879));
+antizer.reagent.message_error.cljs$lang$applyTo = (function (seq42254){
+return antizer.reagent.message_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42254));
 });
 
 
 antizer.reagent.message_info = (function antizer$reagent$message_info(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34905 = arguments.length;
-var i__31527__auto___34906 = (0);
+var len__31526__auto___42280 = arguments.length;
+var i__31527__auto___42281 = (0);
 while(true){
-if((i__31527__auto___34906 < len__31526__auto___34905)){
-args__31533__auto__.push((arguments[i__31527__auto___34906]));
+if((i__31527__auto___42281 < len__31526__auto___42280)){
+args__31533__auto__.push((arguments[i__31527__auto___42281]));
 
-var G__34907 = (i__31527__auto___34906 + (1));
-i__31527__auto___34906 = G__34907;
+var G__42282 = (i__31527__auto___42281 + (1));
+i__31527__auto___42281 = G__42282;
 continue;
 } else {
 }
@@ -605,27 +605,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.message_info.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.message_info.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"message.info",args__34765__auto__);
+antizer.reagent.message_info.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"message.info",args__42140__auto__);
 });
 
 antizer.reagent.message_info.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.message_info.cljs$lang$applyTo = (function (seq34880){
-return antizer.reagent.message_info.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34880));
+antizer.reagent.message_info.cljs$lang$applyTo = (function (seq42255){
+return antizer.reagent.message_info.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42255));
 });
 
 
 antizer.reagent.message_loading = (function antizer$reagent$message_loading(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34908 = arguments.length;
-var i__31527__auto___34909 = (0);
+var len__31526__auto___42283 = arguments.length;
+var i__31527__auto___42284 = (0);
 while(true){
-if((i__31527__auto___34909 < len__31526__auto___34908)){
-args__31533__auto__.push((arguments[i__31527__auto___34909]));
+if((i__31527__auto___42284 < len__31526__auto___42283)){
+args__31533__auto__.push((arguments[i__31527__auto___42284]));
 
-var G__34910 = (i__31527__auto___34909 + (1));
-i__31527__auto___34909 = G__34910;
+var G__42285 = (i__31527__auto___42284 + (1));
+i__31527__auto___42284 = G__42285;
 continue;
 } else {
 }
@@ -636,27 +636,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.message_loading.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.message_loading.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"message.loading",args__34765__auto__);
+antizer.reagent.message_loading.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"message.loading",args__42140__auto__);
 });
 
 antizer.reagent.message_loading.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.message_loading.cljs$lang$applyTo = (function (seq34881){
-return antizer.reagent.message_loading.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34881));
+antizer.reagent.message_loading.cljs$lang$applyTo = (function (seq42256){
+return antizer.reagent.message_loading.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42256));
 });
 
 
 antizer.reagent.message_success = (function antizer$reagent$message_success(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34911 = arguments.length;
-var i__31527__auto___34912 = (0);
+var len__31526__auto___42286 = arguments.length;
+var i__31527__auto___42287 = (0);
 while(true){
-if((i__31527__auto___34912 < len__31526__auto___34911)){
-args__31533__auto__.push((arguments[i__31527__auto___34912]));
+if((i__31527__auto___42287 < len__31526__auto___42286)){
+args__31533__auto__.push((arguments[i__31527__auto___42287]));
 
-var G__34913 = (i__31527__auto___34912 + (1));
-i__31527__auto___34912 = G__34913;
+var G__42288 = (i__31527__auto___42287 + (1));
+i__31527__auto___42287 = G__42288;
 continue;
 } else {
 }
@@ -667,27 +667,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.message_success.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.message_success.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"message.success",args__34765__auto__);
+antizer.reagent.message_success.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"message.success",args__42140__auto__);
 });
 
 antizer.reagent.message_success.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.message_success.cljs$lang$applyTo = (function (seq34882){
-return antizer.reagent.message_success.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34882));
+antizer.reagent.message_success.cljs$lang$applyTo = (function (seq42257){
+return antizer.reagent.message_success.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42257));
 });
 
 
 antizer.reagent.message_warn = (function antizer$reagent$message_warn(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34914 = arguments.length;
-var i__31527__auto___34915 = (0);
+var len__31526__auto___42289 = arguments.length;
+var i__31527__auto___42290 = (0);
 while(true){
-if((i__31527__auto___34915 < len__31526__auto___34914)){
-args__31533__auto__.push((arguments[i__31527__auto___34915]));
+if((i__31527__auto___42290 < len__31526__auto___42289)){
+args__31533__auto__.push((arguments[i__31527__auto___42290]));
 
-var G__34916 = (i__31527__auto___34915 + (1));
-i__31527__auto___34915 = G__34916;
+var G__42291 = (i__31527__auto___42290 + (1));
+i__31527__auto___42290 = G__42291;
 continue;
 } else {
 }
@@ -698,27 +698,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.message_warn.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.message_warn.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"message.warn",args__34765__auto__);
+antizer.reagent.message_warn.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"message.warn",args__42140__auto__);
 });
 
 antizer.reagent.message_warn.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.message_warn.cljs$lang$applyTo = (function (seq34883){
-return antizer.reagent.message_warn.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34883));
+antizer.reagent.message_warn.cljs$lang$applyTo = (function (seq42258){
+return antizer.reagent.message_warn.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42258));
 });
 
 
 antizer.reagent.message_warning = (function antizer$reagent$message_warning(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34917 = arguments.length;
-var i__31527__auto___34918 = (0);
+var len__31526__auto___42292 = arguments.length;
+var i__31527__auto___42293 = (0);
 while(true){
-if((i__31527__auto___34918 < len__31526__auto___34917)){
-args__31533__auto__.push((arguments[i__31527__auto___34918]));
+if((i__31527__auto___42293 < len__31526__auto___42292)){
+args__31533__auto__.push((arguments[i__31527__auto___42293]));
 
-var G__34919 = (i__31527__auto___34918 + (1));
-i__31527__auto___34918 = G__34919;
+var G__42294 = (i__31527__auto___42293 + (1));
+i__31527__auto___42293 = G__42294;
 continue;
 } else {
 }
@@ -729,27 +729,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.message_warning.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.message_warning.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"message.warning",args__34765__auto__);
+antizer.reagent.message_warning.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"message.warning",args__42140__auto__);
 });
 
 antizer.reagent.message_warning.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.message_warning.cljs$lang$applyTo = (function (seq34884){
-return antizer.reagent.message_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34884));
+antizer.reagent.message_warning.cljs$lang$applyTo = (function (seq42259){
+return antizer.reagent.message_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42259));
 });
 
 
 antizer.reagent.modal_confirm = (function antizer$reagent$modal_confirm(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34920 = arguments.length;
-var i__31527__auto___34921 = (0);
+var len__31526__auto___42295 = arguments.length;
+var i__31527__auto___42296 = (0);
 while(true){
-if((i__31527__auto___34921 < len__31526__auto___34920)){
-args__31533__auto__.push((arguments[i__31527__auto___34921]));
+if((i__31527__auto___42296 < len__31526__auto___42295)){
+args__31533__auto__.push((arguments[i__31527__auto___42296]));
 
-var G__34922 = (i__31527__auto___34921 + (1));
-i__31527__auto___34921 = G__34922;
+var G__42297 = (i__31527__auto___42296 + (1));
+i__31527__auto___42296 = G__42297;
 continue;
 } else {
 }
@@ -760,27 +760,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.modal_confirm.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.modal_confirm.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"Modal.confirm",args__34765__auto__);
+antizer.reagent.modal_confirm.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"Modal.confirm",args__42140__auto__);
 });
 
 antizer.reagent.modal_confirm.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.modal_confirm.cljs$lang$applyTo = (function (seq34885){
-return antizer.reagent.modal_confirm.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34885));
+antizer.reagent.modal_confirm.cljs$lang$applyTo = (function (seq42260){
+return antizer.reagent.modal_confirm.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42260));
 });
 
 
 antizer.reagent.modal_error = (function antizer$reagent$modal_error(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34923 = arguments.length;
-var i__31527__auto___34924 = (0);
+var len__31526__auto___42298 = arguments.length;
+var i__31527__auto___42299 = (0);
 while(true){
-if((i__31527__auto___34924 < len__31526__auto___34923)){
-args__31533__auto__.push((arguments[i__31527__auto___34924]));
+if((i__31527__auto___42299 < len__31526__auto___42298)){
+args__31533__auto__.push((arguments[i__31527__auto___42299]));
 
-var G__34925 = (i__31527__auto___34924 + (1));
-i__31527__auto___34924 = G__34925;
+var G__42300 = (i__31527__auto___42299 + (1));
+i__31527__auto___42299 = G__42300;
 continue;
 } else {
 }
@@ -791,27 +791,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.modal_error.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.modal_error.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"Modal.error",args__34765__auto__);
+antizer.reagent.modal_error.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"Modal.error",args__42140__auto__);
 });
 
 antizer.reagent.modal_error.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.modal_error.cljs$lang$applyTo = (function (seq34886){
-return antizer.reagent.modal_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34886));
+antizer.reagent.modal_error.cljs$lang$applyTo = (function (seq42261){
+return antizer.reagent.modal_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42261));
 });
 
 
 antizer.reagent.modal_info = (function antizer$reagent$modal_info(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34926 = arguments.length;
-var i__31527__auto___34927 = (0);
+var len__31526__auto___42301 = arguments.length;
+var i__31527__auto___42302 = (0);
 while(true){
-if((i__31527__auto___34927 < len__31526__auto___34926)){
-args__31533__auto__.push((arguments[i__31527__auto___34927]));
+if((i__31527__auto___42302 < len__31526__auto___42301)){
+args__31533__auto__.push((arguments[i__31527__auto___42302]));
 
-var G__34928 = (i__31527__auto___34927 + (1));
-i__31527__auto___34927 = G__34928;
+var G__42303 = (i__31527__auto___42302 + (1));
+i__31527__auto___42302 = G__42303;
 continue;
 } else {
 }
@@ -822,27 +822,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.modal_info.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.modal_info.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"Modal.info",args__34765__auto__);
+antizer.reagent.modal_info.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"Modal.info",args__42140__auto__);
 });
 
 antizer.reagent.modal_info.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.modal_info.cljs$lang$applyTo = (function (seq34887){
-return antizer.reagent.modal_info.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34887));
+antizer.reagent.modal_info.cljs$lang$applyTo = (function (seq42262){
+return antizer.reagent.modal_info.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42262));
 });
 
 
 antizer.reagent.modal_success = (function antizer$reagent$modal_success(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34929 = arguments.length;
-var i__31527__auto___34930 = (0);
+var len__31526__auto___42304 = arguments.length;
+var i__31527__auto___42305 = (0);
 while(true){
-if((i__31527__auto___34930 < len__31526__auto___34929)){
-args__31533__auto__.push((arguments[i__31527__auto___34930]));
+if((i__31527__auto___42305 < len__31526__auto___42304)){
+args__31533__auto__.push((arguments[i__31527__auto___42305]));
 
-var G__34931 = (i__31527__auto___34930 + (1));
-i__31527__auto___34930 = G__34931;
+var G__42306 = (i__31527__auto___42305 + (1));
+i__31527__auto___42305 = G__42306;
 continue;
 } else {
 }
@@ -853,27 +853,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.modal_success.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.modal_success.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"Modal.success",args__34765__auto__);
+antizer.reagent.modal_success.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"Modal.success",args__42140__auto__);
 });
 
 antizer.reagent.modal_success.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.modal_success.cljs$lang$applyTo = (function (seq34888){
-return antizer.reagent.modal_success.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34888));
+antizer.reagent.modal_success.cljs$lang$applyTo = (function (seq42263){
+return antizer.reagent.modal_success.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42263));
 });
 
 
 antizer.reagent.modal_warning = (function antizer$reagent$modal_warning(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34932 = arguments.length;
-var i__31527__auto___34933 = (0);
+var len__31526__auto___42307 = arguments.length;
+var i__31527__auto___42308 = (0);
 while(true){
-if((i__31527__auto___34933 < len__31526__auto___34932)){
-args__31533__auto__.push((arguments[i__31527__auto___34933]));
+if((i__31527__auto___42308 < len__31526__auto___42307)){
+args__31533__auto__.push((arguments[i__31527__auto___42308]));
 
-var G__34934 = (i__31527__auto___34933 + (1));
-i__31527__auto___34933 = G__34934;
+var G__42309 = (i__31527__auto___42308 + (1));
+i__31527__auto___42308 = G__42309;
 continue;
 } else {
 }
@@ -884,27 +884,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.modal_warning.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.modal_warning.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"Modal.warning",args__34765__auto__);
+antizer.reagent.modal_warning.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"Modal.warning",args__42140__auto__);
 });
 
 antizer.reagent.modal_warning.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.modal_warning.cljs$lang$applyTo = (function (seq34889){
-return antizer.reagent.modal_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34889));
+antizer.reagent.modal_warning.cljs$lang$applyTo = (function (seq42264){
+return antizer.reagent.modal_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42264));
 });
 
 
 antizer.reagent.notification_close = (function antizer$reagent$notification_close(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34935 = arguments.length;
-var i__31527__auto___34936 = (0);
+var len__31526__auto___42310 = arguments.length;
+var i__31527__auto___42311 = (0);
 while(true){
-if((i__31527__auto___34936 < len__31526__auto___34935)){
-args__31533__auto__.push((arguments[i__31527__auto___34936]));
+if((i__31527__auto___42311 < len__31526__auto___42310)){
+args__31533__auto__.push((arguments[i__31527__auto___42311]));
 
-var G__34937 = (i__31527__auto___34936 + (1));
-i__31527__auto___34936 = G__34937;
+var G__42312 = (i__31527__auto___42311 + (1));
+i__31527__auto___42311 = G__42312;
 continue;
 } else {
 }
@@ -915,27 +915,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_close.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_close.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.close",args__34765__auto__);
+antizer.reagent.notification_close.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.close",args__42140__auto__);
 });
 
 antizer.reagent.notification_close.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_close.cljs$lang$applyTo = (function (seq34890){
-return antizer.reagent.notification_close.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34890));
+antizer.reagent.notification_close.cljs$lang$applyTo = (function (seq42265){
+return antizer.reagent.notification_close.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42265));
 });
 
 
 antizer.reagent.notification_config = (function antizer$reagent$notification_config(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34938 = arguments.length;
-var i__31527__auto___34939 = (0);
+var len__31526__auto___42313 = arguments.length;
+var i__31527__auto___42314 = (0);
 while(true){
-if((i__31527__auto___34939 < len__31526__auto___34938)){
-args__31533__auto__.push((arguments[i__31527__auto___34939]));
+if((i__31527__auto___42314 < len__31526__auto___42313)){
+args__31533__auto__.push((arguments[i__31527__auto___42314]));
 
-var G__34940 = (i__31527__auto___34939 + (1));
-i__31527__auto___34939 = G__34940;
+var G__42315 = (i__31527__auto___42314 + (1));
+i__31527__auto___42314 = G__42315;
 continue;
 } else {
 }
@@ -946,27 +946,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_config.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_config.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.config",args__34765__auto__);
+antizer.reagent.notification_config.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.config",args__42140__auto__);
 });
 
 antizer.reagent.notification_config.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_config.cljs$lang$applyTo = (function (seq34891){
-return antizer.reagent.notification_config.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34891));
+antizer.reagent.notification_config.cljs$lang$applyTo = (function (seq42266){
+return antizer.reagent.notification_config.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42266));
 });
 
 
 antizer.reagent.notification_destroy = (function antizer$reagent$notification_destroy(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34941 = arguments.length;
-var i__31527__auto___34942 = (0);
+var len__31526__auto___42316 = arguments.length;
+var i__31527__auto___42317 = (0);
 while(true){
-if((i__31527__auto___34942 < len__31526__auto___34941)){
-args__31533__auto__.push((arguments[i__31527__auto___34942]));
+if((i__31527__auto___42317 < len__31526__auto___42316)){
+args__31533__auto__.push((arguments[i__31527__auto___42317]));
 
-var G__34943 = (i__31527__auto___34942 + (1));
-i__31527__auto___34942 = G__34943;
+var G__42318 = (i__31527__auto___42317 + (1));
+i__31527__auto___42317 = G__42318;
 continue;
 } else {
 }
@@ -977,27 +977,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_destroy.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_destroy.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.destroy",args__34765__auto__);
+antizer.reagent.notification_destroy.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.destroy",args__42140__auto__);
 });
 
 antizer.reagent.notification_destroy.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_destroy.cljs$lang$applyTo = (function (seq34892){
-return antizer.reagent.notification_destroy.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34892));
+antizer.reagent.notification_destroy.cljs$lang$applyTo = (function (seq42267){
+return antizer.reagent.notification_destroy.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42267));
 });
 
 
 antizer.reagent.notification_error = (function antizer$reagent$notification_error(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34944 = arguments.length;
-var i__31527__auto___34945 = (0);
+var len__31526__auto___42319 = arguments.length;
+var i__31527__auto___42320 = (0);
 while(true){
-if((i__31527__auto___34945 < len__31526__auto___34944)){
-args__31533__auto__.push((arguments[i__31527__auto___34945]));
+if((i__31527__auto___42320 < len__31526__auto___42319)){
+args__31533__auto__.push((arguments[i__31527__auto___42320]));
 
-var G__34946 = (i__31527__auto___34945 + (1));
-i__31527__auto___34945 = G__34946;
+var G__42321 = (i__31527__auto___42320 + (1));
+i__31527__auto___42320 = G__42321;
 continue;
 } else {
 }
@@ -1008,27 +1008,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_error.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_error.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.error",args__34765__auto__);
+antizer.reagent.notification_error.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.error",args__42140__auto__);
 });
 
 antizer.reagent.notification_error.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_error.cljs$lang$applyTo = (function (seq34893){
-return antizer.reagent.notification_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34893));
+antizer.reagent.notification_error.cljs$lang$applyTo = (function (seq42268){
+return antizer.reagent.notification_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42268));
 });
 
 
 antizer.reagent.notification_info = (function antizer$reagent$notification_info(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34947 = arguments.length;
-var i__31527__auto___34948 = (0);
+var len__31526__auto___42322 = arguments.length;
+var i__31527__auto___42323 = (0);
 while(true){
-if((i__31527__auto___34948 < len__31526__auto___34947)){
-args__31533__auto__.push((arguments[i__31527__auto___34948]));
+if((i__31527__auto___42323 < len__31526__auto___42322)){
+args__31533__auto__.push((arguments[i__31527__auto___42323]));
 
-var G__34949 = (i__31527__auto___34948 + (1));
-i__31527__auto___34948 = G__34949;
+var G__42324 = (i__31527__auto___42323 + (1));
+i__31527__auto___42323 = G__42324;
 continue;
 } else {
 }
@@ -1039,27 +1039,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_info.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_info.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.info",args__34765__auto__);
+antizer.reagent.notification_info.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.info",args__42140__auto__);
 });
 
 antizer.reagent.notification_info.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_info.cljs$lang$applyTo = (function (seq34894){
-return antizer.reagent.notification_info.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34894));
+antizer.reagent.notification_info.cljs$lang$applyTo = (function (seq42269){
+return antizer.reagent.notification_info.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42269));
 });
 
 
 antizer.reagent.notification_open = (function antizer$reagent$notification_open(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34950 = arguments.length;
-var i__31527__auto___34951 = (0);
+var len__31526__auto___42325 = arguments.length;
+var i__31527__auto___42326 = (0);
 while(true){
-if((i__31527__auto___34951 < len__31526__auto___34950)){
-args__31533__auto__.push((arguments[i__31527__auto___34951]));
+if((i__31527__auto___42326 < len__31526__auto___42325)){
+args__31533__auto__.push((arguments[i__31527__auto___42326]));
 
-var G__34952 = (i__31527__auto___34951 + (1));
-i__31527__auto___34951 = G__34952;
+var G__42327 = (i__31527__auto___42326 + (1));
+i__31527__auto___42326 = G__42327;
 continue;
 } else {
 }
@@ -1070,27 +1070,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_open.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_open.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.open",args__34765__auto__);
+antizer.reagent.notification_open.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.open",args__42140__auto__);
 });
 
 antizer.reagent.notification_open.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_open.cljs$lang$applyTo = (function (seq34895){
-return antizer.reagent.notification_open.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34895));
+antizer.reagent.notification_open.cljs$lang$applyTo = (function (seq42270){
+return antizer.reagent.notification_open.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42270));
 });
 
 
 antizer.reagent.notification_success = (function antizer$reagent$notification_success(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34953 = arguments.length;
-var i__31527__auto___34954 = (0);
+var len__31526__auto___42328 = arguments.length;
+var i__31527__auto___42329 = (0);
 while(true){
-if((i__31527__auto___34954 < len__31526__auto___34953)){
-args__31533__auto__.push((arguments[i__31527__auto___34954]));
+if((i__31527__auto___42329 < len__31526__auto___42328)){
+args__31533__auto__.push((arguments[i__31527__auto___42329]));
 
-var G__34955 = (i__31527__auto___34954 + (1));
-i__31527__auto___34954 = G__34955;
+var G__42330 = (i__31527__auto___42329 + (1));
+i__31527__auto___42329 = G__42330;
 continue;
 } else {
 }
@@ -1101,27 +1101,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_success.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_success.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.success",args__34765__auto__);
+antizer.reagent.notification_success.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.success",args__42140__auto__);
 });
 
 antizer.reagent.notification_success.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_success.cljs$lang$applyTo = (function (seq34896){
-return antizer.reagent.notification_success.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34896));
+antizer.reagent.notification_success.cljs$lang$applyTo = (function (seq42271){
+return antizer.reagent.notification_success.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42271));
 });
 
 
 antizer.reagent.notification_warn = (function antizer$reagent$notification_warn(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34956 = arguments.length;
-var i__31527__auto___34957 = (0);
+var len__31526__auto___42331 = arguments.length;
+var i__31527__auto___42332 = (0);
 while(true){
-if((i__31527__auto___34957 < len__31526__auto___34956)){
-args__31533__auto__.push((arguments[i__31527__auto___34957]));
+if((i__31527__auto___42332 < len__31526__auto___42331)){
+args__31533__auto__.push((arguments[i__31527__auto___42332]));
 
-var G__34958 = (i__31527__auto___34957 + (1));
-i__31527__auto___34957 = G__34958;
+var G__42333 = (i__31527__auto___42332 + (1));
+i__31527__auto___42332 = G__42333;
 continue;
 } else {
 }
@@ -1132,27 +1132,27 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_warn.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_warn.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.warn",args__34765__auto__);
+antizer.reagent.notification_warn.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.warn",args__42140__auto__);
 });
 
 antizer.reagent.notification_warn.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_warn.cljs$lang$applyTo = (function (seq34897){
-return antizer.reagent.notification_warn.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34897));
+antizer.reagent.notification_warn.cljs$lang$applyTo = (function (seq42272){
+return antizer.reagent.notification_warn.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42272));
 });
 
 
 antizer.reagent.notification_warning = (function antizer$reagent$notification_warning(var_args){
 var args__31533__auto__ = [];
-var len__31526__auto___34959 = arguments.length;
-var i__31527__auto___34960 = (0);
+var len__31526__auto___42334 = arguments.length;
+var i__31527__auto___42335 = (0);
 while(true){
-if((i__31527__auto___34960 < len__31526__auto___34959)){
-args__31533__auto__.push((arguments[i__31527__auto___34960]));
+if((i__31527__auto___42335 < len__31526__auto___42334)){
+args__31533__auto__.push((arguments[i__31527__auto___42335]));
 
-var G__34961 = (i__31527__auto___34960 + (1));
-i__31527__auto___34960 = G__34961;
+var G__42336 = (i__31527__auto___42335 + (1));
+i__31527__auto___42335 = G__42336;
 continue;
 } else {
 }
@@ -1163,18 +1163,18 @@ var argseq__31534__auto__ = ((((0) < args__31533__auto__.length))?(new cljs.core
 return antizer.reagent.notification_warning.cljs$core$IFn$_invoke$arity$variadic(argseq__31534__auto__);
 });
 
-antizer.reagent.notification_warning.cljs$core$IFn$_invoke$arity$variadic = (function (args__34765__auto__){
-return cljs.core.apply.call(null,antizer.core.call_func,"notification.warning",args__34765__auto__);
+antizer.reagent.notification_warning.cljs$core$IFn$_invoke$arity$variadic = (function (args__42140__auto__){
+return cljs.core.apply.call(null,antizer.core.call_func,"notification.warning",args__42140__auto__);
 });
 
 antizer.reagent.notification_warning.cljs$lang$maxFixedArity = (0);
 
-antizer.reagent.notification_warning.cljs$lang$applyTo = (function (seq34898){
-return antizer.reagent.notification_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq34898));
+antizer.reagent.notification_warning.cljs$lang$applyTo = (function (seq42273){
+return antizer.reagent.notification_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq42273));
 });
 
-antizer.reagent.locales = (function antizer$reagent$locales(prop__34767__auto__){
-return antizer.core.get_prop.call(null,"locales",prop__34767__auto__);
+antizer.reagent.locales = (function antizer$reagent$locales(prop__42142__auto__){
+return antizer.core.get_prop.call(null,"locales",prop__42142__auto__);
 });
 antizer.reagent.affix = reagent.core.adapt_react_class.call(null,cljs.core.apply.call(null,goog.object.getValueByKeys,antd,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Affix"], null)));
 
@@ -1334,4 +1334,4 @@ antizer.reagent.tree_tree_node = reagent.core.adapt_react_class.call(null,cljs.c
 
 antizer.reagent.upload = reagent.core.adapt_react_class.call(null,cljs.core.apply.call(null,goog.object.getValueByKeys,antd,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Upload"], null)));
 
-//# sourceMappingURL=reagent.js.map?rel=1506023320764
+//# sourceMappingURL=reagent.js.map?rel=1506985651096
