@@ -10,27 +10,27 @@ re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("window","update-widt
 var width = window.innerWidth;
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword("window","width","window/width",-1138776901),width);
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("window","update-breakpoint","window/update-breakpoint",1517550785),(function (p__41202,_){
-var map__41203 = p__41202;
-var map__41203__$1 = ((((!((map__41203 == null)))?((((map__41203.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__41203.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__41203):map__41203);
-var db = map__41203__$1;
-var width = cljs.core.get.call(null,map__41203__$1,new cljs.core.Keyword("window","width","window/width",-1138776901));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("window","update-breakpoint","window/update-breakpoint",1517550785),(function (p__41203,_){
+var map__41204 = p__41203;
+var map__41204__$1 = ((((!((map__41204 == null)))?((((map__41204.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__41204.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__41204):map__41204);
+var db = map__41204__$1;
+var width = cljs.core.get.call(null,map__41204__$1,new cljs.core.Keyword("window","width","window/width",-1138776901));
 var breakpoint = (((width < (600)))?new cljs.core.Keyword(null,"xs","xs",649443341):((((width >= (600))) && ((width < (960))))?new cljs.core.Keyword(null,"sm","sm",-1402575065):((((width >= (960))) && ((width < (1200))))?new cljs.core.Keyword(null,"md","md",707286655):((((width >= (1200))) && ((width < (1920))))?new cljs.core.Keyword(null,"lg","lg",-80787836):(((width >= (1920)))?new cljs.core.Keyword(null,"xl","xl",-1689552936):null)))));
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword("window","breakpoint","window/breakpoint",628938776),breakpoint);
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("layout","update-columns","layout/update-columns",1792953905),(function (p__41205,_){
-var map__41206 = p__41205;
-var map__41206__$1 = ((((!((map__41206 == null)))?((((map__41206.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__41206.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__41206):map__41206);
-var db = map__41206__$1;
-var width = cljs.core.get.call(null,map__41206__$1,new cljs.core.Keyword("window","width","window/width",-1138776901));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("layout","update-columns","layout/update-columns",1792953905),(function (p__41206,_){
+var map__41207 = p__41206;
+var map__41207__$1 = ((((!((map__41207 == null)))?((((map__41207.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__41207.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__41207):map__41207);
+var db = map__41207__$1;
+var width = cljs.core.get.call(null,map__41207__$1,new cljs.core.Keyword("window","width","window/width",-1138776901));
 var columns = (((width < (600)))?(4):((((width >= (600))) && ((width < (720))))?(8):(((width >= (720)))?(12):null)));
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword("layout","columns","layout/columns",-1195849614),columns);
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("layout","update-gutter","layout/update-gutter",-832825682),(function (p__41208,_){
-var map__41209 = p__41208;
-var map__41209__$1 = ((((!((map__41209 == null)))?((((map__41209.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__41209.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__41209):map__41209);
-var db = map__41209__$1;
-var width = cljs.core.get.call(null,map__41209__$1,new cljs.core.Keyword("window","width","window/width",-1138776901));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("layout","update-gutter","layout/update-gutter",-832825682),(function (p__41209,_){
+var map__41210 = p__41209;
+var map__41210__$1 = ((((!((map__41210 == null)))?((((map__41210.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__41210.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__41210):map__41210);
+var db = map__41210__$1;
+var width = cljs.core.get.call(null,map__41210__$1,new cljs.core.Keyword("window","width","window/width",-1138776901));
 var gutter = (((width < (600)))?(16):(((width >= (600)))?(24):null));
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword("layout","gutter","layout/gutter",-2143600188),gutter);
 }));
@@ -38,21 +38,21 @@ re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("window","update-size
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("window","update-height","window/update-height",-825804406)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("window","update-width","window/update-width",1111264788)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("window","update-breakpoint","window/update-breakpoint",1517550785)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("layout","update-columns","layout/update-columns",1792953905)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("layout","update-gutter","layout/update-gutter",-832825682)], null)], null)], null);
 }));
 re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("window","run-resize-listener!","window/run-resize-listener!",-743521203),(function (_,___$1){
-var resize_state_41211 = cljs.core.atom.call(null,null);
-window.addEventListener("resize",((function (resize_state_41211){
+var resize_state_41212 = cljs.core.atom.call(null,null);
+window.addEventListener("resize",((function (resize_state_41212){
 return (function (){
-clearTimeout(cljs.core.deref.call(null,resize_state_41211));
+clearTimeout(cljs.core.deref.call(null,resize_state_41212));
 
-var timeout = setTimeout(((function (resize_state_41211){
+var timeout = setTimeout(((function (resize_state_41212){
 return (function (){
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("window","update-size","window/update-size",624479977)], null));
-});})(resize_state_41211))
+});})(resize_state_41212))
 ,(500));
-return cljs.core.reset_BANG_.call(null,resize_state_41211,timeout);
-});})(resize_state_41211))
+return cljs.core.reset_BANG_.call(null,resize_state_41212,timeout);
+});})(resize_state_41212))
 );
 
 return null;
 }));
 
-//# sourceMappingURL=events.js.map?rel=1506985649518
+//# sourceMappingURL=events.js.map?rel=1507056175248

@@ -4,11 +4,13 @@
             [cljs-time.core :as t]
             [cljs-time.coerce :as tc]
             [taoensso.timbre :as timbre]
-            [taoensso.encore :refer [path]]))
+            [taoensso.encore :refer [path]]
+            [eckersdorf.db.core :refer [->local-storage]]))
 
 
 (rf/reg-event-db
   :user/logout
+  [->local-storage]
   (fn [db _]
     (assoc db :user/object-id nil
               :user/first-name nil
@@ -21,26 +23,38 @@
 
 (rf/reg-event-db
   :user/set-first-name
+  [->local-storage]
   (fn [db [_ first-name]]
     (assoc db :user/first-name first-name)))
 
 
 (rf/reg-event-db
   :user/set-last-name
+  [->local-storage]
   (fn [db [_ last-name]]
     (assoc db :user/set-last-name last-name)))
 
 
 (rf/reg-event-db
   :user/set-email-address
+  [->local-storage]
   (fn [db [_ email-address]]
     (assoc db :user/set-email-address email-address)))
 
 
 (rf/reg-event-db
   :user/set-phone-number
+  [->local-storage]
   (fn [db [_ phone-number]]
     (assoc db :user/set-phone-number phone-number)))
+
+
+(rf/reg-event-db
+  :user/refresh-last-login
+  [->local-storage]
+  (fn [db _]
+    (println :user/refresh-last-login)
+    (assoc db :user/last-login (t/now))))
 
 
 (rf/reg-event-fx
@@ -63,6 +77,7 @@
 
 (rf/reg-event-fx
   :user/request-update-success
+  [->local-storage]
   (fn [{db :db} [_ response]]
     (timbre/info response)
     {:db (merge db response)}))

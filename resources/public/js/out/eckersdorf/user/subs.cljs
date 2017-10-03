@@ -82,3 +82,9 @@
   :<- [:user/token]
   (fn [token]
     (some? token)))
+
+
+(rf/reg-sub
+  :user/last-login
+  (fn [db _]
+    (:user/last-login db)))

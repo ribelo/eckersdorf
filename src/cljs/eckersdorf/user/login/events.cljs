@@ -2,25 +2,32 @@
   (:require [re-frame.core :as rf]
             [ajax.core :as ajax]
             [cljs-time.core :as t]
-            [cljs-time.coerce :as tc]))
+            [cljs-time.coerce :as tc]
+            [eckersdorf.db.core :refer [->local-storage]]))
 
 
 (rf/reg-event-db
-  :login/set-email-address!
+  :login/set-email-address
   (fn [db [_ email]]
     (assoc db :login/email-address email)))
 
 
 (rf/reg-event-db
-  :login/set-password!
+  :login/set-password
   (fn [db [_ password]]
     (assoc db :login/password password)))
 
 
 (rf/reg-event-db
-  :login/set-invalid-password!
+  :login/set-invalid-password
   (fn [db [_ status]]
     (assoc db :login/invalid-password? status)))
+
+
+(rf/reg-event-db
+  :login/toggle-remember
+  (fn [db _]
+    (update db :login/remember? not)))
 
 
 (rf/reg-event-fx
@@ -40,19 +47,20 @@
 
 (rf/reg-event-fx
   :login/request-login-success
+  [->local-storage]
   (fn [{db :db} [_ response]]
     (println (-> response
                  (update :user/expire-at tc/from-string)
                  (clojure.set/rename-keys {:mongo/object-id :user/object-id})))
     {:db         (merge db (-> response (update :user/expire-at tc/from-string) (clojure.set/rename-keys {:mongo/object-id :user/object-id})))
      :dispatch-n [[:process/set {:event :login/request-login}]
-                  [:login/set-invalid-password! false]
-                  [:login/toggle-dialog]]}))
+                  [:login/set-invalid-password false]
+                  [:user/refresh-last-login]]}))
 
 
 (rf/reg-event-fx
   :login/request-login-failure
   (fn [{db :db} [_ {:keys [status] :as response}]]
     (case status
-      401 {:dispatch [:login/set-invalid-password! true]}
+      401 {:dispatch [:login/set-invalid-password true]}
       {:dispatch-n [:error/set {:event :login/request-login}]})))

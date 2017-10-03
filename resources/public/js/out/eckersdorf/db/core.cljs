@@ -1,30 +1,42 @@
 (ns eckersdorf.db.core
   (:require [cognitect.transit :as t]
-            [re-frame.core :as rf]))
+            [re-frame.core :as rf])
+  (:import [goog.date UtcDateTime]))
 
 
-(def ^:private ks
-  [:basket/products
-   :warehouse/last-watched])
+(def transit-readers
+  {:handlers
+   {"m" (t/read-handler (fn [s] (UtcDateTime.fromTimestamp s)))}})
+
+
+(def transit-writers
+  {:handlers
+   {UtcDateTime (t/write-handler
+                  (constantly "m")
+                  (fn [v] (.getTime v))
+                  (fn [v] (str (.getTime v))))}})
+
+
+(defn ->json [db]
+  (let [w (t/writer :json transit-writers)]
+    (t/write w db)))
 
 
 (defn save-local-storage [db]
-  (let [w (t/writer :json)]
-    (.setItem js/localStorage "pintu" (t/write w (select-keys db ks)))))
+  (.setItem js/localStorage "eckersdorf" (->json db)))
 
 
 (def ->local-storage (rf/after save-local-storage))
 
-
 (defn load-local-storage []
-  (let [r (t/reader :json)]
-    (some->> (.getItem js/localStorage "pintu")
+  (let [r (t/reader :json transit-readers)]
+    (some->> (.getItem js/localStorage "eckersdorf")
              (t/read r))))
 
 
 (defn clear-local-storage []
-  (.setItem js/localStorage "pintu" {}))
+  (save-local-storage {}))
 
 
 (def default-db
-  {:view/active-panel :store/products})
+  {})

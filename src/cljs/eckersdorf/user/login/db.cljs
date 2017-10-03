@@ -3,8 +3,9 @@
 
 
 (def login-state
-  {:login/dialog-opened?   false
-   :login/email-address    ""
-   :login/error            nil
-   :login/password         ""
+  {:login/remember?         true
+   :login/dialog-opened?    false
+   :login/email-address     ""
+   :login/error             nil
+   :login/password          ""
    :login/invalid-password? nil})

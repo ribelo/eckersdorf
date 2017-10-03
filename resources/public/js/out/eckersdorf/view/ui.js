@@ -21,8 +21,8 @@ var workplaces_list = re_frame.core.subscribe.call(null,new cljs.core.Persistent
 return ((function (workplaces_list){
 return (function (){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.table,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"title","title",636505583),"nazwa",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),new cljs.core.Keyword("workplace","name","workplace/name",-1414028077),new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("workplace","name","workplace/name",-1414028077)], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"title","title",636505583),"typ",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),new cljs.core.Keyword("workplace","type","workplace/type",-9855694),new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("workplace","type","workplace/type",-9855694)], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"title","title",636505583),"e-mail",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),new cljs.core.Keyword("workplace","email-address","workplace/email-address",-2014908542),new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("workplace","email-address","workplace/email-address",-2014908542)], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"title","title",636505583),"ulica",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),"address.street-name",new cljs.core.Keyword(null,"key","key",-1516042587),"address.street-name"], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"title","title",636505583),"numer ulicy",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),"address.street-number",new cljs.core.Keyword(null,"key","key",-1516042587),"address.street-number"], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"title","title",636505583),"numer budynku",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),"address.house-number",new cljs.core.Keyword(null,"key","key",-1516042587),"address.house-number",new cljs.core.Keyword(null,"render","render",-1408033454),((function (workplaces_list){
-return (function (p1__53492_SHARP_){
-var or__30249__auto__ = p1__53492_SHARP_;
+return (function (p1__61432_SHARP_){
+var or__30249__auto__ = p1__61432_SHARP_;
 if(cljs.core.truth_(or__30249__auto__)){
 return or__30249__auto__;
 } else {
@@ -62,7 +62,7 @@ var sider_collapsed_QMARK_ = re_frame.core.subscribe.call(null,new cljs.core.Per
 var personal_data = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","personal-data","user/personal-data",-1584646157)], null));
 return ((function (logged_QMARK_,sider_collapsed_QMARK_,personal_data){
 return (function (){
-if(cljs.core.not.call(null,cljs.core.deref.call(null,logged_QMARK_))){
+if(cljs.core.truth_(cljs.core.deref.call(null,logged_QMARK_))){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.user.login.ui.login_page], null);
 } else {
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.layout,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"min-height","min-height",398480837),"100vh"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.layout_sider,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"collapsible","collapsible",-1677056983),true,new cljs.core.Keyword(null,"collapsed","collapsed",-628494523),cljs.core.deref.call(null,sider_collapsed_QMARK_),new cljs.core.Keyword(null,"on-collapse","on-collapse",-1862907995),((function (logged_QMARK_,sider_collapsed_QMARK_,personal_data){
@@ -75,4 +75,4 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 
 ;})(logged_QMARK_,sider_collapsed_QMARK_,personal_data))
 });
 
-//# sourceMappingURL=ui.js.map?rel=1506986750870
+//# sourceMappingURL=ui.js.map?rel=1507067216857

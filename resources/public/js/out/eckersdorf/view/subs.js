@@ -19,4 +19,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("view","sider-collapsed?",
 return new cljs.core.Keyword("view","sider-collapsed?","view/sider-collapsed?",888100809).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1506985648136
+//# sourceMappingURL=subs.js.map?rel=1507056174069

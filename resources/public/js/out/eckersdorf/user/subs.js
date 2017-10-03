@@ -29,10 +29,10 @@ return cljs.core.contains_QMARK_.call(null,cljs.core.set.call(null,new cljs.core
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315),(function (db,_){
 return cljs.core.contains_QMARK_.call(null,cljs.core.set.call(null,new cljs.core.Keyword("user","roles","user/roles",130427029).cljs$core$IFn$_invoke$arity$1(db)),"moderator");
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","admin-or-moderator?","user/admin-or-moderator?",1276690555),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","admin?","user/admin?",-380045250)], null),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315)], null),(function (p__43408,_){
-var vec__43409 = p__43408;
-var admin_QMARK_ = cljs.core.nth.call(null,vec__43409,(0),null);
-var moderator_QMARK_ = cljs.core.nth.call(null,vec__43409,(1),null);
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","admin-or-moderator?","user/admin-or-moderator?",1276690555),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","admin?","user/admin?",-380045250)], null),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315)], null),(function (p__59330,_){
+var vec__59331 = p__59330;
+var admin_QMARK_ = cljs.core.nth.call(null,vec__59331,(0),null);
+var moderator_QMARK_ = cljs.core.nth.call(null,vec__59331,(1),null);
 var or__30249__auto__ = admin_QMARK_;
 if(cljs.core.truth_(or__30249__auto__)){
 return or__30249__auto__;
@@ -46,5 +46,8 @@ return cljs.core.select_keys.call(null,db,new cljs.core.PersistentVector(null, 4
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","logged-in?","user/logged-in?",-657925498),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","token","user/token",-1199473138)], null),(function (token){
 return !((token == null));
 }));
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","last-login","user/last-login",-513275033),(function (db,_){
+return new cljs.core.Keyword("user","last-login","user/last-login",-513275033).cljs$core$IFn$_invoke$arity$1(db);
+}));
 
-//# sourceMappingURL=subs.js.map?rel=1506985651884
+//# sourceMappingURL=subs.js.map?rel=1507060103494

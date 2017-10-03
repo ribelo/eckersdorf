@@ -2,6 +2,7 @@
 goog.provide('eckersdorf.db.events');
 goog.require('cljs.core');
 goog.require('re_frame.core');
+goog.require('cljs_time.core');
 goog.require('eckersdorf.db.core');
 goog.require('eckersdorf.window.db');
 goog.require('eckersdorf.view.db');
@@ -12,19 +13,25 @@ goog.require('eckersdorf.process.db');
 goog.require('eckersdorf.workplaces.db');
 re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","initialize-db","db/initialize-db",230999070),(function (_,___$1){
 var db = cljs.core.merge.call(null,eckersdorf.db.core.default_db,eckersdorf.window.db.window_state,eckersdorf.view.db.view_state,eckersdorf.error.db.error_state,eckersdorf.user.login.db.login_state,eckersdorf.user.db.user_state,eckersdorf.process.db.process_state,eckersdorf.workplaces.db.workplaces_state);
-var temp__5288__auto__ = eckersdorf.db.core.load_local_storage.call(null);
-if(cljs.core.truth_(temp__5288__auto__)){
-var storage = temp__5288__auto__;
+var storage = eckersdorf.db.core.load_local_storage.call(null);
+var last_login = new cljs.core.Keyword("user","last-login","user/last-login",-513275033).cljs$core$IFn$_invoke$arity$1(storage);
+if(cljs.core.truth_((function (){var and__30237__auto__ = last_login;
+if(cljs.core.truth_(and__30237__auto__)){
+return cljs_time.core.before_QMARK_.call(null,cljs_time.core.now.call(null),cljs_time.core.plus.call(null,last_login,cljs_time.core.months.call(null,(1))));
+} else {
+return and__30237__auto__;
+}
+})())){
 return cljs.core.merge.call(null,db,storage);
 } else {
 return db;
 }
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","merge-db","db/merge-db",-2107570316),(function (db,p__48867){
-var vec__48868 = p__48867;
-var _ = cljs.core.nth.call(null,vec__48868,(0),null);
-var state = cljs.core.nth.call(null,vec__48868,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","merge-db","db/merge-db",-2107570316),(function (db,p__59788){
+var vec__59789 = p__59788;
+var _ = cljs.core.nth.call(null,vec__59789,(0),null);
+var state = cljs.core.nth.call(null,vec__59789,(1),null);
 return cljs.core.merge.call(null,db,state);
 }));
 
-//# sourceMappingURL=events.js.map?rel=1506985654782
+//# sourceMappingURL=events.js.map?rel=1507060443351

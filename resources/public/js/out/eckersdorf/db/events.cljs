@@ -1,5 +1,6 @@
 (ns eckersdorf.db.events
   (:require [re-frame.core :as rf]
+            [cljs-time.core :as t]
             [eckersdorf.db.core :as db]
             [eckersdorf.window.db :refer [window-state]]
             [eckersdorf.view.db :refer [view-state]]
@@ -9,6 +10,7 @@
             [eckersdorf.process.db :refer [process-state]]
             [eckersdorf.workplaces.db :refer [workplaces-state]]
             ))
+
 
 
 (rf/reg-event-db
@@ -23,9 +25,11 @@
                     process-state
                     workplaces-state
                     )]
-      (if-let [storage (db/load-local-storage)]
-        (merge db storage)
-        db))))
+      (let [storage (db/load-local-storage)
+            last-login (:user/last-login storage)]
+        (if (and last-login (t/before? (t/now) (t/plus last-login (t/months 1))))
+          (merge db storage)
+          db)))))
 
 
 (rf/reg-event-db

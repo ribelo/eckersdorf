@@ -56,7 +56,7 @@
                                                             :type     :danger
                                                             :on-click (fn []
                                                                         (println "try to delete" email-address))}]
-                                               [ant/button {:icon :edit
+                                               [ant/button {:icon     :edit
                                                             :on-click (fn []
                                                                         (println "try to edit" email-address))}]])))}]
                   :dataSource (map-indexed (fn [i m] (assoc m :id i)) @workplaces-list)
@@ -69,7 +69,7 @@
         sider-collapsed? (rf/subscribe [:view/sider-collapsed?])
         personal-data (rf/subscribe [:user/personal-data])]
     (fn []
-      (if-not @logged?
+      (if @logged?
         [login.ui/login-page]
         [ant/layout {:style {:min-height "100vh"}}
          [ant/layout-sider {:collapsible true

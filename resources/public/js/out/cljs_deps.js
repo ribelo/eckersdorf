@@ -101,11 +101,12 @@ goog.addDependency("../cljs_time/internal/parse.js", ['cljs_time.internal.parse'
 goog.addDependency("../cljs_time/internal/unparse.js", ['cljs_time.internal.unparse'], ['cljs_time.internal.parse', 'goog.date.UtcDateTime', 'cljs.core', 'goog.date.Interval', 'cljs_time.internal.core', 'goog.date.DateTime', 'goog.date.Date', 'goog.date']);
 goog.addDependency("../cljs_time/format.js", ['cljs_time.format'], ['cljs_time.internal.parse', 'cljs_time.internal.unparse', 'cljs.core', 'goog.date.duration', 'cljs_time.core', 'clojure.set', 'cljs_time.internal.core']);
 goog.addDependency("../cljs_time/coerce.js", ['cljs_time.coerce'], ['goog.date.UtcDateTime', 'cljs.core', 'cljs_time.core', 'cljs_time.format']);
-goog.addDependency("../eckersdorf/user/events.js", ['eckersdorf.user.events'], ['ajax.core', 'cljs.core', 'cljs_time.core', 'cljs_time.coerce', 'taoensso.timbre', 'taoensso.encore', 're_frame.core']);
+goog.addDependency("../eckersdorf/db/core.js", ['eckersdorf.db.core'], ['goog.date.UtcDateTime', 'cljs.core', 'cognitect.transit', 're_frame.core']);
+goog.addDependency("../eckersdorf/user/events.js", ['eckersdorf.user.events'], ['ajax.core', 'cljs.core', 'cljs_time.core', 'cljs_time.coerce', 'eckersdorf.db.core', 'taoensso.timbre', 'taoensso.encore', 're_frame.core']);
 goog.addDependency("../eckersdorf/db/specs.js", ['eckersdorf.db.specs'], ['cljs.core', 'cljs_time.core', 'goog.date.DateTime', 'cljs.spec.alpha', 'cuerdas.core']);
 goog.addDependency("../eckersdorf/workplaces/events.js", ['eckersdorf.workplaces.events'], ['ajax.core', 'cljs.core', 'cljs_time.core', 'cljs_time.coerce', 'taoensso.timbre', 'taoensso.encore', 're_frame.core']);
 goog.addDependency("../eckersdorf/user/login/db.js", ['eckersdorf.user.login.db'], ['cljs.core', 're_frame.core']);
-goog.addDependency("../eckersdorf/user/login/events.js", ['eckersdorf.user.login.events'], ['ajax.core', 'cljs.core', 'cljs_time.core', 'cljs_time.coerce', 're_frame.core']);
+goog.addDependency("../eckersdorf/user/login/events.js", ['eckersdorf.user.login.events'], ['ajax.core', 'cljs.core', 'cljs_time.core', 'cljs_time.coerce', 'eckersdorf.db.core', 're_frame.core']);
 goog.addDependency("../bardo/ease.js", ['bardo.ease'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../cljs/core/match.js", ['cljs.core.match'], ['cljs.core']);
 goog.addDependency("../bardo/interpolate.js", ['bardo.interpolate'], ['cljs.core', 'bardo.ease', 'clojure.set', 'cljs.core.match']);
@@ -124,9 +125,8 @@ goog.addDependency("../eckersdorf/process/db.js", ['eckersdorf.process.db'], ['c
 goog.addDependency("../eckersdorf/process/events.js", ['eckersdorf.process.events'], ['cljs.core', 'taoensso.timbre', 'taoensso.encore', 'eckersdorf.process.db', 're_frame.core']);
 goog.addDependency("../eckersdorf/error/subs.js", ['eckersdorf.error.subs'], ['cljs.core', 're_frame.core']);
 goog.addDependency("../eckersdorf/view/db.js", ['eckersdorf.view.db'], ['cljs.core']);
-goog.addDependency("../eckersdorf/db/core.js", ['eckersdorf.db.core'], ['cljs.core', 'cognitect.transit', 're_frame.core']);
 goog.addDependency("../eckersdorf/window/db.js", ['eckersdorf.window.db'], ['cljs.core', 're_frame.core']);
-goog.addDependency("../eckersdorf/db/events.js", ['eckersdorf.db.events'], ['eckersdorf.user.db', 'cljs.core', 'eckersdorf.user.login.db', 'eckersdorf.view.db', 'eckersdorf.db.core', 'eckersdorf.workplaces.db', 'eckersdorf.window.db', 'eckersdorf.process.db', 'eckersdorf.error.db', 're_frame.core']);
+goog.addDependency("../eckersdorf/db/events.js", ['eckersdorf.db.events'], ['eckersdorf.user.db', 'cljs.core', 'cljs_time.core', 'eckersdorf.user.login.db', 'eckersdorf.view.db', 'eckersdorf.db.core', 'eckersdorf.workplaces.db', 'eckersdorf.window.db', 'eckersdorf.process.db', 'eckersdorf.error.db', 're_frame.core']);
 goog.addDependency("../eckersdorf/csv/core.js", ['eckersdorf.csv.core'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../eckersdorf/events.js", ['eckersdorf.events'], ['cljs.core', 'taoensso.encore', 'eckersdorf.csv.core', 're_frame.core']);
 goog.addDependency("../day8/re_frame/http_fx.js", ['day8.re_frame.http_fx'], ['ajax.core', 'cljs.core', 'goog.net.ErrorCode', 're_frame.core']);

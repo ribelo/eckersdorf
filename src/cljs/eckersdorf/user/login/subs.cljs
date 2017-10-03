@@ -15,6 +15,12 @@
 
 
 (rf/reg-sub
+  :login/remember?
+  (fn [db _]
+    (:login/remember? db)))
+
+
+(rf/reg-sub
   :login/invalid-password?
   (fn [db _]
     (:login/invalid-password? db)))

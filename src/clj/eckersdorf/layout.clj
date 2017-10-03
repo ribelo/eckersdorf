@@ -25,7 +25,7 @@
 
                       "}
     "Loading App..."]
-   ;(page/include-css "css/eckersdorf.css")
+   (page/include-css "css/eckersdorf.css")
    (page/include-css "https://cdnjs.cloudflare.com/ajax/libs/antd/2.12.3/antd.min.css")
    (page/include-css "/assets/font-awesome/css/font-awesome.min.css")
    (page/include-js "/js/app.js")
