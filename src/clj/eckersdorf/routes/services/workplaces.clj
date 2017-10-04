@@ -24,9 +24,17 @@
              :response (fn [ctx]
                          (let [opts (->> (get-in ctx [:parameters :query])
                                          (reduce (fn [r [k v]]
-                                                   (assoc r k {"$regex" v
+                                                   (assoc r k {"$regex"   v
                                                                "$options" "i"})) {}))]
-                           (db.workplaces/workplaces-list db opts)))}}})]
+                           (db.workplaces/workplaces-list db opts)))}
+            :post
+            {:produces   #{"application/json" "text/plain"}
+             :consumes   #{"application/json" "application/x-www-form-urlencoded"}
+             :parameters {:body {:sex schema/Str}}
+             :response   (fn [ctx]
+                           (let [address-name (get-in ctx [:parameters :body :short-name])]
+                             (println (get-in ctx [:parameters :body]))
+                             (assoc (:response ctx) :status 401)))}}})]
     ;["/add" (yada/resource
     ;          {:methods
     ;           {:post

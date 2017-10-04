@@ -22,7 +22,7 @@
 (rf/reg-event-fx
   :workplaces/request-list-success
   (fn [{db :db} [_ response]]
-    {:db (assoc db :workplaces/list response)
+    {:db       (assoc db :workplaces/list response)
      :dispatch [:process/clear]}))
 
 
@@ -33,24 +33,20 @@
                                :desc  response}]
                   [:process/clear]]}))
 
-
+(rf/subscribe [:workplaces/workplace-form])
 (rf/reg-event-fx
-  :workplaces/request-update
+  :workplaces/request-add
   (fn [{db :db} _]
-    (let [workplaces-id (:workplaces/object-id db)
-          workplaces {:email-address (:workplaces/email-address db)
-                :phone-number  (:workplaces/phone-number db)
-                :first-name    (:workplaces/first-name db)
-                :last-name     (:workplaces/last-name db)
-                :token         (:workplaces/token db)}]
-      {:http-xhrio {:method          :put
-                    :uri             (path "/api/1.0/workplacess/" workplaces-id "update")
-                    :params          workplaces
-                    :format          (ajax/url-request-format)
+    (let [workplace (:workplaces/workplace-form db)]
+      (println workplace)
+      {:http-xhrio {:method          :post
+                    :uri             (path "/api/1.0/workplaces")
+                    :params          {:sex "a"}
+                    :format          (ajax/json-request-format)
                     :response-format (ajax/json-response-format {:keywords? true})
                     :on-success      [:workplaces/request-update-success]
                     :on-failure      [:workplaces/request-update-failure]}})))
-
+(rf/dispatch [:workplaces/request-add])
 
 (rf/reg-event-fx
   :workplaces/request-update-success
@@ -64,3 +60,9 @@
   (fn [{db :db} [_ response]]
     {:dispatch [:error/set {:event :workplaces/request-update
                             :desc  response}]}))
+
+
+(rf/reg-event-db
+  :workplaces/set-workplace-form
+  (fn [db [_ workplace]]
+    (assoc db :workplaces/workplace-form workplace)))

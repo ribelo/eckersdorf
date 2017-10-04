@@ -27,11 +27,11 @@ return cljs.core.merge.call(null,db,storage);
 return db;
 }
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","merge-db","db/merge-db",-2107570316),(function (db,p__59788){
-var vec__59789 = p__59788;
-var _ = cljs.core.nth.call(null,vec__59789,(0),null);
-var state = cljs.core.nth.call(null,vec__59789,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","merge-db","db/merge-db",-2107570316),(function (db,p__62402){
+var vec__62403 = p__62402;
+var _ = cljs.core.nth.call(null,vec__62403,(0),null);
+var state = cljs.core.nth.call(null,vec__62403,(1),null);
 return cljs.core.merge.call(null,db,state);
 }));
 
-//# sourceMappingURL=events.js.map?rel=1507060443351
+//# sourceMappingURL=events.js.map?rel=1507153621491

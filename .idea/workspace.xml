@@ -2,378 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15e23457-2cef-4f86-8996-e706ca63f8e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/css/eckersdorf.css" />
+      <change type="DELETED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/timetable.sync-conflict-20170930-104439-PLXMWLI.clj" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/users.sync-conflict-20170930-104429-PLXMWLI.clj" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.sync-conflict-20170930-104440-PLXMWLI.clj" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.sync-conflict-20170930-104440-PLXMWLI.cljc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eckersdorf.iml" afterPath="$PROJECT_DIR$/eckersdorf.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figwheel_server.log" afterPath="$PROJECT_DIR$/figwheel_server.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/.idea/workspace.xml" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/eckersdorf.iml" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/eckersdorf.iml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/figwheel_server.log" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/figwheel_server.log" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/project.clj" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/project.clj" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/.figwheel-compile-stamp" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/.figwheel-compile-stamp" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/easy.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/easy.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/easy.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/easy.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/easy.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/easy.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/formats.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/formats.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/formats.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/formats.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/formats.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/formats.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/interceptors.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/interceptors.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/interceptors.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/interceptors.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/interceptors.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/interceptors.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/json.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/json.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/json.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/json.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/protocols.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/protocols.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/protocols.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/protocols.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/protocols.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/protocols.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/ring.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/ring.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/ring.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/ring.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/simple.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/simple.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/simple.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/simple.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/simple.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/simple.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/transit.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/transit.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/transit.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/transit.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/transit.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/transit.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/url.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/url.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/url.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/url.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/url.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/url.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/util.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/util.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/util.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/util.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xhrio.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xhrio.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xhrio.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xhrio.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xml_http_request.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xml_http_request.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xml_http_request.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/ajax/xml_http_request.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/reagent.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/reagent.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/reagent.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/reagent.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/reagent.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/antizer/reagent.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/ease.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/ease.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/ease.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/ease.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/interpolate.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/interpolate.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/interpolate.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/interpolate.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/transition.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/transition.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/transition.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bardo/transition.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/bidi.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/bidi.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/bidi.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/bidi.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/bidi.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/bidi.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/router.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/router.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/router.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/router.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/router.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/bidi/router.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/buffers.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/buffers.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/buffers.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/buffers.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/channels.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/channels.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/channels.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/channels.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/channels.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/channels.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/dispatch.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/dispatch.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/dispatch.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/dispatch.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/ioc_helpers.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/ioc_helpers.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/ioc_helpers.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/ioc_helpers.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/ioc_helpers.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/ioc_helpers.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/protocols.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/protocols.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/protocols.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/protocols.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/timers.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/timers.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/timers.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/async/impl/timers.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/match.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/match.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/match.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/core/match.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/pprint.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/pprint.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/pprint.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/pprint.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/pprint.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/pprint.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/reader.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/reader.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/reader.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/reader.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/repl.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/repl.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/repl.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/repl.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/repl.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/repl.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/alpha.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/alpha.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/alpha.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/alpha.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/alpha.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/alpha.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/gen/alpha.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/gen/alpha.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/gen/alpha.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/spec/gen/alpha.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/stacktrace.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/stacktrace.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/stacktrace.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/stacktrace.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/stacktrace.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/stacktrace.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/test.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/test.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/test.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/test.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/edn.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/edn.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/edn.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/edn.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/commons.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/commons.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/commons.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/commons.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/utils.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/utils.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/utils.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/utils.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/utils.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/impl/utils.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/reader_types.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/reader_types.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/reader_types.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs/tools/reader/reader_types.js.map" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_deps.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_deps.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/coerce.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/coerce.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/coerce.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/coerce.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/core.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/core.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/format.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/format.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/format.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/format.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/format.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/format.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/core.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/core.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/parse.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/parse.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/parse.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/parse.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/parse.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/parse.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/unparse.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/unparse.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/unparse.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/unparse.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/unparse.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cljs_time/internal/unparse.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/data.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/data.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/data.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/data.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/set.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/set.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/set.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/set.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/string.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/string.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/string.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/string.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/walk.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/walk.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/walk.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/clojure/walk.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cognitect/transit.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cognitect/transit.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cognitect/transit.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cognitect/transit.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cognitect/transit.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cognitect/transit.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/regexp.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/regexp.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/regexp.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/cuerdas/regexp.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/day8/re_frame/http_fx.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/day8/re_frame/http_fx.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/day8/re_frame/http_fx.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/day8/re_frame/http_fx.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/day8/re_frame/http_fx.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/day8/re_frame/http_fx.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/async.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/async.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/async.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/async.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/context.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/context.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/context.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/context.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/defaults.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/defaults.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/defaults.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/defaults.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/format.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/format.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/format.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/format.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/budgeting.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/budgeting.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/budgeting.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/budgeting.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/helpers.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/helpers.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/helpers.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/helpers.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/markup.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/markup.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/markup.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/markup.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/printing.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/printing.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/printing.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/printing.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/state.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/state.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/state.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/state.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/templating.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/templating.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/templating.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/formatters/templating.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/hints.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/hints.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/hints.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/hints.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/munging.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/munging.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/munging.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/munging.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/munging.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/munging.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/prefs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/prefs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/prefs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/prefs.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/preload.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/preload.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/preload.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/preload.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/protocols.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/protocols.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/protocols.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/protocols.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/reporter.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/reporter.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/reporter.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/reporter.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/toolbox.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/toolbox.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/toolbox.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/toolbox.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/toolbox.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/toolbox.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/util.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/util.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/util.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/util.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/version.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/version.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/version.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/devtools/version.js.map" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/app.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/app.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/app.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/app.js.map" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/core.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/csv/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/csv/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/csv/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/csv/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.cljs.cache.json" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/events.js.map" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.cljc" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.cljc" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.cljc.cache.json" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/db/specs.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/db.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/db.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/subs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/error/subs.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/flex.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/flex.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/flex.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/flex.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/flex.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/flex.js.map" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/init.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/init.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/init.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/init.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/db.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/db.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/subs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/process/subs.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/repl.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/repl.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/repl.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/repl.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/routes/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/db.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/db.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/subs.js.map" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/ui.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/ui.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/ui.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/login/ui.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/subs.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/ui.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/ui.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/ui.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/user/ui.js.map" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.cljs.cache.json" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/util.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/db.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/db.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/subs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/subs.js.map" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.cljs.cache.json" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/view/ui.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/db.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/db.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/subs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/window/subs.js.map" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.cljs.cache.json" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/db.js.map" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.cljs.cache.json" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/events.js.map" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.cljs.cache.json" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/eckersdorf/workplaces/subs.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/file_reloading.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/file_reloading.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/file_reloading.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/file_reloading.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/file_reloading.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/file_reloading.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/heads_up.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/heads_up.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/heads_up.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/heads_up.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/heads_up.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/heads_up.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/socket.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/socket.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/socket.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/socket.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/socket.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/socket.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/utils.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/utils.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/utils.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/utils.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/utils.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/figwheel/client/utils.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/process/env.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/process/env.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/process/env.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/process/env.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/pushy/core.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/pushy/core.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/pushy/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/pushy/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/pushy/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/pushy/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/cofx.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/cofx.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/cofx.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/cofx.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/db.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/db.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/db.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/db.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/events.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/events.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/events.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/events.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/fx.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/fx.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/fx.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/fx.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interceptor.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interceptor.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interceptor.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interceptor.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interop.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interop.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interop.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/interop.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/loggers.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/loggers.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/loggers.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/loggers.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/registrar.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/registrar.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/registrar.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/registrar.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/router.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/router.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/router.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/router.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/std_interceptors.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/std_interceptors.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/std_interceptors.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/std_interceptors.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/subs.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/subs.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/subs.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/subs.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/trace.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/trace.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/trace.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/trace.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/trace.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/trace.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/utils.cljc.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/utils.cljc.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/utils.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/utils.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/utils.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/re_frame/utils.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/debug.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/debug.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/debug.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/debug.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/dom.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/dom.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/dom.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/dom.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/batching.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/batching.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/batching.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/batching.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/component.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/component.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/component.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/component.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/template.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/template.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/template.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/template.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/util.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/util.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/util.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/impl/util.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/interop.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/interop.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/interop.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/interop.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/ratom.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/ratom.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/ratom.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/reagent/ratom.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/encore.cljs.cache.json" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/encore.cljs.cache.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/encore.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/encore.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/encore.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/encore.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre/appenders/core.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre/appenders/core.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre/appenders/core.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/timbre/appenders/core.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss/impl.js" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss/impl.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss/impl.js.map" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/js/out/taoensso/truss/impl.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/layout.clj" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/layout.clj" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/core.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/core.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/db.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/db.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/events.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/db.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/db.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/events.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/subs.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/subs.cljs" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/subs.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/subs.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workplaces.clj" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workplaces.clj" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/db.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/db.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/events.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/events.cljs" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/subs.cljs" afterPath="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/subs.cljs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -397,7 +74,17 @@
         <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="56" column="8" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+              <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/events.cljs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -406,88 +93,58 @@
       <file leaf-file-name="ui.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="300">
+              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eckersdorf.css" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/css/eckersdorf.css">
+      <file leaf-file-name="workplaces.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workplaces.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="368">
+              <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/layout.clj">
+      <file leaf-file-name="workplaces.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workplaces.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="specs.cljc" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
-              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subs.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/subs.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/db.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subs.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/subs.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/ui.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reagent.cljs" pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/antizer/antizer/0.2.2/antizer-0.2.2.jar!/antizer/reagent.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/core.cljs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -507,8 +164,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>[cljs.spec :as s]</find>
-      <find>:login/set-email-address</find>
       <find>:login/set-password</find>
       <find>:login/set-invalid-password</find>
       <find>schnapside</find>
@@ -537,6 +192,8 @@
       <find>ant/input</find>
       <find>setfields</find>
       <find>collap</find>
+      <find>:workplaces/set-workplace-form</find>
+      <find>transit</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -562,10 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/clj/eckersdorf/db/users.clj" />
-        <option value="$PROJECT_DIR$/src/clj/eckersdorf/db/core.clj" />
-        <option value="$PROJECT_DIR$/src/clj/eckersdorf/server.clj" />
-        <option value="$PROJECT_DIR$/src/clj/eckersdorf/nrepl.clj" />
         <option value="$PROJECT_DIR$/src/clj/eckersdorf/db/timetable.clj" />
         <option value="$PROJECT_DIR$/src/cljc/eckersdorf/db/specs.cljc" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/resources/config.edn" />
@@ -599,7 +252,6 @@
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.sync-conflict-20170930-104902-H2N7QH2.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/project.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/db.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/db.cljs" />
@@ -611,8 +263,13 @@
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/db/events.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/layout.clj" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/css/eckersdorf.css" />
-        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" />
         <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/ui.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/db.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/subs.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workplaces.clj" />
+        <option value="$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/events.cljs" />
       </list>
     </option>
   </component>
@@ -794,6 +451,44 @@
               <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
               <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clj" type="462c0819:PsiDirectoryNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clj" type="462c0819:PsiDirectoryNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clj" type="462c0819:PsiDirectoryNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cljc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cljc" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eckersdorf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eckersdorf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cljs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -881,7 +576,7 @@
       <recent name="$USER_HOME$/data/code/Clojure/eckersdorf" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1507067250569">{:repl-history {:ide [], :local [{:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [eckersdorf.db.timetable :as timetable]\n            [eckersdorf.db.workers :as db.workers]\n            [eckersdorf.db.workplaces :as db.workplaces]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 1011, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timbre/merge-config! {:level :info})&quot;, :offset 37, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def repl-system nil)&quot;, :offset 21, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def tmp-db nil)&quot;, :offset 16, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn init-system []\n  (alter-var-root #'repl-system (constantly (system/new-system))))&quot;, :offset 87, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn start-system []\n  (alter-var-root #'repl-system component/start-system)\n  (alter-var-root #'tmp-db (fn [_] (:db (:mongo repl-system)))))&quot;, :offset 142, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn stop-system []\n  (alter-var-root #'repl-system\n                  (fn [s] (when s (component/stop-system s)))))&quot;, :offset 116, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn go-system []\n  (init-system)\n  (start-system))&quot;, :offset 52, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn reset-system []\n  (stop-system)\n  (init-system)\n  (start-system))&quot;, :offset 71, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(go-system)&quot;, :offset 11, :ns &quot;eckersdorf.repl&quot;}], :remote [{:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr]))&quot;, :offset 813, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 851, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timbre/merge-config! {:level :info})&quot;, :offset 37, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def repl-system nil)&quot;, :offset 21, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def tmp-db nil)&quot;, :offset 16, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn init-system []\n  (alter-var-root #'repl-system (constantly (system/new-system))))&quot;, :offset 87, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn start-system []\n  (alter-var-root #'repl-system component/start-system)\n  (alter-var-root #'tmp-db (fn [_] (:db (:mongo repl-system)))))&quot;, :offset 142, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn stop-system []\n  (alter-var-root #'repl-system\n                  (fn [s] (when s (component/stop-system s)))))&quot;, :offset 116, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn go-system []\n  (init-system)\n  (start-system))&quot;, :offset 52, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn reset-system []\n  (stop-system)\n  (init-system)\n  (start-system))&quot;, :offset 71, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(go-system)&quot;, :offset 11, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(stop-system)&quot;, :offset 13, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(reset-system)&quot;, :offset 14, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.util\n  (:require [reagent.core :as r]\n            [cuerdas.core :as str]\n            [eckersdorf.flex :as flex]\n            [react-swipeable-views :as swipeable]))&quot;, :offset 178, :ns &quot;eckersdorf.util&quot;} {:command &quot;(ns eckersdorf.workplaces.subs\n  (:require [re-frame.core :as rf]))&quot;, :offset 67, :ns &quot;eckersdorf.workplaces.subs&quot;} {:command &quot;(ns eckersdorf.figwheel\n  (:require [figwheel-sidecar.repl-api :refer :all]))&quot;, :offset 77, :ns &quot;eckersdorf.figwheel&quot;} {:command &quot;(cljs-repl)&quot;, :offset 11, :ns &quot;eckersdorf.figwheel&quot;} {:command &quot;(ns eckersdorf.view.ui\n  (:require [reagent.core :as r]\n            [reagent.ratom :refer-macros [reaction]]\n            [re-frame.core :as rf]\n            [cljsjs.material-ui]\n            [cljs-react-material-ui.core :refer [get-mui-theme color]]\n            [cljs-react-material-ui.reagent :as ui]\n            [cljs-react-material-ui.icons :as ic]\n            [antizer.reagent :as ant]\n            [goog.string :as string]\n            [cuerdas.core :as str]\n            [eckersdorf.routes.core :as router]\n            [eckersdorf.flex :as flex]\n            [eckersdorf.user.login.ui :as login.ui]))&quot;, :offset 600, :ns &quot;eckersdorf.view.ui&quot;} {:command &quot;(def eckersdorf-theme\n  (get-mui-theme {:palette\n                  {:primary1Color (color :green500)\n                   :primary2Color (color :green100)\n                   :accent1Color  (color :cyan500)}}))&quot;, :offset 207, :ns &quot;eckersdorf.view.ui&quot;}]}}</component>
+  <component name="ReplState" timestamp="1507157878377">{:repl-history {:ide [], :local [{:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [eckersdorf.db.timetable :as timetable]\n            [eckersdorf.db.workers :as db.workers]\n            [eckersdorf.db.workplaces :as db.workplaces]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 1011, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timbre/merge-config! {:level :info})&quot;, :offset 37, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def repl-system nil)&quot;, :offset 21, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def tmp-db nil)&quot;, :offset 16, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn init-system []\n  (alter-var-root #'repl-system (constantly (system/new-system))))&quot;, :offset 87, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn start-system []\n  (alter-var-root #'repl-system component/start-system)\n  (alter-var-root #'tmp-db (fn [_] (:db (:mongo repl-system)))))&quot;, :offset 142, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn stop-system []\n  (alter-var-root #'repl-system\n                  (fn [s] (when s (component/stop-system s)))))&quot;, :offset 116, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn go-system []\n  (init-system)\n  (start-system))&quot;, :offset 52, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn reset-system []\n  (stop-system)\n  (init-system)\n  (start-system))&quot;, :offset 71, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(go-system)&quot;, :offset 11, :ns &quot;eckersdorf.repl&quot;}], :remote [{:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr]))&quot;, :offset 813, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.repl\n  (:require [clojure.spec.alpha :as s]\n            [clojure.java.io :as io]\n            [com.stuartsierra.component :as component]\n            [aero.core :as aero]\n            [taoensso.encore :as encore]\n            [taoensso.timbre :as timbre]\n            [monger.collection :as mc]\n            [eckersdorf.server :as server]\n            [eckersdorf.db.core :as db]\n            [eckersdorf.routes.core :as routes]\n            [eckersdorf.system :as system]\n            [eckersdorf.db.users :as users]\n            [cuerdas.core :as str]\n            [clojure.spec.alpha :as s]\n            [buddy.sign.jwt :as jwt]\n            [buddy.hashers :as hashers]\n            [clj-time.core :as t]\n            [progrock.core :as pr]\n            [clojure.zip :as zip]\n            [progrock.core :as pr])\n  (:import (org.bson.types ObjectId)))&quot;, :offset 851, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(timbre/merge-config! {:level :info})&quot;, :offset 37, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def repl-system nil)&quot;, :offset 21, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(def tmp-db nil)&quot;, :offset 16, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn init-system []\n  (alter-var-root #'repl-system (constantly (system/new-system))))&quot;, :offset 87, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn start-system []\n  (alter-var-root #'repl-system component/start-system)\n  (alter-var-root #'tmp-db (fn [_] (:db (:mongo repl-system)))))&quot;, :offset 142, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn stop-system []\n  (alter-var-root #'repl-system\n                  (fn [s] (when s (component/stop-system s)))))&quot;, :offset 116, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn go-system []\n  (init-system)\n  (start-system))&quot;, :offset 52, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(defn reset-system []\n  (stop-system)\n  (init-system)\n  (start-system))&quot;, :offset 71, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(go-system)&quot;, :offset 11, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(stop-system)&quot;, :offset 13, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(reset-system)&quot;, :offset 14, :ns &quot;eckersdorf.repl&quot;} {:command &quot;(ns eckersdorf.util\n  (:require [reagent.core :as r]\n            [cuerdas.core :as str]\n            [eckersdorf.flex :as flex]\n            [react-swipeable-views :as swipeable]))&quot;, :offset 178, :ns &quot;eckersdorf.util&quot;} {:command &quot;(ns eckersdorf.workplaces.subs\n  (:require [re-frame.core :as rf]))&quot;, :offset 67, :ns &quot;eckersdorf.workplaces.subs&quot;} {:command &quot;(ns eckersdorf.figwheel\n  (:require [figwheel-sidecar.repl-api :refer :all]))&quot;, :offset 77, :ns &quot;eckersdorf.figwheel&quot;} {:command &quot;(cljs-repl)&quot;, :offset 11, :ns &quot;eckersdorf.figwheel&quot;} {:command &quot;(ns eckersdorf.view.ui\n  (:require [reagent.core :as r]\n            [reagent.ratom :refer-macros [reaction]]\n            [re-frame.core :as rf]\n            [cljsjs.material-ui]\n            [cljs-react-material-ui.core :refer [get-mui-theme color]]\n            [cljs-react-material-ui.reagent :as ui]\n            [cljs-react-material-ui.icons :as ic]\n            [antizer.reagent :as ant]\n            [goog.string :as string]\n            [cuerdas.core :as str]\n            [eckersdorf.routes.core :as router]\n            [eckersdorf.flex :as flex]\n            [eckersdorf.user.login.ui :as login.ui]))&quot;, :offset 600, :ns &quot;eckersdorf.view.ui&quot;} {:command &quot;(def eckersdorf-theme\n  (get-mui-theme {:palette\n                  {:primary1Color (color :green500)\n                   :primary2Color (color :green100)\n                   :accent1Color  (color :cyan500)}}))&quot;, :offset 207, :ns &quot;eckersdorf.view.ui&quot;}]}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -1218,12 +913,12 @@
       <workItem from="1506966497499" duration="1257000" />
       <workItem from="1506968942190" duration="3609000" />
       <workItem from="1506985260435" duration="8075000" />
-      <workItem from="1507051600917" duration="13043000" />
+      <workItem from="1507051600917" duration="24137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51027000" />
+    <option name="totallyTimeSpent" value="62121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="45" width="1230" height="995" extended-state="0" />
@@ -1274,40 +969,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/events.cljs" />
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc" />
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/core.clj" />
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services.clj" />
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/login/ui.cljs" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cljs/eckersdorf/util.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="25" column="89" lean-forward="false" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/eckersdorf/db/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/dev/clj/eckersdorf/figwheel.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1387,13 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cljs/eckersdorf/user/login/db.cljs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1429,14 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1497,22 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/subs.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/events.cljs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -1537,6 +1167,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/antizer/antizer/0.2.2/antizer-0.2.2.jar!/antizer/antd.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/antizer/antizer/0.2.2/antizer-0.2.2.jar!/antizer/macros.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="63" column="50" lean-forward="true" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/antizer/antizer/0.2.2/antizer-0.2.2.jar!/antizer/reagent.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/ui.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="31" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/db.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/subs.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/subs.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/layout.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/resources/public/css/eckersdorf.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1545,58 +1239,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/db.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="56" column="8" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        <state relative-caret-position="138">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/flex.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="286" column="36" lean-forward="false" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljc/eckersdorf/db/specs.cljc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/events.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cljs-ajax/cljs-ajax/0.7.2/cljs-ajax-0.7.2.jar!/ajax/core.cljc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/util.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/ui.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/ui.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+        <state relative-caret-position="300">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/subs.cljs">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/env/dev/clj/eckersdorf/repl.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        <state relative-caret-position="396">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/view/db.cljs">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/db/workplaces.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="368">
+          <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/layout.clj">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/workplaces/events.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state relative-caret-position="615">
+          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/cljs/eckersdorf/user/login/ui.cljs">
+    <entry file="file://$USER_HOME$/data/code/Clojure/eckersdorf/src/clj/eckersdorf/routes/services/workplaces.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/antizer/antizer/0.2.2/antizer-0.2.2.jar!/antizer/reagent.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="345">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding />
         </state>
       </provider>
