@@ -11,25 +11,24 @@
             [eckersdorf.util :as util]))
 
 
-
-(defn sider []
-  (let []
-    (fn []
-      )))
-
 ;(clj->js @(rf/subscribe [:workplaces/list]))
 (rf/dispatch [:workplaces/request-list])
-
+(str/split "a@" "@")
 
 (defn workplace-dialog [modify?]
   (let [show-dialog? (rf/subscribe [:workplaces/show-dialog?])
-        workplace (r/atom @(rf/subscribe [:workplaces/workplace-form]))]
+        workplace (r/atom @(rf/subscribe [:workplaces/workplace-form]))
+        email-addon (reaction (str "@" (or (second (str/split (:workplace/email-address @workplace) "@"))
+                                           "teas.com.pl")))]
     (fn []
-      [ant/modal {:visible     true
+      [ant/modal {:visible     @show-dialog?
                   :title       (if modify? "edytuj sklep" "dodaj sklep")
                   :cancel-text "anuluj"
+                  :on-cancel   #(rf/dispatch [:workplaces/toggle-dialog])
                   :ok-text     "dodaj"
-                  :on-ok       #(rf/dispatch [:workplaces/set-workplace-form @workplace])}
+                  :on-ok       (fn []
+                                 (rf/dispatch [:workplaces/set-workplace-form @workplace])
+                                 (rf/dispatch [:workplaces/request-create]))}
        [flex/vbox
         [ant/form {:layout :horizontal}
          [ant/form-item
@@ -43,17 +42,22 @@
                                           (let [val (-> e .-target .-value)]
                                             (swap! workplace assoc :workplace/name val)))}]]]
            [flex/gap {:size "12px"}]
-           [ant/form-item
-            [ant/input {:placeholder   "e-mail"
-                        :default-value (:workplace/email @workplace)
-                        :on-change     (fn [e]
-                                         (let [val (-> e .-target .-value)]
-                                           (swap! workplace assoc :workplace/email val)))}]]
+           [flex/box {:size  2
+                      :style {:display :block}}
+            [ant/form-item
+             [ant/input {:placeholder   "e-mail"
+                         :default-value (:workplace/email-address @workplace)
+                         :addon-after   @email-addon
+                         :on-change     (fn [e]
+                                          (println (str val @email-addon))
+                                          (let [val (-> e .-target .-value)]
+                                            (swap! workplace assoc :workplace/email-address
+                                                   (str val @email-addon))))}]]]
            [flex/gap {:size "12px"}]
            [flex/box {:size  1
                       :style {:display :block}}
             [ant/form-item
-             [ant/select {:default-value (:workplace/type @workplace)
+             [ant/select {:default-value (or (:workplace/type @workplace) "dc")
                           :on-change     (fn [val]
                                            (swap! workplace assoc :workplace/type val))}
               [ant/select-option {:value "dc"} "delikatesy"]
@@ -85,12 +89,12 @@
            [flex/box {:size  1
                       :style {:display :block}}
             [ant/form-item
-             [ant/input {:placeholder   "numer budynku"
-                         :default-value (get-in @workplace [:workplace/address :address/home-number])
+             [ant/input {:placeholder   "budynku"
+                         :default-value (get-in @workplace [:workplace/address :address/house-number])
                          :on-change     (fn [e]
                                           (let [val (-> e .-target .-value)]
                                             (swap! workplace assoc-in
-                                                   [:workplace/address :address/home-number]
+                                                   [:workplace/address :address/house-number]
                                                    val)))}]]]]]
          [ant/form-item
           [flex/hbox
@@ -168,12 +172,13 @@
      [workplace-dialog]
      [workplaces-list]
      [flex/hbox {:justify-content :center}
-      [ant/button {:type :primary}
+      [ant/button {:type     :primary
+                   :on-click #(rf/dispatch [:workplaces/create-workplace-dialog])}
        "dodaj"]]]))
 
 
 (defn page []
-  (let [logged? (or (atom true) (rf/subscribe [:user/logged-in?]))
+  (let [logged? (rf/subscribe [:user/logged-in?])
         sider-collapsed? (rf/subscribe [:view/sider-collapsed?])
         personal-data (rf/subscribe [:user/personal-data])]
     (fn []

@@ -15,7 +15,7 @@
 
 (rf/reg-event-db
   :db/initialize-db
-  (fn [_ _]
+  (fn [_ [_ load-storage?]]
     (let [db (merge db/default-db
                     window-state
                     view-state
@@ -23,13 +23,17 @@
                     login-state
                     user-state
                     process-state
-                    workplaces-state
-                    )]
-      (let [storage (db/load-local-storage)
-            last-login (:user/last-login storage)]
-        (if (and last-login (t/before? (t/now) (t/plus last-login (t/months 1))))
-          (merge db storage)
-          db)))))
+                    workplaces-state)]
+      db)))
+
+(rf/reg-event-db
+  :db/load-storage
+  (fn [db [_ force?]]
+    (let [storage (db/load-local-storage)
+          last-login (:user/last-login storage)]
+      (if (or force? (and last-login (t/before? (t/now) (t/plus last-login (t/months 1)))))
+        (merge db storage)
+        db))))
 
 
 (rf/reg-event-db

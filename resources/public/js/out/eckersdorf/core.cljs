@@ -22,8 +22,9 @@
 
 
 (defn init! []
-  (routes/init)
+  ;(routes/init)
   (rf/dispatch-sync [:db/initialize-db])
+  (rf/dispatch-sync [:db/load-storage])
   (rf/dispatch [:window/run-resize-listener!])
   (rf/dispatch [:window/update-size])
   (mount-components))

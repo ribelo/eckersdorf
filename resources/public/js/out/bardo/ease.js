@@ -29,8 +29,8 @@ return f.call(null,(((t < (0)))?(0):(((t > (1)))?(1):t
  * shifts the domain of input from [cmin cmax] to [nmin nmax]
  */
 bardo.ease.shift = (function bardo$ease$shift(var_args){
-var G__48129 = arguments.length;
-switch (G__48129) {
+var G__43939 = arguments.length;
+switch (G__43939) {
 case 3:
 return bardo.ease.shift.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -78,10 +78,10 @@ if(cljs.core._EQ_.call(null,cljs.core.count.call(null,input),cljs.core.count.cal
 throw (new Error(["Assert failed: ","ranges must be the same length","\n","(= (count input) (count output))"].join('')));
 }
 
-var vec__48131 = cljs.core.mapv.call(null,cljs.core.comp.call(null,cljs.core.vec,cljs.core.partial.call(null,cljs.core.map_indexed,cljs.core.vector),bardo.ease.partition_range),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [input,output], null));
-var input__$1 = cljs.core.nth.call(null,vec__48131,(0),null);
-var output__$1 = cljs.core.nth.call(null,vec__48131,(1),null);
-return ((function (vec__48131,input__$1,output__$1){
+var vec__43941 = cljs.core.mapv.call(null,cljs.core.comp.call(null,cljs.core.vec,cljs.core.partial.call(null,cljs.core.map_indexed,cljs.core.vector),bardo.ease.partition_range),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [input,output], null));
+var input__$1 = cljs.core.nth.call(null,vec__43941,(0),null);
+var output__$1 = cljs.core.nth.call(null,vec__43941,(1),null);
+return ((function (vec__43941,input__$1,output__$1){
 return (function (t){
 if(cljs.core._EQ_.call(null,t,(0))){
 return f.call(null,(0));
@@ -89,29 +89,29 @@ return f.call(null,(0));
 if(cljs.core._EQ_.call(null,t,(1))){
 return f.call(null,(1));
 } else {
-var vec__48134 = cljs.core.first.call(null,cljs.core.filter.call(null,cljs.core.comp.call(null,((function (vec__48131,input__$1,output__$1){
-return (function (p__48146){
-var vec__48147 = p__48146;
-var start = cljs.core.nth.call(null,vec__48147,(0),null);
-var end = cljs.core.nth.call(null,vec__48147,(1),null);
+var vec__43944 = cljs.core.first.call(null,cljs.core.filter.call(null,cljs.core.comp.call(null,((function (vec__43941,input__$1,output__$1){
+return (function (p__43956){
+var vec__43957 = p__43956;
+var start = cljs.core.nth.call(null,vec__43957,(0),null);
+var end = cljs.core.nth.call(null,vec__43957,(1),null);
 return ((start <= t)) && ((t <= end));
-});})(vec__48131,input__$1,output__$1))
+});})(vec__43941,input__$1,output__$1))
 ,cljs.core.second),input__$1));
-var idx = cljs.core.nth.call(null,vec__48134,(0),null);
-var vec__48137 = cljs.core.nth.call(null,vec__48134,(1),null);
-var istart = cljs.core.nth.call(null,vec__48137,(0),null);
-var iend = cljs.core.nth.call(null,vec__48137,(1),null);
-var vec__48140 = cljs.core.get.call(null,output__$1,(idx | (0)));
-var _ = cljs.core.nth.call(null,vec__48140,(0),null);
-var vec__48143 = cljs.core.nth.call(null,vec__48140,(1),null);
-var estart = cljs.core.nth.call(null,vec__48143,(0),null);
-var eend = cljs.core.nth.call(null,vec__48143,(1),null);
+var idx = cljs.core.nth.call(null,vec__43944,(0),null);
+var vec__43947 = cljs.core.nth.call(null,vec__43944,(1),null);
+var istart = cljs.core.nth.call(null,vec__43947,(0),null);
+var iend = cljs.core.nth.call(null,vec__43947,(1),null);
+var vec__43950 = cljs.core.get.call(null,output__$1,(idx | (0)));
+var _ = cljs.core.nth.call(null,vec__43950,(0),null);
+var vec__43953 = cljs.core.nth.call(null,vec__43950,(1),null);
+var estart = cljs.core.nth.call(null,vec__43953,(0),null);
+var eend = cljs.core.nth.call(null,vec__43953,(1),null);
 return bardo.ease.shift.call(null,f,istart,iend,estart,eend).call(null,t);
 
 }
 }
 });
-;})(vec__48131,input__$1,output__$1))
+;})(vec__43941,input__$1,output__$1))
 });
 /**
  * reverse
@@ -211,40 +211,40 @@ bardo.ease.ease_fns = cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyw
  *   ex. :bounce-in-out will return a symetrical bounce easing curve
  */
 bardo.ease.ease = (function bardo$ease$ease(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___48155 = arguments.length;
-var i__31527__auto___48156 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___43965 = arguments.length;
+var i__31517__auto___43966 = (0);
 while(true){
-if((i__31527__auto___48156 < len__31526__auto___48155)){
-args__31533__auto__.push((arguments[i__31527__auto___48156]));
+if((i__31517__auto___43966 < len__31516__auto___43965)){
+args__31523__auto__.push((arguments[i__31517__auto___43966]));
 
-var G__48157 = (i__31527__auto___48156 + (1));
-i__31527__auto___48156 = G__48157;
+var G__43967 = (i__31517__auto___43966 + (1));
+i__31517__auto___43966 = G__43967;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return bardo.ease.ease.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return bardo.ease.ease.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 bardo.ease.ease.cljs$core$IFn$_invoke$arity$variadic = (function (key,args){
-var vec__48152 = clojure.string.split.call(null,cljs.core.name.call(null,key),/-/);
-var fn = cljs.core.nth.call(null,vec__48152,(0),null);
-var start = cljs.core.nth.call(null,vec__48152,(1),null);
-var end = cljs.core.nth.call(null,vec__48152,(2),null);
-var ease_fn = (function (){var or__30249__auto__ = cljs.core.get.call(null,bardo.ease.ease_fns,cljs.core.keyword.call(null,fn));
-if(cljs.core.truth_(or__30249__auto__)){
-return or__30249__auto__;
+var vec__43962 = clojure.string.split.call(null,cljs.core.name.call(null,key),/-/);
+var fn = cljs.core.nth.call(null,vec__43962,(0),null);
+var start = cljs.core.nth.call(null,vec__43962,(1),null);
+var end = cljs.core.nth.call(null,vec__43962,(2),null);
+var ease_fn = (function (){var or__30239__auto__ = cljs.core.get.call(null,bardo.ease.ease_fns,cljs.core.keyword.call(null,fn));
+if(cljs.core.truth_(or__30239__auto__)){
+return or__30239__auto__;
 } else {
 return new cljs.core.Keyword(null,"linear","linear",872268697).cljs$core$IFn$_invoke$arity$1(bardo.ease.ease_fns);
 }
 })();
-var mode = (function (){var or__30249__auto__ = cljs.core.get.call(null,bardo.ease.modes,cljs.core.keyword.call(null,clojure.string.join.call(null,"-",cljs.core.filter.call(null,cljs.core.identity,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [start,end], null)))));
-if(cljs.core.truth_(or__30249__auto__)){
-return or__30249__auto__;
+var mode = (function (){var or__30239__auto__ = cljs.core.get.call(null,bardo.ease.modes,cljs.core.keyword.call(null,clojure.string.join.call(null,"-",cljs.core.filter.call(null,cljs.core.identity,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [start,end], null)))));
+if(cljs.core.truth_(or__30239__auto__)){
+return or__30239__auto__;
 } else {
 return new cljs.core.Keyword(null,"in","in",-1531184865).cljs$core$IFn$_invoke$arity$1(bardo.ease.modes);
 }
@@ -254,11 +254,11 @@ return cljs.core.comp.call(null,bardo.ease.clamp,mode).call(null,cljs.core.apply
 
 bardo.ease.ease.cljs$lang$maxFixedArity = (1);
 
-bardo.ease.ease.cljs$lang$applyTo = (function (seq48150){
-var G__48151 = cljs.core.first.call(null,seq48150);
-var seq48150__$1 = cljs.core.next.call(null,seq48150);
-return bardo.ease.ease.cljs$core$IFn$_invoke$arity$variadic(G__48151,seq48150__$1);
+bardo.ease.ease.cljs$lang$applyTo = (function (seq43960){
+var G__43961 = cljs.core.first.call(null,seq43960);
+var seq43960__$1 = cljs.core.next.call(null,seq43960);
+return bardo.ease.ease.cljs$core$IFn$_invoke$arity$variadic(G__43961,seq43960__$1);
 });
 
 
-//# sourceMappingURL=ease.js.map?rel=1507056180790
+//# sourceMappingURL=ease.js.map?rel=1507757462518

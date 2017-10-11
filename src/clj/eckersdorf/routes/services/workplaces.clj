@@ -14,6 +14,12 @@
             [eckersdorf.db.workplaces :as db.workplaces]))
 
 
+(defn add-ns [m ns]
+  (reduce (fn [ret [k v]]
+            (assoc ret (keyword (name ns) (name k)) v))
+          {} m))
+
+
 (defn workplaces-routes [db]
   ["/workplaces"
    [
@@ -30,11 +36,19 @@
             :post
             {:produces   #{"application/json" "text/plain"}
              :consumes   #{"application/json" "application/x-www-form-urlencoded"}
-             :parameters {:body {:sex schema/Str}}
+             :parameters {:body {:name          schema/Str
+                                 :email-address schema/Str
+                                 :type          schema/Str
+                                 :address       {schema/Keyword schema/Str}}}
              :response   (fn [ctx]
-                           (let [address-name (get-in ctx [:parameters :body :short-name])]
-                             (println (get-in ctx [:parameters :body]))
-                             (assoc (:response ctx) :status 401)))}}})]
+                           (let [address (add-ns (get-in ctx [:parameters :body :address]) :address)
+                                 workplace (-> (get-in ctx [:parameters :body])
+                                               (add-ns :workplace)
+                                               (update :workplace/address add-ns :address))]
+                             (println (s/explain :workplace/workplace workplace))
+                             (if-let [response (db.workplaces/create-workplace db workplace)]
+                               {:data response}
+                               (assoc (:response ctx) :status 404))))}}})]
     ;["/add" (yada/resource
     ;          {:methods
     ;           {:post

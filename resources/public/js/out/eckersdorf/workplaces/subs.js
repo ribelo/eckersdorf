@@ -12,4 +12,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("workplaces","workplace-fo
 return new cljs.core.Keyword("workplaces","workplace-form","workplaces/workplace-form",2000080237).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1507153651807
+//# sourceMappingURL=subs.js.map?rel=1507757467445

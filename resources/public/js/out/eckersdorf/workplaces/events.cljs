@@ -33,20 +33,18 @@
                                :desc  response}]
                   [:process/clear]]}))
 
-(rf/subscribe [:workplaces/workplace-form])
 (rf/reg-event-fx
-  :workplaces/request-add
+  :workplaces/request-create
   (fn [{db :db} _]
     (let [workplace (:workplaces/workplace-form db)]
       (println workplace)
       {:http-xhrio {:method          :post
                     :uri             (path "/api/1.0/workplaces")
-                    :params          {:sex "a"}
+                    :params          workplace
                     :format          (ajax/json-request-format)
                     :response-format (ajax/json-response-format {:keywords? true})
                     :on-success      [:workplaces/request-update-success]
                     :on-failure      [:workplaces/request-update-failure]}})))
-(rf/dispatch [:workplaces/request-add])
 
 (rf/reg-event-fx
   :workplaces/request-update-success
@@ -66,3 +64,34 @@
   :workplaces/set-workplace-form
   (fn [db [_ workplace]]
     (assoc db :workplaces/workplace-form workplace)))
+
+
+(rf/reg-event-fx
+  :workplaces/create-workplace-dialog
+  (fn [_ _]
+    (let [empty-workplace {:workplace/name          nil
+                           :workplace/type          "dc"
+                           :workplace/email-address nil
+                           :workplace/address       {:address/street-name   nil
+                                                     :address/street-number nil
+                                                     :address/house-number  nil
+                                                     :address/zip-code      nil
+                                                     :address/city          nil}}]
+      {:dispatch-n [[:workplaces/set-workplace-form empty-workplace]
+                    [:workplaces/toggle-dialog]
+                    ]})))
+
+
+(rf/reg-event-fx
+  :workplaces/modify-workplace-dialog
+  (fn [_ [_ workplace]]
+    {:dispatch-n [[:workplaces/set-workplace-form workplace]
+                  [:workplaces/toggle-dialog]]}))
+
+
+(rf/reg-event-db
+  :workplaces/toggle-dialog
+  (fn [db _]
+    (update db :workplaces/show-dialog? not)))
+
+(rf/subscribe [:workplaces/workplace-form])

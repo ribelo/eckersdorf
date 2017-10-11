@@ -18,14 +18,14 @@
             (ant/decorate-field form "email"
               {:rules [{:required :true
                         :message  "wprowadź adres email"}]}
-              [ant/input {:on-change (fn [e] (rf/dispatch [:login/set-email-address! (-> e .-target .-value)]))}])]
+              [ant/input {:on-change (fn [e] (rf/dispatch [:login/set-email-address (-> e .-target .-value)]))}])]
            [ant/form-item {:label           "hasło"
                            :validate-status (when (true? @invalid-password?) :error)
                            :help            (when (true? @invalid-password?) "blędne hasło")}
             (ant/decorate-field form "blabla" {:rules [{:required :true
                                                         :message  "wprowadź hasło"}]}
               [ant/input {:type      :password
-                          :on-change (fn [e] (rf/dispatch [:login/set-password! (-> e .-target .-value)]))}])]
+                          :on-change (fn [e] (rf/dispatch [:login/set-password (-> e .-target .-value)]))}])]
            [flex/hbox {:justify-content :center}
             [ant/form-item
              [ant/button {:on-click #(rf/dispatch [:login/request-login])}

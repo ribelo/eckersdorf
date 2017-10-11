@@ -18,4 +18,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("login","error","login/err
 return new cljs.core.Keyword("login","error","login/error",-1153937795).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1507060103481
+//# sourceMappingURL=subs.js.map?rel=1507757460593

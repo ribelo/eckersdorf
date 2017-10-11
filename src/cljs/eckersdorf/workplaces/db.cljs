@@ -5,7 +5,7 @@
    :workplace/workplaces     nil
    :workplace/show-dialog    false
    :workplace/workplace-form {:workplace/name          nil
-                              :workplace/type          nil
+                              :workplace/type          "dc"
                               :workplace/email-address nil
                               :workplace/address       {:address/street-name   nil
                                                         :address/street-number nil
