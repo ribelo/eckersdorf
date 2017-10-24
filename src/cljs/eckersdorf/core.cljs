@@ -27,5 +27,7 @@
   (rf/dispatch-sync [:db/load-storage])
   (rf/dispatch [:window/run-resize-listener!])
   (rf/dispatch [:window/update-size])
+  (rf/dispatch [:workplaces/request-list])
+  (rf/dispatch [:workers/request-list])
   (mount-components))
 

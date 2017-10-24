@@ -6,7 +6,6 @@ goog.require('reagent.ratom');
 goog.require('re_frame.core');
 goog.require('cuerdas.core');
 goog.require('antizer.reagent');
-goog.require('eckersdorf.util');
 goog.require('eckersdorf.flex');
 eckersdorf.user.login.ui.login_form = (function eckersdorf$user$login$ui$login_form(){
 return antizer.reagent.create_form.call(null,(function (){var invalid_password_QMARK_ = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("login","invalid-password?","login/invalid-password?",-1029257272)], null));
@@ -48,4 +47,4 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 ;})(email_address,password,valid_email_QMARK_,invalid_password_QMARK_,show_password_QMARK_,disabled_login_button_QMARK_))
 });
 
-//# sourceMappingURL=ui.js.map?rel=1507759897792
+//# sourceMappingURL=ui.js.map?rel=1508178449017

@@ -5,20 +5,16 @@ goog.require('reagent.core');
 goog.require('cuerdas.core');
 goog.require('eckersdorf.flex');
 goog.require('antizer.reagent');
-eckersdorf.util.px = (function eckersdorf$util$px(num){
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.long$.call(null,num)),"px"].join('');
-});
-eckersdorf.util.valid_email_address_QMARK_ = (function eckersdorf$util$valid_email_address_QMARK_(text){
-return !((cljs.core.re_find.call(null,/(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)/,text) == null));
-});
-eckersdorf.util.valid_phone_number_QMARK_ = (function eckersdorf$util$valid_phone_number_QMARK_(text){
-return !((cljs.core.re_find.call(null,/^(?:[0+]48)?\d{9}$/,text) == null));
-});
-eckersdorf.util.valid_password = (function eckersdorf$util$valid_password(text){
-return cljs.core.re_find.call(null,/(?=^.{8,}$)^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/,text);
+eckersdorf.util.add_ns = (function eckersdorf$util$add_ns(m,ns){
+return cljs.core.reduce.call(null,(function (ret,p__42285){
+var vec__42286 = p__42285;
+var k = cljs.core.nth.call(null,vec__42286,(0),null);
+var v = cljs.core.nth.call(null,vec__42286,(1),null);
+return cljs.core.assoc.call(null,ret,cljs.core.keyword.call(null,cljs.core.name.call(null,ns),cljs.core.name.call(null,k)),v);
+}),cljs.core.PersistentArrayMap.EMPTY,m);
 });
 eckersdorf.util.ant_form_item = (function eckersdorf$util$ant_form_item(form,name,children){
 return null;
 });
 
-//# sourceMappingURL=util.js.map?rel=1507757451604
+//# sourceMappingURL=util.js.map?rel=1508149233252

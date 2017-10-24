@@ -11,10 +11,9 @@
             [cuerdas.core :as str]
             [hiccup.core :as hiccup]
             [yada.jwt :as jwt]
-            [eckersdorf.db.workers :as db.workers]))
+            [eckersdorf.db.workers :as db.workers]
+            [eckersdorf.utils :refer [add-ns]]))
 
-(reduce (fn [r [k v]]
-       (assoc r k (inc v))) {} {})
 
 (defn workers-routes [db]
   ["/workers"
@@ -26,27 +25,42 @@
              :response (fn [ctx]
                          (let [opts (->> (get-in ctx [:parameters :query])
                                          (reduce (fn [r [k v]]
-                                                   (assoc r k {"$regex" v
+                                                   (assoc r k {"$regex"   v
                                                                "$options" "i"})) {}))]
-                           (db.workers/workers-list db opts)))}}})]
-    ;["/add" (yada/resource
-    ;          {:methods
-    ;           {:post
-    ;            {:produces   #{"application/json" "text/plain"}
-    ;             :consumes   "application/x-www-form-urlencoded"
-    ;             :parameters {:body {:email-address schema/Str
-    ;                                 :password      schema/Str
-    ;                                 :first-name    schema/Str
-    ;                                 :last-name     schema/Str}}
-    ;             :response   (fn [ctx]
-    ;                           (let [{:keys [email-address password first-name
-    ;                                         last-name]} (get-in ctx [:parameters :body])]
-    ;                             (if-not (db.users/find-user-by-email-address db email-address)
-    ;                               (let [user (db.users/create-user db {:user/first-name    first-name
-    ;                                                                    :user/last-name     last-name
-    ;                                                                    :user/password      password
-    ;                                                                    :user/email-address email-address})]
-    ;                                 ;(postman/send-activation-email user)
-    ;                                 (dissoc user :user/password))
-    ;                               (assoc (:response ctx) :status 500 :body {:error "user exists"}))))}}})]
+                           {:data (db.workers/workers-list db opts)}))}
+            :post
+            {:produces   #{"application/json" "text/plain"}
+             :consumes   #{"application/json" "application/x-www-form-urlencoded"}
+             :parameters {:body {schema/Any schema/Any}}
+             :response   (fn [ctx]
+                           (let [worker (-> (get-in ctx [:parameters :body])
+                                            (add-ns :worker))]
+                             (if-let [response (db.workers/create-worker db worker)]
+                               {:data (db.workers/workers-list db)}
+                               (assoc (:response ctx) :status 404))))}}})]
+    [["/" :id] (yada/resource
+                 {:methods
+                  {:put
+                   {:produces   #{"application/json" "text/plain"}
+                    :consumes   #{"application/json" "application/x-www-form-urlencoded"}
+                    :parameters {:path {:id schema/Str}
+                                 :body {schema/Any schema/Any}}
+                    :response   (fn [ctx]
+                                  (let [object-id (get-in ctx [:parameters :path :id])
+                                        worker (-> (get-in ctx [:parameters :body])
+                                                   (add-ns :worker)
+                                                   (update :worker/address add-ns :address))]
+                                    (println (s/explain :worker/worker worker))
+                                    (if-let [response (db.workers/update-worker-by-id
+                                                        db object-id worker)]
+                                      {:data (db.workers/workers-list db)}
+                                      (assoc (:response ctx) :status 404))))}
+                   :delete
+                   {:produces   #{"application/json" "text/plain"}
+                    :consumes   #{"application/json" "application/x-www-form-urlencoded"}
+                    :parameters {:path {:id schema/Str}}
+                    :response   (fn [ctx]
+                                  (let [id (get-in ctx [:parameters :path :id])]
+                                    (db.workers/remove-worker-by-id db id)
+                                    {:data (db.workers/workers-list db)}))}}})]
     ]])

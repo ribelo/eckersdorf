@@ -73,6 +73,16 @@
     {:_id :mongo/object-id}))
 
 
+(defmulti remove-worker-by-id (fn [_ id] (type id)))
+
+(defmethod remove-worker-by-id ObjectId [db ^ObjectId id]
+  {:pre [(s/valid? :mongo/object-id id)]}
+  (mr/acknowledged? (mc/remove-by-id db "workers" id)))
+
+(defmethod remove-worker-by-id String [db ^String id]
+  (remove-worker-by-id db (ObjectId. id)))
+
+
 (defn remove-worker-by-email [db email-address]
   {:pre [(s/valid? :worker/email-address email-address)]}
   (mr/acknowledged? (mc/remove db "workers" {:worker/email-address email-address})))

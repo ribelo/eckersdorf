@@ -21,7 +21,8 @@
             [clj-time.core :as t]
             [progrock.core :as pr]
             [clojure.zip :as zip]
-            [progrock.core :as pr])
+            [progrock.core :as pr]
+            [clojure.set :as set])
   (:import (org.bson.types ObjectId)))
 
 (timbre/merge-config! {:level :info})
@@ -79,7 +80,8 @@
                                   :worker/address nil
                                   })
 
-(db.workers/workers-list tmp-db {:worker/first-name "anna"})
+(db.workers/workers-list tmp-db)
+(db.workers/reset-workers-collection tmp-db)
 
 
 (timetable/create-timetable-collection tmp-db)
@@ -97,4 +99,5 @@
                                                      :address/zip-code "59-516"
                                                      :address/city "wilków"}})
 
-(db.workplaces/workplaces-list tmp-db)
+
+

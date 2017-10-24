@@ -4,7 +4,6 @@
             [re-frame.core :as rf]
             [cuerdas.core :as str]
             [antizer.reagent :as ant]
-            [eckersdorf.util :as util]
             [eckersdorf.flex :as flex]))
 
 
@@ -47,3 +46,4 @@
                     :align-items     :center
                     :style           {:min-height "100vh"}}
          (login-form)]]])))
+

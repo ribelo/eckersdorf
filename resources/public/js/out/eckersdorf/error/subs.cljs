@@ -18,3 +18,13 @@
   :error/description
   (fn [db]
     (get db :error/description)))
+
+
+(rf/reg-sub
+  :error/last-error
+  (fn [db]
+    (let [ks [:error/event :error/description :error/name]]
+      (reduce
+        (fn [ret k]
+          (assoc ret k (get k db)))
+        {} ks))))

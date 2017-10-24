@@ -23,12 +23,17 @@
             [eckersdorf.user.login.events]
             [eckersdorf.user.login.subs]
             [eckersdorf.workplaces.db]
-            [eckersdorf.workplaces.subs]
             [eckersdorf.workplaces.events]
+            [eckersdorf.workplaces.subs]
+            [eckersdorf.workers.db]
+            [eckersdorf.workers.events]
+            [eckersdorf.workers.subs]
+
 
             [re-frame.router :as router]
             [re-frame.registrar :refer [get-handler clear-handlers register-handler]]
             [re-frame.loggers :refer [console]]
+            [antizer.reagent :as ant]
             [eckersdorf.routes.core :as routes]
             ))
 
@@ -47,5 +52,18 @@
                   :dispatch-sync-n
                   (fn [value]
                     (if-not (sequential? value)
-                      (console :error "re-frame: ignoring bad :dispatch-n value. Expected a collection, got got:" value))
+                      (console :error "re-frame: ignoring bad :dispatch-n value. Expected a collection but got:" value))
                     (doseq [event value] (router/dispatch-sync event))))
+
+
+(register-handler :fx
+                  :message
+                  (fn [{:keys [content type duration] :as m}]
+                    (if-not (map? m)
+                      (console :error "re-frame: ignoring bad :dispatch-n value. Expected a map, but got:" m)
+                      (case type
+                        :info (ant/message-info content (or duration 3.5))
+                        :success (ant/message-success content (or duration 3.5))
+                        :warning (ant/message-warning content (or duration 3.5))
+                        :error (ant/message-error content (or duration 3.5))
+                        :loading (ant/message-loading content (or duration 3.5))))))

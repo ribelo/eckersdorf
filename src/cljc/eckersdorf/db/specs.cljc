@@ -51,30 +51,34 @@
                                       :address/house-number :address/zip-code
                                       :address/city]))
 
-(s/def :workplace/id :mongo/object-id)
+(s/def :workplace/object-id :mongo/object-id)
 (s/def :workplace/name :string/not-empty)
 (s/def :workplace/type (s/nilable #{"shop" "dc" "wholesale"}))
 (s/def :workplace/email-address :email-address/email-address)
 (s/def :workplace/address :address/address)
 (s/def :workplace/workplace (s/keys :req [:workplace/name
+                                          :workplace/email-address
                                           :workplace/address
                                           :workplace/type]
                                     :opt [:workplace/id]))
 (s/def :workplace/workplaces (s/* :workplace/workplace))
 
 
-(s/def :worker/id :mongo/object-id)
+(s/def :worker/object-id :mongo/object-id)
 (s/def :worker/first-name :string/not-empty)
 (s/def :worker/last-name :string/not-empty)
+(s/def :worker/position (s/nilable string?))
 (s/def :worker/email-address :email-address/email-address)
-(s/def :worker/phone-number (s/nilable (s/and string? #(re-find #"^[0-9]{9}$" %))))
-(s/def :worker/workplace (s/nilable :workplace/workplace))
+(s/def :worker/phone-number (s/nilable (s/or :empty :string/empty
+                                             :number #(re-find #"^[0-9]{9}$" %))))
+(s/def :worker/birth-date (s/nilable :datetime/datetime))
+(s/def :worker/working-hours int?)
+(s/def :worker/workplace (s/nilable :workplace/object-id))
 (s/def :worker/address (s/nilable :address/address))
 (s/def :worker/worker (s/keys :req [:worker/first-name :worker/last-name
                                     :worker/email-address :worker/phone-number
-                                    :worker/workplace :worker/address]))
+                                    :worker/workplace]))
 
-
-(s/def :timetable/workplace :workplace/id)
+(s/def :timetable/workplace :workplace/object-id)
 (s/def :timetable/datetime :datetime/datetime)
-(s/def :timetable/worker :worker/id)
+(s/def :timetable/worker :worker/object-id)

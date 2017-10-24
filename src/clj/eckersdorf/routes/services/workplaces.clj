@@ -11,13 +11,8 @@
             [cuerdas.core :as str]
             [hiccup.core :as hiccup]
             [yada.jwt :as jwt]
-            [eckersdorf.db.workplaces :as db.workplaces]))
-
-
-(defn add-ns [m ns]
-  (reduce (fn [ret [k v]]
-            (assoc ret (keyword (name ns) (name k)) v))
-          {} m))
+            [eckersdorf.db.workplaces :as db.workplaces]
+            [eckersdorf.utils :refer [add-ns]]))
 
 
 (defn workplaces-routes [db]
@@ -45,10 +40,37 @@
                                  workplace (-> (get-in ctx [:parameters :body])
                                                (add-ns :workplace)
                                                (update :workplace/address add-ns :address))]
-                             (println (s/explain :workplace/workplace workplace))
                              (if-let [response (db.workplaces/create-workplace db workplace)]
                                {:data response}
                                (assoc (:response ctx) :status 404))))}}})]
+    [["/" :id] (yada/resource
+                 {:methods
+                  {:put
+                   {:produces   #{"application/json" "text/plain"}
+                    :consumes   #{"application/json" "application/x-www-form-urlencoded"}
+                    :parameters {:path {:id schema/Str}
+                                 :body {:name          schema/Str
+                                        :email-address schema/Str
+                                        :type          schema/Str
+                                        :address       {schema/Keyword schema/Str}}}
+                    :response   (fn [ctx]
+                                  (let [object-id (get-in ctx [:parameters :path :id])
+                                        address (add-ns (get-in ctx [:parameters :body :address]) :address)
+                                        workplace (-> (get-in ctx [:parameters :body])
+                                                      (add-ns :workplace)
+                                                      (update :workplace/address add-ns :address))]
+                                    (if-let [response (db.workplaces/update-workplace-by-id
+                                                        db object-id workplace)]
+                                      {:data response}
+                                      (assoc (:response ctx) :status 404))))}
+                   :delete
+                   {:produces   #{"application/json" "text/plain"}
+                    :consumes   #{"application/json" "application/x-www-form-urlencoded"}
+                    :parameters {:path {:id schema/Str}}
+                    :response   (fn [ctx]
+                                  (let [id (get-in ctx [:parameters :path :id])]
+                                    (db.workplaces/remove-workplace-by-id db id)
+                                    {:response ""}))}}})]
     ;["/add" (yada/resource
     ;          {:methods
     ;           {:post

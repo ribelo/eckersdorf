@@ -18,3 +18,20 @@
   :workplaces/workplace-form
   (fn [db _]
     (:workplaces/workplace-form db)))
+
+
+(rf/reg-sub
+  :workplace/get-by-id
+  :<- [:workplaces/list]
+  (fn [workplaces [_ id]]
+    (->> workplaces
+         (filter #(= id (:mongo/object-id %)))
+         (first))))
+
+(rf/reg-sub
+  :workplace/get-by-email
+  :<- [:workplaces/list]
+  (fn [workplaces [_ x]]
+    (->> workplaces
+         (filter #(= x (:workplace/email-address %)))
+         (first))))

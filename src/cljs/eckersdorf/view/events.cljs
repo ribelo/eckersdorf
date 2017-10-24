@@ -8,6 +8,12 @@
 
 
 (rf/reg-event-db
+  :view/set-active-panel
+  (fn [db [_ panel]]
+    (assoc db :view/active-panel panel)))
+
+
+(rf/reg-event-db
   :view/update-scroll-top
   (fn [db _]
     (let [last-position (get db :view/scroll-top)
