@@ -29,13 +29,13 @@ return cljs.core.contains_QMARK_.call(null,cljs.core.set.call(null,new cljs.core
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315),(function (db,_){
 return cljs.core.contains_QMARK_.call(null,cljs.core.set.call(null,new cljs.core.Keyword("user","roles","user/roles",130427029).cljs$core$IFn$_invoke$arity$1(db)),"moderator");
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","admin-or-moderator?","user/admin-or-moderator?",1276690555),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","admin?","user/admin?",-380045250)], null),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315)], null),(function (p__43398,_){
-var vec__43399 = p__43398;
-var admin_QMARK_ = cljs.core.nth.call(null,vec__43399,(0),null);
-var moderator_QMARK_ = cljs.core.nth.call(null,vec__43399,(1),null);
-var or__30239__auto__ = admin_QMARK_;
-if(cljs.core.truth_(or__30239__auto__)){
-return or__30239__auto__;
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","admin-or-moderator?","user/admin-or-moderator?",1276690555),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","admin?","user/admin?",-380045250)], null),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("user","moderator?","user/moderator?",-1643695315)], null),(function (p__43835,_){
+var vec__43836 = p__43835;
+var admin_QMARK_ = cljs.core.nth.call(null,vec__43836,(0),null);
+var moderator_QMARK_ = cljs.core.nth.call(null,vec__43836,(1),null);
+var or__30249__auto__ = admin_QMARK_;
+if(cljs.core.truth_(or__30249__auto__)){
+return or__30249__auto__;
 } else {
 return moderator_QMARK_;
 }
@@ -50,4 +50,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("user","last-login","user/
 return new cljs.core.Keyword("user","last-login","user/last-login",-513275033).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1507757460760
+//# sourceMappingURL=subs.js.map?rel=1508862160482

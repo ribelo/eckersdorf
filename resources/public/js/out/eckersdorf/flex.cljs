@@ -120,7 +120,9 @@
 (s/def :flex/none #{"none" :none})
 (s/def :flex/grow (s/or :number number? :string str/numeric?))
 (s/def :flex/shrink str/numeric?)
-(s/def :flex/basis (s/or :px #(re-find #"px" %)
+(s/def :flex/basis (s/or :zero #(or (zero? %)
+                                    (zero? (js/parseInt %)))
+                         :px #(re-find #"px" %)
                          :percent #(re-find #"\%" %)
                          :auto :flex/auto
                          :initial :flex/initial))

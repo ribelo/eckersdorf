@@ -16,7 +16,9 @@
 #?(:clj  (s/def :mongo/object-id (s/or :object-id #(instance? ObjectId %) :string (s/and string? #(= 24 (count %)))))
    :cljs (s/def :mongo/object-id (s/and string? #(= 24 (count %)))))
 
+
 (s/def :email-address/email-address (s/and string? #(re-find #"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" %)))
+(s/def :datetime/iso-string (s/and string? #"^(d{4})(-(d{2}))??(-(d{2}))??(T(d{2}):(d{2})(:(d{2}))??(.(d+))??(([+-]{1}d{2}:d{2})|Z)??)??$"))
 (s/def :datetime/datetime #(instance? DateTime %))
 (s/def :string/not-empty (s/and string? seq))
 (s/def :string/empty (s/and string? empty?))
@@ -56,6 +58,10 @@
 (s/def :workplace/type (s/nilable #{"shop" "dc" "wholesale"}))
 (s/def :workplace/email-address :email-address/email-address)
 (s/def :workplace/address :address/address)
+;(s/def :working-hours/open (s/nilable int?))
+;(s/def :working-hours/close (s/nilable int?))
+;(s/def ::working-hours (s/keys :req [:working-hours/open :working-hours/close ]))
+;(s/def :workplace/working-hours {int? {:open int? :close int?}}) ; TODO
 (s/def :workplace/workplace (s/keys :req [:workplace/name
                                           :workplace/email-address
                                           :workplace/address
@@ -79,6 +85,13 @@
                                     :worker/email-address :worker/phone-number
                                     :worker/workplace]))
 
-(s/def :timetable/workplace :workplace/object-id)
-(s/def :timetable/datetime :datetime/datetime)
-(s/def :timetable/worker :worker/object-id)
+(s/def :work-schedule/workplace-id :workplace/object-id)
+(s/def :work-schedule/datetime :datetime/datetime)
+(s/def :work-schedule/worker-id :worker/object-id)
+(s/def :work-schedule/work-type #{"butcher" "seller" "holiday"})
+
+(s/def :work-schedule/schedule (s/keys :req [:work-schedule/workplace-id
+                                             :work-schedule/worker-id
+                                             :work-schedule/work-type
+                                             :work-schedule/datetime]))
+

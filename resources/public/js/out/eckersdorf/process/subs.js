@@ -12,4 +12,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("process","description","p
 return new cljs.core.Keyword("process","description","process/description",-647576593).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1507757460576
+//# sourceMappingURL=subs.js.map?rel=1508862160432

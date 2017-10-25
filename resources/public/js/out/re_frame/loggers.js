@@ -12,23 +12,23 @@ re_frame.loggers.loggers = cljs.core.atom.call(null,new cljs.core.PersistentArra
 return cljs.core.List.EMPTY;
 }))], null));
 re_frame.loggers.console = (function re_frame$loggers$console(var_args){
-var args__31523__auto__ = [];
-var len__31516__auto___38967 = arguments.length;
-var i__31517__auto___38968 = (0);
+var args__31533__auto__ = [];
+var len__31526__auto___38732 = arguments.length;
+var i__31527__auto___38733 = (0);
 while(true){
-if((i__31517__auto___38968 < len__31516__auto___38967)){
-args__31523__auto__.push((arguments[i__31517__auto___38968]));
+if((i__31527__auto___38733 < len__31526__auto___38732)){
+args__31533__auto__.push((arguments[i__31527__auto___38733]));
 
-var G__38969 = (i__31517__auto___38968 + (1));
-i__31517__auto___38968 = G__38969;
+var G__38734 = (i__31527__auto___38733 + (1));
+i__31527__auto___38733 = G__38734;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
-return re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
+var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
+return re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
 });
 
 re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic = (function (level,args){
@@ -42,10 +42,10 @@ return cljs.core.apply.call(null,level.call(null,cljs.core.deref.call(null,re_fr
 
 re_frame.loggers.console.cljs$lang$maxFixedArity = (1);
 
-re_frame.loggers.console.cljs$lang$applyTo = (function (seq38965){
-var G__38966 = cljs.core.first.call(null,seq38965);
-var seq38965__$1 = cljs.core.next.call(null,seq38965);
-return re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic(G__38966,seq38965__$1);
+re_frame.loggers.console.cljs$lang$applyTo = (function (seq38730){
+var G__38731 = cljs.core.first.call(null,seq38730);
+var seq38730__$1 = cljs.core.next.call(null,seq38730);
+return re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic(G__38731,seq38730__$1);
 });
 
 /**
@@ -67,4 +67,4 @@ re_frame.loggers.get_loggers = (function re_frame$loggers$get_loggers(){
 return cljs.core.deref.call(null,re_frame.loggers.loggers);
 });
 
-//# sourceMappingURL=loggers.js.map?rel=1507757451672
+//# sourceMappingURL=loggers.js.map?rel=1508862156084

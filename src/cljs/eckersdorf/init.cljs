@@ -28,6 +28,9 @@
             [eckersdorf.workers.db]
             [eckersdorf.workers.events]
             [eckersdorf.workers.subs]
+            [eckersdorf.work-schedule.db]
+            [eckersdorf.work-schedule.events]
+            [eckersdorf.work-schedule.subs]
 
 
             [re-frame.router :as router]

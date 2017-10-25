@@ -148,23 +148,23 @@
   :workers/create-worker-dialog
   (fn [_ _]
     {:dispatch-n [[:workers/set-worker-form empty-worker]
-                  [:workers/show-dialog :create]]}))
+                  [:workers/show-dialog? :create]]}))
 
 
 (rf/reg-event-fx
   :workers/modify-worker-dialog
   (fn [_ [_ worker]]
     {:dispatch-n [[:workers/set-worker-form worker]
-                  [:workers/show-dialog :modify]]}))
+                  [:workers/show-dialog? :modify]]}))
 
 
 (rf/reg-event-db
-  :workers/show-dialog
+  :workers/show-dialog?
   (fn [db [_ type]]
     (assoc db :workers/show-dialog? type)))
 
 
 (rf/reg-event-db
   :workers/hide-dialog
-  (fn [db [_ type]]
-    (assoc db :workers/show-dialog? type)))
+  (fn [db _]
+    (assoc db :workers/show-dialog? nil)))

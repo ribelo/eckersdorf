@@ -10,7 +10,8 @@
             [eckersdorf.flex :as flex]
             [eckersdorf.user.login.ui :as login.ui]
             [eckersdorf.workplaces.ui :as workplaces.ui]
-            [eckersdorf.workers.ui :as workers.ui]))
+            [eckersdorf.workers.ui :as workers.ui]
+            [eckersdorf.work-schedule.ui :as work-schedule.ui]))
 
 
 (defn page []
@@ -22,12 +23,12 @@
       (if-not @logged?
         [login.ui/login-page]
         [ant/locale-provider {:locale (ant/locales "pl_PL")}
-         [ant/layout {:style {:min-height "100vh"}}
+         [ant/layout {:style {:height "100%"}}
           [ant/layout-sider {:collapsible true
                              :collapsed   @sider-collapsed?
                              :on-collapse (fn []
                                             (rf/dispatch [:view/sider-toggle]))
-                             :style       {:min-height :inherit}}
+                             :style       {:height "100%"}}
            [ant/menu {:theme         :dark
                       :mode          :inline
                       :on-click      (fn [e] (rf/dispatch [:view/set-active-panel (keyword (.-key e))]))
@@ -43,13 +44,15 @@
             [ant/menu-item {:key :workers}
              [ant/icon {:type :usergroup-add}]
              [:span "Pracownicy"]]
-            [ant/menu-item {:key 3}
+            [ant/menu-item {:key :work-schedule}
              [ant/icon {:type :calendar}]
              [:span "Harmonogram Pracy"]]]]
-          [ant/layout {:style {:padding "24px 24px"}}
-           [ant/layout-content
+          [ant/layout {:style {:padding "24px 24px 0px"}}
+           [ant/layout-content {:style {:max-height "100%"
+                                        :overflow :auto}}
             (case @panel
               :user [:div "pusto jeszcze"]
               :workplaces [workplaces.ui/workplaces-view]
-              :workers [workers.ui/workers-view])]]]])
+              :workers [workers.ui/workers-view]
+              :work-schedule [work-schedule.ui/work-schedule-view])]]]])
       )))

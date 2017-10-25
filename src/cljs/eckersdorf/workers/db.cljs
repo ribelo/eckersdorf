@@ -12,7 +12,7 @@
 
 (def workers-state
   {
-   :workers/workers     nil
-   :workers/show-dialog false
-   :workers/worker-form empty-worker
+   :workers/workers      nil
+   :workers/show-dialog? false
+   :workers/worker-form  empty-worker
    })

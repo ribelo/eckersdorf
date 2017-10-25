@@ -3,3 +3,6 @@
             [re-frame.db :refer [app-db]]))
 
 @app-db
+
+(rf/dispatch [:workplaces/request-list])
+(rf/subscribe [:workplaces/list])

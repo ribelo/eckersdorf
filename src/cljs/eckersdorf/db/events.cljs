@@ -10,7 +10,7 @@
             [eckersdorf.process.db :refer [process-state]]
             [eckersdorf.workplaces.db :refer [workplaces-state]]
             [eckersdorf.workers.db :refer [workers-state]]
-            ))
+            [eckersdorf.work-schedule.db :refer [work-schedule-state]]))
 
 
 
@@ -25,7 +25,8 @@
                     user-state
                     process-state
                     workplaces-state
-                    workers-state)]
+                    workers-state
+                    work-schedule-state)]
       db)))
 
 (rf/reg-event-db

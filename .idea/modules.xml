@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/eckersdorf.iml" filepath="$PROJECT_DIR$/eckersdorf.iml" />
+      <module fileurl="file://$USER_HOME$/data/code/Clojure/eckersdorf/eckersdorf.iml" filepath="$USER_HOME$/data/code/Clojure/eckersdorf/eckersdorf.iml" />
     </modules>
   </component>
 </project>

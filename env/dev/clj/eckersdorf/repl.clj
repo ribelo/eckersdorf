@@ -11,9 +11,9 @@
             [eckersdorf.routes.core :as routes]
             [eckersdorf.system :as system]
             [eckersdorf.db.users :as users]
-            [eckersdorf.db.timetable :as timetable]
             [eckersdorf.db.workers :as db.workers]
             [eckersdorf.db.workplaces :as db.workplaces]
+            [eckersdorf.db.work-schedule :as db.work-schedule]
             [cuerdas.core :as str]
             [clojure.spec.alpha :as s]
             [buddy.sign.jwt :as jwt]
@@ -22,7 +22,8 @@
             [progrock.core :as pr]
             [clojure.zip :as zip]
             [progrock.core :as pr]
-            [clojure.set :as set])
+            [clojure.set :as set]
+            [clj-time.core :as dt])
   (:import (org.bson.types ObjectId)))
 
 (timbre/merge-config! {:level :info})
@@ -100,4 +101,13 @@
                                                      :address/city "wilków"}})
 
 
+(first (db.workplaces/workplaces-list tmp-db))
+(first (db.workers/workers-list tmp-db))
+(db.work-schedule/schedule-work tmp-db
+                                {:work-schedule/workplace-id "59cd4fc48466bc2056615d66"
+                                 :work-schedule/worker-id "59ed11e7fe1b232a5593a5a4"
+                                 :work-schedule/datetime (dt/now)
+                                 :work-schedule/work-type "seller"})
 
+(mc/find-maps tmp-db "work-schedule")
+(db.work-schedule/reset-work-schedule-collection tmp-db)

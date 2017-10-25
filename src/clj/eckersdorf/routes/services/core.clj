@@ -7,6 +7,7 @@
             [eckersdorf.routes.services.users :as services.users]
             [eckersdorf.routes.services.workers :as services.workers]
             [eckersdorf.routes.services.workplaces :as services.workplaces]
+            [eckersdorf.routes.services.work-schedule :as services.work-schedule]
             [taoensso.timbre :as timbre]
             [taoensso.encore :as encore :refer [assoc-some]]
             [manifold.deferred :as d]
@@ -23,4 +24,5 @@
      [
       (services.users/users-routes db)
       (services.workplaces/workplaces-routes db)
-      (services.workers/workers-routes db)]]]])
+      (services.workers/workers-routes db)
+      (services.work-schedule/schedule-routes db)]]]])
