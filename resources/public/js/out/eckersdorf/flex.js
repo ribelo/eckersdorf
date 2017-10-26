@@ -11,10 +11,10 @@ return cljs.core.merge.call(null,style,new cljs.core.PersistentArrayMap(null, 1,
 });
 cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","direction","flex/direction",-630213658),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, ["column",null,"row",null,"row-rewerse",null,"column-rewerse",null], null), null),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, ["column",null,"row",null,"row-rewerse",null,"column-rewerse",null], null), null));
 cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","wrap","flex/wrap",856912860),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [null,null,"wrap",null,"nowrap",null], null), null),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [null,null,"wrap",null,"nowrap",null], null), null));
-cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","flow","flex/flow",587343295),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","let","cljs.core/let",-308701135,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"direction","direction",1007172132,null),new cljs.core.Symbol(null,"wrap","wrap",-1802765782,null)], null),cljs.core.list(new cljs.core.Symbol("cuerdas.core","split","cuerdas.core/split",1272694307,null),new cljs.core.Symbol(null,"%","%",-950237169,null)," ")], null),cljs.core.list(new cljs.core.Symbol("cljs.core","or","cljs.core/or",1201033885,null),cljs.core.list(new cljs.core.Symbol("cljs.core","and","cljs.core/and",-6692549,null),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","direction","flex/direction",-630213658),new cljs.core.Symbol(null,"direction","direction",1007172132,null)),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","wrap","flex/wrap",856912860),new cljs.core.Symbol(null,"wrap","wrap",-1802765782,null))),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, ["inherit",null], null), null),new cljs.core.Symbol(null,"%","%",-950237169,null))))),(function (p1__79422_SHARP_){
-var vec__79423 = cuerdas.core.split.call(null,p1__79422_SHARP_," ");
-var direction = cljs.core.nth.call(null,vec__79423,(0),null);
-var wrap = cljs.core.nth.call(null,vec__79423,(1),null);
+cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","flow","flex/flow",587343295),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","let","cljs.core/let",-308701135,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"direction","direction",1007172132,null),new cljs.core.Symbol(null,"wrap","wrap",-1802765782,null)], null),cljs.core.list(new cljs.core.Symbol("cuerdas.core","split","cuerdas.core/split",1272694307,null),new cljs.core.Symbol(null,"%","%",-950237169,null)," ")], null),cljs.core.list(new cljs.core.Symbol("cljs.core","or","cljs.core/or",1201033885,null),cljs.core.list(new cljs.core.Symbol("cljs.core","and","cljs.core/and",-6692549,null),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","direction","flex/direction",-630213658),new cljs.core.Symbol(null,"direction","direction",1007172132,null)),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","wrap","flex/wrap",856912860),new cljs.core.Symbol(null,"wrap","wrap",-1802765782,null))),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, ["inherit",null], null), null),new cljs.core.Symbol(null,"%","%",-950237169,null))))),(function (p1__93858_SHARP_){
+var vec__93859 = cuerdas.core.split.call(null,p1__93858_SHARP_," ");
+var direction = cljs.core.nth.call(null,vec__93859,(0),null);
+var wrap = cljs.core.nth.call(null,vec__93859,(1),null);
 var or__30249__auto__ = (function (){var and__30237__auto__ = cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("flex","direction","flex/direction",-630213658),direction);
 if(cljs.core.truth_(and__30237__auto__)){
 return cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("flex","wrap","flex/wrap",856912860),wrap);
@@ -25,7 +25,7 @@ return and__30237__auto__;
 if(cljs.core.truth_(or__30249__auto__)){
 return or__30249__auto__;
 } else {
-return cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, ["inherit",null], null), null),p1__79422_SHARP_);
+return cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, ["inherit",null], null), null),p1__93858_SHARP_);
 }
 }));
 eckersdorf.flex.flow = (function eckersdorf$flex$flow(style,flow){
@@ -135,18 +135,18 @@ cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","auto","flex/aut
 cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","none","flex/none",1338711365),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["none",null,new cljs.core.Keyword(null,"none","none",1333468478),null], null), null),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["none",null,new cljs.core.Keyword(null,"none","none",1333468478),null], null), null));
 cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","grow","flex/grow",-518876038),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","or","cljs.spec.alpha/or",-831679639,null),new cljs.core.Keyword(null,"number","number",1570378438),new cljs.core.Symbol("cljs.core","number?","cljs.core/number?",-811857295,null),new cljs.core.Keyword(null,"string","string",-1989541586),new cljs.core.Symbol("cuerdas.core","numeric?","cuerdas.core/numeric?",1925957499,null)),cljs.spec.alpha.or_spec_impl.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"number","number",1570378438),new cljs.core.Keyword(null,"string","string",-1989541586)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("cljs.core","number?","cljs.core/number?",-811857295,null),new cljs.core.Symbol("cuerdas.core","numeric?","cuerdas.core/numeric?",1925957499,null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.number_QMARK_,cuerdas.core.numeric_QMARK_], null),null));
 cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","shrink","flex/shrink",1420530486),new cljs.core.Symbol("cuerdas.core","numeric?","cuerdas.core/numeric?",1925957499,null),cuerdas.core.numeric_QMARK_);
-cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","basis","flex/basis",1835410626),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","or","cljs.spec.alpha/or",-831679639,null),new cljs.core.Keyword(null,"zero","zero",-858964576),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__79426#","p1__79426#",668141776,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","or","cljs.core/or",1201033885,null),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),new cljs.core.Symbol(null,"p1__79426#","p1__79426#",668141776,null)),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),cljs.core.list(new cljs.core.Symbol("js","parseInt","js/parseInt",-92318511,null),new cljs.core.Symbol(null,"p1__79426#","p1__79426#",668141776,null))))),new cljs.core.Keyword(null,"px","px",281329899),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__79427#","p1__79427#",70191678,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/px/,new cljs.core.Symbol(null,"p1__79427#","p1__79427#",70191678,null))),new cljs.core.Keyword(null,"percent","percent",2031453817),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__79428#","p1__79428#",1961153308,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/\%/,new cljs.core.Symbol(null,"p1__79428#","p1__79428#",1961153308,null))),new cljs.core.Keyword(null,"auto","auto",-566279492),new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword(null,"initial","initial",1854648214),new cljs.core.Keyword("flex","initial","flex/initial",1857793885)),cljs.spec.alpha.or_spec_impl.call(null,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"zero","zero",-858964576),new cljs.core.Keyword(null,"px","px",281329899),new cljs.core.Keyword(null,"percent","percent",2031453817),new cljs.core.Keyword(null,"auto","auto",-566279492),new cljs.core.Keyword(null,"initial","initial",1854648214)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","or","cljs.core/or",1201033885,null),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),new cljs.core.Symbol(null,"%","%",-950237169,null)),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),cljs.core.list(new cljs.core.Symbol("js","parseInt","js/parseInt",-92318511,null),new cljs.core.Symbol(null,"%","%",-950237169,null))))),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/px/,new cljs.core.Symbol(null,"%","%",-950237169,null))),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/\%/,new cljs.core.Symbol(null,"%","%",-950237169,null))),new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword("flex","initial","flex/initial",1857793885)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (p1__79426_SHARP_){
-return ((p1__79426_SHARP_ === (0))) || ((parseInt(p1__79426_SHARP_) === (0)));
-}),(function (p1__79427_SHARP_){
-return cljs.core.re_find.call(null,/px/,p1__79427_SHARP_);
-}),(function (p1__79428_SHARP_){
-return cljs.core.re_find.call(null,/\%/,p1__79428_SHARP_);
+cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","basis","flex/basis",1835410626),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","or","cljs.spec.alpha/or",-831679639,null),new cljs.core.Keyword(null,"zero","zero",-858964576),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__93862#","p1__93862#",-81455121,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","or","cljs.core/or",1201033885,null),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),new cljs.core.Symbol(null,"p1__93862#","p1__93862#",-81455121,null)),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),cljs.core.list(new cljs.core.Symbol("js","parseInt","js/parseInt",-92318511,null),new cljs.core.Symbol(null,"p1__93862#","p1__93862#",-81455121,null))))),new cljs.core.Keyword(null,"px","px",281329899),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__93863#","p1__93863#",-1505907953,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/px/,new cljs.core.Symbol(null,"p1__93863#","p1__93863#",-1505907953,null))),new cljs.core.Keyword(null,"percent","percent",2031453817),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__93864#","p1__93864#",-716858750,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/\%/,new cljs.core.Symbol(null,"p1__93864#","p1__93864#",-716858750,null))),new cljs.core.Keyword(null,"auto","auto",-566279492),new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword(null,"initial","initial",1854648214),new cljs.core.Keyword("flex","initial","flex/initial",1857793885)),cljs.spec.alpha.or_spec_impl.call(null,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"zero","zero",-858964576),new cljs.core.Keyword(null,"px","px",281329899),new cljs.core.Keyword(null,"percent","percent",2031453817),new cljs.core.Keyword(null,"auto","auto",-566279492),new cljs.core.Keyword(null,"initial","initial",1854648214)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","or","cljs.core/or",1201033885,null),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),new cljs.core.Symbol(null,"%","%",-950237169,null)),cljs.core.list(new cljs.core.Symbol("cljs.core","zero?","cljs.core/zero?",-341242858,null),cljs.core.list(new cljs.core.Symbol("js","parseInt","js/parseInt",-92318511,null),new cljs.core.Symbol(null,"%","%",-950237169,null))))),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/px/,new cljs.core.Symbol(null,"%","%",-950237169,null))),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","re-find","cljs.core/re-find",745076500,null),/\%/,new cljs.core.Symbol(null,"%","%",-950237169,null))),new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword("flex","initial","flex/initial",1857793885)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (p1__93862_SHARP_){
+return ((p1__93862_SHARP_ === (0))) || ((parseInt(p1__93862_SHARP_) === (0)));
+}),(function (p1__93863_SHARP_){
+return cljs.core.re_find.call(null,/px/,p1__93863_SHARP_);
+}),(function (p1__93864_SHARP_){
+return cljs.core.re_find.call(null,/\%/,p1__93864_SHARP_);
 }),new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword("flex","initial","flex/initial",1857793885)], null),null));
-cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","gsb","flex/gsb",461461210),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","let","cljs.core/let",-308701135,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"g","g",-916345864,null),new cljs.core.Symbol(null,"s","s",-948495851,null),new cljs.core.Symbol(null,"b","b",-1172211299,null)], null),cljs.core.list(new cljs.core.Symbol("cuerdas.core","split","cuerdas.core/split",1272694307,null),new cljs.core.Symbol(null,"%","%",-950237169,null))], null),cljs.core.list(new cljs.core.Symbol("cljs.core","and","cljs.core/and",-6692549,null),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","grow","flex/grow",-518876038),new cljs.core.Symbol(null,"g","g",-916345864,null)),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","shrink","flex/shrink",1420530486),new cljs.core.Symbol(null,"s","s",-948495851,null)),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","basis","flex/basis",1835410626),new cljs.core.Symbol(null,"b","b",-1172211299,null))))),(function (p1__79429_SHARP_){
-var vec__79430 = cuerdas.core.split.call(null,p1__79429_SHARP_);
-var g = cljs.core.nth.call(null,vec__79430,(0),null);
-var s = cljs.core.nth.call(null,vec__79430,(1),null);
-var b = cljs.core.nth.call(null,vec__79430,(2),null);
+cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","gsb","flex/gsb",461461210),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","let","cljs.core/let",-308701135,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"g","g",-916345864,null),new cljs.core.Symbol(null,"s","s",-948495851,null),new cljs.core.Symbol(null,"b","b",-1172211299,null)], null),cljs.core.list(new cljs.core.Symbol("cuerdas.core","split","cuerdas.core/split",1272694307,null),new cljs.core.Symbol(null,"%","%",-950237169,null))], null),cljs.core.list(new cljs.core.Symbol("cljs.core","and","cljs.core/and",-6692549,null),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","grow","flex/grow",-518876038),new cljs.core.Symbol(null,"g","g",-916345864,null)),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","shrink","flex/shrink",1420530486),new cljs.core.Symbol(null,"s","s",-948495851,null)),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","valid?","cljs.spec.alpha/valid?",-142132235,null),new cljs.core.Keyword("flex","basis","flex/basis",1835410626),new cljs.core.Symbol(null,"b","b",-1172211299,null))))),(function (p1__93865_SHARP_){
+var vec__93866 = cuerdas.core.split.call(null,p1__93865_SHARP_);
+var g = cljs.core.nth.call(null,vec__93866,(0),null);
+var s = cljs.core.nth.call(null,vec__93866,(1),null);
+var b = cljs.core.nth.call(null,vec__93866,(2),null);
 var and__30237__auto__ = cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("flex","grow","flex/grow",-518876038),g);
 if(cljs.core.truth_(and__30237__auto__)){
 var and__30237__auto____$1 = cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("flex","shrink","flex/shrink",1420530486),s);
@@ -162,12 +162,12 @@ return and__30237__auto__;
 cljs.spec.alpha.def_impl.call(null,new cljs.core.Keyword("flex","flex","flex/flex",-1424076043),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","nilable","cljs.spec.alpha/nilable",1628308748,null),cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","or","cljs.spec.alpha/or",-831679639,null),new cljs.core.Keyword(null,"auto","auto",-566279492),new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword(null,"initial","initial",1854648214),new cljs.core.Keyword("flex","initial","flex/initial",1857793885),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword("flex","none","flex/none",1338711365),new cljs.core.Keyword(null,"grow","grow",-524118895),new cljs.core.Keyword("flex","grow","flex/grow",-518876038),new cljs.core.Keyword(null,"gsb","gsb",466704095),new cljs.core.Keyword("flex","gsb","flex/gsb",461461210),new cljs.core.Keyword(null,"basis","basis",1865819339),new cljs.core.Keyword("flex","basis","flex/basis",1835410626))),cljs.spec.alpha.nilable_impl.call(null,cljs.core.list(new cljs.core.Symbol("cljs.spec.alpha","or","cljs.spec.alpha/or",-831679639,null),new cljs.core.Keyword(null,"auto","auto",-566279492),new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword(null,"initial","initial",1854648214),new cljs.core.Keyword("flex","initial","flex/initial",1857793885),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword("flex","none","flex/none",1338711365),new cljs.core.Keyword(null,"grow","grow",-524118895),new cljs.core.Keyword("flex","grow","flex/grow",-518876038),new cljs.core.Keyword(null,"gsb","gsb",466704095),new cljs.core.Keyword("flex","gsb","flex/gsb",461461210),new cljs.core.Keyword(null,"basis","basis",1865819339),new cljs.core.Keyword("flex","basis","flex/basis",1835410626)),cljs.spec.alpha.or_spec_impl.call(null,new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"auto","auto",-566279492),new cljs.core.Keyword(null,"initial","initial",1854648214),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"grow","grow",-524118895),new cljs.core.Keyword(null,"gsb","gsb",466704095),new cljs.core.Keyword(null,"basis","basis",1865819339)], null),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword("flex","initial","flex/initial",1857793885),new cljs.core.Keyword("flex","none","flex/none",1338711365),new cljs.core.Keyword("flex","grow","flex/grow",-518876038),new cljs.core.Keyword("flex","gsb","flex/gsb",461461210),new cljs.core.Keyword("flex","basis","flex/basis",1835410626)], null),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("flex","auto","flex/auto",-502316349),new cljs.core.Keyword("flex","initial","flex/initial",1857793885),new cljs.core.Keyword("flex","none","flex/none",1338711365),new cljs.core.Keyword("flex","grow","flex/grow",-518876038),new cljs.core.Keyword("flex","gsb","flex/gsb",461461210),new cljs.core.Keyword("flex","basis","flex/basis",1835410626)], null),null),null));
 eckersdorf.flex.flex = (function eckersdorf$flex$flex(style,size){
 if(cljs.core.truth_(size)){
-var vec__79433 = cljs.spec.alpha.conform.call(null,new cljs.core.Keyword("flex","flex","flex/flex",-1424076043),size);
-var type = cljs.core.nth.call(null,vec__79433,(0),null);
-var size__$1 = cljs.core.nth.call(null,vec__79433,(1),null);
-var flex = (function (){var G__79436 = type;
-var G__79436__$1 = (((G__79436 instanceof cljs.core.Keyword))?G__79436.fqn:null);
-switch (G__79436__$1) {
+var vec__93869 = cljs.spec.alpha.conform.call(null,new cljs.core.Keyword("flex","flex","flex/flex",-1424076043),size);
+var type = cljs.core.nth.call(null,vec__93869,(0),null);
+var size__$1 = cljs.core.nth.call(null,vec__93869,(1),null);
+var flex = (function (){var G__93872 = type;
+var G__93872__$1 = (((G__93872 instanceof cljs.core.Keyword))?G__93872.fqn:null);
+switch (G__93872__$1) {
 case "initial":
 return "0 1 auto";
 
@@ -185,12 +185,12 @@ return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.last.call(null,siz
 
 break;
 case "basis":
-var vec__79437 = size__$1;
-var unit = cljs.core.nth.call(null,vec__79437,(0),null);
-var size__$2 = cljs.core.nth.call(null,vec__79437,(1),null);
-var G__79440 = unit;
-var G__79440__$1 = (((G__79440 instanceof cljs.core.Keyword))?G__79440.fqn:null);
-switch (G__79440__$1) {
+var vec__93873 = size__$1;
+var unit = cljs.core.nth.call(null,vec__93873,(0),null);
+var size__$2 = cljs.core.nth.call(null,vec__93873,(1),null);
+var G__93876 = unit;
+var G__93876__$1 = (((G__93876 instanceof cljs.core.Keyword))?G__93876.fqn:null);
+switch (G__93876__$1) {
 case "px":
 return ["0 0 ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(size__$2)].join('');
 
@@ -200,7 +200,7 @@ return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.re_find.call(null,
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__79440__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__93876__$1)].join('')));
 
 }
 
@@ -215,12 +215,12 @@ return cljs.core.merge.call(null,style,new cljs.core.PersistentArrayMap(null, 1,
 return style;
 }
 });
-eckersdorf.flex.gap = (function eckersdorf$flex$gap(p__79443){
-var map__79444 = p__79443;
-var map__79444__$1 = ((((!((map__79444 == null)))?((((map__79444.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__79444.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__79444):map__79444);
-var size = cljs.core.get.call(null,map__79444__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-var width = cljs.core.get.call(null,map__79444__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var height = cljs.core.get.call(null,map__79444__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+eckersdorf.flex.gap = (function eckersdorf$flex$gap(p__93879){
+var map__93880 = p__93879;
+var map__93880__$1 = ((((!((map__93880 == null)))?((((map__93880.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__93880.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__93880):map__93880);
+var size = cljs.core.get.call(null,map__93880__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var width = cljs.core.get.call(null,map__93880__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var height = cljs.core.get.call(null,map__93880__$1,new cljs.core.Keyword(null,"height","height",1025178622));
 var this$ = reagent.core.current_component.call(null);
 var props = cljs.core.apply.call(null,cljs.core.dissoc,reagent.core.props.call(null,this$),eckersdorf.flex.all_prop_keys);
 var children = reagent.core.children.call(null,this$);
@@ -239,33 +239,33 @@ return size;
 })()),size)], null),props)], null),children);
 });
 eckersdorf.flex.gap_ = eckersdorf.flex.gap;
-eckersdorf.flex.line = (function eckersdorf$flex$line(p__79446){
-var map__79447 = p__79446;
-var map__79447__$1 = ((((!((map__79447 == null)))?((((map__79447.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__79447.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__79447):map__79447);
-var size = cljs.core.get.call(null,map__79447__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-var color = cljs.core.get.call(null,map__79447__$1,new cljs.core.Keyword(null,"color","color",1011675173),"lightgray");
+eckersdorf.flex.line = (function eckersdorf$flex$line(p__93882){
+var map__93883 = p__93882;
+var map__93883__$1 = ((((!((map__93883 == null)))?((((map__93883.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__93883.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__93883):map__93883);
+var size = cljs.core.get.call(null,map__93883__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var color = cljs.core.get.call(null,map__93883__$1,new cljs.core.Keyword(null,"color","color",1011675173),"lightgray");
 var this$ = reagent.core.current_component.call(null);
 var props = cljs.core.apply.call(null,cljs.core.dissoc,reagent.core.props.call(null,this$),eckersdorf.flex.all_prop_keys);
 var children = reagent.core.children.call(null,this$);
 return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),reagent.core.merge_props.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),eckersdorf.flex.flex.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"background-color","background-color",570434026),color], null),size)], null),props)], null),children);
 });
-eckersdorf.flex.scroller = (function eckersdorf$flex$scroller(p__79449){
-var map__79450 = p__79449;
-var map__79450__$1 = ((((!((map__79450 == null)))?((((map__79450.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__79450.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__79450):map__79450);
-var align_self = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
-var overflow_y = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"overflow-y","overflow-y",-1436589285));
-var height = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"height","height",1025178622));
-var min_width = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
-var align_items = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462));
-var max_height = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
-var min_height = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
-var overflow = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"overflow","overflow",2058931880));
-var width = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var max_width = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
-var size = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"size","size",1098693007),"auto");
-var justify_content = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787));
-var overflow_x = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"overflow-x","overflow-x",-26547754));
-var gap = cljs.core.get.call(null,map__79450__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
+eckersdorf.flex.scroller = (function eckersdorf$flex$scroller(p__93885){
+var map__93886 = p__93885;
+var map__93886__$1 = ((((!((map__93886 == null)))?((((map__93886.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__93886.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__93886):map__93886);
+var align_self = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
+var overflow_y = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"overflow-y","overflow-y",-1436589285));
+var height = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+var min_width = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
+var align_items = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462));
+var max_height = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
+var min_height = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
+var overflow = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"overflow","overflow",2058931880));
+var width = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var max_width = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
+var size = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"size","size",1098693007),"auto");
+var justify_content = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787));
+var overflow_x = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"overflow-x","overflow-x",-26547754));
+var gap = cljs.core.get.call(null,map__93886__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
 var this$ = reagent.core.current_component.call(null);
 var props = cljs.core.apply.call(null,cljs.core.dissoc,reagent.core.props.call(null,this$),eckersdorf.flex.all_prop_keys);
 var children = reagent.core.children.call(null,this$);
@@ -273,60 +273,60 @@ var not_v_or_h = ((overflow_y == null)) && ((overflow_x == null));
 var overflow__$1 = ((((overflow == null)) && (not_v_or_h))?new cljs.core.Keyword(null,"auto","auto",-566279492):overflow);
 return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),reagent.core.merge_props.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),eckersdorf.flex.align_self.call(null,eckersdorf.flex.align_items.call(null,eckersdorf.flex.justify_content.call(null,eckersdorf.flex.flow.call(null,eckersdorf.flex.flex.call(null,eckersdorf.flex.display.call(null,taoensso.encore.assoc_some.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"min-width","min-width",1926193728),min_width,new cljs.core.Keyword(null,"width","width",-384071477),width,new cljs.core.Keyword(null,"max-width","max-width",-1939924051),max_width,new cljs.core.Keyword(null,"min-height","min-height",398480837),min_height,new cljs.core.Keyword(null,"height","height",1025178622),height,new cljs.core.Keyword(null,"max-height","max-height",-612563804),max_height,new cljs.core.Keyword(null,"overflow","overflow",2058931880),overflow__$1,new cljs.core.Keyword(null,"overflow-x","overflow-x",-26547754),overflow_x,new cljs.core.Keyword(null,"overflow-y","overflow-y",-1436589285),overflow_y)),size),"inherit"),justify_content),align_items),align_self)], null),props)], null),children);
 });
-eckersdorf.flex.hbox = (function eckersdorf$flex$hbox(p__79452){
-var map__79453 = p__79452;
-var map__79453__$1 = ((((!((map__79453 == null)))?((((map__79453.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__79453.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__79453):map__79453);
-var align_self = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
-var height = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"height","height",1025178622));
-var min_width = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
-var align_items = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"stretch","stretch",-1888837380));
-var max_height = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
-var min_height = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
-var width = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var max_width = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
-var size = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"none","none",1333468478));
-var justify_content = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"start","start",-355208981));
-var gap = cljs.core.get.call(null,map__79453__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
+eckersdorf.flex.hbox = (function eckersdorf$flex$hbox(p__93888){
+var map__93889 = p__93888;
+var map__93889__$1 = ((((!((map__93889 == null)))?((((map__93889.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__93889.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__93889):map__93889);
+var align_self = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
+var height = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+var min_width = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
+var align_items = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"stretch","stretch",-1888837380));
+var max_height = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
+var min_height = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
+var width = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var max_width = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
+var size = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"none","none",1333468478));
+var justify_content = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"start","start",-355208981));
+var gap = cljs.core.get.call(null,map__93889__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
 var this$ = reagent.core.current_component.call(null);
 var props = cljs.core.apply.call(null,cljs.core.dissoc,reagent.core.props.call(null,this$),eckersdorf.flex.all_prop_keys);
 var gap_form = (cljs.core.truth_(gap)?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.flex.gap_,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"size","size",1098693007),gap], null)], null):null);
 var children = (cljs.core.truth_(gap)?cljs.core.interpose.call(null,gap_form,cljs.core.filter.call(null,cljs.core.identity,reagent.core.children.call(null,this$))):reagent.core.children.call(null,this$));
 return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),reagent.core.merge_props.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),eckersdorf.flex.align_self.call(null,eckersdorf.flex.align_items.call(null,eckersdorf.flex.justify_content.call(null,eckersdorf.flex.flow.call(null,eckersdorf.flex.flex.call(null,eckersdorf.flex.display.call(null,taoensso.encore.assoc_some.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"min-width","min-width",1926193728),min_width,new cljs.core.Keyword(null,"width","width",-384071477),width,new cljs.core.Keyword(null,"max-width","max-width",-1939924051),max_width,new cljs.core.Keyword(null,"min-height","min-height",398480837),min_height,new cljs.core.Keyword(null,"height","height",1025178622),height,new cljs.core.Keyword(null,"max-height","max-height",-612563804),max_height)),size),"row nowrap"),justify_content),align_items),align_self)], null),props)], null),children);
 });
-eckersdorf.flex.vbox = (function eckersdorf$flex$vbox(p__79455){
-var map__79456 = p__79455;
-var map__79456__$1 = ((((!((map__79456 == null)))?((((map__79456.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__79456.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__79456):map__79456);
-var align_self = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
-var height = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"height","height",1025178622));
-var min_width = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
-var align_items = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"stretch","stretch",-1888837380));
-var max_height = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
-var min_height = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
-var width = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var max_width = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
-var size = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"none","none",1333468478));
-var justify_content = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"start","start",-355208981));
-var gap = cljs.core.get.call(null,map__79456__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
+eckersdorf.flex.vbox = (function eckersdorf$flex$vbox(p__93891){
+var map__93892 = p__93891;
+var map__93892__$1 = ((((!((map__93892 == null)))?((((map__93892.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__93892.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__93892):map__93892);
+var align_self = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
+var height = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+var min_width = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
+var align_items = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"stretch","stretch",-1888837380));
+var max_height = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
+var min_height = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
+var width = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var max_width = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
+var size = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"none","none",1333468478));
+var justify_content = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"start","start",-355208981));
+var gap = cljs.core.get.call(null,map__93892__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
 var this$ = reagent.core.current_component.call(null);
 var props = cljs.core.apply.call(null,cljs.core.dissoc,reagent.core.props.call(null,this$),eckersdorf.flex.all_prop_keys);
 var gap_form = (cljs.core.truth_(gap)?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.flex.gap_,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"size","size",1098693007),gap], null)], null):null);
 var children = (cljs.core.truth_(gap)?cljs.core.interpose.call(null,gap_form,cljs.core.filter.call(null,cljs.core.identity,reagent.core.children.call(null,this$))):reagent.core.children.call(null,this$));
 return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),reagent.core.merge_props.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),eckersdorf.flex.align_self.call(null,eckersdorf.flex.align_items.call(null,eckersdorf.flex.justify_content.call(null,eckersdorf.flex.flow.call(null,eckersdorf.flex.flex.call(null,eckersdorf.flex.display.call(null,taoensso.encore.assoc_some.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"min-width","min-width",1926193728),min_width,new cljs.core.Keyword(null,"width","width",-384071477),width,new cljs.core.Keyword(null,"max-width","max-width",-1939924051),max_width,new cljs.core.Keyword(null,"min-height","min-height",398480837),min_height,new cljs.core.Keyword(null,"height","height",1025178622),height,new cljs.core.Keyword(null,"max-height","max-height",-612563804),max_height)),size),"column nowrap"),justify_content),align_items),align_self)], null),props)], null),children);
 });
-eckersdorf.flex.box = (function eckersdorf$flex$box(p__79458){
-var map__79459 = p__79458;
-var map__79459__$1 = ((((!((map__79459 == null)))?((((map__79459.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__79459.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__79459):map__79459);
-var align_self = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
-var height = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"height","height",1025178622));
-var min_width = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
-var align_items = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"stretch","stretch",-1888837380));
-var max_height = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
-var min_height = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
-var width = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var max_width = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
-var size = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"none","none",1333468478));
-var justify_content = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"start","start",-355208981));
-var gap = cljs.core.get.call(null,map__79459__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
+eckersdorf.flex.box = (function eckersdorf$flex$box(p__93894){
+var map__93895 = p__93894;
+var map__93895__$1 = ((((!((map__93895 == null)))?((((map__93895.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__93895.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__93895):map__93895);
+var align_self = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"align-self","align-self",1475936794));
+var height = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"height","height",1025178622));
+var min_width = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"min-width","min-width",1926193728));
+var align_items = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"stretch","stretch",-1888837380));
+var max_height = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"max-height","max-height",-612563804));
+var min_height = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"min-height","min-height",398480837));
+var width = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var max_width = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"max-width","max-width",-1939924051));
+var size = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"none","none",1333468478));
+var justify_content = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"start","start",-355208981));
+var gap = cljs.core.get.call(null,map__93895__$1,new cljs.core.Keyword(null,"gap","gap",80255254));
 var this$ = reagent.core.current_component.call(null);
 var props = cljs.core.apply.call(null,cljs.core.dissoc,reagent.core.props.call(null,this$),eckersdorf.flex.all_prop_keys);
 var gap_form = (cljs.core.truth_(gap)?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.flex.gap_,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"size","size",1098693007),gap], null)], null):null);
@@ -334,4 +334,4 @@ var children = (cljs.core.truth_(gap)?cljs.core.interpose.call(null,gap_form,clj
 return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),reagent.core.merge_props.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),eckersdorf.flex.align_self.call(null,eckersdorf.flex.align_items.call(null,eckersdorf.flex.justify_content.call(null,eckersdorf.flex.flow.call(null,eckersdorf.flex.flex.call(null,eckersdorf.flex.display.call(null,taoensso.encore.assoc_some.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"min-width","min-width",1926193728),min_width,new cljs.core.Keyword(null,"width","width",-384071477),width,new cljs.core.Keyword(null,"max-width","max-width",-1939924051),max_width,new cljs.core.Keyword(null,"min-height","min-height",398480837),min_height,new cljs.core.Keyword(null,"height","height",1025178622),height,new cljs.core.Keyword(null,"max-height","max-height",-612563804),max_height)),size),"inherit"),justify_content),align_items),align_self)], null),props)], null),children);
 });
 
-//# sourceMappingURL=flex.js.map?rel=1508970624785
+//# sourceMappingURL=flex.js.map?rel=1509053649322

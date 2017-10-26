@@ -40,28 +40,69 @@
                 :work-schedule/days days))))
 
 
-
 (rf/reg-event-db
-  :work-schedule/schedule-work
-  (fn [db [_ work]]
-    (let [schedule (:work-schedule/schedule db)]
-      (assoc db :work-schedule/schedule (distinct (conj schedule work))))))
-
-
-(rf/reg-event-db
-  :work-schedule/remove-work
+  :work-schedule/calculate-hours-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id
-                     work-schedule/workplace-id
                      work-schedule/datetime]}]]
+    (let [begin-time (dt/first-day-of-the-month (dtc/from-string datetime))
+          end-time (dt/plus (dt/last-day-of-the-month begin-time) (dt/days 1))
+          hours-worked (->> (:work-schedule/schedule db)
+                            (filter #(and (= worker-id (:work-schedule/worker-id %))
+                                          (#{"seller" "butcher"} (:work-schedule/work-type %))))
+                            (count))]
+      (assoc-in db [:work-schedule/stats worker-id :hours-worked-in-month] hours-worked))))
+
+
+(rf/reg-event-fx
+  :work-schedule/schedule-work
+  (fn [{db :db} [_ work]]
     (let [schedule (:work-schedule/schedule db)]
-      (assoc db :work-schedule/schedule
-                (->> schedule
-                     (remove (fn [work]
-                               (and (= worker-id (:work-schedule/worker-id work))
-                                    (= workplace-id (:work-schedule/workplace-id work))
-                                    (= datetime (:work-schedule/datetime work)))))
-                     (distinct)
-                     (into []))))))
+      {:db       (assoc db :work-schedule/schedule (distinct (conj schedule work)))
+       :dispatch [:work-schedule/calculate-hours-worked-in-month work]})))
+
+
+(rf/reg-event-fx
+  :work-schedule/schedule-multiple-work
+  (fn [{db :db} [_ works]]
+    (let [schedule (:work-schedule/schedule db)]
+      {:db       (assoc db :work-schedule/schedule (distinct (into schedule works)))
+       :dispatch [:work-schedule/calculate-hours-worked-in-month (first works)]})))
+
+
+(rf/reg-event-fx
+  :work-schedule/remove-work
+  (fn [{db :db} [_ {:keys [work-schedule/worker-id
+                           work-schedule/workplace-id
+                           work-schedule/datetime] :as work}]]
+    {:db       (let [schedule (:work-schedule/schedule db)]
+                 (assoc db :work-schedule/schedule
+                           (->> schedule
+                                (remove (fn [work]
+                                          (and (= worker-id (:work-schedule/worker-id work))
+                                               (= workplace-id (:work-schedule/workplace-id work))
+                                               (= datetime (:work-schedule/datetime work)))))
+                                (distinct)
+                                (into []))))
+     :dispatch [:work-schedule/calculate-hours-worked-in-month work]}))
+
+
+(rf/reg-event-fx
+  :work-schedule/remove-multiple-work
+  (fn [{db :db} [_ works]]
+    {:db       (let [schedule (:work-schedule/schedule db)]
+                 (assoc db :work-schedule/schedule
+                           (->> schedule
+                                (remove (fn [work]
+                                          (some (fn [{:keys [work-schedule/worker-id
+                                                             work-schedule/workplace-id
+                                                             work-schedule/datetime]}]
+                                                  (and (= worker-id (:work-schedule/worker-id work))
+                                                       (= workplace-id (:work-schedule/workplace-id work))
+                                                       (= datetime (:work-schedule/datetime work))))
+                                                works)))
+                                (distinct)
+                                (into []))))
+     :dispatch [:work-schedule/calculate-hours-worked-in-month (first works)]}))
 
 
 (rf/reg-event-fx
@@ -69,6 +110,13 @@
   (fn [db [_ work]]
     {:dispatch-n [[:work-schedule/remove-work work]
                   [:work-schedule/schedule-work work]]}))
+
+
+(rf/reg-event-fx
+  :work-schedule/update-multiple-work
+  (fn [db [_ works]]
+    {:dispatch-n [[:work-schedule/remove-multiple-work works]
+                  [:work-schedule/schedule-multiple-work works]]}))
 
 
 (rf/reg-event-fx
@@ -84,7 +132,8 @@
                       (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
                                         (dt/plus zero-time (dt/hours 21))
                                         (dt/hours 1)))]
-      {:dispatch-n works})))
+      {:dispatch-n (conj works
+                         [:work-schedule/calculate-hours-worked-in-month work])})))
 
 
 (rf/reg-event-fx

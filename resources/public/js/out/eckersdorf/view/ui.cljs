@@ -48,8 +48,7 @@
              [ant/icon {:type :calendar}]
              [:span "Harmonogram Pracy"]]]]
           [ant/layout {:style {:padding "24px 24px 0px"}}
-           [ant/layout-content {:style {:max-height "100%"
-                                        :overflow :auto}}
+           [ant/layout-content {:style {:height "100%"}}
             (case @panel
               :user [:div "pusto jeszcze"]
               :workplaces [workplaces.ui/workplaces-view]

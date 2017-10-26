@@ -17,7 +17,7 @@ goog.require('goog.History');
 eckersdorf.core.mount_components = (function eckersdorf$core$mount_components(){
 taoensso.timbre._log_BANG_.call(null,taoensso.timbre._STAR_config_STAR_,new cljs.core.Keyword(null,"info","info",-317069002),"eckersdorf.core","/tmp/form-init7472925615710723956.clj",19,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"auto","auto",-566279492),(new cljs.core.Delay((function (){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["components mounted!"], null);
-}),null)),null,-1524273005);
+}),null)),null,-1182159388);
 
 re_frame.core.clear_subscription_cache_BANG_.call(null);
 
@@ -39,4 +39,4 @@ re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs
 return eckersdorf.core.mount_components.call(null);
 });
 
-//# sourceMappingURL=core.js.map?rel=1508972779839
+//# sourceMappingURL=core.js.map?rel=1509056172084

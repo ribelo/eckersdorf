@@ -113,12 +113,18 @@
            (= "vacation")))))
 
 
+(rf/reg-sub
+  :work-schedule/hours-worked-in-month
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (get-in db [:work-schedule/stats worker-id :hours-worked-in-month])))
+
+
+
+
 @(rf/subscribe [:workplaces/list])
+(rf/subscribe [:workers/list])
 (rf/clear-subscription-cache!)
-@(rf/subscribe [:work-schedule/schedule])
-(rf/subscribe [:work-schedule/is-holiday?
-               {:work-schedule/workplace-id "59cd4fc48466bc2056615d66"
-                :work-schedule/datetime     (dtc/to-string (dt/date-time 2017 10 1 10))}])
+(rf/subscribe [:work-schedule/hours-worked-in-month {:work-schedule/worker-id "59ed196efe1b232a5593a5a6"}])
 
 
 ;(rf/reg-sub

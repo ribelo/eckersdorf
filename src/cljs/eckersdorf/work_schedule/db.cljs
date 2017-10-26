@@ -11,4 +11,5 @@
                                                             (dt/plus (dt/last-day-of-the-month now) (dt/days 1))
                                                             (dt/days 1)))
    :work-schedule/show-dialog           false
-   :work-schedule/schedule              []})
+   :work-schedule/schedule              []
+   :work-schedule/stats {}})
