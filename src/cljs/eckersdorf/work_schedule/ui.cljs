@@ -77,6 +77,19 @@
                                                                  (-> date (.toISOString) (dtc/from-string))]))}]])))
 
 
+(defn reload-button []
+  (fn []
+    [ant/button {:icon :reload}]))
+
+
+(defn sync-button []
+  (let [edited? (rf/subscribe [:work-schedule/edited?])]
+    (fn []
+     [ant/button {:type (when @edited? :primary)
+                  :icon :sync
+                  :on-click #(rf/dispatch [:work-schedule/sync])}])))
+
+
 (defn work-cell [{:keys [work-schedule/worker-id
                          work-schedule/workplace-id
                          work-schedule/datetime] :as m}]
@@ -107,28 +120,28 @@
                              #fcb8d3 4px,
                              #fcb8d3 8px)"]
     (fn [m]
+
       (let [work-type (:work-schedule/work-type @work)
             working-hours (:worker/working-hours @worker)]
         [flex/box {:size            1
                    :on-click        (fn []
                                       (case work-type
                                         nil (rf/dispatch [:work-schedule/schedule-work (assoc m :work-schedule/work-type "seller")])
-                                        "seller" (rf/dispatch [:work-schedule/update-work (assoc m :work-schedule/work-type "butcher")])
+                                        "seller" (do (println m) (rf/dispatch [:work-schedule/update-work (assoc m :work-schedule/work-type "butcher")]))
                                         "butcher" (rf/dispatch [:work-schedule/remove-work m])
                                         "vacation" (do (rf/dispatch [:work-schedule/clear-day m])
                                                        (js/setTimeout #(rf/dispatch [:work-schedule/schedule-work (assoc m :work-schedule/work-type "seller")])))
                                         "holiday" nil))
                    :on-double-click (fn []
-                                      (let [datetime (dtc/from-string datetime)
-                                            end-datetime (dt/plus datetime (dt/hours (min working-hours
+                                      (let [end-datetime (dt/plus datetime (dt/hours (min working-hours
                                                                                           (- 21 (dt/hour datetime)))))]
                                         (case work-type
-                                          nil (let [works (map #(assoc m :work-schedule/datetime (dtc/to-string %)) (dtp/periodic-seq datetime end-datetime (dt/hours 1)))]
+                                          nil (let [works (map #(assoc m :work-schedule/datetime %) (dtp/periodic-seq datetime end-datetime (dt/hours 1)))]
                                                 (rf/dispatch [:work-schedule/remove-multiple-work works]))
-                                          "seller" (let [works (map #(assoc m :work-schedule/datetime (dtc/to-string %)
+                                          "seller" (let [works (map #(assoc m :work-schedule/datetime %
                                                                               :work-schedule/work-type "seller") (dtp/periodic-seq datetime end-datetime (dt/hours 1)))]
                                                      (rf/dispatch [:work-schedule/update-multiple-work works]))
-                                          "butcher" (let [works (map #(assoc m :work-schedule/datetime (dtc/to-string %)
+                                          "butcher" (let [works (map #(assoc m :work-schedule/datetime %
                                                                                :work-schedule/work-type "butcher") (dtp/periodic-seq datetime end-datetime (dt/hours 1)))]
                                                       (rf/dispatch [:work-schedule/update-multiple-work works]))
                                           "holiday" nil)))
@@ -158,86 +171,98 @@
       [flex/vbox {:height "100%"}
        [flex/hbox {:justify-content :center}
         [select-workplace]
-        [select-month]]
-       [flex/hbox {:height "100%"}
-        [flex/vbox {:size   "10 0 0"
-                    :height "100%"
-                    :style  {:overflow-y :scroll}}
-         (doall (for [date @days
-                      :let [weekday (dt/day-of-week date)
-                            weekday-name (get long-weekdays weekday)]]
-                  ^{:key (str date)}
-                  [flex/vbox
-                   [flex/hbox {:gap         "4px"
-                               :align-items :center}
-                    [:h3 (str (dtf/unparse (dtf/formatter "yyyy-MM-dd") date) " " weekday-name)]
-                    [ant/icon {:type     :dingding
-                               :on-click (fn []
-                                           (let [holiday? (rf/subscribe [:work-schedule/is-holiday? {:work-schedule/workplace-id @workplace-id
-                                                                                                     :work-schedule/datetime     (dtc/to-string date)}])]
-                                             (if-not @holiday?
-                                               (rf/dispatch [:work-schedule/set-holiday @workplace-id @workers (dtc/to-string date)])
-                                               (rf/dispatch [:work-schedule/remove-holiday @workplace-id @workers (dtc/to-string date)]))))
-                               :style    {:cursor :pointer}}]]
-                   [flex/hbox
-                    [flex/box {:size  3
-                               :style {:border "1px solid #d9d9d9"}}
-                     nil]
-                    (doall (for [hour (range 6 21)]
-                             ^{:key hour}
-                             [flex/box {:size  1
-                                        :style {:border     "1px solid #d9d9d9"
-                                                :text-align :center}}
-                              (str hour ":00")]))]
-                   (doall (for [{:keys [mongo/object-id
-                                        worker/first-name
-                                        worker/last-name
-                                        worker/working-hours]} @workers]
-                            ^{:key object-id}
-                            [flex/hbox
-                             [flex/hbox {:size  3
-                                         :style {:border "1px solid #d9d9d9"}}
-                              [flex/hbox {:size            1
-                                          :justify-content :space-between
-                                          :align-content   :center}
-                               [:div (str first-name " " last-name)]
-                               [flex/hbox {:gap "4px"}
-                                [ant/icon {:type     :tag
-                                           :on-click (fn []
-                                                       (let [holiday? (rf/subscribe [:work-schedule/is-holiday? {:work-schedule/workplace-id @workplace-id
-                                                                                                                 :work-schedule/datetime     (dtc/to-string date)}])]
-                                                         (when-not @holiday?
-                                                           (rf/dispatch [:work-schedule/set-vacation
-                                                                         {:work-schedule/workplace-id @workplace-id
-                                                                          :work-schedule/worker-id    object-id
-                                                                          :work-schedule/datetime     (dtc/to-string date)}]))))
-                                           :style    {:cursor :pointer}}]
-                                [ant/icon {:type     :delete
-                                           :style    {:cursor :pointer}
-                                           :on-click (fn []
-                                                       (let [holiday? (rf/subscribe [:work-schedule/is-holiday? {:work-schedule/workplace-id @workplace-id
-                                                                                                                 :work-schedule/datetime     (dtc/to-string date)}])]
-                                                         (when-not @holiday?
-                                                           (rf/dispatch [:work-schedule/clear-day
-                                                                         {:work-schedule/workplace-id @workplace-id
-                                                                          :work-schedule/worker-id    object-id
-                                                                          :work-schedule/datetime     (dtc/to-string date)}]))))}]]]]
-                             (doall (for [hour (range 6 21)
-                                          :let [datetime (dtc/to-string (dt/plus date (dt/hours hour)))]]
-                                      ^{:key hour}
-                                      [work-cell {:work-schedule/workplace-id @workplace-id
-                                                  :work-schedule/worker-id    object-id
-                                                  :work-schedule/datetime     datetime}]))]))
-                   [:br]]))]
-        [flex/vbox {:size "3 0 auto"}
-         (doall (for [{:keys [mongo/object-id
-                              worker/first-name
-                              worker/last-name
-                              worker/working-hours]} @workers]
-                  ^{:key object-id}
-                  [flex/hbox {:justify-content :space-between
-                              :align-content   :center}
-                   [:div (str first-name " " last-name)]
-                   [worked-hours {:work-schedule/worker-id object-id
-                                  :work-schedule/workplace-id @workplace-id
-                                  :work-schedule/datetime @main-date}]]))]]])))
+        [select-month]
+        [reload-button]
+        [sync-button]]
+       (if-not @workplace-id
+         [flex/hbox {:size 1
+                     :justify-content :center
+                     :align-items :center}
+          [:h1 "proszę wybrać sklep"]]
+         [flex/hbox {:height "100%"}
+          [flex/vbox {:size   "14 0 0"
+                      :height "100%"
+                      :style  {:overflow-y :scroll}}
+           (doall (for [date @days
+                        :let [weekday (dt/day-of-week date)
+                              weekday-name (get long-weekdays weekday)]]
+                    ^{:key (str date)}
+                    [flex/vbox
+                     [flex/hbox {:gap         "4px"
+                                 :align-items :center}
+                      [:h3 (str (dtf/unparse (dtf/formatter "yyyy-MM-dd") date) " " weekday-name)]
+                      [ant/icon {:type     :dingding
+                                 :on-click (fn []
+                                             (let [holiday? (rf/subscribe [:work-schedule/is-holiday? {:work-schedule/workplace-id @workplace-id
+                                                                                                       :work-schedule/datetime     date}])]
+                                               (if-not @holiday?
+                                                 (rf/dispatch [:work-schedule/set-holiday @workplace-id @workers date])
+                                                 (rf/dispatch [:work-schedule/remove-holiday @workplace-id @workers date]))))
+                                 :style    {:cursor :pointer}}]]
+                     [flex/hbox
+                      [flex/box {:size  3
+                                 :style {:border "1px solid #d9d9d9"}}
+                       nil]
+                      (doall (for [hour (range 6 21)]
+                               ^{:key hour}
+                               [flex/box {:size  1
+                                          :style {:border     "1px solid #d9d9d9"
+                                                  :text-align :center}}
+                                (str hour ":00")]))]
+                     (doall (for [{:keys [mongo/object-id
+                                          worker/first-name
+                                          worker/last-name
+                                          worker/working-hours]} @workers]
+                              ^{:key object-id}
+                              [flex/hbox
+                               [flex/hbox {:size  3
+                                           :style {:border "1px solid #d9d9d9"}}
+                                [flex/hbox {:size            1
+                                            :justify-content :space-between
+                                            :align-content   :center}
+                                 [:div (str first-name " " last-name)]
+                                 [flex/hbox {:gap "4px"}
+                                  [ant/icon {:type     :tag
+                                             :on-click (fn []
+                                                         (let [holiday? (rf/subscribe [:work-schedule/is-holiday? {:work-schedule/workplace-id @workplace-id
+                                                                                                                   :work-schedule/datetime     date}])]
+                                                           (when-not @holiday?
+                                                             (rf/dispatch [:work-schedule/set-vacation
+                                                                           {:work-schedule/workplace-id @workplace-id
+                                                                            :work-schedule/worker-id    object-id
+                                                                            :work-schedule/datetime     date}]))))
+                                             :style    {:cursor :pointer}}]
+                                  [ant/icon {:type     :delete
+                                             :style    {:cursor :pointer}
+                                             :on-click (fn []
+                                                         (let [holiday? (rf/subscribe [:work-schedule/is-holiday? {:work-schedule/workplace-id @workplace-id
+                                                                                                                   :work-schedule/datetime     date}])]
+                                                           (when-not @holiday?
+                                                             (rf/dispatch [:work-schedule/clear-day
+                                                                           {:work-schedule/workplace-id @workplace-id
+                                                                            :work-schedule/worker-id    object-id
+                                                                            :work-schedule/datetime     date}]))))}]]]]
+                               (doall (for [hour (range 6 21)
+                                            :let [datetime (dt/plus date (dt/hours hour))]]
+                                        ^{:key hour}
+                                        [work-cell {:work-schedule/workplace-id @workplace-id
+                                                    :work-schedule/worker-id    object-id
+                                                    :work-schedule/datetime     datetime}]))]))
+                     [:br]]))]
+          [flex/vbox {:size  "2 0 auto"
+                      :style {:padding "0px 12px"}}
+           [flex/hbox {:justify-content :space-between
+                       :align-content   :center}
+            [:div "osoba"]
+            [:div "liczba godzin"]]
+           (doall (for [{:keys [mongo/object-id
+                                worker/first-name
+                                worker/last-name
+                                worker/working-hours]} @workers]
+                    ^{:key object-id}
+                    [flex/hbox {:justify-content :space-between
+                                :align-content   :center}
+                     [:div (str first-name " " last-name)]
+                     [worked-hours {:work-schedule/worker-id    object-id
+                                    :work-schedule/workplace-id @workplace-id
+                                    :work-schedule/datetime     @main-date}]]))]])])))

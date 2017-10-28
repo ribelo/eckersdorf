@@ -111,3 +111,6 @@
 
 (mc/find-maps tmp-db "work-schedule")
 (db.work-schedule/reset-work-schedule-collection tmp-db)
+
+(let [now (dt/now)]
+  (distinct [now (dt/plus now (dt/hours 1)) now]))

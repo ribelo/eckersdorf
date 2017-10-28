@@ -11,8 +11,8 @@ goog.require('cljs_time.internal.core');
  *   and the growing value, return a lazy sequence.
  */
 cljs_time.periodic.periodic_seq = (function cljs_time$periodic$periodic_seq(var_args){
-var G__53461 = arguments.length;
-switch (G__53461) {
+var G__43757 = arguments.length;
+switch (G__43757) {
 case 2:
 return cljs_time.periodic.periodic_seq.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -48,4 +48,4 @@ return cljs_time.core.before_QMARK_.call(null,next,end);
 cljs_time.periodic.periodic_seq.cljs$lang$maxFixedArity = 3;
 
 
-//# sourceMappingURL=periodic.js.map?rel=1508862730781
+//# sourceMappingURL=periodic.js.map?rel=1509094247854

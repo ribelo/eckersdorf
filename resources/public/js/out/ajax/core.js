@@ -46,36 +46,36 @@ ajax.core.detect_response_format = ajax.easy.detect_response_format;
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.GET = (function ajax$core$GET(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42594 = arguments.length;
-var i__31527__auto___42595 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42584 = arguments.length;
+var i__31517__auto___42585 = (0);
 while(true){
-if((i__31527__auto___42595 < len__31526__auto___42594)){
-args__31533__auto__.push((arguments[i__31527__auto___42595]));
+if((i__31517__auto___42585 < len__31516__auto___42584)){
+args__31523__auto__.push((arguments[i__31517__auto___42585]));
 
-var G__42596 = (i__31527__auto___42595 + (1));
-i__31527__auto___42595 = G__42596;
+var G__42586 = (i__31517__auto___42585 + (1));
+i__31517__auto___42585 = G__42586;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.GET.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.GET.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.GET.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"GET",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"GET",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.GET.cljs$lang$maxFixedArity = (1);
 
-ajax.core.GET.cljs$lang$applyTo = (function (seq42592){
-var G__42593 = cljs.core.first.call(null,seq42592);
-var seq42592__$1 = cljs.core.next.call(null,seq42592);
-return ajax.core.GET.cljs$core$IFn$_invoke$arity$variadic(G__42593,seq42592__$1);
+ajax.core.GET.cljs$lang$applyTo = (function (seq42582){
+var G__42583 = cljs.core.first.call(null,seq42582);
+var seq42582__$1 = cljs.core.next.call(null,seq42582);
+return ajax.core.GET.cljs$core$IFn$_invoke$arity$variadic(G__42583,seq42582__$1);
 });
 
 /**
@@ -92,36 +92,36 @@ return ajax.core.GET.cljs$core$IFn$_invoke$arity$variadic(G__42593,seq42592__$1)
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.HEAD = (function ajax$core$HEAD(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42599 = arguments.length;
-var i__31527__auto___42600 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42589 = arguments.length;
+var i__31517__auto___42590 = (0);
 while(true){
-if((i__31527__auto___42600 < len__31526__auto___42599)){
-args__31533__auto__.push((arguments[i__31527__auto___42600]));
+if((i__31517__auto___42590 < len__31516__auto___42589)){
+args__31523__auto__.push((arguments[i__31517__auto___42590]));
 
-var G__42601 = (i__31527__auto___42600 + (1));
-i__31527__auto___42600 = G__42601;
+var G__42591 = (i__31517__auto___42590 + (1));
+i__31517__auto___42590 = G__42591;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.HEAD.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.HEAD.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.HEAD.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"HEAD",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"HEAD",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.HEAD.cljs$lang$maxFixedArity = (1);
 
-ajax.core.HEAD.cljs$lang$applyTo = (function (seq42597){
-var G__42598 = cljs.core.first.call(null,seq42597);
-var seq42597__$1 = cljs.core.next.call(null,seq42597);
-return ajax.core.HEAD.cljs$core$IFn$_invoke$arity$variadic(G__42598,seq42597__$1);
+ajax.core.HEAD.cljs$lang$applyTo = (function (seq42587){
+var G__42588 = cljs.core.first.call(null,seq42587);
+var seq42587__$1 = cljs.core.next.call(null,seq42587);
+return ajax.core.HEAD.cljs$core$IFn$_invoke$arity$variadic(G__42588,seq42587__$1);
 });
 
 /**
@@ -138,36 +138,36 @@ return ajax.core.HEAD.cljs$core$IFn$_invoke$arity$variadic(G__42598,seq42597__$1
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.POST = (function ajax$core$POST(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42604 = arguments.length;
-var i__31527__auto___42605 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42594 = arguments.length;
+var i__31517__auto___42595 = (0);
 while(true){
-if((i__31527__auto___42605 < len__31526__auto___42604)){
-args__31533__auto__.push((arguments[i__31527__auto___42605]));
+if((i__31517__auto___42595 < len__31516__auto___42594)){
+args__31523__auto__.push((arguments[i__31517__auto___42595]));
 
-var G__42606 = (i__31527__auto___42605 + (1));
-i__31527__auto___42605 = G__42606;
+var G__42596 = (i__31517__auto___42595 + (1));
+i__31517__auto___42595 = G__42596;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.POST.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.POST.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.POST.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"POST",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"POST",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.POST.cljs$lang$maxFixedArity = (1);
 
-ajax.core.POST.cljs$lang$applyTo = (function (seq42602){
-var G__42603 = cljs.core.first.call(null,seq42602);
-var seq42602__$1 = cljs.core.next.call(null,seq42602);
-return ajax.core.POST.cljs$core$IFn$_invoke$arity$variadic(G__42603,seq42602__$1);
+ajax.core.POST.cljs$lang$applyTo = (function (seq42592){
+var G__42593 = cljs.core.first.call(null,seq42592);
+var seq42592__$1 = cljs.core.next.call(null,seq42592);
+return ajax.core.POST.cljs$core$IFn$_invoke$arity$variadic(G__42593,seq42592__$1);
 });
 
 /**
@@ -184,36 +184,36 @@ return ajax.core.POST.cljs$core$IFn$_invoke$arity$variadic(G__42603,seq42602__$1
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.PUT = (function ajax$core$PUT(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42609 = arguments.length;
-var i__31527__auto___42610 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42599 = arguments.length;
+var i__31517__auto___42600 = (0);
 while(true){
-if((i__31527__auto___42610 < len__31526__auto___42609)){
-args__31533__auto__.push((arguments[i__31527__auto___42610]));
+if((i__31517__auto___42600 < len__31516__auto___42599)){
+args__31523__auto__.push((arguments[i__31517__auto___42600]));
 
-var G__42611 = (i__31527__auto___42610 + (1));
-i__31527__auto___42610 = G__42611;
+var G__42601 = (i__31517__auto___42600 + (1));
+i__31517__auto___42600 = G__42601;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.PUT.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.PUT.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.PUT.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"PUT",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"PUT",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.PUT.cljs$lang$maxFixedArity = (1);
 
-ajax.core.PUT.cljs$lang$applyTo = (function (seq42607){
-var G__42608 = cljs.core.first.call(null,seq42607);
-var seq42607__$1 = cljs.core.next.call(null,seq42607);
-return ajax.core.PUT.cljs$core$IFn$_invoke$arity$variadic(G__42608,seq42607__$1);
+ajax.core.PUT.cljs$lang$applyTo = (function (seq42597){
+var G__42598 = cljs.core.first.call(null,seq42597);
+var seq42597__$1 = cljs.core.next.call(null,seq42597);
+return ajax.core.PUT.cljs$core$IFn$_invoke$arity$variadic(G__42598,seq42597__$1);
 });
 
 /**
@@ -230,36 +230,36 @@ return ajax.core.PUT.cljs$core$IFn$_invoke$arity$variadic(G__42608,seq42607__$1)
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.DELETE = (function ajax$core$DELETE(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42614 = arguments.length;
-var i__31527__auto___42615 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42604 = arguments.length;
+var i__31517__auto___42605 = (0);
 while(true){
-if((i__31527__auto___42615 < len__31526__auto___42614)){
-args__31533__auto__.push((arguments[i__31527__auto___42615]));
+if((i__31517__auto___42605 < len__31516__auto___42604)){
+args__31523__auto__.push((arguments[i__31517__auto___42605]));
 
-var G__42616 = (i__31527__auto___42615 + (1));
-i__31527__auto___42615 = G__42616;
+var G__42606 = (i__31517__auto___42605 + (1));
+i__31517__auto___42605 = G__42606;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.DELETE.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.DELETE.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.DELETE.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"DELETE",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"DELETE",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.DELETE.cljs$lang$maxFixedArity = (1);
 
-ajax.core.DELETE.cljs$lang$applyTo = (function (seq42612){
-var G__42613 = cljs.core.first.call(null,seq42612);
-var seq42612__$1 = cljs.core.next.call(null,seq42612);
-return ajax.core.DELETE.cljs$core$IFn$_invoke$arity$variadic(G__42613,seq42612__$1);
+ajax.core.DELETE.cljs$lang$applyTo = (function (seq42602){
+var G__42603 = cljs.core.first.call(null,seq42602);
+var seq42602__$1 = cljs.core.next.call(null,seq42602);
+return ajax.core.DELETE.cljs$core$IFn$_invoke$arity$variadic(G__42603,seq42602__$1);
 });
 
 /**
@@ -276,36 +276,36 @@ return ajax.core.DELETE.cljs$core$IFn$_invoke$arity$variadic(G__42613,seq42612__
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.OPTIONS = (function ajax$core$OPTIONS(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42619 = arguments.length;
-var i__31527__auto___42620 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42609 = arguments.length;
+var i__31517__auto___42610 = (0);
 while(true){
-if((i__31527__auto___42620 < len__31526__auto___42619)){
-args__31533__auto__.push((arguments[i__31527__auto___42620]));
+if((i__31517__auto___42610 < len__31516__auto___42609)){
+args__31523__auto__.push((arguments[i__31517__auto___42610]));
 
-var G__42621 = (i__31527__auto___42620 + (1));
-i__31527__auto___42620 = G__42621;
+var G__42611 = (i__31517__auto___42610 + (1));
+i__31517__auto___42610 = G__42611;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.OPTIONS.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.OPTIONS.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.OPTIONS.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"OPTIONS",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"OPTIONS",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.OPTIONS.cljs$lang$maxFixedArity = (1);
 
-ajax.core.OPTIONS.cljs$lang$applyTo = (function (seq42617){
-var G__42618 = cljs.core.first.call(null,seq42617);
-var seq42617__$1 = cljs.core.next.call(null,seq42617);
-return ajax.core.OPTIONS.cljs$core$IFn$_invoke$arity$variadic(G__42618,seq42617__$1);
+ajax.core.OPTIONS.cljs$lang$applyTo = (function (seq42607){
+var G__42608 = cljs.core.first.call(null,seq42607);
+var seq42607__$1 = cljs.core.next.call(null,seq42607);
+return ajax.core.OPTIONS.cljs$core$IFn$_invoke$arity$variadic(G__42608,seq42607__$1);
 });
 
 /**
@@ -322,36 +322,36 @@ return ajax.core.OPTIONS.cljs$core$IFn$_invoke$arity$variadic(G__42618,seq42617_
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.TRACE = (function ajax$core$TRACE(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42624 = arguments.length;
-var i__31527__auto___42625 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42614 = arguments.length;
+var i__31517__auto___42615 = (0);
 while(true){
-if((i__31527__auto___42625 < len__31526__auto___42624)){
-args__31533__auto__.push((arguments[i__31527__auto___42625]));
+if((i__31517__auto___42615 < len__31516__auto___42614)){
+args__31523__auto__.push((arguments[i__31517__auto___42615]));
 
-var G__42626 = (i__31527__auto___42625 + (1));
-i__31527__auto___42625 = G__42626;
+var G__42616 = (i__31517__auto___42615 + (1));
+i__31517__auto___42615 = G__42616;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.TRACE.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.TRACE.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.TRACE.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"TRACE",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"TRACE",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.TRACE.cljs$lang$maxFixedArity = (1);
 
-ajax.core.TRACE.cljs$lang$applyTo = (function (seq42622){
-var G__42623 = cljs.core.first.call(null,seq42622);
-var seq42622__$1 = cljs.core.next.call(null,seq42622);
-return ajax.core.TRACE.cljs$core$IFn$_invoke$arity$variadic(G__42623,seq42622__$1);
+ajax.core.TRACE.cljs$lang$applyTo = (function (seq42612){
+var G__42613 = cljs.core.first.call(null,seq42612);
+var seq42612__$1 = cljs.core.next.call(null,seq42612);
+return ajax.core.TRACE.cljs$core$IFn$_invoke$arity$variadic(G__42613,seq42612__$1);
 });
 
 /**
@@ -368,36 +368,36 @@ return ajax.core.TRACE.cljs$core$IFn$_invoke$arity$variadic(G__42623,seq42622__$
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.PATCH = (function ajax$core$PATCH(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42629 = arguments.length;
-var i__31527__auto___42630 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42619 = arguments.length;
+var i__31517__auto___42620 = (0);
 while(true){
-if((i__31527__auto___42630 < len__31526__auto___42629)){
-args__31533__auto__.push((arguments[i__31527__auto___42630]));
+if((i__31517__auto___42620 < len__31516__auto___42619)){
+args__31523__auto__.push((arguments[i__31517__auto___42620]));
 
-var G__42631 = (i__31527__auto___42630 + (1));
-i__31527__auto___42630 = G__42631;
+var G__42621 = (i__31517__auto___42620 + (1));
+i__31517__auto___42620 = G__42621;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.PATCH.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.PATCH.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.PATCH.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"PATCH",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"PATCH",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.PATCH.cljs$lang$maxFixedArity = (1);
 
-ajax.core.PATCH.cljs$lang$applyTo = (function (seq42627){
-var G__42628 = cljs.core.first.call(null,seq42627);
-var seq42627__$1 = cljs.core.next.call(null,seq42627);
-return ajax.core.PATCH.cljs$core$IFn$_invoke$arity$variadic(G__42628,seq42627__$1);
+ajax.core.PATCH.cljs$lang$applyTo = (function (seq42617){
+var G__42618 = cljs.core.first.call(null,seq42617);
+var seq42617__$1 = cljs.core.next.call(null,seq42617);
+return ajax.core.PATCH.cljs$core$IFn$_invoke$arity$variadic(G__42618,seq42617__$1);
 });
 
 /**
@@ -414,37 +414,37 @@ return ajax.core.PATCH.cljs$core$IFn$_invoke$arity$variadic(G__42628,seq42627__$
  *      :params - a map of parameters that will be sent with the request
  */
 ajax.core.PURGE = (function ajax$core$PURGE(var_args){
-var args__31533__auto__ = [];
-var len__31526__auto___42634 = arguments.length;
-var i__31527__auto___42635 = (0);
+var args__31523__auto__ = [];
+var len__31516__auto___42624 = arguments.length;
+var i__31517__auto___42625 = (0);
 while(true){
-if((i__31527__auto___42635 < len__31526__auto___42634)){
-args__31533__auto__.push((arguments[i__31527__auto___42635]));
+if((i__31517__auto___42625 < len__31516__auto___42624)){
+args__31523__auto__.push((arguments[i__31517__auto___42625]));
 
-var G__42636 = (i__31527__auto___42635 + (1));
-i__31527__auto___42635 = G__42636;
+var G__42626 = (i__31517__auto___42625 + (1));
+i__31517__auto___42625 = G__42626;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__31534__auto__ = ((((1) < args__31533__auto__.length))?(new cljs.core.IndexedSeq(args__31533__auto__.slice((1)),(0),null)):null);
-return ajax.core.PURGE.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31534__auto__);
+var argseq__31524__auto__ = ((((1) < args__31523__auto__.length))?(new cljs.core.IndexedSeq(args__31523__auto__.slice((1)),(0),null)):null);
+return ajax.core.PURGE.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__31524__auto__);
 });
 
 ajax.core.PURGE.cljs$core$IFn$_invoke$arity$variadic = (function (uri,opts){
-var f__42191__auto__ = cljs.core.first.call(null,opts);
-return ajax.easy.easy_ajax_request.call(null,uri,"PURGE",(((f__42191__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42191__auto__));
+var f__42224__auto__ = cljs.core.first.call(null,opts);
+return ajax.easy.easy_ajax_request.call(null,uri,"PURGE",(((f__42224__auto__ instanceof cljs.core.Keyword))?cljs.core.apply.call(null,cljs.core.hash_map,opts):f__42224__auto__));
 });
 
 ajax.core.PURGE.cljs$lang$maxFixedArity = (1);
 
-ajax.core.PURGE.cljs$lang$applyTo = (function (seq42632){
-var G__42633 = cljs.core.first.call(null,seq42632);
-var seq42632__$1 = cljs.core.next.call(null,seq42632);
-return ajax.core.PURGE.cljs$core$IFn$_invoke$arity$variadic(G__42633,seq42632__$1);
+ajax.core.PURGE.cljs$lang$applyTo = (function (seq42622){
+var G__42623 = cljs.core.first.call(null,seq42622);
+var seq42622__$1 = cljs.core.next.call(null,seq42622);
+return ajax.core.PURGE.cljs$core$IFn$_invoke$arity$variadic(G__42623,seq42622__$1);
 });
 
 
-//# sourceMappingURL=core.js.map?rel=1508862159532
+//# sourceMappingURL=core.js.map?rel=1509094246716

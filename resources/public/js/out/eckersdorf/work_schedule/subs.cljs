@@ -59,7 +59,7 @@
 ;         (filter (fn [m]
 ;                   (and (= worker-id (:work-schedule/worker-id m))
 ;                        (= workplace-id (:work-schedule/workplace-id m))
-;                        (= datetime (:work-schedule/datetime m)))))
+;                        (dt/equal? datetime (:work-schedule/datetime m)))))
 ;         (first))))
 
 
@@ -69,12 +69,14 @@
   (fn [schedule [_ {:keys [work-schedule/worker-id
                            work-schedule/workplace-id
                            work-schedule/datetime]}]]
-    (->> schedule
-         (filter (fn [m]
-                   (and (= worker-id (:work-schedule/worker-id m))
-                        (= workplace-id (:work-schedule/workplace-id m))
-                        (= datetime (:work-schedule/datetime m)))))
-         (first))))
+    (-> schedule
+        (->> (filter (fn [m]
+                       (and (= worker-id (:work-schedule/worker-id m))
+                            (= workplace-id (:work-schedule/workplace-id m))
+                            (dt/equal? datetime (:work-schedule/datetime m))))))
+        (first)
+        ;(update :work-schedule/datetime dtc/to-string)
+        )))
 
 
 (rf/reg-sub
@@ -82,13 +84,12 @@
   :<- [:work-schedule/schedule]
   (fn [schedule [_ {:keys [work-schedule/workplace-id
                            work-schedule/datetime]}]]
-    (let [datetime (dtc/from-string datetime)
-          zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))]
+    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))]
       (->> schedule
            (filter (fn [m]
                      (and (= workplace-id (:work-schedule/workplace-id m))
-                          (= (dtc/to-string (dt/plus zero-time (dt/hours 12)))
-                             (:work-schedule/datetime m)))))
+                          (dt/equal? (dt/plus zero-time (dt/hours 12))
+                                     (:work-schedule/datetime m)))))
            (first)
            :work-schedule/work-type
            (= "holiday")))))
@@ -100,14 +101,13 @@
   (fn [schedule [_ {:keys [work-schedule/workplace-id
                            work-schedule/worker-id
                            work-schedule/datetime]}]]
-    (let [datetime (dtc/from-string datetime)
-          zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))]
+    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))]
       (->> schedule
            (filter (fn [m]
                      (and (= worker-id (:work-schedule/worker-id m))
                           (= workplace-id (:work-schedule/workplace-id m))
-                          (= (dtc/to-string (dt/plus zero-time (dt/hours 12)))
-                             (:work-schedule/datetime m)))))
+                          (dt/equal? (dt/plus zero-time (dt/hours 12))
+                                     (:work-schedule/datetime m)))))
            (first)
            :work-schedule/work-type
            (= "vacation")))))
@@ -116,11 +116,15 @@
 (rf/reg-sub
   :work-schedule/hours-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id]}]]
-    (get-in db [:work-schedule/stats worker-id :hours-worked-in-month])))
+    (or (get-in db [:work-schedule/stats worker-id :hours-worked-in-month]) 0)))
 
 
+(rf/reg-sub
+  :work-schedule/edited?
+  (fn [db _]
+    (:work-schedule/edited? db)))
 
-
+(rf/dispatch [:work-schedule/clear])
 @(rf/subscribe [:workplaces/list])
 (rf/subscribe [:workers/list])
 (rf/clear-subscription-cache!)

@@ -87,6 +87,8 @@
 
 (s/def :work-schedule/workplace-id :workplace/object-id)
 (s/def :work-schedule/datetime :datetime/datetime)
+(s/def :work-schedule/begin-datetime :datetime/datetime)
+(s/def :work-schedule/end-datetime :datetime/datetime)
 (s/def :work-schedule/worker-id :worker/object-id)
 (s/def :work-schedule/work-type #{"butcher" "seller" "holiday"})
 

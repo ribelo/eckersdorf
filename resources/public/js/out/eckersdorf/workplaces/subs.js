@@ -11,25 +11,25 @@ return new cljs.core.Keyword("workplaces","show-dialog?","workplaces/show-dialog
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword("workplaces","workplace-form","workplaces/workplace-form",2000080237),(function (db,_){
 return new cljs.core.Keyword("workplaces","workplace-form","workplaces/workplace-form",2000080237).cljs$core$IFn$_invoke$arity$1(db);
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword("workplace","get-by-id","workplace/get-by-id",-1352956083),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplaces","list","workplaces/list",852308376)], null),(function (workplaces,p__48936){
-var vec__48937 = p__48936;
-var _ = cljs.core.nth.call(null,vec__48937,(0),null);
-var id = cljs.core.nth.call(null,vec__48937,(1),null);
-return cljs.core.first.call(null,cljs.core.filter.call(null,((function (vec__48937,_,id){
-return (function (p1__48935_SHARP_){
-return cljs.core._EQ_.call(null,id,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663).cljs$core$IFn$_invoke$arity$1(p1__48935_SHARP_));
-});})(vec__48937,_,id))
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword("workplace","get-by-id","workplace/get-by-id",-1352956083),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplaces","list","workplaces/list",852308376)], null),(function (workplaces,p__49176){
+var vec__49177 = p__49176;
+var _ = cljs.core.nth.call(null,vec__49177,(0),null);
+var id = cljs.core.nth.call(null,vec__49177,(1),null);
+return cljs.core.first.call(null,cljs.core.filter.call(null,((function (vec__49177,_,id){
+return (function (p1__49175_SHARP_){
+return cljs.core._EQ_.call(null,id,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663).cljs$core$IFn$_invoke$arity$1(p1__49175_SHARP_));
+});})(vec__49177,_,id))
 ,workplaces));
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword("workplace","get-by-email","workplace/get-by-email",1808089154),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplaces","list","workplaces/list",852308376)], null),(function (workplaces,p__48941){
-var vec__48942 = p__48941;
-var _ = cljs.core.nth.call(null,vec__48942,(0),null);
-var x = cljs.core.nth.call(null,vec__48942,(1),null);
-return cljs.core.first.call(null,cljs.core.filter.call(null,((function (vec__48942,_,x){
-return (function (p1__48940_SHARP_){
-return cljs.core._EQ_.call(null,x,new cljs.core.Keyword("workplace","email-address","workplace/email-address",-2014908542).cljs$core$IFn$_invoke$arity$1(p1__48940_SHARP_));
-});})(vec__48942,_,x))
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword("workplace","get-by-email","workplace/get-by-email",1808089154),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplaces","list","workplaces/list",852308376)], null),(function (workplaces,p__49181){
+var vec__49182 = p__49181;
+var _ = cljs.core.nth.call(null,vec__49182,(0),null);
+var x = cljs.core.nth.call(null,vec__49182,(1),null);
+return cljs.core.first.call(null,cljs.core.filter.call(null,((function (vec__49182,_,x){
+return (function (p1__49180_SHARP_){
+return cljs.core._EQ_.call(null,x,new cljs.core.Keyword("workplace","email-address","workplace/email-address",-2014908542).cljs$core$IFn$_invoke$arity$1(p1__49180_SHARP_));
+});})(vec__49182,_,x))
 ,workplaces));
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1508862162483
+//# sourceMappingURL=subs.js.map?rel=1509094252022

@@ -39,7 +39,8 @@
                                            (->> (map (fn [m]
                                                        (-> m (update :datetime #(-> % :date (dtc/from-string)))
                                                            (add-ns :work-schedule))))))]
-                             (println works)
+                             (doseq [work works]
+                               (db.work-schedule/schedule-work db work))
                              ;(if-let [response (db.work-schedule/schedule-work db work)]
                              ;  {:data response}
                              ;  (assoc (:response ctx) :status 404))

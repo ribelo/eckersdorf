@@ -36,6 +36,23 @@
   (create-work-schedule-collection db))
 
 
+(defmulti month-query
+  (fn [db {:keys [work-schedule/workplace-id
+                  work-schedule/worker-id
+                  work-schedule/datetime]}]
+    [(class workplace-id) (class worker-id) (class datetime)]))
+
+(defmethod month-query [ObjectId ObjectId DateTime]
+  [db {:keys [work-schedule/workplace-id
+              work-schedule/worker-id
+              work-schedule/datetime] :as doc}]
+  (let [begin-datetime (dt/first-day-of-the-month datetime)
+        end-datetime (dt/last-day-of-the-month datetime)]
+    (mc/find-maps db "work-schedule" (assoc doc :work-schedule/datetime
+                                                {"$gt" begin-datetime
+                                                 "$le" end-datetime}))))
+
+
 (defmulti schedule-work
   (fn [db {:keys [work-schedule/workplace-id
                   work-schedule/worker-id
@@ -47,7 +64,7 @@
               work-schedule/worker-id
               work-schedule/datetime
               work-schedule/work-type] :as m}]
-  (mr/acknowledged? (mc/insert db "work-schedule" m)))
+  (mr/acknowledged? (mc/save db "work-schedule" m)))
 
 
 (defmethod schedule-work [String ObjectId DateTime]
@@ -55,25 +72,25 @@
               work-schedule/worker-id
               work-schedule/datetime
               work-schedule/work-type] :as m}]
-  (mr/acknowledged? (mc/insert db "work-schedule"
-                               (-> m (clojure.core/update :work-schedule/workplace-id #(ObjectId. ^String %))))))
+  (mr/acknowledged? (mc/save db "work-schedule"
+                             (-> m (clojure.core/update :work-schedule/workplace-id #(ObjectId. ^String %))))))
 
 (defmethod schedule-work [ObjectId String DateTime]
   [db {:keys [work-schedule/workplace-id
               work-schedule/worker-id
               work-schedule/datetime
               work-schedule/work-type] :as m}]
-  (mr/acknowledged? (mc/insert db "work-schedule"
-                               (-> m (clojure.core/update :work-schedule/worker-id #(ObjectId. ^String %))))))
+  (mr/acknowledged? (mc/save db "work-schedule"
+                             (-> m (clojure.core/update :work-schedule/worker-id #(ObjectId. ^String %))))))
 
 (defmethod schedule-work [String String DateTime]
   [db {:keys [work-schedule/workplace-id
               work-schedule/worker-id
               work-schedule/datetime
               work-schedule/work-type] :as m}]
-  (mr/acknowledged? (mc/insert db "work-schedule"
-                               (-> m
-                                   (clojure.core/update :work-schedule/workplace-id #(ObjectId. ^String %))
-                                   (clojure.core/update :work-schedule/worker-id #(ObjectId. ^String %))))))
+  (mr/acknowledged? (mc/save db "work-schedule"
+                             (-> m
+                                 (clojure.core/update :work-schedule/workplace-id #(ObjectId. ^String %))
+                                 (clojure.core/update :work-schedule/worker-id #(ObjectId. ^String %))))))
 
 
