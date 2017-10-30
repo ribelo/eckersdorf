@@ -13,9 +13,9 @@
   (start [component]
     (let [port (:webserver/port config)
           routes (new-routes mongo)
-          vhosts (vhosts-model [{:scheme :http :host (str (:webserver/host config) ":" port)}
-                                routes])
-          listener (yada/listener vhosts {:port port})]
+          ;vhosts (vhosts-model [{:scheme :http :host (str (:webserver/host config) ":" port)}
+          ;                      routes])
+          listener (yada/listener routes {:port port})]
       (timbre/info (str/format "Started web-serwer on port %s" (:port listener)))
       (assoc component :listener listener)))
   (stop [component]

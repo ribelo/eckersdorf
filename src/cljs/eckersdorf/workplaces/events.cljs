@@ -110,7 +110,6 @@
   (fn [{db :db} _]
     (let [id (get-in db [:workplaces/workplace-form :mongo/object-id])
           workplace (-> db :workplaces/workplace-form (dissoc :mongo/object-id))]
-      (println :workplaces/request-update id workplace)
       {:http-xhrio {:method          :put
                     :uri             (path "/api/1.0/workplaces" id)
                     :params          workplace
@@ -167,7 +166,6 @@
 (rf/reg-event-fx
   :workplaces/modify-workplace-dialog
   (fn [_ [_ workplace]]
-    (println workplace)
     {:dispatch-n [[:workplaces/set-workplace-form workplace]
                   [:workplaces/show-dialog :modify]]}))
 

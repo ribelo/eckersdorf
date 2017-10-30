@@ -3,7 +3,8 @@
             [yada.yada :as yada]
             [taoensso.timbre :as timbre]
             [eckersdorf.system :as system]
-            [eckersdorf.config]))
+            [eckersdorf.config])
+  (:gen-class))
 
 (defn -main
   [& args]

@@ -53,7 +53,6 @@
   :user/refresh-last-login
   [->local-storage]
   (fn [db _]
-    (println :user/refresh-last-login)
     (assoc db :user/last-login (t/now))))
 
 

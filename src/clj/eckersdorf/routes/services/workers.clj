@@ -50,7 +50,6 @@
                                         worker (-> (get-in ctx [:parameters :body])
                                                    (add-ns :worker)
                                                    (update :worker/address add-ns :address))]
-                                    (println (s/explain :worker/worker worker))
                                     (if-let [response (db.workers/update-worker-by-id
                                                         db object-id worker)]
                                       {:data (db.workers/workers-list db)}

@@ -16,20 +16,22 @@
             [eckersdorf.utils :refer [add-ns]]))
 
 
+
 (defn schedule-routes [db]
   ["/work-schedule"
    [
     ["" (yada/resource
           {:methods
            {
-            ;:get
-            ;{:produces #{"application/json" "text/plain"}
-            ; :response (fn [ctx]
-            ;             (let [opts (->> (get-in ctx [:parameters :query])
-            ;                             (reduce (fn [r [k v]]
-            ;                                       (assoc r k {"$regex"   v
-            ;                                                   "$options" "i"})) {}))]
-            ;               {:data (db.workers/workers-list db opts)}))}
+            :get
+            {:produces #{"application/json"}
+             ;:parameters {:query {schema/Any schema/Any}}
+             :response (fn [ctx]
+                         (let [datetime (get-in ctx [:parameters :query "datetime"])
+                               work (-> (get-in ctx [:parameters :query])
+                                        (update "datetime" dtc/from-string)
+                                        (add-ns :work-schedule))]
+                           {:data (db.work-schedule/month-query db work)}))}
             :post
             {:produces   #{"application/json"}
              :consumes   #{"application/json"}
@@ -39,10 +41,6 @@
                                            (->> (map (fn [m]
                                                        (-> m (update :datetime #(-> % :date (dtc/from-string)))
                                                            (add-ns :work-schedule))))))]
-                             (doseq [work works]
-                               (db.work-schedule/schedule-work db work))
-                             ;(if-let [response (db.work-schedule/schedule-work db work)]
-                             ;  {:data response}
-                             ;  (assoc (:response ctx) :status 404))
-                             ))}}})]
+                             (db.work-schedule/save-month db works)
+                             {:data (db.work-schedule/month-query db (first works))}))}}})]
     ]])

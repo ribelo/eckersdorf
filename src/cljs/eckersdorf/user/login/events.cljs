@@ -33,8 +33,6 @@
 (rf/reg-event-fx
   :login/request-login
   (fn [{db :db} _]
-    (println {:email-address (:login/email-address db)
-              :password      (:login/password db)})
     {:http-xhrio {:method          :post
                   :uri             "/api/1.0/users/login"
                   :params          {:email-address (:login/email-address db)
@@ -49,9 +47,6 @@
   :login/request-login-success
   [->local-storage]
   (fn [{db :db} [_ response]]
-    (println (-> response
-                 (update :user/expire-at tc/from-string)
-                 (clojure.set/rename-keys {:mongo/object-id :user/object-id})))
     {:db         (merge db (-> response (update :user/expire-at tc/from-string) (clojure.set/rename-keys {:mongo/object-id :user/object-id})))
      :dispatch-n [[:process/set {:event :login/request-login}]
                   [:login/set-invalid-password false]

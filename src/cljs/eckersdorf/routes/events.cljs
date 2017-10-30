@@ -6,7 +6,6 @@
 ;(rf/reg-event-fx
 ;  :routes/set-active-panel
 ;  (fn [{db :db} [_ {:keys [panel]}]]
-;    (println :routes/set-active-panel panel)
 ;    {:db         (assoc db :view/active-panel (if (seq panel) (keyword panel) :warehouse))
 ;     :dispatch-n [[:warehouse/deselect-product-group]
 ;                  [:warehouse/deselect-product]

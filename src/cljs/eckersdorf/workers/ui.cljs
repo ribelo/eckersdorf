@@ -31,9 +31,7 @@
                                                                      (if (#{:modify} @show-dialog?)
                                                                        (rf/dispatch [:workers/request-update])
                                                                        (rf/dispatch [:workers/request-create]))
-                                                                     (do
-                                                                       (ant/message-warning "wprowadzono błędne dane")
-                                                                       (println (s/explain :worker/worker @worker-form)))))}
+                                                                     (ant/message-warning "wprowadzono błędne dane")))}
                                            (if (#{:modify} @show-dialog?) "modyfikuj" "dodaj")]])}
        [:div
         (let [{:keys [worker/first-name worker/last-name]} @worker-form]
@@ -202,7 +200,6 @@
                                                    second-id (aget b "workplace")
                                                    first-workplace @(rf/subscribe [:workplace/get-by-id first-id])
                                                    second-workplace @(rf/subscribe [:workplace/get-by-id second-id])]
-                                               (println first-id first-workplace second-workplace)
                                                (compare (:workplace/name first-workplace)
                                                         (:workplace/name second-workplace))))
                                 :filters   (doall
@@ -211,7 +208,6 @@
                                                {:text  name
                                                 :value object-id}))
                                 :onFilter  (fn [v record]
-                                             (println v (aget record "workplace"))
                                              (= v (aget record "workplace")))}
                                {:title     "wielkość etatu w h"
                                 :dataIndex :worker/working-hours

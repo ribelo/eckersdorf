@@ -1,7 +1,7 @@
 {:webserver/port 3000
  :webserver/host "127.0.0.1"
 
- :nrepl/port     7000
+ :nrepl/port     7002
 
  :mongo/uri      "mongodb://mo14601_eckers:Teas.Firma95@mongo2.mydevil.net/mo14601_eckers"
 

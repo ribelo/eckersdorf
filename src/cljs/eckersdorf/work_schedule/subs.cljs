@@ -49,70 +49,52 @@
     (:work-schedule/schedule db)))
 
 
-;(rf/reg-sub
-;  :work-schedule/get
-;  :<- [:work-schedule/schedule]
-;  (fn [schedule [_ {:keys [work-schedule/worker-id
-;                           work-schedule/workplace-id
-;                           work-schedule/datetime]}]]
-;    (->> schedule
-;         (filter (fn [m]
-;                   (and (= worker-id (:work-schedule/worker-id m))
-;                        (= workplace-id (:work-schedule/workplace-id m))
-;                        (dt/equal? datetime (:work-schedule/datetime m)))))
-;         (first))))
-
-
-(rf/reg-sub
+(rf/reg-sub-raw
   :work-schedule/get
-  :<- [:work-schedule/schedule]
-  (fn [schedule [_ {:keys [work-schedule/worker-id
-                           work-schedule/workplace-id
-                           work-schedule/datetime]}]]
-    (-> schedule
-        (->> (filter (fn [m]
-                       (and (= worker-id (:work-schedule/worker-id m))
-                            (= workplace-id (:work-schedule/workplace-id m))
-                            (dt/equal? datetime (:work-schedule/datetime m))))))
-        (first)
-        ;(update :work-schedule/datetime dtc/to-string)
-        )))
+  (fn [db [_ {:keys [work-schedule/worker-id
+                     work-schedule/workplace-id
+                     work-schedule/datetime]}]]
+    (let [schedule (reaction (:work-schedule/schedule @db))
+          by-id (reaction (->> @schedule
+                               (filter (fn [m] (and (= worker-id (:work-schedule/worker-id m))
+                                                    (= workplace-id (:work-schedule/workplace-id m)))))))]
+      (reaction (->> @by-id (filter (fn [m] (dt/equal? datetime (:work-schedule/datetime m)))) (first))))))
 
 
-(rf/reg-sub
+
+(rf/reg-sub-raw
   :work-schedule/is-holiday?
-  :<- [:work-schedule/schedule]
-  (fn [schedule [_ {:keys [work-schedule/workplace-id
-                           work-schedule/datetime]}]]
-    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))]
-      (->> schedule
-           (filter (fn [m]
-                     (and (= workplace-id (:work-schedule/workplace-id m))
-                          (dt/equal? (dt/plus zero-time (dt/hours 12))
-                                     (:work-schedule/datetime m)))))
-           (first)
-           :work-schedule/work-type
-           (= "holiday")))))
+  (fn [db [_ {:keys [work-schedule/worker-id
+                     work-schedule/workplace-id
+                     work-schedule/datetime]}]]
+    (let [schedule (reaction (:work-schedule/schedule @db))
+          by-id (reaction (->> @schedule
+                               (filter (fn [m] (= workplace-id (:work-schedule/workplace-id m))))))]
+      (reaction (->> @by-id
+                     (filter (fn [m] (dt/equal? (dt/plus (dt/minus datetime (dt/hours (dt/hour datetime))) (dt/hours 6))
+                                                (:work-schedule/datetime m))))
+                     (first)
+                     :work-schedule/work-type
+                     (= "holiday"))))))
 
 
-(rf/reg-sub
+(rf/reg-sub-raw
   :work-schedule/is-vacation?
-  :<- [:work-schedule/schedule]
-  (fn [schedule [_ {:keys [work-schedule/workplace-id
-                           work-schedule/worker-id
-                           work-schedule/datetime]}]]
-    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))]
-      (->> schedule
-           (filter (fn [m]
-                     (and (= worker-id (:work-schedule/worker-id m))
-                          (= workplace-id (:work-schedule/workplace-id m))
-                          (dt/equal? (dt/plus zero-time (dt/hours 12))
-                                     (:work-schedule/datetime m)))))
-           (first)
-           :work-schedule/work-type
-           (= "vacation")))))
+  (fn [db [_ {:keys [work-schedule/worker-id
+                     work-schedule/workplace-id
+                     work-schedule/datetime]}]]
+    (let [schedule (reaction (:work-schedule/schedule @db))
+          by-id (reaction (->> @schedule
+                               (filter (fn [m] (and (= workplace-id (:work-schedule/workplace-id m))
+                                                    (= worker-id (:work-schedule/worker-id m)))))))]
+      (reaction (->> @by-id
+                     (filter (fn [m] (dt/equal? (dt/plus (dt/minus datetime (dt/hours (dt/hour datetime))) (dt/hours 6))
+                                                (:work-schedule/datetime m))))
+                     (first)
+                     :work-schedule/work-type
+                     (= "vacation"))))))
 
-
+(rf/clear-subscription-cache!)
 (rf/reg-sub
   :work-schedule/hours-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id]}]]
@@ -120,15 +102,15 @@
 
 
 (rf/reg-sub
+  :work-schedule/days-worked-in-month
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (or (get-in db [:work-schedule/stats worker-id :days-worked-in-month]) 0)))
+
+
+(rf/reg-sub
   :work-schedule/edited?
   (fn [db _]
     (:work-schedule/edited? db)))
-
-(rf/dispatch [:work-schedule/clear])
-@(rf/subscribe [:workplaces/list])
-(rf/subscribe [:workers/list])
-(rf/clear-subscription-cache!)
-(rf/subscribe [:work-schedule/hours-worked-in-month {:work-schedule/worker-id "59ed196efe1b232a5593a5a6"}])
 
 
 ;(rf/reg-sub

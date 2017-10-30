@@ -30,7 +30,6 @@
                                                                        (rf/dispatch [:workplaces/request-update])
                                                                        (rf/dispatch [:workplaces/request-create]))
                                                                      (do
-                                                                       (println (s/explain :workplace/workplace @workplace-form))
                                                                        (ant/message-warning "wprowadzono błędne dane"))))}
                                            (if (#{:modify} @show-dialog?) "modyfikuj" "dodaj")]])}
        [flex/vbox

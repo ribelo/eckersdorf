@@ -35,7 +35,3 @@
   :workers/worker-form
   (fn [db _]
     (:workers/worker-form db)))
-
-(rf/subscribe [:workers/worker-form])
-(last @(rf/subscribe [:workers/list]))
-(cljs.spec.alpha/explain :worker/worker (last @(rf/subscribe [:workers/list])))

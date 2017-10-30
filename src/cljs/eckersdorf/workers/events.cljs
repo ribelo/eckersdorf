@@ -107,7 +107,6 @@
   (fn [{db :db} _]
     (let [id (get-in db [:workers/worker-form :mongo/object-id])
           worker (-> db :workers/worker-form (dissoc :mongo/object-id))]
-      (println :workers/request-update id worker)
       {:http-xhrio {:method          :put
                     :uri             (path "/api/1.0/workers" id)
                     :params          worker
