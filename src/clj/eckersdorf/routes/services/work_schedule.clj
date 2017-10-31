@@ -42,5 +42,16 @@
                                                        (-> m (update :datetime #(-> % :date (dtc/from-string)))
                                                            (add-ns :work-schedule))))))]
                              (db.work-schedule/save-month db works)
-                             {:data (db.work-schedule/month-query db (first works))}))}}})]
+                             {:data (db.work-schedule/month-query db (first works))}))}
+            :delete
+            {:produces   #{"application/json"}
+             :consumes   #{"application/json"}
+             :parameters {:body {schema/Any schema/Any}}
+             :response   (fn [ctx]
+                           (let [work (-> (get-in ctx [:parameters :body])
+                                          (update :datetime dtc/from-string)
+                                          (add-ns :work-schedule))]
+                             (println work (get-in ctx [:parameters :body]))
+                             (db.work-schedule/remove-month db work)
+                             {:data []}))}}})]
     ]])
