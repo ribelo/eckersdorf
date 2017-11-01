@@ -13,17 +13,17 @@ goog.require('eckersdorf.process.db');
 goog.require('eckersdorf.workplaces.db');
 goog.require('eckersdorf.workers.db');
 goog.require('eckersdorf.work_schedule.db');
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","initialize-db","db/initialize-db",230999070),(function (_,p__47794){
-var vec__47795 = p__47794;
-var ___$1 = cljs.core.nth.call(null,vec__47795,(0),null);
-var load_storage_QMARK_ = cljs.core.nth.call(null,vec__47795,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","initialize-db","db/initialize-db",230999070),(function (_,p__45081){
+var vec__45082 = p__45081;
+var ___$1 = cljs.core.nth.call(null,vec__45082,(0),null);
+var load_storage_QMARK_ = cljs.core.nth.call(null,vec__45082,(1),null);
 var db = cljs.core.merge.call(null,eckersdorf.db.core.default_db,eckersdorf.window.db.window_state,eckersdorf.view.db.view_state,eckersdorf.error.db.error_state,eckersdorf.user.login.db.login_state,eckersdorf.user.db.user_state,eckersdorf.process.db.process_state,eckersdorf.workplaces.db.workplaces_state,eckersdorf.workers.db.workers_state,eckersdorf.work_schedule.db.work_schedule_state);
 return db;
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","load-storage","db/load-storage",171544095),(function (db,p__47798){
-var vec__47799 = p__47798;
-var _ = cljs.core.nth.call(null,vec__47799,(0),null);
-var force_QMARK_ = cljs.core.nth.call(null,vec__47799,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","load-storage","db/load-storage",171544095),(function (db,p__45085){
+var vec__45086 = p__45085;
+var _ = cljs.core.nth.call(null,vec__45086,(0),null);
+var force_QMARK_ = cljs.core.nth.call(null,vec__45086,(1),null);
 var storage = eckersdorf.db.core.load_local_storage.call(null);
 var last_login = new cljs.core.Keyword("user","last-login","user/last-login",-513275033).cljs$core$IFn$_invoke$arity$1(storage);
 if(cljs.core.truth_((function (){var or__30249__auto__ = force_QMARK_;
@@ -43,11 +43,11 @@ return cljs.core.merge.call(null,db,storage);
 return db;
 }
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","merge-db","db/merge-db",-2107570316),(function (db,p__47802){
-var vec__47803 = p__47802;
-var _ = cljs.core.nth.call(null,vec__47803,(0),null);
-var state = cljs.core.nth.call(null,vec__47803,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("db","merge-db","db/merge-db",-2107570316),(function (db,p__45089){
+var vec__45090 = p__45089;
+var _ = cljs.core.nth.call(null,vec__45090,(0),null);
+var state = cljs.core.nth.call(null,vec__45090,(1),null);
 return cljs.core.merge.call(null,db,state);
 }));
 
-//# sourceMappingURL=events.js.map?rel=1509397949090
+//# sourceMappingURL=events.js.map?rel=1509567978115

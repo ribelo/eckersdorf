@@ -1,5 +1,6 @@
 (ns eckersdorf.workers.subs
-  (:require [re-frame.core :as rf]))
+  (:require [re-frame.core :as rf]
+            [eckersdorf.workers.utils :as utils]))
 
 
 (rf/reg-sub
@@ -12,8 +13,7 @@
   :workers/by-workplace-id
   :<- [:workers/list]
   (fn [workers [_ workplace-id]]
-    (->> workers
-         (filter #(= workplace-id (:worker/workplace %))))))
+    (utils/workers-by-id workers workplace-id)))
 
 
 (rf/reg-sub

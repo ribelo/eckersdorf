@@ -25,6 +25,12 @@
     (assoc db :work-schedule/show-dialog? type)))
 
 
+(rf/reg-event-db
+  :work-schedule/toggle-print
+  (fn [db _]
+    (update db :work-schedule/print? not)))
+
+
 (rf/reg-event-fx
   :work-schedule/set-workplace
   [->local-storage]
@@ -85,17 +91,66 @@
 
 (rf/reg-event-db
   :work-schedule/calculate-days-worked-in-month
-  (fn [db [_ {:keys [work-schedule/worker-id
-                     work-schedule/datetime]}]]
-    (let [begin-time (dt/first-day-of-the-month datetime)
-          end-time (dt/plus (dt/last-day-of-the-month begin-time) (dt/days 1))
-          hours-worked (->> (:work-schedule/schedule db)
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (let [hours-worked (->> (:work-schedule/schedule db)
                             (filter #(and (= worker-id (:work-schedule/worker-id %))
                                           (#{"seller" "butcher"} (:work-schedule/work-type %))))
                             (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
                             (distinct)
                             (count))]
       (assoc-in db [:work-schedule/stats worker-id :days-worked-in-month] hours-worked))))
+
+
+(rf/reg-event-db
+  :work-schedule/calculate-saturdays-worked-in-month
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (let [c (->> (:work-schedule/schedule db)
+                 (filter #(and (= worker-id (:work-schedule/worker-id %))
+                               (#{"seller" "butcher"} (:work-schedule/work-type %))
+                               (dtpred/saturday? (:work-schedule/datetime %))))
+                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                 (distinct)
+                 (count))]
+      (assoc-in db [:work-schedule/stats worker-id :saturdays-worked-in-month] c))))
+
+
+(rf/reg-event-db
+  :work-schedule/calculate-sundays-worked-in-month
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (let [c (->> (:work-schedule/schedule db)
+                 (filter #(and (= worker-id (:work-schedule/worker-id %))
+                               (#{"seller" "butcher"} (:work-schedule/work-type %))
+                               (dtpred/sunday? (:work-schedule/datetime %))))
+                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                 (distinct)
+                 (count))]
+      (assoc-in db [:work-schedule/stats worker-id :sundays-worked-in-month] c))))
+
+
+(rf/reg-event-db
+  :work-schedule/calculate-first-changes-worked-in-month
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (let [c (->> (:work-schedule/schedule db)
+                 (filter #(and (= worker-id (:work-schedule/worker-id %))
+                               (#{"seller" "butcher"} (:work-schedule/work-type %))
+                               (= 6 (dt/hour (:work-schedule/datetime %)))))
+                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                 (distinct)
+                 (count))]
+      (assoc-in db [:work-schedule/stats worker-id :first-changes-worked-in-month] c))))
+
+
+(rf/reg-event-db
+  :work-schedule/calculate-second-changes-worked-in-month
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (let [c (->> (:work-schedule/schedule db)
+                 (filter #(and (= worker-id (:work-schedule/worker-id %))
+                               (#{"seller" "butcher"} (:work-schedule/work-type %))
+                               (= 20 (dt/hour (:work-schedule/datetime %)))))
+                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                 (distinct)
+                 (count))]
+      (assoc-in db [:work-schedule/stats worker-id :second-changes-worked-in-month] c))))
 
 
 (rf/reg-event-fx
@@ -105,6 +160,10 @@
       {:db         (assoc db :work-schedule/schedule (distinct (conj schedule work)))
        :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
                     [:work-schedule/calculate-days-worked-in-month work]
+                    [:work-schedule/calculate-saturdays-worked-in-month work]
+                    [:work-schedule/calculate-sundays-worked-in-month work]
+                    [:work-schedule/calculate-first-changes-worked-in-month work]
+                    [:work-schedule/calculate-second-changes-worked-in-month work]
                     [:work-schedule/set-edited]]})))
 
 
@@ -114,6 +173,11 @@
     (let [schedule (:work-schedule/schedule db)]
       {:db         (assoc db :work-schedule/schedule (distinct (into schedule works)))
        :dispatch-n [[:work-schedule/calculate-hours-worked-in-month (first works)]
+                    [:work-schedule/calculate-days-worked-in-month (first works)]
+                    [:work-schedule/calculate-saturdays-worked-in-month (first works)]
+                    [:work-schedule/calculate-sundays-worked-in-month (first works)]
+                    [:work-schedule/calculate-first-changes-worked-in-month (first works)]
+                    [:work-schedule/calculate-second-changes-worked-in-month (first works)]
                     [:work-schedule/set-edited]]})))
 
 
@@ -125,6 +189,10 @@
     {:db         (utils/remove-work db work)
      :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
                   [:work-schedule/calculate-days-worked-in-month work]
+                  [:work-schedule/calculate-saturdays-worked-in-month work]
+                  [:work-schedule/calculate-sundays-worked-in-month work]
+                  [:work-schedule/calculate-first-changes-worked-in-month work]
+                  [:work-schedule/calculate-second-changes-worked-in-month work]
                   [:work-schedule/set-edited]]}))
 
 
@@ -133,6 +201,11 @@
   (fn [{db :db} [_ works]]
     {:db         (utils/remove-multiple-work db works)
      :dispatch-n [[:work-schedule/calculate-hours-worked-in-month (first works)]
+                  [:work-schedule/calculate-days-worked-in-month (first works)]
+                  [:work-schedule/calculate-saturdays-worked-in-month (first works)]
+                  [:work-schedule/calculate-sundays-worked-in-month (first works)]
+                  [:work-schedule/calculate-first-changes-worked-in-month (first works)]
+                  [:work-schedule/calculate-second-changes-worked-in-month (first works)]
                   [:work-schedule/set-edited]]}))
 
 
@@ -165,6 +238,10 @@
       {:db         (utils/remove-multiple-work db works)
        :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
                     [:work-schedule/calculate-days-worked-in-month work]
+                    [:work-schedule/calculate-saturdays-worked-in-month work]
+                    [:work-schedule/calculate-sundays-worked-in-month work]
+                    [:work-schedule/calculate-first-changes-worked-in-month work]
+                    [:work-schedule/calculate-second-changes-worked-in-month work]
                     [:work-schedule/set-edited]]})))
 
 
@@ -181,8 +258,14 @@
                       (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
                                         (dt/plus zero-time (dt/hours 21))
                                         (dt/hours 1)))]
-      {:db       (-> db (utils/remove-multiple-work works) (update :work-schedule/schedule (fn [schedule] (distinct (into schedule works)))))
-       :dispatch [:work-schedule/set-edited]})))
+      {:db         (-> db (utils/remove-multiple-work works) (update :work-schedule/schedule (fn [schedule] (distinct (into schedule works)))))
+       :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
+                    [:work-schedule/calculate-days-worked-in-month work]
+                    [:work-schedule/calculate-saturdays-worked-in-month work]
+                    [:work-schedule/calculate-sundays-worked-in-month work]
+                    [:work-schedule/calculate-first-changes-worked-in-month work]
+                    [:work-schedule/calculate-second-changes-worked-in-month work]
+                    [:work-schedule/set-edited]]})))
 
 
 (rf/reg-event-fx
@@ -196,8 +279,14 @@
                       (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
                                         (dt/plus zero-time (dt/hours 21))
                                         (dt/hours 1)))]
-      {:db       (-> db (utils/remove-multiple-work works))
-       :dispatch [:work-schedule/set-edited]})))
+      {:db         (-> db (utils/remove-multiple-work works))
+       :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
+                    [:work-schedule/calculate-days-worked-in-month work]
+                    [:work-schedule/calculate-saturdays-worked-in-month work]
+                    [:work-schedule/calculate-sundays-worked-in-month work]
+                    [:work-schedule/calculate-first-changes-worked-in-month work]
+                    [:work-schedule/calculate-second-changes-worked-in-month work]
+                    [:work-schedule/set-edited]]})))
 
 
 (rf/reg-event-fx
@@ -216,8 +305,14 @@
                           :work-schedule/worker-id    object-id
                           :work-schedule/datetime     datetime
                           :work-schedule/work-type    "holiday"}))]
-      {:db       (-> db (utils/remove-multiple-work works) (update :work-schedule/schedule (fn [schedule] (distinct (into schedule works)))))
-       :dispatch [:work-schedule/set-edited]})))
+      {:db         (-> db (utils/remove-multiple-work works) (update :work-schedule/schedule (fn [schedule] (distinct (into schedule works)))))
+       :dispatch-n [[:work-schedule/calculate-hours-worked-in-month (first works)]
+                    [:work-schedule/calculate-days-worked-in-month (first works)]
+                    [:work-schedule/calculate-saturdays-worked-in-month (first works)]
+                    [:work-schedule/calculate-sundays-worked-in-month (first works)]
+                    [:work-schedule/calculate-first-changes-worked-in-month (first works)]
+                    [:work-schedule/calculate-second-changes-worked-in-month (first works)]
+                    [:work-schedule/set-edited]]})))
 
 
 (rf/reg-event-fx
@@ -235,8 +330,14 @@
                          {:work-schedule/workplace-id workplace-id
                           :work-schedule/worker-id    object-id
                           :work-schedule/datetime     datetime}))]
-      {:db       (-> db (utils/remove-multiple-work works))
-       :dispatch [:work-schedule/set-edited]})))
+      {:db         (-> db (utils/remove-multiple-work works))
+       :dispatch-n [[:work-schedule/calculate-hours-worked-in-month (first works)]
+                    [:work-schedule/calculate-days-worked-in-month (first works)]
+                    [:work-schedule/calculate-saturdays-worked-in-month (first works)]
+                    [:work-schedule/calculate-sundays-worked-in-month (first works)]
+                    [:work-schedule/calculate-first-changes-worked-in-month (first works)]
+                    [:work-schedule/calculate-second-changes-worked-in-month (first works)]
+                    [:work-schedule/set-edited]]})))
 
 
 (rf/reg-event-db
@@ -385,10 +486,6 @@
 ;            (range 6 21))))
 ;
 ;
-;(rf/reg-event-db
-;  :work-schedule/toggle-print
-;  (fn [db _]
-;    (update db :view/print? not)))
 
 
 ;(rf/reg-event-fx

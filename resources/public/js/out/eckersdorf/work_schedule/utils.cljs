@@ -33,3 +33,15 @@
                                    works)))
                    (distinct)
                    (into [])))))
+
+
+(defn worker-working-hours [db worker-id day]
+  (->> db
+       :work-schedule/schedule
+       (filter #(and (= day (dt/day (:work-schedule/datetime %)))
+                     (= worker-id (:work-schedule/worker-id %))))
+       (sort-by :work-schedule/datetime
+                (fn [d1 d2] (dt/before? d1 d2)))
+       ((juxt #(->> % first :work-schedule/datetime dt/hour)
+              #(->> % last :work-schedule/datetime dt/hour)
+              #(->> % first :work-schedule/work-type)))))

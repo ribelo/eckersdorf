@@ -13,4 +13,5 @@
    :work-schedule/show-dialog           false
    :work-schedule/schedule              []
    :work-schedule/stats                 {}
-   :work-schedule/edited?               false})
+   :work-schedule/edited?               false
+   :work-schedule/print?                false})

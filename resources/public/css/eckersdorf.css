@@ -2,3 +2,26 @@
     width: 0px;
     background: transparent;
 }
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+
+    .avoid-break {
+        page-break-after: always;
+        page-break-inside: avoid;
+        -webkit-region-break-inside: avoid;
+        position: relative
+    }
+
+    div {
+        overflow: initial !important
+    }
+}
+
+/*@media print {*/
+    /*.aviod-break-inside, .aviod-break-inside * {*/
+        /*page-break-inside: avoid;*/
+    /*}*/
+/*}*/

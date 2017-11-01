@@ -1,8 +1,8 @@
 (ns eckersdorf.view.events
   (:require [re-frame.core :as rf]
             [goog.dom :as dom]
-            ;[bardo.transition :as transition]
-            ;[bardo.interpolate :as interpolate]
+    ;[bardo.transition :as transition]
+    ;[bardo.interpolate :as interpolate]
             [cljs.core.async :refer [<! >!]])
   (:require-macros [cljs.core.async.macros :refer [go-loop go]]))
 
@@ -14,9 +14,15 @@
 
 
 (rf/reg-event-db
-  :view/sider-toggle
+  :view/toggle-sider
   (fn [db _]
     (update db :view/sider-collapsed? not)))
+
+
+(rf/reg-event-db
+  :view/toggle-scroll-content
+  (fn [db _]
+    (update db :view/scroll-content? not)))
 
 
 ;(rf/reg-event-fx

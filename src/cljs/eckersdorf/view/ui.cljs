@@ -18,16 +18,18 @@
   (let [panel (rf/subscribe [:view/active-panel])
         logged? (rf/subscribe [:user/logged-in?])
         sider-collapsed? (rf/subscribe [:view/sider-collapsed?])
-        personal-data (rf/subscribe [:user/personal-data])]
+        personal-data (rf/subscribe [:user/personal-data])
+        scroll-content? (rf/subscribe [:view/scroll-content?])]
     (fn []
       (if-not @logged?
         [login.ui/login-page]
         [ant/locale-provider {:locale (ant/locales "pl_PL")}
          [ant/layout {:style {:height "100%"}}
-          [ant/layout-sider {:collapsible true
+          [ant/layout-sider {:class       "no-print"
+                             :collapsible true
                              :collapsed   @sider-collapsed?
                              :on-collapse (fn []
-                                            (rf/dispatch [:view/sider-toggle]))
+                                            (rf/dispatch [:view/toggle-sider]))
                              :style       {:height "100%"}}
            [ant/menu {:theme         :dark
                       :mode          :inline
@@ -48,10 +50,10 @@
              [ant/icon {:type :calendar}]
              [:span "Harmonogram Pracy"]]]]
           [ant/layout {:style {:padding "24px 24px 0px"}}
-           [ant/layout-content {:style {:height "100%"}}
+           [ant/layout-content {:style {:height "100%"
+                                        :overflow (if @scroll-content? :scroll)}}
             (case @panel
               :user [:div "pusto jeszcze"]
               :workplaces [workplaces.ui/workplaces-view]
               :workers [workers.ui/workers-view]
-              :work-schedule [work-schedule.ui/work-schedule-view])]]]])
-      )))
+              :work-schedule [work-schedule.ui/work-schedule-view])]]]]))))

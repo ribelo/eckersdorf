@@ -93,6 +93,15 @@
                     :on-click #(rf/dispatch [:work-schedule/sync])}]])))
 
 
+(defn print-button []
+  (let [print? (rf/subscribe [:work-schedule/print?])]
+    (fn []
+      [ant/tooltip {:title (if-not @print? "drukuj harmonogram" "edytuj harmonogram")}
+       [ant/button {:type     (when @print? :primary)
+                    :icon     (if-not @print? :printer :calendar)
+                    :on-click #(rf/dispatch [:work-schedule/toggle-print])}]])))
+
+
 (defn work-cell [{:keys [work-schedule/worker-id
                          work-schedule/workplace-id
                          work-schedule/datetime] :as m}]
@@ -171,18 +180,136 @@
       [:div @worked-days])))
 
 
-(defn work-schedule-view []
+(defn worked-first-changes [work]
+  (let [x (rf/subscribe [:work-schedule/first-changes-worked-in-month work])]
+    (fn [work]
+      [:div @x])))
+
+
+(defn worked-second-changes [work]
+  (let [x (rf/subscribe [:work-schedule/second-changes-worked-in-month work])]
+    (fn [work]
+      [:div @x])))
+
+
+(defn worked-saturdays [work]
+  (let [x (rf/subscribe [:work-schedule/saturdays-worked-in-month work])]
+    (fn [work]
+      [:div @x])))
+
+
+(defn worked-sundays [work]
+  (let [x (rf/subscribe [:work-schedule/sundays-worked-in-month work])]
+    (fn [work]
+      [:div @x])))
+
+
+(defn work-schedule-print []
+  (let [main-date (rf/subscribe [:work-schedule/main-date])
+        days (rf/subscribe [:work-schedule/days])
+        workplace-id (rf/subscribe [:work-schedule/selected-workplace-id])
+        workplace (reaction @(rf/subscribe [:workplace/get-by-id @workplace-id]))
+        workers (reaction @(rf/subscribe [:workers/by-workplace-id @workplace-id]))]
+    (r/create-class
+      {:display-name
+       "work-schedule-print"
+       :component-did-mount
+       #(.print js/window)
+       :reagent-render
+       (fn []
+         [:div {:class "avoid-break"}
+          [flex/hbox {:class           "no-print"
+                      :justify-content :center}
+           [select-workplace]
+           [select-month]
+           [ant/button-group
+            [reload-button]
+            [sync-button]
+            [print-button]]]
+          [flex/hbox {:justify-content :center}
+           [flex/vbox
+            [:div (str "grafik na " (get long-months (dt/month @main-date)) " " (dt/year @main-date)
+                       " dla " (:workplace/name @workplace))]]]
+          ;[ant/table {:columns    (mapv (fn [worker]
+          ;                                {:title (:worker/last-name worker)
+          ;                                 :date-index (:mongo/object-id worker)
+          ;                                 :key (:mongo/object-id worker)})
+          ;                              @workers)
+          ;                        [{:title     "imię"
+          ;                          :dataIndex :worker/first-name
+          ;                          :key       :worker/first-name
+          ;                          :sorter    (fn [a b]
+          ;                                       (compare (aget a "first-name") (aget b "first-name")))}
+          ;                         {:title     "nazwisko"
+          ;                          :dataIndex :worker/last-name
+          ;                          :key       :worker/last-name
+          ;                          :sorter    (fn [a b]
+          ;                                       (compare (aget a "last-name") (aget b "last-name")))}
+          ;                         {:title     "e-mail"
+          ;                          :dataIndex :worker/email-address
+          ;                          :key       :worker/email-address}
+          ;                         {:title     "miejsce pracy"
+          ;                          :dataIndex :worker/workplace
+          ;                          :key       :worker/workplace
+          ;                          :render    (fn [id _ _]
+          ;                                       (let [{:keys [workplace/name]} @(rf/subscribe [:workplace/get-by-id id])]
+          ;                                         name))
+          ;                          :sorter    (fn [a b]
+          ;                                       (let [first-id (aget a "workplace")
+          ;                                             second-id (aget b "workplace")
+          ;                                             first-workplace @(rf/subscribe [:workplace/get-by-id first-id])
+          ;                                             second-workplace @(rf/subscribe [:workplace/get-by-id second-id])]
+          ;                                         (compare (:workplace/name first-workplace)
+          ;                                                  (:workplace/name second-workplace))))
+          ;                          :filters   (doall
+          ;                                       (for [{:keys [workplace/name mongo/object-id]} @workplaces-list]
+          ;                                         ^{:key object-id}
+          ;                                         {:text  name
+          ;                                          :value object-id}))
+          ;                          :onFilter  (fn [v record]
+          ;                                       (= v (aget record "workplace")))}
+          ;                         {:title     "wielkość etatu w h"
+          ;                          :dataIndex :worker/working-hours
+          ;                          :key       :worker/working-hours}
+          ;                         {:title  "akcje"
+          ;                          :render (fn [_ record _]
+          ;                                    (let [object-id (aget record "object-id")
+          ;                                          worker (-> record
+          ;                                                     (js->clj :keywordize-keys true)
+          ;                                                     (dissoc :id)
+          ;                                                     (add-ns :worker)
+          ;                                                     (set/rename-keys {:worker/object-id :mongo/object-id})
+          ;                                                     (update :worker/address add-ns :address))]
+          ;                                      (r/as-element
+          ;                                        [ant/button-group
+          ;                                         [ant/button {:icon     :delete
+          ;                                                      :type     :danger
+          ;                                                      :on-click (fn []
+          ;                                                                  (rf/dispatch [:workers/request-delete object-id]))}]
+          ;                                         [ant/button {:icon     :edit
+          ;                                                      :on-click (fn []
+          ;                                                                  (rf/dispatch [:workers/modify-worker-dialog worker]))}]])))}]
+          ;            :dataSource (map-indexed (fn [i m] (assoc m :id i)) @workers-list)
+          ;            :row-key    "id"
+          ;            :pagination {:page-size 5}}]
+          ])})))
+
+
+(defn work-schedule-app []
   (let [main-date (rf/subscribe [:work-schedule/main-date])
         days (rf/subscribe [:work-schedule/days])
         workplace-id (rf/subscribe [:work-schedule/selected-workplace-id])
         workers (reaction @(rf/subscribe [:workers/by-workplace-id @workplace-id]))]
     (fn []
       [flex/vbox {:height "100%"}
-       [flex/hbox {:justify-content :center}
+       [flex/hbox {:class           "no-print"
+                   :justify-content :center}
         [select-workplace]
         [select-month]
-        [reload-button]
-        [sync-button]]
+        [ant/button-group
+         [reload-button]
+         [sync-button]
+         [print-button]]]
        (if-not @workplace-id
          [flex/hbox {:size            1
                      :justify-content :center
@@ -191,7 +318,8 @@
          [flex/hbox {:height "100%"}
           [flex/vbox {:size   "14 0 0"
                       :height "100%"
-                      :style  {:overflow-y    :scroll
+                      :style  {
+                               ;:overflow-y    :scroll
                                :padding-right "24px"}}
            (doall (for [date @days
                         :let [weekday (dt/day-of-week date)
@@ -271,7 +399,7 @@
                                                                             {:work-schedule/workplace-id @workplace-id
                                                                              :work-schedule/worker-id    object-id
                                                                              :work-schedule/datetime     date}]))))
-                                              :style    {:cursor  :pointer
+                                              :style    {:cursor        :pointer
                                                          :padding-right "4px"}}]]]]]
                                (doall (for [hour (range 6 21)
                                             :let [datetime (dt/plus date (dt/hours hour))]]
@@ -280,13 +408,22 @@
                                                     :work-schedule/worker-id    object-id
                                                     :work-schedule/datetime     datetime}]))]))
                      [:br]]))]
-          [flex/vbox {:size  "2 0 auto"
+          [flex/vbox {:class "no-print"
+                      :size  "3 0 auto"
                       :style {:padding "0px 12px"}}
            [flex/hbox {:justify-content :space-between
                        :align-items     :center}
-            [flex/box {:size 2} "osoba"]
-            [flex/box {:size 1} "godziny"]
-            [flex/box {:size 1} "dni"]]
+            [flex/box {:size 3} "osoba"]
+            [flex/box {:size 1}
+             [ant/tooltip {:title "liczba godzin"} [:div {:style {:cursor :pointer}} "g"]]]
+            [flex/box {:size 1}
+             [ant/tooltip {:title "liczba pierwszych zmian"} [:div {:style {:cursor :pointer}} "p"]]]
+            [flex/box {:size 1}
+             [ant/tooltip {:title "liczba drugich zmian"} [:div {:style {:cursor :pointer}} "d"]]]
+            [flex/box {:size 1}
+             [ant/tooltip {:title "liczba sobót"} [:div {:style {:cursor :pointer}} "s"]]]
+            [flex/box {:size 1}
+             [ant/tooltip {:title "liczba niedziel"} [:div {:style {:cursor :pointer}} "n"]]]]
            (doall (for [{:keys [mongo/object-id
                                 worker/first-name
                                 worker/last-name
@@ -294,12 +431,33 @@
                     ^{:key object-id}
                     [flex/hbox {:justify-content :space-between
                                 :align-items     :center}
-                     [flex/box {:size 2} (str first-name " " last-name)]
+                     [flex/box {:size 3}
+                      (str (first first-name) ". " last-name)]
                      [flex/box {:size 1}
                       [worked-hours {:work-schedule/worker-id    object-id
                                      :work-schedule/workplace-id @workplace-id
                                      :work-schedule/datetime     @main-date}]]
                      [flex/box {:size 1}
-                      [worked-days {:work-schedule/worker-id    object-id
-                                    :work-schedule/workplace-id @workplace-id
-                                    :work-schedule/datetime     @main-date}]]]))]])])))
+                      [worked-first-changes {:work-schedule/worker-id    object-id
+                                             :work-schedule/workplace-id @workplace-id
+                                             :work-schedule/datetime     @main-date}]]
+                     [flex/box {:size 1}
+                      [worked-second-changes {:work-schedule/worker-id    object-id
+                                              :work-schedule/workplace-id @workplace-id
+                                              :work-schedule/datetime     @main-date}]]
+                     [flex/box {:size 1}
+                      [worked-saturdays {:work-schedule/worker-id    object-id
+                                         :work-schedule/workplace-id @workplace-id
+                                         :work-schedule/datetime     @main-date}]]
+                     [flex/box {:size 1}
+                      [worked-sundays {:work-schedule/worker-id    object-id
+                                       :work-schedule/workplace-id @workplace-id
+                                       :work-schedule/datetime     @main-date}]]]))]])])))
+
+
+(defn work-schedule-view []
+  (let [print? (rf/subscribe [:work-schedule/print?])]
+    (fn []
+      (if-not @print?
+        [work-schedule-app]
+        [work-schedule-print]))))

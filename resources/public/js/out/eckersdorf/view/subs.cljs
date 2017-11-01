@@ -31,3 +31,9 @@
   :view/sider-collapsed?
   (fn [db _]
     (:view/sider-collapsed? db)))
+
+
+(rf/reg-sub
+  :view/scroll-content?
+  (fn [db _]
+    (:view/scroll-content? db)))

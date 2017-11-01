@@ -10,34 +10,37 @@ goog.require('taoensso.encore');
 goog.require('ajax.core');
 goog.require('eckersdorf.db.core');
 goog.require('eckersdorf.work_schedule.utils');
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","show-dialog","work-schedule/show-dialog",1852194113),(function (db,p__53103){
-var vec__53104 = p__53103;
-var _ = cljs.core.nth.call(null,vec__53104,(0),null);
-var type = cljs.core.nth.call(null,vec__53104,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","show-dialog","work-schedule/show-dialog",1852194113),(function (db,p__47279){
+var vec__47280 = p__47279;
+var _ = cljs.core.nth.call(null,vec__47280,(0),null);
+var type = cljs.core.nth.call(null,vec__47280,(1),null);
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","show-dialog?","work-schedule/show-dialog?",-970421831),type);
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","hide-dialog","work-schedule/hide-dialog",-1968439396),(function (db,p__53107){
-var vec__53108 = p__53107;
-var _ = cljs.core.nth.call(null,vec__53108,(0),null);
-var type = cljs.core.nth.call(null,vec__53108,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","hide-dialog","work-schedule/hide-dialog",-1968439396),(function (db,p__47283){
+var vec__47284 = p__47283;
+var _ = cljs.core.nth.call(null,vec__47284,(0),null);
+var type = cljs.core.nth.call(null,vec__47284,(1),null);
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","show-dialog?","work-schedule/show-dialog?",-970421831),type);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-workplace","work-schedule/set-workplace",-600467261),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.db.core.__GT_local_storage], null),(function (p__53111,p__53112){
-var map__53113 = p__53111;
-var map__53113__$1 = ((((!((map__53113 == null)))?((((map__53113.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53113.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53113):map__53113);
-var db = cljs.core.get.call(null,map__53113__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53114 = p__53112;
-var _ = cljs.core.nth.call(null,vec__53114,(0),null);
-var workplace_id = cljs.core.nth.call(null,vec__53114,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","toggle-print","work-schedule/toggle-print",1363518021),(function (db,_){
+return cljs.core.update.call(null,db,new cljs.core.Keyword("work-schedule","print?","work-schedule/print?",-1907155809),cljs.core.not);
+}));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-workplace","work-schedule/set-workplace",-600467261),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.db.core.__GT_local_storage], null),(function (p__47287,p__47288){
+var map__47289 = p__47287;
+var map__47289__$1 = ((((!((map__47289 == null)))?((((map__47289.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47289.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47289):map__47289);
+var db = cljs.core.get.call(null,map__47289__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47290 = p__47288;
+var _ = cljs.core.nth.call(null,vec__47290,(0),null);
+var workplace_id = cljs.core.nth.call(null,vec__47290,(1),null);
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","selected-workplace-id","work-schedule/selected-workplace-id",623410962),workplace_id),new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.get-work-schedule","work-schedule/ajax.get-work-schedule",-1297058300)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-date","work-schedule/set-date",-1172573652),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.db.core.__GT_local_storage], null),(function (p__53118,p__53119){
-var map__53120 = p__53118;
-var map__53120__$1 = ((((!((map__53120 == null)))?((((map__53120.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53120.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53120):map__53120);
-var db = cljs.core.get.call(null,map__53120__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53121 = p__53119;
-var _ = cljs.core.nth.call(null,vec__53121,(0),null);
-var date = cljs.core.nth.call(null,vec__53121,(1),null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-date","work-schedule/set-date",-1172573652),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [eckersdorf.db.core.__GT_local_storage], null),(function (p__47294,p__47295){
+var map__47296 = p__47294;
+var map__47296__$1 = ((((!((map__47296 == null)))?((((map__47296.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47296.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47296):map__47296);
+var db = cljs.core.get.call(null,map__47296__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47297 = p__47295;
+var _ = cljs.core.nth.call(null,vec__47297,(0),null);
+var date = cljs.core.nth.call(null,vec__47297,(1),null);
 var days = cljs_time.periodic.periodic_seq.call(null,cljs_time.core.first_day_of_the_month.call(null,date),cljs_time.core.plus.call(null,cljs_time.core.last_day_of_the_month.call(null,date),cljs_time.core.days.call(null,(1))),cljs_time.core.days.call(null,(1)));
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","main-date","work-schedule/main-date",-1562823118),date,new cljs.core.Keyword("work-schedule","days","work-schedule/days",550342111),days),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-all-working-days-in-month","work-schedule/calculate-all-working-days-in-month",1968649364)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.get-work-schedule","work-schedule/ajax.get-work-schedule",-1297058300)], null)], null)], null);
 }));
@@ -52,234 +55,351 @@ var datetime = new cljs.core.Keyword("work-schedule","main-date","work-schedule/
 var begin_time = cljs_time.core.first_day_of_the_month.call(null,datetime);
 var end_time = cljs_time.core.plus.call(null,cljs_time.core.last_day_of_the_month.call(null,begin_time),cljs_time.core.days.call(null,(1)));
 return cljs.core.assoc_in.call(null,db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","stats","work-schedule/stats",1594028770),new cljs.core.Keyword(null,"all-working-days","all-working-days",1056590347)], null),cljs.core.count.call(null,cljs.core.filter.call(null,((function (datetime,begin_time,end_time){
-return (function (p1__53125_SHARP_){
-return cljs_time.predicates.weekday_QMARK_.call(null,p1__53125_SHARP_);
+return (function (p1__47301_SHARP_){
+return cljs_time.predicates.weekday_QMARK_.call(null,p1__47301_SHARP_);
 });})(datetime,begin_time,end_time))
 ,cljs_time.periodic.periodic_seq.call(null,begin_time,end_time,cljs_time.core.days.call(null,(1))))));
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),(function (db,p__53127){
-var vec__53128 = p__53127;
-var _ = cljs.core.nth.call(null,vec__53128,(0),null);
-var map__53131 = cljs.core.nth.call(null,vec__53128,(1),null);
-var map__53131__$1 = ((((!((map__53131 == null)))?((((map__53131.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53131.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53131):map__53131);
-var worker_id = cljs.core.get.call(null,map__53131__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
-var datetime = cljs.core.get.call(null,map__53131__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),(function (db,p__47303){
+var vec__47304 = p__47303;
+var _ = cljs.core.nth.call(null,vec__47304,(0),null);
+var map__47307 = cljs.core.nth.call(null,vec__47304,(1),null);
+var map__47307__$1 = ((((!((map__47307 == null)))?((((map__47307.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47307.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47307):map__47307);
+var worker_id = cljs.core.get.call(null,map__47307__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var datetime = cljs.core.get.call(null,map__47307__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
 var begin_time = cljs_time.core.first_day_of_the_month.call(null,datetime);
 var end_time = cljs_time.core.plus.call(null,cljs_time.core.last_day_of_the_month.call(null,begin_time),cljs_time.core.days.call(null,(1)));
-var hours_worked = cljs.core.count.call(null,cljs.core.filter.call(null,((function (begin_time,end_time,vec__53128,_,map__53131,map__53131__$1,worker_id,datetime){
-return (function (p1__53126_SHARP_){
-var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__53126_SHARP_));
+var hours_worked = cljs.core.count.call(null,cljs.core.filter.call(null,((function (begin_time,end_time,vec__47304,_,map__47307,map__47307__$1,worker_id,datetime){
+return (function (p1__47302_SHARP_){
+var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__47302_SHARP_));
 if(and__30237__auto__){
-return new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__53126_SHARP_));
+return new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__47302_SHARP_));
 } else {
 return and__30237__auto__;
 }
-});})(begin_time,end_time,vec__53128,_,map__53131,map__53131__$1,worker_id,datetime))
+});})(begin_time,end_time,vec__47304,_,map__47307,map__47307__$1,worker_id,datetime))
 ,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db)));
 return cljs.core.assoc_in.call(null,db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","stats","work-schedule/stats",1594028770),worker_id,new cljs.core.Keyword(null,"hours-worked-in-month","hours-worked-in-month",-1178358959)], null),hours_worked);
 }));
-re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),(function (db,p__53134){
-var vec__53135 = p__53134;
-var _ = cljs.core.nth.call(null,vec__53135,(0),null);
-var map__53138 = cljs.core.nth.call(null,vec__53135,(1),null);
-var map__53138__$1 = ((((!((map__53138 == null)))?((((map__53138.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53138.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53138):map__53138);
-var worker_id = cljs.core.get.call(null,map__53138__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
-var datetime = cljs.core.get.call(null,map__53138__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
-var begin_time = cljs_time.core.first_day_of_the_month.call(null,datetime);
-var end_time = cljs_time.core.plus.call(null,cljs_time.core.last_day_of_the_month.call(null,begin_time),cljs_time.core.days.call(null,(1)));
-var hours_worked = cljs.core.count.call(null,cljs.core.distinct.call(null,cljs.core.map.call(null,((function (begin_time,end_time,vec__53135,_,map__53138,map__53138__$1,worker_id,datetime){
-return (function (p__53140){
-var map__53141 = p__53140;
-var map__53141__$1 = ((((!((map__53141 == null)))?((((map__53141.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53141.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53141):map__53141);
-var datetime__$1 = cljs.core.get.call(null,map__53141__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
-return cljs_time.core.day.call(null,datetime__$1);
-});})(begin_time,end_time,vec__53135,_,map__53138,map__53138__$1,worker_id,datetime))
-,cljs.core.filter.call(null,((function (begin_time,end_time,vec__53135,_,map__53138,map__53138__$1,worker_id,datetime){
-return (function (p1__53133_SHARP_){
-var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__53133_SHARP_));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),(function (db,p__47310){
+var vec__47311 = p__47310;
+var _ = cljs.core.nth.call(null,vec__47311,(0),null);
+var map__47314 = cljs.core.nth.call(null,vec__47311,(1),null);
+var map__47314__$1 = ((((!((map__47314 == null)))?((((map__47314.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47314.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47314):map__47314);
+var worker_id = cljs.core.get.call(null,map__47314__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var hours_worked = cljs.core.count.call(null,cljs.core.distinct.call(null,cljs.core.map.call(null,((function (vec__47311,_,map__47314,map__47314__$1,worker_id){
+return (function (p__47316){
+var map__47317 = p__47316;
+var map__47317__$1 = ((((!((map__47317 == null)))?((((map__47317.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47317.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47317):map__47317);
+var datetime = cljs.core.get.call(null,map__47317__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+return cljs_time.core.day.call(null,datetime);
+});})(vec__47311,_,map__47314,map__47314__$1,worker_id))
+,cljs.core.filter.call(null,((function (vec__47311,_,map__47314,map__47314__$1,worker_id){
+return (function (p1__47309_SHARP_){
+var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__47309_SHARP_));
 if(and__30237__auto__){
-return new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__53133_SHARP_));
+return new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__47309_SHARP_));
 } else {
 return and__30237__auto__;
 }
-});})(begin_time,end_time,vec__53135,_,map__53138,map__53138__$1,worker_id,datetime))
+});})(vec__47311,_,map__47314,map__47314__$1,worker_id))
 ,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db)))));
 return cljs.core.assoc_in.call(null,db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","stats","work-schedule/stats",1594028770),worker_id,new cljs.core.Keyword(null,"days-worked-in-month","days-worked-in-month",-1174346359)], null),hours_worked);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","schedule-work","work-schedule/schedule-work",1434388170),(function (p__53143,p__53144){
-var map__53145 = p__53143;
-var map__53145__$1 = ((((!((map__53145 == null)))?((((map__53145.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53145.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53145):map__53145);
-var db = cljs.core.get.call(null,map__53145__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53146 = p__53144;
-var _ = cljs.core.nth.call(null,vec__53146,(0),null);
-var work = cljs.core.nth.call(null,vec__53146,(1),null);
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),(function (db,p__47320){
+var vec__47321 = p__47320;
+var _ = cljs.core.nth.call(null,vec__47321,(0),null);
+var map__47324 = cljs.core.nth.call(null,vec__47321,(1),null);
+var map__47324__$1 = ((((!((map__47324 == null)))?((((map__47324.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47324.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47324):map__47324);
+var worker_id = cljs.core.get.call(null,map__47324__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var c = cljs.core.count.call(null,cljs.core.distinct.call(null,cljs.core.map.call(null,((function (vec__47321,_,map__47324,map__47324__$1,worker_id){
+return (function (p__47326){
+var map__47327 = p__47326;
+var map__47327__$1 = ((((!((map__47327 == null)))?((((map__47327.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47327.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47327):map__47327);
+var datetime = cljs.core.get.call(null,map__47327__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+return cljs_time.core.day.call(null,datetime);
+});})(vec__47321,_,map__47324,map__47324__$1,worker_id))
+,cljs.core.filter.call(null,((function (vec__47321,_,map__47324,map__47324__$1,worker_id){
+return (function (p1__47319_SHARP_){
+var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__47319_SHARP_));
+if(and__30237__auto__){
+var and__30237__auto____$1 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__47319_SHARP_));
+if(cljs.core.truth_(and__30237__auto____$1)){
+return cljs_time.predicates.saturday_QMARK_.call(null,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599).cljs$core$IFn$_invoke$arity$1(p1__47319_SHARP_));
+} else {
+return and__30237__auto____$1;
+}
+} else {
+return and__30237__auto__;
+}
+});})(vec__47321,_,map__47324,map__47324__$1,worker_id))
+,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db)))));
+return cljs.core.assoc_in.call(null,db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","stats","work-schedule/stats",1594028770),worker_id,new cljs.core.Keyword(null,"saturdays-worked-in-month","saturdays-worked-in-month",-983473622)], null),c);
+}));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),(function (db,p__47330){
+var vec__47331 = p__47330;
+var _ = cljs.core.nth.call(null,vec__47331,(0),null);
+var map__47334 = cljs.core.nth.call(null,vec__47331,(1),null);
+var map__47334__$1 = ((((!((map__47334 == null)))?((((map__47334.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47334.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47334):map__47334);
+var worker_id = cljs.core.get.call(null,map__47334__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var c = cljs.core.count.call(null,cljs.core.distinct.call(null,cljs.core.map.call(null,((function (vec__47331,_,map__47334,map__47334__$1,worker_id){
+return (function (p__47336){
+var map__47337 = p__47336;
+var map__47337__$1 = ((((!((map__47337 == null)))?((((map__47337.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47337.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47337):map__47337);
+var datetime = cljs.core.get.call(null,map__47337__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+return cljs_time.core.day.call(null,datetime);
+});})(vec__47331,_,map__47334,map__47334__$1,worker_id))
+,cljs.core.filter.call(null,((function (vec__47331,_,map__47334,map__47334__$1,worker_id){
+return (function (p1__47329_SHARP_){
+var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__47329_SHARP_));
+if(and__30237__auto__){
+var and__30237__auto____$1 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__47329_SHARP_));
+if(cljs.core.truth_(and__30237__auto____$1)){
+return cljs_time.predicates.sunday_QMARK_.call(null,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599).cljs$core$IFn$_invoke$arity$1(p1__47329_SHARP_));
+} else {
+return and__30237__auto____$1;
+}
+} else {
+return and__30237__auto__;
+}
+});})(vec__47331,_,map__47334,map__47334__$1,worker_id))
+,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db)))));
+return cljs.core.assoc_in.call(null,db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","stats","work-schedule/stats",1594028770),worker_id,new cljs.core.Keyword(null,"sundays-worked-in-month","sundays-worked-in-month",1551954077)], null),c);
+}));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),(function (db,p__47340){
+var vec__47341 = p__47340;
+var _ = cljs.core.nth.call(null,vec__47341,(0),null);
+var map__47344 = cljs.core.nth.call(null,vec__47341,(1),null);
+var map__47344__$1 = ((((!((map__47344 == null)))?((((map__47344.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47344.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47344):map__47344);
+var worker_id = cljs.core.get.call(null,map__47344__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var c = cljs.core.count.call(null,cljs.core.distinct.call(null,cljs.core.map.call(null,((function (vec__47341,_,map__47344,map__47344__$1,worker_id){
+return (function (p__47346){
+var map__47347 = p__47346;
+var map__47347__$1 = ((((!((map__47347 == null)))?((((map__47347.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47347.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47347):map__47347);
+var datetime = cljs.core.get.call(null,map__47347__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+return cljs_time.core.day.call(null,datetime);
+});})(vec__47341,_,map__47344,map__47344__$1,worker_id))
+,cljs.core.filter.call(null,((function (vec__47341,_,map__47344,map__47344__$1,worker_id){
+return (function (p1__47339_SHARP_){
+var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__47339_SHARP_));
+if(and__30237__auto__){
+var and__30237__auto____$1 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__47339_SHARP_));
+if(cljs.core.truth_(and__30237__auto____$1)){
+return cljs.core._EQ_.call(null,(6),cljs_time.core.hour.call(null,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599).cljs$core$IFn$_invoke$arity$1(p1__47339_SHARP_)));
+} else {
+return and__30237__auto____$1;
+}
+} else {
+return and__30237__auto__;
+}
+});})(vec__47341,_,map__47344,map__47344__$1,worker_id))
+,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db)))));
+return cljs.core.assoc_in.call(null,db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","stats","work-schedule/stats",1594028770),worker_id,new cljs.core.Keyword(null,"first-changes-worked-in-month","first-changes-worked-in-month",-146640955)], null),c);
+}));
+re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),(function (db,p__47350){
+var vec__47351 = p__47350;
+var _ = cljs.core.nth.call(null,vec__47351,(0),null);
+var map__47354 = cljs.core.nth.call(null,vec__47351,(1),null);
+var map__47354__$1 = ((((!((map__47354 == null)))?((((map__47354.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47354.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47354):map__47354);
+var worker_id = cljs.core.get.call(null,map__47354__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var c = cljs.core.count.call(null,cljs.core.distinct.call(null,cljs.core.map.call(null,((function (vec__47351,_,map__47354,map__47354__$1,worker_id){
+return (function (p__47356){
+var map__47357 = p__47356;
+var map__47357__$1 = ((((!((map__47357 == null)))?((((map__47357.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47357.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47357):map__47357);
+var datetime = cljs.core.get.call(null,map__47357__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+return cljs_time.core.day.call(null,datetime);
+});})(vec__47351,_,map__47354,map__47354__$1,worker_id))
+,cljs.core.filter.call(null,((function (vec__47351,_,map__47354,map__47354__$1,worker_id){
+return (function (p1__47349_SHARP_){
+var and__30237__auto__ = cljs.core._EQ_.call(null,worker_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603).cljs$core$IFn$_invoke$arity$1(p1__47349_SHARP_));
+if(and__30237__auto__){
+var and__30237__auto____$1 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["butcher",null,"seller",null], null), null).call(null,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823).cljs$core$IFn$_invoke$arity$1(p1__47349_SHARP_));
+if(cljs.core.truth_(and__30237__auto____$1)){
+return cljs.core._EQ_.call(null,(20),cljs_time.core.hour.call(null,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599).cljs$core$IFn$_invoke$arity$1(p1__47349_SHARP_)));
+} else {
+return and__30237__auto____$1;
+}
+} else {
+return and__30237__auto__;
+}
+});})(vec__47351,_,map__47354,map__47354__$1,worker_id))
+,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db)))));
+return cljs.core.assoc_in.call(null,db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","stats","work-schedule/stats",1594028770),worker_id,new cljs.core.Keyword(null,"second-changes-worked-in-month","second-changes-worked-in-month",820237509)], null),c);
+}));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","schedule-work","work-schedule/schedule-work",1434388170),(function (p__47359,p__47360){
+var map__47361 = p__47359;
+var map__47361__$1 = ((((!((map__47361 == null)))?((((map__47361.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47361.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47361):map__47361);
+var db = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47362 = p__47360;
+var _ = cljs.core.nth.call(null,vec__47362,(0),null);
+var work = cljs.core.nth.call(null,vec__47362,(1),null);
 var schedule = new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db);
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.distinct.call(null,cljs.core.conj.call(null,schedule,work))),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.distinct.call(null,cljs.core.conj.call(null,schedule,work))),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","schedule-multiple-work","work-schedule/schedule-multiple-work",-1082639016),(function (p__53150,p__53151){
-var map__53152 = p__53150;
-var map__53152__$1 = ((((!((map__53152 == null)))?((((map__53152.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53152.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53152):map__53152);
-var db = cljs.core.get.call(null,map__53152__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53153 = p__53151;
-var _ = cljs.core.nth.call(null,vec__53153,(0),null);
-var works = cljs.core.nth.call(null,vec__53153,(1),null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","schedule-multiple-work","work-schedule/schedule-multiple-work",-1082639016),(function (p__47366,p__47367){
+var map__47368 = p__47366;
+var map__47368__$1 = ((((!((map__47368 == null)))?((((map__47368.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47368.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47368):map__47368);
+var db = cljs.core.get.call(null,map__47368__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47369 = p__47367;
+var _ = cljs.core.nth.call(null,vec__47369,(0),null);
+var works = cljs.core.nth.call(null,vec__47369,(1),null);
 var schedule = new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db);
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.distinct.call(null,cljs.core.into.call(null,schedule,works))),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.distinct.call(null,cljs.core.into.call(null,schedule,works))),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-work","work-schedule/remove-work",891271461),(function (p__53157,p__53158){
-var map__53159 = p__53157;
-var map__53159__$1 = ((((!((map__53159 == null)))?((((map__53159.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53159.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53159):map__53159);
-var db = cljs.core.get.call(null,map__53159__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53160 = p__53158;
-var _ = cljs.core.nth.call(null,vec__53160,(0),null);
-var map__53163 = cljs.core.nth.call(null,vec__53160,(1),null);
-var map__53163__$1 = ((((!((map__53163 == null)))?((((map__53163.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53163.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53163):map__53163);
-var work = map__53163__$1;
-var worker_id = cljs.core.get.call(null,map__53163__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
-var workplace_id = cljs.core.get.call(null,map__53163__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
-var datetime = cljs.core.get.call(null,map__53163__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_work.call(null,db,work),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-work","work-schedule/remove-work",891271461),(function (p__47373,p__47374){
+var map__47375 = p__47373;
+var map__47375__$1 = ((((!((map__47375 == null)))?((((map__47375.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47375.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47375):map__47375);
+var db = cljs.core.get.call(null,map__47375__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47376 = p__47374;
+var _ = cljs.core.nth.call(null,vec__47376,(0),null);
+var map__47379 = cljs.core.nth.call(null,vec__47376,(1),null);
+var map__47379__$1 = ((((!((map__47379 == null)))?((((map__47379.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47379.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47379):map__47379);
+var work = map__47379__$1;
+var worker_id = cljs.core.get.call(null,map__47379__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var workplace_id = cljs.core.get.call(null,map__47379__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
+var datetime = cljs.core.get.call(null,map__47379__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_work.call(null,db,work),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-multiple-work","work-schedule/remove-multiple-work",647477489),(function (p__53166,p__53167){
-var map__53168 = p__53166;
-var map__53168__$1 = ((((!((map__53168 == null)))?((((map__53168.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53168.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53168):map__53168);
-var db = cljs.core.get.call(null,map__53168__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53169 = p__53167;
-var _ = cljs.core.nth.call(null,vec__53169,(0),null);
-var works = cljs.core.nth.call(null,vec__53169,(1),null);
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-multiple-work","work-schedule/remove-multiple-work",647477489),(function (p__47382,p__47383){
+var map__47384 = p__47382;
+var map__47384__$1 = ((((!((map__47384 == null)))?((((map__47384.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47384.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47384):map__47384);
+var db = cljs.core.get.call(null,map__47384__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47385 = p__47383;
+var _ = cljs.core.nth.call(null,vec__47385,(0),null);
+var works = cljs.core.nth.call(null,vec__47385,(1),null);
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","update-work","work-schedule/update-work",-297258453),(function (p__53173,p__53174){
-var map__53175 = p__53173;
-var map__53175__$1 = ((((!((map__53175 == null)))?((((map__53175.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53175.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53175):map__53175);
-var db = cljs.core.get.call(null,map__53175__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53176 = p__53174;
-var _ = cljs.core.nth.call(null,vec__53176,(0),null);
-var work = cljs.core.nth.call(null,vec__53176,(1),null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","update-work","work-schedule/update-work",-297258453),(function (p__47389,p__47390){
+var map__47391 = p__47389;
+var map__47391__$1 = ((((!((map__47391 == null)))?((((map__47391.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47391.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47391):map__47391);
+var db = cljs.core.get.call(null,map__47391__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47392 = p__47390;
+var _ = cljs.core.nth.call(null,vec__47392,(0),null);
+var work = cljs.core.nth.call(null,vec__47392,(1),null);
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","remove-work","work-schedule/remove-work",891271461),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","schedule-work","work-schedule/schedule-work",1434388170),work], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","update-multiple-work","work-schedule/update-multiple-work",1219497502),(function (p__53180,p__53181){
-var map__53182 = p__53180;
-var map__53182__$1 = ((((!((map__53182 == null)))?((((map__53182.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53182.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53182):map__53182);
-var db = cljs.core.get.call(null,map__53182__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53183 = p__53181;
-var _ = cljs.core.nth.call(null,vec__53183,(0),null);
-var works = cljs.core.nth.call(null,vec__53183,(1),null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","update-multiple-work","work-schedule/update-multiple-work",1219497502),(function (p__47396,p__47397){
+var map__47398 = p__47396;
+var map__47398__$1 = ((((!((map__47398 == null)))?((((map__47398.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47398.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47398):map__47398);
+var db = cljs.core.get.call(null,map__47398__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47399 = p__47397;
+var _ = cljs.core.nth.call(null,vec__47399,(0),null);
+var works = cljs.core.nth.call(null,vec__47399,(1),null);
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","remove-multiple-work","work-schedule/remove-multiple-work",647477489),works], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","schedule-multiple-work","work-schedule/schedule-multiple-work",-1082639016),works], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","clear-day","work-schedule/clear-day",2018341687),(function (p__53187,p__53188){
-var map__53189 = p__53187;
-var map__53189__$1 = ((((!((map__53189 == null)))?((((map__53189.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53189.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53189):map__53189);
-var db = cljs.core.get.call(null,map__53189__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53190 = p__53188;
-var _ = cljs.core.nth.call(null,vec__53190,(0),null);
-var map__53193 = cljs.core.nth.call(null,vec__53190,(1),null);
-var map__53193__$1 = ((((!((map__53193 == null)))?((((map__53193.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53193.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53193):map__53193);
-var work = map__53193__$1;
-var worker_id = cljs.core.get.call(null,map__53193__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
-var workplace_id = cljs.core.get.call(null,map__53193__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
-var datetime = cljs.core.get.call(null,map__53193__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","clear-day","work-schedule/clear-day",2018341687),(function (p__47403,p__47404){
+var map__47405 = p__47403;
+var map__47405__$1 = ((((!((map__47405 == null)))?((((map__47405.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47405.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47405):map__47405);
+var db = cljs.core.get.call(null,map__47405__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47406 = p__47404;
+var _ = cljs.core.nth.call(null,vec__47406,(0),null);
+var map__47409 = cljs.core.nth.call(null,vec__47406,(1),null);
+var map__47409__$1 = ((((!((map__47409 == null)))?((((map__47409.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47409.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47409):map__47409);
+var work = map__47409__$1;
+var worker_id = cljs.core.get.call(null,map__47409__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var workplace_id = cljs.core.get.call(null,map__47409__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
+var datetime = cljs.core.get.call(null,map__47409__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
 var datetime__$1 = datetime;
 var zero_time = cljs_time.core.minus.call(null,datetime__$1,cljs_time.core.hours.call(null,cljs_time.core.hour.call(null,datetime__$1)));
-var works = cljs.core.mapv.call(null,((function (datetime__$1,zero_time,map__53189,map__53189__$1,db,vec__53190,_,map__53193,map__53193__$1,work,worker_id,workplace_id,datetime){
+var works = cljs.core.mapv.call(null,((function (datetime__$1,zero_time,map__47405,map__47405__$1,db,vec__47406,_,map__47409,map__47409__$1,work,worker_id,workplace_id,datetime){
 return (function (datetime__$2){
 return cljs.core.assoc.call(null,work,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2);
-});})(datetime__$1,zero_time,map__53189,map__53189__$1,db,vec__53190,_,map__53193,map__53193__$1,work,worker_id,workplace_id,datetime))
+});})(datetime__$1,zero_time,map__47405,map__47405__$1,db,vec__47406,_,map__47409,map__47409__$1,work,worker_id,workplace_id,datetime))
 ,cljs_time.periodic.periodic_seq.call(null,cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(6))),cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(21))),cljs_time.core.hours.call(null,(1))));
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-vacation","work-schedule/set-vacation",-1445617925),(function (p__53196,p__53197){
-var map__53198 = p__53196;
-var map__53198__$1 = ((((!((map__53198 == null)))?((((map__53198.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53198.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53198):map__53198);
-var db = cljs.core.get.call(null,map__53198__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53199 = p__53197;
-var _ = cljs.core.nth.call(null,vec__53199,(0),null);
-var map__53202 = cljs.core.nth.call(null,vec__53199,(1),null);
-var map__53202__$1 = ((((!((map__53202 == null)))?((((map__53202.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53202.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53202):map__53202);
-var work = map__53202__$1;
-var worker_id = cljs.core.get.call(null,map__53202__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
-var workplace_id = cljs.core.get.call(null,map__53202__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
-var datetime = cljs.core.get.call(null,map__53202__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-vacation","work-schedule/set-vacation",-1445617925),(function (p__47412,p__47413){
+var map__47414 = p__47412;
+var map__47414__$1 = ((((!((map__47414 == null)))?((((map__47414.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47414.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47414):map__47414);
+var db = cljs.core.get.call(null,map__47414__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47415 = p__47413;
+var _ = cljs.core.nth.call(null,vec__47415,(0),null);
+var map__47418 = cljs.core.nth.call(null,vec__47415,(1),null);
+var map__47418__$1 = ((((!((map__47418 == null)))?((((map__47418.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47418.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47418):map__47418);
+var work = map__47418__$1;
+var worker_id = cljs.core.get.call(null,map__47418__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var workplace_id = cljs.core.get.call(null,map__47418__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
+var datetime = cljs.core.get.call(null,map__47418__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
 var datetime__$1 = datetime;
 var zero_time = cljs_time.core.minus.call(null,datetime__$1,cljs_time.core.hours.call(null,cljs_time.core.hour.call(null,datetime__$1)));
-var works = cljs.core.mapv.call(null,((function (datetime__$1,zero_time,map__53198,map__53198__$1,db,vec__53199,_,map__53202,map__53202__$1,work,worker_id,workplace_id,datetime){
+var works = cljs.core.mapv.call(null,((function (datetime__$1,zero_time,map__47414,map__47414__$1,db,vec__47415,_,map__47418,map__47418__$1,work,worker_id,workplace_id,datetime){
 return (function (datetime__$2){
 return cljs.core.assoc.call(null,work,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823),"vacation");
-});})(datetime__$1,zero_time,map__53198,map__53198__$1,db,vec__53199,_,map__53202,map__53202__$1,work,worker_id,workplace_id,datetime))
+});})(datetime__$1,zero_time,map__47414,map__47414__$1,db,vec__47415,_,map__47418,map__47418__$1,work,worker_id,workplace_id,datetime))
 ,cljs_time.periodic.periodic_seq.call(null,cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(6))),cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(21))),cljs_time.core.hours.call(null,(1))));
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.update.call(null,eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),((function (datetime__$1,zero_time,works,map__53198,map__53198__$1,db,vec__53199,_,map__53202,map__53202__$1,work,worker_id,workplace_id,datetime){
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.update.call(null,eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),((function (datetime__$1,zero_time,works,map__47414,map__47414__$1,db,vec__47415,_,map__47418,map__47418__$1,work,worker_id,workplace_id,datetime){
 return (function (schedule){
 return cljs.core.distinct.call(null,cljs.core.into.call(null,schedule,works));
-});})(datetime__$1,zero_time,works,map__53198,map__53198__$1,db,vec__53199,_,map__53202,map__53202__$1,work,worker_id,workplace_id,datetime))
-),new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null);
+});})(datetime__$1,zero_time,works,map__47414,map__47414__$1,db,vec__47415,_,map__47418,map__47418__$1,work,worker_id,workplace_id,datetime))
+),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-vacation","work-schedule/remove-vacation",-149059750),(function (p__53205,p__53206){
-var map__53207 = p__53205;
-var map__53207__$1 = ((((!((map__53207 == null)))?((((map__53207.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53207.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53207):map__53207);
-var db = cljs.core.get.call(null,map__53207__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53208 = p__53206;
-var _ = cljs.core.nth.call(null,vec__53208,(0),null);
-var map__53211 = cljs.core.nth.call(null,vec__53208,(1),null);
-var map__53211__$1 = ((((!((map__53211 == null)))?((((map__53211.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53211.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53211):map__53211);
-var work = map__53211__$1;
-var worker_id = cljs.core.get.call(null,map__53211__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
-var workplace_id = cljs.core.get.call(null,map__53211__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
-var datetime = cljs.core.get.call(null,map__53211__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-vacation","work-schedule/remove-vacation",-149059750),(function (p__47421,p__47422){
+var map__47423 = p__47421;
+var map__47423__$1 = ((((!((map__47423 == null)))?((((map__47423.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47423.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47423):map__47423);
+var db = cljs.core.get.call(null,map__47423__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47424 = p__47422;
+var _ = cljs.core.nth.call(null,vec__47424,(0),null);
+var map__47427 = cljs.core.nth.call(null,vec__47424,(1),null);
+var map__47427__$1 = ((((!((map__47427 == null)))?((((map__47427.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47427.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47427):map__47427);
+var work = map__47427__$1;
+var worker_id = cljs.core.get.call(null,map__47427__$1,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603));
+var workplace_id = cljs.core.get.call(null,map__47427__$1,new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045));
+var datetime = cljs.core.get.call(null,map__47427__$1,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599));
 var zero_time = cljs_time.core.minus.call(null,datetime,cljs_time.core.hours.call(null,cljs_time.core.hour.call(null,datetime)));
-var works = cljs.core.mapv.call(null,((function (zero_time,map__53207,map__53207__$1,db,vec__53208,_,map__53211,map__53211__$1,work,worker_id,workplace_id,datetime){
+var works = cljs.core.mapv.call(null,((function (zero_time,map__47423,map__47423__$1,db,vec__47424,_,map__47427,map__47427__$1,work,worker_id,workplace_id,datetime){
 return (function (datetime__$1){
 return cljs.core.assoc.call(null,work,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$1);
-});})(zero_time,map__53207,map__53207__$1,db,vec__53208,_,map__53211,map__53211__$1,work,worker_id,workplace_id,datetime))
+});})(zero_time,map__47423,map__47423__$1,db,vec__47424,_,map__47427,map__47427__$1,work,worker_id,workplace_id,datetime))
 ,cljs_time.periodic.periodic_seq.call(null,cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(6))),cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(21))),cljs_time.core.hours.call(null,(1))));
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null);
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),work], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),work], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-holiday","work-schedule/set-holiday",781884568),(function (p__53214,p__53215){
-var map__53216 = p__53214;
-var map__53216__$1 = ((((!((map__53216 == null)))?((((map__53216.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53216.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53216):map__53216);
-var db = cljs.core.get.call(null,map__53216__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53217 = p__53215;
-var _ = cljs.core.nth.call(null,vec__53217,(0),null);
-var workplace_id = cljs.core.nth.call(null,vec__53217,(1),null);
-var workers = cljs.core.nth.call(null,vec__53217,(2),null);
-var datetime = cljs.core.nth.call(null,vec__53217,(3),null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","set-holiday","work-schedule/set-holiday",781884568),(function (p__47430,p__47431){
+var map__47432 = p__47430;
+var map__47432__$1 = ((((!((map__47432 == null)))?((((map__47432.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47432.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47432):map__47432);
+var db = cljs.core.get.call(null,map__47432__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47433 = p__47431;
+var _ = cljs.core.nth.call(null,vec__47433,(0),null);
+var workplace_id = cljs.core.nth.call(null,vec__47433,(1),null);
+var workers = cljs.core.nth.call(null,vec__47433,(2),null);
+var datetime = cljs.core.nth.call(null,vec__47433,(3),null);
 var datetime__$1 = datetime;
 var zero_time = cljs_time.core.minus.call(null,datetime__$1,cljs_time.core.hours.call(null,cljs_time.core.hour.call(null,datetime__$1)));
-var works = cljs.core.doall.call(null,(function (){var iter__31131__auto__ = ((function (datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime){
-return (function eckersdorf$work_schedule$events$iter__53221(s__53222){
-return (new cljs.core.LazySeq(null,((function (datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime){
+var works = cljs.core.doall.call(null,(function (){var iter__31131__auto__ = ((function (datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime){
+return (function eckersdorf$work_schedule$events$iter__47437(s__47438){
+return (new cljs.core.LazySeq(null,((function (datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime){
 return (function (){
-var s__53222__$1 = s__53222;
+var s__47438__$1 = s__47438;
 while(true){
-var temp__5290__auto__ = cljs.core.seq.call(null,s__53222__$1);
+var temp__5290__auto__ = cljs.core.seq.call(null,s__47438__$1);
 if(temp__5290__auto__){
 var xs__5843__auto__ = temp__5290__auto__;
-var map__53227 = cljs.core.first.call(null,xs__5843__auto__);
-var map__53227__$1 = ((((!((map__53227 == null)))?((((map__53227.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53227.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53227):map__53227);
-var object_id = cljs.core.get.call(null,map__53227__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
-var first_name = cljs.core.get.call(null,map__53227__$1,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645));
-var last_name = cljs.core.get.call(null,map__53227__$1,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756));
-var working_hours = cljs.core.get.call(null,map__53227__$1,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629));
-var iterys__31127__auto__ = ((function (s__53222__$1,map__53227,map__53227__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime){
-return (function eckersdorf$work_schedule$events$iter__53221_$_iter__53223(s__53224){
-return (new cljs.core.LazySeq(null,((function (s__53222__$1,map__53227,map__53227__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime){
+var map__47443 = cljs.core.first.call(null,xs__5843__auto__);
+var map__47443__$1 = ((((!((map__47443 == null)))?((((map__47443.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47443.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47443):map__47443);
+var object_id = cljs.core.get.call(null,map__47443__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
+var first_name = cljs.core.get.call(null,map__47443__$1,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645));
+var last_name = cljs.core.get.call(null,map__47443__$1,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756));
+var working_hours = cljs.core.get.call(null,map__47443__$1,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629));
+var iterys__31127__auto__ = ((function (s__47438__$1,map__47443,map__47443__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime){
+return (function eckersdorf$work_schedule$events$iter__47437_$_iter__47439(s__47440){
+return (new cljs.core.LazySeq(null,((function (s__47438__$1,map__47443,map__47443__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime){
 return (function (){
-var s__53224__$1 = s__53224;
+var s__47440__$1 = s__47440;
 while(true){
-var temp__5290__auto____$1 = cljs.core.seq.call(null,s__53224__$1);
+var temp__5290__auto____$1 = cljs.core.seq.call(null,s__47440__$1);
 if(temp__5290__auto____$1){
-var s__53224__$2 = temp__5290__auto____$1;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__53224__$2)){
-var c__31129__auto__ = cljs.core.chunk_first.call(null,s__53224__$2);
+var s__47440__$2 = temp__5290__auto____$1;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__47440__$2)){
+var c__31129__auto__ = cljs.core.chunk_first.call(null,s__47440__$2);
 var size__31130__auto__ = cljs.core.count.call(null,c__31129__auto__);
-var b__53226 = cljs.core.chunk_buffer.call(null,size__31130__auto__);
-if((function (){var i__53225 = (0);
+var b__47442 = cljs.core.chunk_buffer.call(null,size__31130__auto__);
+if((function (){var i__47441 = (0);
 while(true){
-if((i__53225 < size__31130__auto__)){
-var datetime__$2 = cljs.core._nth.call(null,c__31129__auto__,i__53225);
-cljs.core.chunk_append.call(null,b__53226,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823),"holiday"], null));
+if((i__47441 < size__31130__auto__)){
+var datetime__$2 = cljs.core._nth.call(null,c__31129__auto__,i__47441);
+cljs.core.chunk_append.call(null,b__47442,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823),"holiday"], null));
 
-var G__53229 = (i__53225 + (1));
-i__53225 = G__53229;
+var G__47445 = (i__47441 + (1));
+i__47441 = G__47445;
 continue;
 } else {
 return true;
@@ -287,29 +407,29 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__53226),eckersdorf$work_schedule$events$iter__53221_$_iter__53223.call(null,cljs.core.chunk_rest.call(null,s__53224__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__47442),eckersdorf$work_schedule$events$iter__47437_$_iter__47439.call(null,cljs.core.chunk_rest.call(null,s__47440__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__53226),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__47442),null);
 }
 } else {
-var datetime__$2 = cljs.core.first.call(null,s__53224__$2);
-return cljs.core.cons.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823),"holiday"], null),eckersdorf$work_schedule$events$iter__53221_$_iter__53223.call(null,cljs.core.rest.call(null,s__53224__$2)));
+var datetime__$2 = cljs.core.first.call(null,s__47440__$2);
+return cljs.core.cons.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2,new cljs.core.Keyword("work-schedule","work-type","work-schedule/work-type",985175823),"holiday"], null),eckersdorf$work_schedule$events$iter__47437_$_iter__47439.call(null,cljs.core.rest.call(null,s__47440__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(s__53222__$1,map__53227,map__53227__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime))
+});})(s__47438__$1,map__47443,map__47443__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime))
 ,null,null));
-});})(s__53222__$1,map__53227,map__53227__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime))
+});})(s__47438__$1,map__47443,map__47443__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime))
 ;
 var fs__31128__auto__ = cljs.core.seq.call(null,iterys__31127__auto__.call(null,cljs_time.periodic.periodic_seq.call(null,cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(6))),cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(21))),cljs_time.core.hours.call(null,(1)))));
 if(fs__31128__auto__){
-return cljs.core.concat.call(null,fs__31128__auto__,eckersdorf$work_schedule$events$iter__53221.call(null,cljs.core.rest.call(null,s__53222__$1)));
+return cljs.core.concat.call(null,fs__31128__auto__,eckersdorf$work_schedule$events$iter__47437.call(null,cljs.core.rest.call(null,s__47438__$1)));
 } else {
-var G__53230 = cljs.core.rest.call(null,s__53222__$1);
-s__53222__$1 = G__53230;
+var G__47446 = cljs.core.rest.call(null,s__47438__$1);
+s__47438__$1 = G__47446;
 continue;
 }
 } else {
@@ -317,65 +437,65 @@ return null;
 }
 break;
 }
-});})(datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime))
+});})(datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime))
 ,null,null));
-});})(datetime__$1,zero_time,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime))
+});})(datetime__$1,zero_time,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime))
 ;
 return iter__31131__auto__.call(null,workers);
 })());
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.update.call(null,eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),((function (datetime__$1,zero_time,works,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime){
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.update.call(null,eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),((function (datetime__$1,zero_time,works,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime){
 return (function (schedule){
 return cljs.core.distinct.call(null,cljs.core.into.call(null,schedule,works));
-});})(datetime__$1,zero_time,works,map__53216,map__53216__$1,db,vec__53217,_,workplace_id,workers,datetime))
-),new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null);
+});})(datetime__$1,zero_time,works,map__47432,map__47432__$1,db,vec__47433,_,workplace_id,workers,datetime))
+),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-holiday","work-schedule/remove-holiday",250448456),(function (p__53231,p__53232){
-var map__53233 = p__53231;
-var map__53233__$1 = ((((!((map__53233 == null)))?((((map__53233.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53233.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53233):map__53233);
-var db = cljs.core.get.call(null,map__53233__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53234 = p__53232;
-var _ = cljs.core.nth.call(null,vec__53234,(0),null);
-var workplace_id = cljs.core.nth.call(null,vec__53234,(1),null);
-var workers = cljs.core.nth.call(null,vec__53234,(2),null);
-var datetime = cljs.core.nth.call(null,vec__53234,(3),null);
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","remove-holiday","work-schedule/remove-holiday",250448456),(function (p__47447,p__47448){
+var map__47449 = p__47447;
+var map__47449__$1 = ((((!((map__47449 == null)))?((((map__47449.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47449.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47449):map__47449);
+var db = cljs.core.get.call(null,map__47449__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47450 = p__47448;
+var _ = cljs.core.nth.call(null,vec__47450,(0),null);
+var workplace_id = cljs.core.nth.call(null,vec__47450,(1),null);
+var workers = cljs.core.nth.call(null,vec__47450,(2),null);
+var datetime = cljs.core.nth.call(null,vec__47450,(3),null);
 var datetime__$1 = datetime;
 var zero_time = cljs_time.core.minus.call(null,datetime__$1,cljs_time.core.hours.call(null,cljs_time.core.hour.call(null,datetime__$1)));
-var works = cljs.core.doall.call(null,(function (){var iter__31131__auto__ = ((function (datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime){
-return (function eckersdorf$work_schedule$events$iter__53238(s__53239){
-return (new cljs.core.LazySeq(null,((function (datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime){
+var works = cljs.core.doall.call(null,(function (){var iter__31131__auto__ = ((function (datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime){
+return (function eckersdorf$work_schedule$events$iter__47454(s__47455){
+return (new cljs.core.LazySeq(null,((function (datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime){
 return (function (){
-var s__53239__$1 = s__53239;
+var s__47455__$1 = s__47455;
 while(true){
-var temp__5290__auto__ = cljs.core.seq.call(null,s__53239__$1);
+var temp__5290__auto__ = cljs.core.seq.call(null,s__47455__$1);
 if(temp__5290__auto__){
 var xs__5843__auto__ = temp__5290__auto__;
-var map__53244 = cljs.core.first.call(null,xs__5843__auto__);
-var map__53244__$1 = ((((!((map__53244 == null)))?((((map__53244.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53244.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53244):map__53244);
-var object_id = cljs.core.get.call(null,map__53244__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
-var first_name = cljs.core.get.call(null,map__53244__$1,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645));
-var last_name = cljs.core.get.call(null,map__53244__$1,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756));
-var working_hours = cljs.core.get.call(null,map__53244__$1,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629));
-var iterys__31127__auto__ = ((function (s__53239__$1,map__53244,map__53244__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime){
-return (function eckersdorf$work_schedule$events$iter__53238_$_iter__53240(s__53241){
-return (new cljs.core.LazySeq(null,((function (s__53239__$1,map__53244,map__53244__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime){
+var map__47460 = cljs.core.first.call(null,xs__5843__auto__);
+var map__47460__$1 = ((((!((map__47460 == null)))?((((map__47460.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47460.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47460):map__47460);
+var object_id = cljs.core.get.call(null,map__47460__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
+var first_name = cljs.core.get.call(null,map__47460__$1,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645));
+var last_name = cljs.core.get.call(null,map__47460__$1,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756));
+var working_hours = cljs.core.get.call(null,map__47460__$1,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629));
+var iterys__31127__auto__ = ((function (s__47455__$1,map__47460,map__47460__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime){
+return (function eckersdorf$work_schedule$events$iter__47454_$_iter__47456(s__47457){
+return (new cljs.core.LazySeq(null,((function (s__47455__$1,map__47460,map__47460__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime){
 return (function (){
-var s__53241__$1 = s__53241;
+var s__47457__$1 = s__47457;
 while(true){
-var temp__5290__auto____$1 = cljs.core.seq.call(null,s__53241__$1);
+var temp__5290__auto____$1 = cljs.core.seq.call(null,s__47457__$1);
 if(temp__5290__auto____$1){
-var s__53241__$2 = temp__5290__auto____$1;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__53241__$2)){
-var c__31129__auto__ = cljs.core.chunk_first.call(null,s__53241__$2);
+var s__47457__$2 = temp__5290__auto____$1;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__47457__$2)){
+var c__31129__auto__ = cljs.core.chunk_first.call(null,s__47457__$2);
 var size__31130__auto__ = cljs.core.count.call(null,c__31129__auto__);
-var b__53243 = cljs.core.chunk_buffer.call(null,size__31130__auto__);
-if((function (){var i__53242 = (0);
+var b__47459 = cljs.core.chunk_buffer.call(null,size__31130__auto__);
+if((function (){var i__47458 = (0);
 while(true){
-if((i__53242 < size__31130__auto__)){
-var datetime__$2 = cljs.core._nth.call(null,c__31129__auto__,i__53242);
-cljs.core.chunk_append.call(null,b__53243,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2], null));
+if((i__47458 < size__31130__auto__)){
+var datetime__$2 = cljs.core._nth.call(null,c__31129__auto__,i__47458);
+cljs.core.chunk_append.call(null,b__47459,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2], null));
 
-var G__53246 = (i__53242 + (1));
-i__53242 = G__53246;
+var G__47462 = (i__47458 + (1));
+i__47458 = G__47462;
 continue;
 } else {
 return true;
@@ -383,29 +503,29 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__53243),eckersdorf$work_schedule$events$iter__53238_$_iter__53240.call(null,cljs.core.chunk_rest.call(null,s__53241__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__47459),eckersdorf$work_schedule$events$iter__47454_$_iter__47456.call(null,cljs.core.chunk_rest.call(null,s__47457__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__53243),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__47459),null);
 }
 } else {
-var datetime__$2 = cljs.core.first.call(null,s__53241__$2);
-return cljs.core.cons.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2], null),eckersdorf$work_schedule$events$iter__53238_$_iter__53240.call(null,cljs.core.rest.call(null,s__53241__$2)));
+var datetime__$2 = cljs.core.first.call(null,s__47457__$2);
+return cljs.core.cons.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","worker-id","work-schedule/worker-id",-1438436603),object_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),datetime__$2], null),eckersdorf$work_schedule$events$iter__47454_$_iter__47456.call(null,cljs.core.rest.call(null,s__47457__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(s__53239__$1,map__53244,map__53244__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime))
+});})(s__47455__$1,map__47460,map__47460__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime))
 ,null,null));
-});})(s__53239__$1,map__53244,map__53244__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime))
+});})(s__47455__$1,map__47460,map__47460__$1,object_id,first_name,last_name,working_hours,xs__5843__auto__,temp__5290__auto__,datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime))
 ;
 var fs__31128__auto__ = cljs.core.seq.call(null,iterys__31127__auto__.call(null,cljs_time.periodic.periodic_seq.call(null,cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(6))),cljs_time.core.plus.call(null,zero_time,cljs_time.core.hours.call(null,(21))),cljs_time.core.hours.call(null,(1)))));
 if(fs__31128__auto__){
-return cljs.core.concat.call(null,fs__31128__auto__,eckersdorf$work_schedule$events$iter__53238.call(null,cljs.core.rest.call(null,s__53239__$1)));
+return cljs.core.concat.call(null,fs__31128__auto__,eckersdorf$work_schedule$events$iter__47454.call(null,cljs.core.rest.call(null,s__47455__$1)));
 } else {
-var G__53247 = cljs.core.rest.call(null,s__53239__$1);
-s__53239__$1 = G__53247;
+var G__47463 = cljs.core.rest.call(null,s__47455__$1);
+s__47455__$1 = G__47463;
 continue;
 }
 } else {
@@ -413,125 +533,125 @@ return null;
 }
 break;
 }
-});})(datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime))
+});})(datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime))
 ,null,null));
-});})(datetime__$1,zero_time,map__53233,map__53233__$1,db,vec__53234,_,workplace_id,workers,datetime))
+});})(datetime__$1,zero_time,map__47449,map__47449__$1,db,vec__47450,_,workplace_id,workers,datetime))
 ;
 return iter__31131__auto__.call(null,workers);
 })());
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null);
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),eckersdorf.work_schedule.utils.remove_multiple_work.call(null,db,works),new cljs.core.Keyword(null,"dispatch-n","dispatch-n",-504469236),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-hours-worked-in-month","work-schedule/calculate-hours-worked-in-month",28405095),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-days-worked-in-month","work-schedule/calculate-days-worked-in-month",2005154371),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-saturdays-worked-in-month","work-schedule/calculate-saturdays-worked-in-month",-569653985),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-sundays-worked-in-month","work-schedule/calculate-sundays-worked-in-month",-213405750),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-first-changes-worked-in-month","work-schedule/calculate-first-changes-worked-in-month",1368017319),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","calculate-second-changes-worked-in-month","work-schedule/calculate-second-changes-worked-in-month",-1947005161),cljs.core.first.call(null,works)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","set-edited","work-schedule/set-edited",-962845982)], null)], null)], null);
 }));
 re_frame.core.reg_event_db.call(null,new cljs.core.Keyword("work-schedule","clear","work-schedule/clear",209389428),(function (db,_){
 return cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.PersistentVector.EMPTY);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.get-work-schedule","work-schedule/ajax.get-work-schedule",-1297058300),(function (p__53248,_){
-var map__53249 = p__53248;
-var map__53249__$1 = ((((!((map__53249 == null)))?((((map__53249.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53249.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53249):map__53249);
-var db = cljs.core.get.call(null,map__53249__$1,new cljs.core.Keyword(null,"db","db",993250759));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.get-work-schedule","work-schedule/ajax.get-work-schedule",-1297058300),(function (p__47464,_){
+var map__47465 = p__47464;
+var map__47465__$1 = ((((!((map__47465 == null)))?((((map__47465.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47465.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47465):map__47465);
+var db = cljs.core.get.call(null,map__47465__$1,new cljs.core.Keyword(null,"db","db",993250759));
 var workplace_id = new cljs.core.Keyword("work-schedule","selected-workplace-id","work-schedule/selected-workplace-id",623410962).cljs$core$IFn$_invoke$arity$1(db);
 var datetime = new cljs.core.Keyword("work-schedule","main-date","work-schedule/main-date",-1562823118).cljs$core$IFn$_invoke$arity$1(db);
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"http-xhrio","http-xhrio",1846166714),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"method","method",55703592),new cljs.core.Keyword(null,"get","get",1683182755),new cljs.core.Keyword(null,"uri","uri",-774711847),taoensso.encore.path.call(null,"/api/1.0/work-schedule"),new cljs.core.Keyword(null,"params","params",710516235),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),cljs_time.coerce.to_string.call(null,datetime)], null),new cljs.core.Keyword(null,"response-format","response-format",1664465322),ajax.core.json_response_format.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"keywords?","keywords?",764949733),true], null)),new cljs.core.Keyword(null,"on-success","on-success",1786904109),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.get-work-schedule-success","work-schedule/ajax.get-work-schedule-success",753020555)], null),new cljs.core.Keyword(null,"on-failure","on-failure",842888245),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.get-work-schedule-failure","work-schedule/ajax.get-work-schedule-failure",-1814016044)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.get-work-schedule-success","work-schedule/ajax.get-work-schedule-success",753020555),(function (p__53251,p__53252){
-var map__53253 = p__53251;
-var map__53253__$1 = ((((!((map__53253 == null)))?((((map__53253.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53253.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53253):map__53253);
-var db = cljs.core.get.call(null,map__53253__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53254 = p__53252;
-var _ = cljs.core.nth.call(null,vec__53254,(0),null);
-var map__53257 = cljs.core.nth.call(null,vec__53254,(1),null);
-var map__53257__$1 = ((((!((map__53257 == null)))?((((map__53257.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53257.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53257):map__53257);
-var data = cljs.core.get.call(null,map__53257__$1,new cljs.core.Keyword(null,"data","data",-232669377));
-return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.mapv.call(null,((function (map__53253,map__53253__$1,db,vec__53254,_,map__53257,map__53257__$1,data){
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.get-work-schedule-success","work-schedule/ajax.get-work-schedule-success",753020555),(function (p__47467,p__47468){
+var map__47469 = p__47467;
+var map__47469__$1 = ((((!((map__47469 == null)))?((((map__47469.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47469.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47469):map__47469);
+var db = cljs.core.get.call(null,map__47469__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47470 = p__47468;
+var _ = cljs.core.nth.call(null,vec__47470,(0),null);
+var map__47473 = cljs.core.nth.call(null,vec__47470,(1),null);
+var map__47473__$1 = ((((!((map__47473 == null)))?((((map__47473.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47473.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47473):map__47473);
+var data = cljs.core.get.call(null,map__47473__$1,new cljs.core.Keyword(null,"data","data",-232669377));
+return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.mapv.call(null,((function (map__47469,map__47469__$1,db,vec__47470,_,map__47473,map__47473__$1,data){
 return (function (work){
 return cljs.core.update.call(null,work,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),cljs_time.coerce.from_string);
-});})(map__53253,map__53253__$1,db,vec__53254,_,map__53257,map__53257__$1,data))
+});})(map__47469,map__47469__$1,db,vec__47470,_,map__47473,map__47473__$1,data))
 ,data)),new cljs.core.Keyword(null,"message","message",-406056002),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"content","content",15833224),"poprawnie pobrano harmonogram pracy",new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"success","success",1890645906),new cljs.core.Keyword(null,"duration","duration",1444101068),1.5], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.get-work-schedule-failure","work-schedule/ajax.get-work-schedule-failure",-1814016044),(function (p__53260,p__53261){
-var map__53262 = p__53260;
-var map__53262__$1 = ((((!((map__53262 == null)))?((((map__53262.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53262.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53262):map__53262);
-var db = cljs.core.get.call(null,map__53262__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53263 = p__53261;
-var _ = cljs.core.nth.call(null,vec__53263,(0),null);
-var map__53266 = cljs.core.nth.call(null,vec__53263,(1),null);
-var map__53266__$1 = ((((!((map__53266 == null)))?((((map__53266.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53266.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53266):map__53266);
-var response = map__53266__$1;
-var status_text = cljs.core.get.call(null,map__53266__$1,new cljs.core.Keyword(null,"status-text","status-text",-1834235478));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.get-work-schedule-failure","work-schedule/ajax.get-work-schedule-failure",-1814016044),(function (p__47476,p__47477){
+var map__47478 = p__47476;
+var map__47478__$1 = ((((!((map__47478 == null)))?((((map__47478.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47478.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47478):map__47478);
+var db = cljs.core.get.call(null,map__47478__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47479 = p__47477;
+var _ = cljs.core.nth.call(null,vec__47479,(0),null);
+var map__47482 = cljs.core.nth.call(null,vec__47479,(1),null);
+var map__47482__$1 = ((((!((map__47482 == null)))?((((map__47482.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47482.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47482):map__47482);
+var response = map__47482__$1;
+var status_text = cljs.core.get.call(null,map__47482__$1,new cljs.core.Keyword(null,"status-text","status-text",-1834235478));
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("error","set","error/set",392376274),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"event","event",301435442),new cljs.core.Keyword("work-schedule","ajax.get-work-schedule","work-schedule/ajax.get-work-schedule",-1297058300),new cljs.core.Keyword(null,"desc","desc",2093485764),response], null)], null),new cljs.core.Keyword(null,"message","message",-406056002),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"content","content",15833224),["b\u0142\u0105d przy pobieraniu harmonogramu pracy: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(status_text)].join(''),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"duration","duration",1444101068),1.5], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.post-work-schedule","work-schedule/ajax.post-work-schedule",378268198),(function (p__53269,_){
-var map__53270 = p__53269;
-var map__53270__$1 = ((((!((map__53270 == null)))?((((map__53270.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53270.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53270):map__53270);
-var db = cljs.core.get.call(null,map__53270__$1,new cljs.core.Keyword(null,"db","db",993250759));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.post-work-schedule","work-schedule/ajax.post-work-schedule",378268198),(function (p__47485,_){
+var map__47486 = p__47485;
+var map__47486__$1 = ((((!((map__47486 == null)))?((((map__47486.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47486.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47486):map__47486);
+var db = cljs.core.get.call(null,map__47486__$1,new cljs.core.Keyword(null,"db","db",993250759));
 var schedule = new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db);
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"http-xhrio","http-xhrio",1846166714),new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"method","method",55703592),new cljs.core.Keyword(null,"post","post",269697687),new cljs.core.Keyword(null,"uri","uri",-774711847),taoensso.encore.path.call(null,"/api/1.0/work-schedule"),new cljs.core.Keyword(null,"params","params",710516235),schedule,new cljs.core.Keyword(null,"format","format",-1306924766),ajax.core.json_request_format.call(null),new cljs.core.Keyword(null,"response-format","response-format",1664465322),ajax.core.json_response_format.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"keywords?","keywords?",764949733),true], null)),new cljs.core.Keyword(null,"on-success","on-success",1786904109),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.post-work-schedule-success","work-schedule/ajax.post-work-schedule-success",-587325761)], null),new cljs.core.Keyword(null,"on-failure","on-failure",842888245),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.post-work-schedule-failure","work-schedule/ajax.post-work-schedule-failure",1488934759)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.post-work-schedule-success","work-schedule/ajax.post-work-schedule-success",-587325761),(function (p__53272,p__53273){
-var map__53274 = p__53272;
-var map__53274__$1 = ((((!((map__53274 == null)))?((((map__53274.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53274.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53274):map__53274);
-var db = cljs.core.get.call(null,map__53274__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53275 = p__53273;
-var _ = cljs.core.nth.call(null,vec__53275,(0),null);
-var map__53278 = cljs.core.nth.call(null,vec__53275,(1),null);
-var map__53278__$1 = ((((!((map__53278 == null)))?((((map__53278.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53278.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53278):map__53278);
-var data = cljs.core.get.call(null,map__53278__$1,new cljs.core.Keyword(null,"data","data",-232669377));
-return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.mapv.call(null,((function (map__53274,map__53274__$1,db,vec__53275,_,map__53278,map__53278__$1,data){
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.post-work-schedule-success","work-schedule/ajax.post-work-schedule-success",-587325761),(function (p__47488,p__47489){
+var map__47490 = p__47488;
+var map__47490__$1 = ((((!((map__47490 == null)))?((((map__47490.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47490.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47490):map__47490);
+var db = cljs.core.get.call(null,map__47490__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47491 = p__47489;
+var _ = cljs.core.nth.call(null,vec__47491,(0),null);
+var map__47494 = cljs.core.nth.call(null,vec__47491,(1),null);
+var map__47494__$1 = ((((!((map__47494 == null)))?((((map__47494.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47494.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47494):map__47494);
+var data = cljs.core.get.call(null,map__47494__$1,new cljs.core.Keyword(null,"data","data",-232669377));
+return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),cljs.core.mapv.call(null,((function (map__47490,map__47490__$1,db,vec__47491,_,map__47494,map__47494__$1,data){
 return (function (work){
 return cljs.core.update.call(null,work,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),cljs_time.coerce.from_string);
-});})(map__53274,map__53274__$1,db,vec__53275,_,map__53278,map__53278__$1,data))
+});})(map__47490,map__47490__$1,db,vec__47491,_,map__47494,map__47494__$1,data))
 ,data)),new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","unset-edited","work-schedule/unset-edited",-673180065)], null),new cljs.core.Keyword(null,"message","message",-406056002),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"content","content",15833224),"poprawnie zapisano harmonogram pracy",new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"success","success",1890645906),new cljs.core.Keyword(null,"duration","duration",1444101068),1.5], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.post-work-schedule-failure","work-schedule/ajax.post-work-schedule-failure",1488934759),(function (p__53281,p__53282){
-var map__53283 = p__53281;
-var map__53283__$1 = ((((!((map__53283 == null)))?((((map__53283.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53283.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53283):map__53283);
-var db = cljs.core.get.call(null,map__53283__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53284 = p__53282;
-var _ = cljs.core.nth.call(null,vec__53284,(0),null);
-var map__53287 = cljs.core.nth.call(null,vec__53284,(1),null);
-var map__53287__$1 = ((((!((map__53287 == null)))?((((map__53287.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53287.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53287):map__53287);
-var response = map__53287__$1;
-var status_text = cljs.core.get.call(null,map__53287__$1,new cljs.core.Keyword(null,"status-text","status-text",-1834235478));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.post-work-schedule-failure","work-schedule/ajax.post-work-schedule-failure",1488934759),(function (p__47497,p__47498){
+var map__47499 = p__47497;
+var map__47499__$1 = ((((!((map__47499 == null)))?((((map__47499.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47499.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47499):map__47499);
+var db = cljs.core.get.call(null,map__47499__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47500 = p__47498;
+var _ = cljs.core.nth.call(null,vec__47500,(0),null);
+var map__47503 = cljs.core.nth.call(null,vec__47500,(1),null);
+var map__47503__$1 = ((((!((map__47503 == null)))?((((map__47503.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47503.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47503):map__47503);
+var response = map__47503__$1;
+var status_text = cljs.core.get.call(null,map__47503__$1,new cljs.core.Keyword(null,"status-text","status-text",-1834235478));
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("error","set","error/set",392376274),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"event","event",301435442),new cljs.core.Keyword("work-schedule","ajax.post-work-schedule","work-schedule/ajax.post-work-schedule",378268198),new cljs.core.Keyword(null,"desc","desc",2093485764),response], null)], null),new cljs.core.Keyword(null,"message","message",-406056002),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"content","content",15833224),["b\u0142\u0105d przy zapisywaniu harmonogram pracy: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(status_text)].join(''),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"duration","duration",1444101068),1.5], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule","work-schedule/ajax.delete-work-schedule",-339546076),(function (p__53290,_){
-var map__53291 = p__53290;
-var map__53291__$1 = ((((!((map__53291 == null)))?((((map__53291.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53291.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53291):map__53291);
-var db = cljs.core.get.call(null,map__53291__$1,new cljs.core.Keyword(null,"db","db",993250759));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule","work-schedule/ajax.delete-work-schedule",-339546076),(function (p__47506,_){
+var map__47507 = p__47506;
+var map__47507__$1 = ((((!((map__47507 == null)))?((((map__47507.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47507.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47507):map__47507);
+var db = cljs.core.get.call(null,map__47507__$1,new cljs.core.Keyword(null,"db","db",993250759));
 var workplace_id = new cljs.core.Keyword("work-schedule","selected-workplace-id","work-schedule/selected-workplace-id",623410962).cljs$core$IFn$_invoke$arity$1(db);
 var datetime = new cljs.core.Keyword("work-schedule","main-date","work-schedule/main-date",-1562823118).cljs$core$IFn$_invoke$arity$1(db);
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"http-xhrio","http-xhrio",1846166714),new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"method","method",55703592),new cljs.core.Keyword(null,"delete","delete",-1768633620),new cljs.core.Keyword(null,"uri","uri",-774711847),taoensso.encore.path.call(null,"/api/1.0/work-schedule"),new cljs.core.Keyword(null,"params","params",710516235),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("work-schedule","workplace-id","work-schedule/workplace-id",-1900703045),workplace_id,new cljs.core.Keyword("work-schedule","datetime","work-schedule/datetime",-1851402599),cljs_time.coerce.to_string.call(null,datetime)], null),new cljs.core.Keyword(null,"format","format",-1306924766),ajax.core.json_request_format.call(null),new cljs.core.Keyword(null,"response-format","response-format",1664465322),ajax.core.json_response_format.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"keywords?","keywords?",764949733),true], null)),new cljs.core.Keyword(null,"on-success","on-success",1786904109),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule-success","work-schedule/ajax.delete-work-schedule-success",-2066310923)], null),new cljs.core.Keyword(null,"on-failure","on-failure",842888245),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule-failure","work-schedule/ajax.delete-work-schedule-failure",-225767126)], null)], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule-success","work-schedule/ajax.delete-work-schedule-success",-2066310923),(function (p__53293,p__53294){
-var map__53295 = p__53293;
-var map__53295__$1 = ((((!((map__53295 == null)))?((((map__53295.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53295.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53295):map__53295);
-var db = cljs.core.get.call(null,map__53295__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53296 = p__53294;
-var _ = cljs.core.nth.call(null,vec__53296,(0),null);
-var map__53299 = cljs.core.nth.call(null,vec__53296,(1),null);
-var map__53299__$1 = ((((!((map__53299 == null)))?((((map__53299.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53299.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53299):map__53299);
-var data = cljs.core.get.call(null,map__53299__$1,new cljs.core.Keyword(null,"data","data",-232669377));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule-success","work-schedule/ajax.delete-work-schedule-success",-2066310923),(function (p__47509,p__47510){
+var map__47511 = p__47509;
+var map__47511__$1 = ((((!((map__47511 == null)))?((((map__47511.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47511.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47511):map__47511);
+var db = cljs.core.get.call(null,map__47511__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47512 = p__47510;
+var _ = cljs.core.nth.call(null,vec__47512,(0),null);
+var map__47515 = cljs.core.nth.call(null,vec__47512,(1),null);
+var map__47515__$1 = ((((!((map__47515 == null)))?((((map__47515.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47515.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47515):map__47515);
+var data = cljs.core.get.call(null,map__47515__$1,new cljs.core.Keyword(null,"data","data",-232669377));
 return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.call(null,db,new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035),data),new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","unset-edited","work-schedule/unset-edited",-673180065)], null),new cljs.core.Keyword(null,"message","message",-406056002),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"content","content",15833224),"poprawnie usuni\u0119to harmonogram pracy",new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"success","success",1890645906),new cljs.core.Keyword(null,"duration","duration",1444101068),1.5], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule-failure","work-schedule/ajax.delete-work-schedule-failure",-225767126),(function (p__53302,p__53303){
-var map__53304 = p__53302;
-var map__53304__$1 = ((((!((map__53304 == null)))?((((map__53304.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53304.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53304):map__53304);
-var db = cljs.core.get.call(null,map__53304__$1,new cljs.core.Keyword(null,"db","db",993250759));
-var vec__53305 = p__53303;
-var _ = cljs.core.nth.call(null,vec__53305,(0),null);
-var map__53308 = cljs.core.nth.call(null,vec__53305,(1),null);
-var map__53308__$1 = ((((!((map__53308 == null)))?((((map__53308.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53308.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53308):map__53308);
-var response = map__53308__$1;
-var status_text = cljs.core.get.call(null,map__53308__$1,new cljs.core.Keyword(null,"status-text","status-text",-1834235478));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule-failure","work-schedule/ajax.delete-work-schedule-failure",-225767126),(function (p__47518,p__47519){
+var map__47520 = p__47518;
+var map__47520__$1 = ((((!((map__47520 == null)))?((((map__47520.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47520.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47520):map__47520);
+var db = cljs.core.get.call(null,map__47520__$1,new cljs.core.Keyword(null,"db","db",993250759));
+var vec__47521 = p__47519;
+var _ = cljs.core.nth.call(null,vec__47521,(0),null);
+var map__47524 = cljs.core.nth.call(null,vec__47521,(1),null);
+var map__47524__$1 = ((((!((map__47524 == null)))?((((map__47524.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47524.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47524):map__47524);
+var response = map__47524__$1;
+var status_text = cljs.core.get.call(null,map__47524__$1,new cljs.core.Keyword(null,"status-text","status-text",-1834235478));
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("error","set","error/set",392376274),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"event","event",301435442),new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule","work-schedule/ajax.delete-work-schedule",-339546076),new cljs.core.Keyword(null,"desc","desc",2093485764),response], null)], null),new cljs.core.Keyword(null,"message","message",-406056002),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"content","content",15833224),["b\u0142\u0105d przy usuwaniu harmonogramu pracy: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(status_text)].join(''),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"duration","duration",1444101068),1.5], null)], null);
 }));
-re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","sync","work-schedule/sync",1459023889),(function (p__53311,_){
-var map__53312 = p__53311;
-var map__53312__$1 = ((((!((map__53312 == null)))?((((map__53312.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53312.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__53312):map__53312);
-var db = cljs.core.get.call(null,map__53312__$1,new cljs.core.Keyword(null,"db","db",993250759));
+re_frame.core.reg_event_fx.call(null,new cljs.core.Keyword("work-schedule","sync","work-schedule/sync",1459023889),(function (p__47527,_){
+var map__47528 = p__47527;
+var map__47528__$1 = ((((!((map__47528 == null)))?((((map__47528.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47528.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47528):map__47528);
+var db = cljs.core.get.call(null,map__47528__$1,new cljs.core.Keyword(null,"db","db",993250759));
 var schedule = new cljs.core.Keyword("work-schedule","schedule","work-schedule/schedule",-1997253035).cljs$core$IFn$_invoke$arity$1(db);
 cljs.core.println.call(null,schedule);
 
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"dispatch","dispatch",1319337009),((!(cljs.core.empty_QMARK_.call(null,schedule)))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.post-work-schedule","work-schedule/ajax.post-work-schedule",378268198)], null):new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("work-schedule","ajax.delete-work-schedule","work-schedule/ajax.delete-work-schedule",-339546076)], null))], null);
 }));
 
-//# sourceMappingURL=events.js.map?rel=1509398254564
+//# sourceMappingURL=events.js.map?rel=1509570209902

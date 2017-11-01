@@ -18,5 +18,8 @@ return new cljs.core.Keyword("view","scrolling-up?","view/scrolling-up?",-736578
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword("view","sider-collapsed?","view/sider-collapsed?",888100809),(function (db,_){
 return new cljs.core.Keyword("view","sider-collapsed?","view/sider-collapsed?",888100809).cljs$core$IFn$_invoke$arity$1(db);
 }));
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword("view","scroll-content?","view/scroll-content?",2031747859),(function (db,_){
+return new cljs.core.Keyword("view","scroll-content?","view/scroll-content?",2031747859).cljs$core$IFn$_invoke$arity$1(db);
+}));
 
-//# sourceMappingURL=subs.js.map?rel=1509397943572
+//# sourceMappingURL=subs.js.map?rel=1509563010642
