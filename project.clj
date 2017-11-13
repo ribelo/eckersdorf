@@ -36,10 +36,10 @@
                  [reagent "0.8.0-alpha2" :exclusions [cljsjs/react cljsjs/react-dom]]
                  [re-frame "0.10.2"]
                  [antizer "0.2.2"]
-                 [cljs-react-material-ui "0.2.50"]
-                 [cljsjs/react "15.6.1-1"]
-                 [cljsjs/react-dom "15.6.1-1"]
-                 [cljsjs/react-transition-group "2.2.0-0"]
+                 ;[cljs-react-material-ui "0.2.50"]
+                 ;[cljsjs/react "15.6.1-1"]
+                 ;[cljsjs/react-dom "15.6.1-1"]
+                 ;[cljsjs/react-transition-group "2.2.0-0"]
                  [day8.re-frame/http-fx "0.1.4"]
                  [com.andrewmcveigh/cljs-time "0.5.1"]
                  [kibu/pushy "0.3.8"]]
@@ -65,7 +65,10 @@
                                                                :closure-warnings {:externs-validation :off :non-standard-jsdoc :off}
                                                                :externs          ["react/externs/react.js"]
 
-                                                               :closure-defines  {process.env/NODE_ENV "development"}}}]}
+                                                               :closure-defines  {process.env/NODE_ENV "development"}
+                                                               :npm-deps {:react     "15.6.2"
+                                                                          :react-dom "15.6.2"
+                                                                          :orgchart "2.0.7"}}}]}
                        :aot          :all
                        :uberjar-name "eckersdorf.jar"
                        :source-paths ["env/prod/clj"]}
@@ -78,7 +81,10 @@
                                                                :closure-warnings {:externs-validation :off :non-standard-jsdoc :off}
                                                                :externs          ["react/externs/react.js"]
 
-                                                               :closure-defines  {process.env/NODE_ENV "production"}}}]}
+                                                               :closure-defines  {process.env/NODE_ENV "production"}
+                                                               :npm-deps         {:react     "15.6.2"
+                                                                                  :react-dom "15.6.2"
+                                                                                  :orgchart  "2.0.7"}}}]}
 
                        :source-paths ["env/prod/clj" "test/clj"]}
              :dev     {:dependencies [[binaryage/devtools "0.9.7"]
@@ -99,6 +105,9 @@
                                                                :closure-defines      {"re_frame.trace.trace_enabled_QMARK_" true}
                                                                :preloads             [devtools.preload day8.re-frame.trace.preload]
                                                                :external-config      {:devtools/config {:features-to-install :all}}
-                                                               :pretty-print         true}}]}
+                                                               :pretty-print         true
+                                                               :npm-deps             {:react     "15.6.2"
+                                                                                      :react-dom "15.6.2"
+                                                                                      :orgchart  "2.0.7"}}}]}
 
                        :source-paths ["env/dev/clj" "test/clj"]}})
