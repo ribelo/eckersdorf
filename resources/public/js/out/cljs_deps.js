@@ -185,6 +185,7 @@ goog.addDependency("../cljs/core/async/impl/dispatch.js", ['cljs.core.async.impl
 goog.addDependency("../cljs/core/async/impl/channels.js", ['cljs.core.async.impl.channels'], ['cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../figwheel/client/utils.js", ['figwheel.client.utils'], ['goog.userAgent.product', 'goog.string', 'cljs.core', 'goog.object', 'goog.string.StringBuffer', 'cljs.pprint', 'goog.async.Deferred', 'clojure.string', 'cljs.reader']);
 goog.addDependency("../figwheel/client/socket.js", ['figwheel.client.socket'], ['cljs.core', 'goog.object', 'figwheel.client.utils', 'cljs.reader']);
+goog.addDependency("../cljsjs/development/jquery.inc.js", ['cljsjs.jquery'], []);
 goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.timers'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.timers']);
 goog.addDependency("../figwheel/client/file_reloading.js", ['figwheel.client.file_reloading'], ['goog.string', 'goog.net.jsloader', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'clojure.set', 'goog.html.legacyconversions', 'figwheel.client.utils', 'goog.async.Deferred', 'clojure.string']);
@@ -192,4 +193,4 @@ goog.addDependency("../figwheel/client/heads_up.js", ['figwheel.client.heads_up'
 goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core', 'cljs.spec.alpha']);
 goog.addDependency("../figwheel/client.js", ['figwheel.client'], ['goog.userAgent.product', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'figwheel.client.file_reloading', 'figwheel.client.utils', 'cljs.repl', 'figwheel.client.heads_up', 'figwheel.client.socket', 'clojure.string', 'cljs.reader']);
 goog.addDependency("../eckersdorf/app.js", ['eckersdorf.app'], ['eckersdorf.core', 'cljs.core', 'figwheel.client', 'devtools.core']);
-goog.addDependency("../eckersdorf/repl.js", ['eckersdorf.repl'], ['cljs.core', 'cljs_time.core']);
+goog.addDependency("../eckersdorf/repl.js", ['eckersdorf.repl'], ['cljsjs.jquery', 'cljs.core', 'cljs.spec.alpha', 're_frame.db', 're_frame.core']);

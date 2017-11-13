@@ -36,95 +36,95 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 
 return antizer.reagent.message_warning.call(null,"wprowadzono b\u0142\u0119dne dane");
 }
 });})(show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
-], null),(cljs.core.truth_(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"modify","modify",-1261040869),null], null), null).call(null,cljs.core.deref.call(null,show_dialog_QMARK_)))?"modyfikuj":"dodaj")], null)], null))], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var map__42370 = cljs.core.deref.call(null,worker_form);
-var map__42370__$1 = ((((!((map__42370 == null)))?((((map__42370.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42370.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42370):map__42370);
-var first_name = cljs.core.get.call(null,map__42370__$1,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645));
-var last_name = cljs.core.get.call(null,map__42370__$1,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756));
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.row,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"gutter","gutter",1047805662),(8)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((first_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645),first_name))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(((!((first_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645),first_name))))?"pole nie mo\u017Ce by\u0107 puste":null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"imi\u0119",new cljs.core.Keyword(null,"value","value",305978217),first_name,new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42370,map__42370__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+], null),(cljs.core.truth_(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"modify","modify",-1261040869),null], null), null).call(null,cljs.core.deref.call(null,show_dialog_QMARK_)))?"modyfikuj":"dodaj")], null)], null))], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var map__42371 = cljs.core.deref.call(null,worker_form);
+var map__42371__$1 = ((((!((map__42371 == null)))?((((map__42371.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42371.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42371):map__42371);
+var first_name = cljs.core.get.call(null,map__42371__$1,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645));
+var last_name = cljs.core.get.call(null,map__42371__$1,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.row,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"gutter","gutter",1047805662),(8)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((first_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645),first_name))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(((!((first_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645),first_name))))?"pole nie mo\u017Ce by\u0107 puste":null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"imi\u0119",new cljs.core.Keyword(null,"value","value",305978217),first_name,new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42371,map__42371__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
 return (function (e){
 var val = cuerdas.core.lower.call(null,e.target.value);
 var email_address = eckersdorf.utils.simplify_string.call(null,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.first.call(null,val)),".",cljs.core.str.cljs$core$IFn$_invoke$arity$1(last_name),cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_addon)].join(''));
 var worker = cljs.core.assoc.call(null,cljs.core.deref.call(null,worker_form),new cljs.core.Keyword("worker","first-name","worker/first-name",-1784265645),val,new cljs.core.Keyword("worker","email-address","worker/email-address",391671898),email_address);
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workers","set-worker-form","workers/set-worker-form",462806327),worker], null));
-});})(map__42370,map__42370__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
-], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((last_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756),last_name))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(((!((last_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756),last_name))))?"pole nie mo\u017Ce by\u0107 puste":null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"nazwisko",new cljs.core.Keyword(null,"value","value",305978217),last_name,new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42370,map__42370__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+});})(map__42371,map__42371__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((last_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756),last_name))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(((!((last_name == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756),last_name))))?"pole nie mo\u017Ce by\u0107 puste":null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"nazwisko",new cljs.core.Keyword(null,"value","value",305978217),last_name,new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42371,map__42371__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
 return (function (e){
 var val = cuerdas.core.lower.call(null,e.target.value);
 var email_address = cuerdas.core.lower.call(null,eckersdorf.utils.simplify_string.call(null,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.first.call(null,first_name)),".",cljs.core.str.cljs$core$IFn$_invoke$arity$1(val),cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_addon)].join('')));
 var worker = cljs.core.assoc.call(null,cljs.core.deref.call(null,worker_form),new cljs.core.Keyword("worker","last-name","worker/last-name",1267326756),val,new cljs.core.Keyword("worker","email-address","worker/email-address",391671898),email_address);
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workers","set-worker-form","workers/set-worker-form",462806327),worker], null));
-});})(map__42370,map__42370__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+});})(map__42371,map__42371__$1,first_name,last_name,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
 ], null)], null)], null)], null)], null);
-})(),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.row,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"gutter","gutter",1047805662),(8)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42372 = cljs.core.deref.call(null,worker_form);
-var map__42372__$1 = ((((!((map__42372 == null)))?((((map__42372.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42372.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42372):map__42372);
-var email_address = cljs.core.get.call(null,map__42372__$1,new cljs.core.Keyword("worker","email-address","worker/email-address",391671898));
+})(),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.row,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"gutter","gutter",1047805662),(8)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42373 = cljs.core.deref.call(null,worker_form);
+var map__42373__$1 = ((((!((map__42373 == null)))?((((map__42373.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42373.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42373):map__42373);
+var email_address = cljs.core.get.call(null,map__42373__$1,new cljs.core.Keyword("worker","email-address","worker/email-address",391671898));
 var email_address__$1 = cljs.core.first.call(null,cuerdas.core.split.call(null,email_address,"@"));
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((email_address__$1 == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","email-address","worker/email-address",391671898),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_address__$1),cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_addon)].join('')))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(cljs.core.truth_(cuerdas.core.empty_QMARK_.call(null,email_address__$1))?"pole nie mo\u017Ce by\u0107 puste":(((!((email_address__$1 == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("workplace","email-address","workplace/email-address",-2014908542),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_address__$1),cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_addon)].join('')))))?"b\u0142\u0119dny adres email":null))], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"e-mail",new cljs.core.Keyword(null,"value","value",305978217),email_address__$1,new cljs.core.Keyword(null,"addon-after","addon-after",634985306),email_addon,new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42372,map__42372__$1,email_address,email_address__$1,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((email_address__$1 == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","email-address","worker/email-address",391671898),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_address__$1),cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_addon)].join('')))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(cljs.core.truth_(cuerdas.core.empty_QMARK_.call(null,email_address__$1))?"pole nie mo\u017Ce by\u0107 puste":(((!((email_address__$1 == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("workplace","email-address","workplace/email-address",-2014908542),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_address__$1),cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_addon)].join('')))))?"b\u0142\u0119dny adres email":null))], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"e-mail",new cljs.core.Keyword(null,"value","value",305978217),email_address__$1,new cljs.core.Keyword(null,"addon-after","addon-after",634985306),email_addon,new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42373,map__42373__$1,email_address,email_address__$1,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
 return (function (e){
 var val = e.target.value;
 var worker = cljs.core.assoc.call(null,cljs.core.deref.call(null,worker_form),new cljs.core.Keyword("worker","email-address","worker/email-address",391671898),((cljs.core.not.call(null,cuerdas.core.empty_or_nil_QMARK_.call(null,val)))?[cljs.core.str.cljs$core$IFn$_invoke$arity$1(val),cljs.core.str.cljs$core$IFn$_invoke$arity$1(email_addon)].join(''):""));
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workers","set-worker-form","workers/set-worker-form",462806327),worker], null));
-});})(map__42372,map__42372__$1,email_address,email_address__$1,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+});})(map__42373,map__42373__$1,email_address,email_address__$1,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
 ], null)], null)], null);
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42374 = cljs.core.deref.call(null,worker_form);
-var map__42374__$1 = ((((!((map__42374 == null)))?((((map__42374.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42374.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42374):map__42374);
-var phone_number = cljs.core.get.call(null,map__42374__$1,new cljs.core.Keyword("worker","phone-number","worker/phone-number",1303174430));
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"wrapper-col","wrapper-col",-1413688923),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(24)], null),new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),((cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","phone-number","worker/phone-number",1303174430),phone_number)))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),((cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","phone-number","worker/phone-number",1303174430),phone_number)))?"b\u0142\u0119dny numer telefonu":null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"numer telefonu",new cljs.core.Keyword(null,"value","value",305978217),phone_number,new cljs.core.Keyword(null,"addon-before","addon-before",-500360384),"+48",new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42374,map__42374__$1,phone_number,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42375 = cljs.core.deref.call(null,worker_form);
+var map__42375__$1 = ((((!((map__42375 == null)))?((((map__42375.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42375.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42375):map__42375);
+var phone_number = cljs.core.get.call(null,map__42375__$1,new cljs.core.Keyword("worker","phone-number","worker/phone-number",1303174430));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"wrapper-col","wrapper-col",-1413688923),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(24)], null),new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),((cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","phone-number","worker/phone-number",1303174430),phone_number)))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),((cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","phone-number","worker/phone-number",1303174430),phone_number)))?"b\u0142\u0119dny numer telefonu":null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"numer telefonu",new cljs.core.Keyword(null,"value","value",305978217),phone_number,new cljs.core.Keyword(null,"addon-before","addon-before",-500360384),"+48",new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42375,map__42375__$1,phone_number,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
 return (function (e){
 var val = e.target.value;
 var worker = cljs.core.assoc.call(null,cljs.core.deref.call(null,worker_form),new cljs.core.Keyword("worker","phone-number","worker/phone-number",1303174430),val);
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workers","set-worker-form","workers/set-worker-form",462806327),worker], null));
-});})(map__42374,map__42374__$1,phone_number,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+});})(map__42375,map__42375__$1,phone_number,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
 ,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"display","display",242065432),new cljs.core.Keyword(null,"inline","inline",1399884222)], null)], null)], null)], null);
-})()], null)], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.row,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"gutter","gutter",1047805662),(8)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42376 = cljs.core.deref.call(null,worker_form);
-var map__42376__$1 = ((((!((map__42376 == null)))?((((map__42376.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42376.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42376):map__42376);
-var working_hours = cljs.core.get.call(null,map__42376__$1,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629));
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"layout","layout",-2120940921),new cljs.core.Keyword(null,"horizontal","horizontal",2062109475)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"label","label",1718410804),"ilo\u015B\u0107 godzin pracy",new cljs.core.Keyword(null,"label-col","label-col",1883390160),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.Keyword(null,"wrapper-col","wrapper-col",-1413688923),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((working_hours == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629),working_hours))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(cljs.core.truth_(cuerdas.core.empty_QMARK_.call(null,working_hours))?"pole nie mo\u017Ce by\u0107 puste":(((!((working_hours == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629),working_hours))))?"b\u0142\u0119dna liczba":null)),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text-align","text-align",1786091845),new cljs.core.Keyword(null,"left","left",-399115937)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input_number,new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"value","value",305978217),working_hours,new cljs.core.Keyword(null,"min","min",444991522),(0),new cljs.core.Keyword(null,"max","max",61366548),(12),new cljs.core.Keyword(null,"size","size",1098693007),"200px",new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42376,map__42376__$1,working_hours,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+})()], null)], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.row,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"gutter","gutter",1047805662),(8)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42377 = cljs.core.deref.call(null,worker_form);
+var map__42377__$1 = ((((!((map__42377 == null)))?((((map__42377.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42377.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42377):map__42377);
+var working_hours = cljs.core.get.call(null,map__42377__$1,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"layout","layout",-2120940921),new cljs.core.Keyword(null,"horizontal","horizontal",2062109475)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"label","label",1718410804),"ilo\u015B\u0107 godzin pracy",new cljs.core.Keyword(null,"label-col","label-col",1883390160),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.Keyword(null,"wrapper-col","wrapper-col",-1413688923),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),new cljs.core.Keyword(null,"validate-status","validate-status",-612956038),(((!((working_hours == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629),working_hours))))?new cljs.core.Keyword(null,"error","error",-978969032):null),new cljs.core.Keyword(null,"help","help",-439233446),(cljs.core.truth_(cuerdas.core.empty_QMARK_.call(null,working_hours))?"pole nie mo\u017Ce by\u0107 puste":(((!((working_hours == null))) && (cljs.core.not.call(null,cljs.spec.alpha.valid_QMARK_.call(null,new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629),working_hours))))?"b\u0142\u0119dna liczba":null)),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text-align","text-align",1786091845),new cljs.core.Keyword(null,"left","left",-399115937)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.input_number,new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"value","value",305978217),working_hours,new cljs.core.Keyword(null,"min","min",444991522),(0),new cljs.core.Keyword(null,"max","max",61366548),(12),new cljs.core.Keyword(null,"size","size",1098693007),"200px",new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42377,map__42377__$1,working_hours,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
 return (function (val){
 var worker = cljs.core.assoc.call(null,cljs.core.deref.call(null,worker_form),new cljs.core.Keyword("worker","working-hours","worker/working-hours",1463334629),val);
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workers","set-worker-form","workers/set-worker-form",462806327),worker], null));
-});})(map__42376,map__42376__$1,working_hours,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+});})(map__42377,map__42377__$1,working_hours,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
 ,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"width","width",-384071477),"100%"], null)], null)], null)], null)], null);
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42378 = cljs.core.deref.call(null,worker_form);
-var map__42378__$1 = ((((!((map__42378 == null)))?((((map__42378.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42378.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42378):map__42378);
-var object_id = cljs.core.get.call(null,map__42378__$1,new cljs.core.Keyword("worker","workplace","worker/workplace",-1450573153));
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.col,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"span","span",1394872991),(12)], null),(function (){var map__42379 = cljs.core.deref.call(null,worker_form);
+var map__42379__$1 = ((((!((map__42379 == null)))?((((map__42379.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42379.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42379):map__42379);
+var object_id = cljs.core.get.call(null,map__42379__$1,new cljs.core.Keyword("worker","workplace","worker/workplace",-1450573153));
 var workplace = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplace","get-by-id","workplace/get-by-id",-1352956083),object_id], null));
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.select,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),(function (){var or__30522__auto__ = new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,workplace));
-if(cljs.core.truth_(or__30522__auto__)){
-return or__30522__auto__;
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.form_item,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.select,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),(function (){var or__30523__auto__ = new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,workplace));
+if(cljs.core.truth_(or__30523__auto__)){
+return or__30523__auto__;
 } else {
 return "brak";
 }
-})(),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42378,map__42378__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+})(),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (map__42379,map__42379__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
 return (function (val){
 var worker = cljs.core.assoc.call(null,cljs.core.deref.call(null,worker_form),new cljs.core.Keyword("worker","workplace","worker/workplace",-1450573153),val);
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workers","set-worker-form","workers/set-worker-form",462806327),worker], null));
-});})(map__42378,map__42378__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
-,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"width","width",-384071477),"100%"], null)], null),cljs.core.doall.call(null,(function (){var iter__31404__auto__ = ((function (map__42378,map__42378__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
-return (function eckersdorf$workers$ui$worker_dialog_$_iter__42380(s__42381){
-return (new cljs.core.LazySeq(null,((function (map__42378,map__42378__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+});})(map__42379,map__42379__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"width","width",-384071477),"100%"], null)], null),cljs.core.doall.call(null,(function (){var iter__31405__auto__ = ((function (map__42379,map__42379__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
+return (function eckersdorf$workers$ui$worker_dialog_$_iter__42381(s__42382){
+return (new cljs.core.LazySeq(null,((function (map__42379,map__42379__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker){
 return (function (){
-var s__42381__$1 = s__42381;
+var s__42382__$1 = s__42382;
 while(true){
-var temp__5457__auto__ = cljs.core.seq.call(null,s__42381__$1);
+var temp__5457__auto__ = cljs.core.seq.call(null,s__42382__$1);
 if(temp__5457__auto__){
-var s__42381__$2 = temp__5457__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__42381__$2)){
-var c__31402__auto__ = cljs.core.chunk_first.call(null,s__42381__$2);
-var size__31403__auto__ = cljs.core.count.call(null,c__31402__auto__);
-var b__42383 = cljs.core.chunk_buffer.call(null,size__31403__auto__);
-if((function (){var i__42382 = (0);
+var s__42382__$2 = temp__5457__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__42382__$2)){
+var c__31403__auto__ = cljs.core.chunk_first.call(null,s__42382__$2);
+var size__31404__auto__ = cljs.core.count.call(null,c__31403__auto__);
+var b__42384 = cljs.core.chunk_buffer.call(null,size__31404__auto__);
+if((function (){var i__42383 = (0);
 while(true){
-if((i__42382 < size__31403__auto__)){
-var w = cljs.core._nth.call(null,c__31402__auto__,i__42382);
-var map__42384 = w;
-var map__42384__$1 = ((((!((map__42384 == null)))?((((map__42384.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42384.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42384):map__42384);
-var object_id__$1 = cljs.core.get.call(null,map__42384__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
-var name = cljs.core.get.call(null,map__42384__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
-cljs.core.chunk_append.call(null,b__42383,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.select_option,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),object_id__$1], null),name], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [object_id__$1], null)], null)));
+if((i__42383 < size__31404__auto__)){
+var w = cljs.core._nth.call(null,c__31403__auto__,i__42383);
+var map__42385 = w;
+var map__42385__$1 = ((((!((map__42385 == null)))?((((map__42385.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42385.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42385):map__42385);
+var object_id__$1 = cljs.core.get.call(null,map__42385__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
+var name = cljs.core.get.call(null,map__42385__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
+cljs.core.chunk_append.call(null,b__42384,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.select_option,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),object_id__$1], null),name], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [object_id__$1], null)], null)));
 
-var G__42388 = (i__42382 + (1));
-i__42382 = G__42388;
+var G__42389 = (i__42383 + (1));
+i__42383 = G__42389;
 continue;
 } else {
 return true;
@@ -132,28 +132,28 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42383),eckersdorf$workers$ui$worker_dialog_$_iter__42380.call(null,cljs.core.chunk_rest.call(null,s__42381__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42384),eckersdorf$workers$ui$worker_dialog_$_iter__42381.call(null,cljs.core.chunk_rest.call(null,s__42382__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42383),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42384),null);
 }
 } else {
-var w = cljs.core.first.call(null,s__42381__$2);
-var map__42386 = w;
-var map__42386__$1 = ((((!((map__42386 == null)))?((((map__42386.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42386.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42386):map__42386);
-var object_id__$1 = cljs.core.get.call(null,map__42386__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
-var name = cljs.core.get.call(null,map__42386__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
-return cljs.core.cons.call(null,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.select_option,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),object_id__$1], null),name], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [object_id__$1], null)], null)),eckersdorf$workers$ui$worker_dialog_$_iter__42380.call(null,cljs.core.rest.call(null,s__42381__$2)));
+var w = cljs.core.first.call(null,s__42382__$2);
+var map__42387 = w;
+var map__42387__$1 = ((((!((map__42387 == null)))?((((map__42387.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42387.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42387):map__42387);
+var object_id__$1 = cljs.core.get.call(null,map__42387__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
+var name = cljs.core.get.call(null,map__42387__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
+return cljs.core.cons.call(null,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [antizer.reagent.select_option,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),object_id__$1], null),name], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [object_id__$1], null)], null)),eckersdorf$workers$ui$worker_dialog_$_iter__42381.call(null,cljs.core.rest.call(null,s__42382__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(map__42378,map__42378__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+});})(map__42379,map__42379__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
 ,null,null));
-});})(map__42378,map__42378__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
+});})(map__42379,map__42379__$1,object_id,workplace,show_dialog_QMARK_,workplaces_list,worker_form,email_addon,valid_worker))
 ;
-return iter__31404__auto__.call(null,cljs.core.into.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663),null,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077),"brak"], null)], null),cljs.core.deref.call(null,workplaces_list)));
+return iter__31405__auto__.call(null,cljs.core.into.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663),null,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077),"brak"], null)], null),cljs.core.deref.call(null,workplaces_list)));
 })())], null)], null);
 })()], null)], null)], null)], null);
 });
@@ -174,9 +174,9 @@ return cljs.core.compare.call(null,(a["last-name"]),(b["last-name"]));
 });})(workers_list,workplaces_list))
 ], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"title","title",636505583),"e-mail",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),new cljs.core.Keyword("worker","email-address","worker/email-address",391671898),new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("worker","email-address","worker/email-address",391671898)], null),new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"title","title",636505583),"miejsce pracy",new cljs.core.Keyword(null,"dataIndex","dataIndex",778447901),new cljs.core.Keyword("worker","workplace","worker/workplace",-1450573153),new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("worker","workplace","worker/workplace",-1450573153),new cljs.core.Keyword(null,"render","render",-1408033454),((function (workers_list,workplaces_list){
 return (function (id,_,___$1){
-var map__42389 = cljs.core.deref.call(null,re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplace","get-by-id","workplace/get-by-id",-1352956083),id], null)));
-var map__42389__$1 = ((((!((map__42389 == null)))?((((map__42389.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42389.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42389):map__42389);
-var name = cljs.core.get.call(null,map__42389__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
+var map__42390 = cljs.core.deref.call(null,re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplace","get-by-id","workplace/get-by-id",-1352956083),id], null)));
+var map__42390__$1 = ((((!((map__42390 == null)))?((((map__42390.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42390.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42390):map__42390);
+var name = cljs.core.get.call(null,map__42390__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
 return name;
 });})(workers_list,workplaces_list))
 ,new cljs.core.Keyword(null,"sorter","sorter",-2066997708),((function (workers_list,workplaces_list){
@@ -187,30 +187,30 @@ var first_workplace = cljs.core.deref.call(null,re_frame.core.subscribe.call(nul
 var second_workplace = cljs.core.deref.call(null,re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("workplace","get-by-id","workplace/get-by-id",-1352956083),second_id], null)));
 return cljs.core.compare.call(null,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077).cljs$core$IFn$_invoke$arity$1(first_workplace),new cljs.core.Keyword("workplace","name","workplace/name",-1414028077).cljs$core$IFn$_invoke$arity$1(second_workplace));
 });})(workers_list,workplaces_list))
-,new cljs.core.Keyword(null,"filters","filters",974726919),cljs.core.doall.call(null,(function (){var iter__31404__auto__ = ((function (workers_list,workplaces_list){
-return (function eckersdorf$workers$ui$workers_list_$_iter__42391(s__42392){
+,new cljs.core.Keyword(null,"filters","filters",974726919),cljs.core.doall.call(null,(function (){var iter__31405__auto__ = ((function (workers_list,workplaces_list){
+return (function eckersdorf$workers$ui$workers_list_$_iter__42392(s__42393){
 return (new cljs.core.LazySeq(null,((function (workers_list,workplaces_list){
 return (function (){
-var s__42392__$1 = s__42392;
+var s__42393__$1 = s__42393;
 while(true){
-var temp__5457__auto__ = cljs.core.seq.call(null,s__42392__$1);
+var temp__5457__auto__ = cljs.core.seq.call(null,s__42393__$1);
 if(temp__5457__auto__){
-var s__42392__$2 = temp__5457__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__42392__$2)){
-var c__31402__auto__ = cljs.core.chunk_first.call(null,s__42392__$2);
-var size__31403__auto__ = cljs.core.count.call(null,c__31402__auto__);
-var b__42394 = cljs.core.chunk_buffer.call(null,size__31403__auto__);
-if((function (){var i__42393 = (0);
+var s__42393__$2 = temp__5457__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__42393__$2)){
+var c__31403__auto__ = cljs.core.chunk_first.call(null,s__42393__$2);
+var size__31404__auto__ = cljs.core.count.call(null,c__31403__auto__);
+var b__42395 = cljs.core.chunk_buffer.call(null,size__31404__auto__);
+if((function (){var i__42394 = (0);
 while(true){
-if((i__42393 < size__31403__auto__)){
-var map__42395 = cljs.core._nth.call(null,c__31402__auto__,i__42393);
-var map__42395__$1 = ((((!((map__42395 == null)))?((((map__42395.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42395.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42395):map__42395);
-var name = cljs.core.get.call(null,map__42395__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
-var object_id = cljs.core.get.call(null,map__42395__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
-cljs.core.chunk_append.call(null,b__42394,cljs.core.with_meta(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"text","text",-1790561697),name,new cljs.core.Keyword(null,"value","value",305978217),object_id], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),object_id], null)));
+if((i__42394 < size__31404__auto__)){
+var map__42396 = cljs.core._nth.call(null,c__31403__auto__,i__42394);
+var map__42396__$1 = ((((!((map__42396 == null)))?((((map__42396.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42396.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42396):map__42396);
+var name = cljs.core.get.call(null,map__42396__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
+var object_id = cljs.core.get.call(null,map__42396__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
+cljs.core.chunk_append.call(null,b__42395,cljs.core.with_meta(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"text","text",-1790561697),name,new cljs.core.Keyword(null,"value","value",305978217),object_id], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),object_id], null)));
 
-var G__42399 = (i__42393 + (1));
-i__42393 = G__42399;
+var G__42400 = (i__42394 + (1));
+i__42394 = G__42400;
 continue;
 } else {
 return true;
@@ -218,16 +218,16 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42394),eckersdorf$workers$ui$workers_list_$_iter__42391.call(null,cljs.core.chunk_rest.call(null,s__42392__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42395),eckersdorf$workers$ui$workers_list_$_iter__42392.call(null,cljs.core.chunk_rest.call(null,s__42393__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42394),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__42395),null);
 }
 } else {
-var map__42397 = cljs.core.first.call(null,s__42392__$2);
-var map__42397__$1 = ((((!((map__42397 == null)))?((((map__42397.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42397.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42397):map__42397);
-var name = cljs.core.get.call(null,map__42397__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
-var object_id = cljs.core.get.call(null,map__42397__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
-return cljs.core.cons.call(null,cljs.core.with_meta(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"text","text",-1790561697),name,new cljs.core.Keyword(null,"value","value",305978217),object_id], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),object_id], null)),eckersdorf$workers$ui$workers_list_$_iter__42391.call(null,cljs.core.rest.call(null,s__42392__$2)));
+var map__42398 = cljs.core.first.call(null,s__42393__$2);
+var map__42398__$1 = ((((!((map__42398 == null)))?((((map__42398.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__42398.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__42398):map__42398);
+var name = cljs.core.get.call(null,map__42398__$1,new cljs.core.Keyword("workplace","name","workplace/name",-1414028077));
+var object_id = cljs.core.get.call(null,map__42398__$1,new cljs.core.Keyword("mongo","object-id","mongo/object-id",-1464142663));
+return cljs.core.cons.call(null,cljs.core.with_meta(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"text","text",-1790561697),name,new cljs.core.Keyword(null,"value","value",305978217),object_id], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),object_id], null)),eckersdorf$workers$ui$workers_list_$_iter__42392.call(null,cljs.core.rest.call(null,s__42393__$2)));
 }
 } else {
 return null;
@@ -238,7 +238,7 @@ break;
 ,null,null));
 });})(workers_list,workplaces_list))
 ;
-return iter__31404__auto__.call(null,cljs.core.deref.call(null,workplaces_list));
+return iter__31405__auto__.call(null,cljs.core.deref.call(null,workplaces_list));
 })()),new cljs.core.Keyword(null,"onFilter","onFilter",-791374537),((function (workers_list,workplaces_list){
 return (function (v,record){
 return cljs.core._EQ_.call(null,v,(record["workplace"]));
@@ -273,4 +273,4 @@ return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 
 });
 });
 
-//# sourceMappingURL=ui.js.map?rel=1510602148853
+//# sourceMappingURL=ui.js.map?rel=1510609297731

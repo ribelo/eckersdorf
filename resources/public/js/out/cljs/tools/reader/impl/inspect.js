@@ -3,9 +3,9 @@ goog.provide('cljs.tools.reader.impl.inspect');
 goog.require('cljs.core');
 cljs.tools.reader.impl.inspect.inspect_STAR__col = (function cljs$tools$reader$impl$inspect$inspect_STAR__col(truncate,col,start,end){
 var n = cljs.core.count.call(null,col);
-var l = (cljs.core.truth_(truncate)?(0):(function (){var x__30881__auto__ = (10);
-var y__30882__auto__ = n;
-return ((x__30881__auto__ < y__30882__auto__) ? x__30881__auto__ : y__30882__auto__);
+var l = (cljs.core.truth_(truncate)?(0):(function (){var x__30882__auto__ = (10);
+var y__30883__auto__ = n;
+return ((x__30882__auto__ < y__30883__auto__) ? x__30882__auto__ : y__30883__auto__);
 })());
 var elements = cljs.core.map.call(null,cljs.core.partial.call(null,cljs.tools.reader.impl.inspect.inspect_STAR_,true),cljs.core.take.call(null,l,col));
 var content = cljs.core.apply.call(null,cljs.core.str,cljs.core.interpose.call(null," ",elements));
@@ -62,20 +62,20 @@ return cljs.core.type.call(null,x);
 });
 if(typeof cljs.tools.reader.impl.inspect.inspect_STAR_ !== 'undefined'){
 } else {
-cljs.tools.reader.impl.inspect.inspect_STAR_ = (function (){var method_table__31577__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var prefer_table__31578__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var method_cache__31579__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var cached_hierarchy__31580__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__31581__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
-return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"cljs.tools.reader.impl.inspect","inspect*"),cljs.tools.reader.impl.inspect.dispatch_inspect,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__31581__auto__,method_table__31577__auto__,prefer_table__31578__auto__,method_cache__31579__auto__,cached_hierarchy__31580__auto__));
+cljs.tools.reader.impl.inspect.inspect_STAR_ = (function (){var method_table__31578__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var prefer_table__31579__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var method_cache__31580__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var cached_hierarchy__31581__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var hierarchy__31582__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
+return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"cljs.tools.reader.impl.inspect","inspect*"),cljs.tools.reader.impl.inspect.dispatch_inspect,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__31582__auto__,method_table__31578__auto__,prefer_table__31579__auto__,method_cache__31580__auto__,cached_hierarchy__31581__auto__));
 })();
 }
 cljs.core._add_method.call(null,cljs.tools.reader.impl.inspect.inspect_STAR_,new cljs.core.Keyword(null,"string","string",-1989541586),(function (truncate,x){
 var n = (cljs.core.truth_(truncate)?(5):(20));
 var suffix = (((x.length > n))?"...\"":"\"");
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("\""),cljs.core.str.cljs$core$IFn$_invoke$arity$1(x.substring((0),(function (){var x__30881__auto__ = n;
-var y__30882__auto__ = x.length;
-return ((x__30881__auto__ < y__30882__auto__) ? x__30881__auto__ : y__30882__auto__);
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("\""),cljs.core.str.cljs$core$IFn$_invoke$arity$1(x.substring((0),(function (){var x__30882__auto__ = n;
+var y__30883__auto__ = x.length;
+return ((x__30882__auto__ < y__30883__auto__) ? x__30882__auto__ : y__30883__auto__);
 })())),cljs.core.str.cljs$core$IFn$_invoke$arity$1(suffix)].join('');
 }));
 cljs.core._add_method.call(null,cljs.tools.reader.impl.inspect.inspect_STAR_,new cljs.core.Keyword(null,"strable","strable",1877668047),(function (truncate,x){
@@ -126,8 +126,8 @@ return cljs.core.pr_str.call(null,cljs.core.type.call(null,x));
  * the inspection.
  */
 cljs.tools.reader.impl.inspect.inspect = (function cljs$tools$reader$impl$inspect$inspect(var_args){
-var G__52784 = arguments.length;
-switch (G__52784) {
+var G__52785 = arguments.length;
+switch (G__52785) {
 case 1:
 return cljs.tools.reader.impl.inspect.inspect.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -153,4 +153,4 @@ return cljs.tools.reader.impl.inspect.inspect_STAR_.call(null,truncate,x);
 cljs.tools.reader.impl.inspect.inspect.cljs$lang$maxFixedArity = 2;
 
 
-//# sourceMappingURL=inspect.js.map?rel=1510602165003
+//# sourceMappingURL=inspect.js.map?rel=1510609305830

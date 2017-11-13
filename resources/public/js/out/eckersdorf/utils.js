@@ -3,10 +3,10 @@ goog.provide('eckersdorf.utils');
 goog.require('cljs.core');
 eckersdorf.utils.add_ns = (function eckersdorf$utils$add_ns(m,ns){
 if(cljs.core.truth_(m)){
-return cljs.core.reduce.call(null,(function (ret,p__38846){
-var vec__38847 = p__38846;
-var k = cljs.core.nth.call(null,vec__38847,(0),null);
-var v = cljs.core.nth.call(null,vec__38847,(1),null);
+return cljs.core.reduce.call(null,(function (ret,p__38847){
+var vec__38848 = p__38847;
+var k = cljs.core.nth.call(null,vec__38848,(0),null);
+var v = cljs.core.nth.call(null,vec__38848,(1),null);
 return cljs.core.assoc.call(null,ret,cljs.core.keyword.call(null,cljs.core.name.call(null,ns),cljs.core.name.call(null,k)),v);
 }),cljs.core.PersistentArrayMap.EMPTY,m);
 } else {
@@ -22,4 +22,4 @@ return cljs.core.apply.call(null,clojure.string.replace,ret,x);
 ,s,replacement_list);
 });
 
-//# sourceMappingURL=utils.js.map?rel=1510602144749
+//# sourceMappingURL=utils.js.map?rel=1510609295083

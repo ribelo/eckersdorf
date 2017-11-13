@@ -21962,3 +21962,361 @@ notifying browser that file changed:  resources/public/js/out/eckersdorf/contact
 [0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "resources/public/js/app.js" in 1.52 seconds.[0m
 notifying browser that file changed:  resources/public/js/out/eckersdorf/contacts/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 1.107 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.81 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.804 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.815 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.797 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.905 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.597 seconds.[0m
+[36m----  Could not Analyze  env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+
+  [1mNo such namespace: orgchart, could not locate orgchart.cljs, orgchart.cljc, or JavaScript source providing "orgchart" [0m
+
+[36m----  Analysis Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.415 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.758 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.956 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 1.03 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.853 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.809 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.011 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 4.248 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.807 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.842 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.759 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/view/ui.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.795 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.777 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.595 seconds.[0m
+[36m----  Could not Analyze  env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+
+  [1mNo such namespace: orgchart, could not locate orgchart.cljs, orgchart.cljc, or JavaScript source providing "orgchart" [0m
+
+[36m----  Analysis Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 3.239 seconds.[0m
+[36m----  Could not Analyze  env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+
+  [1mNo such namespace: orgchart, could not locate orgchart.cljs, orgchart.cljc, or JavaScript source providing "orgchart" [0m
+
+[36m----  Analysis Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.756 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.318 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.691 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.473 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+Notifying browser that CSS file changed: resources/public/css/orgchart.css
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 1.302 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.518 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 4.192 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.755 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.962 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.736 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.753 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.757 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.772 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 5.556 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 5.307 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.765 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.744 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.096 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.748 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.952 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.742 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.829 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.738 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 4.35 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.733 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.184 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+Notifying browser that CSS file changed: resources/public/css/jquery.orgchart.min.css
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.713 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 8.181 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.706 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.923 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.841 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.723 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.712 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.137 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.712 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.951 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.366 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.709 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.789 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.796 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   env/dev/cljs/eckersdorf/repl.cljs   line:7  column:2  ----[0m
+
+  [1mUse of undeclared Var eckersdorf.repl/$[0m
+
+  [36m 3[0m  [36m            [re-frame.core :as rf][0m
+  [36m 4[0m  [36m            [re-frame.db :refer [app-db]][0m
+  [36m 5[0m  [36m            cljsjs.jquery))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m($ js/jQuery "#org-map")[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var eckersdorf.repl/$[0m
+  [36m 8[0m  [36m(js-keys js/jQuery)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(->[0m
+  [36m11[0m  [36m  (js/$ "#org-map")[0m
+  [36m12[0m  [36m  (.orgchart))[0m
+
+[36m----  Compiler Warning : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.967 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.425 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   env/dev/cljs/eckersdorf/repl.cljs   line:7  column:2  ----[0m
+
+  [1mUse of undeclared Var eckersdorf.repl/$[0m
+
+  [36m 3[0m  [36m            [re-frame.core :as rf][0m
+  [36m 4[0m  [36m            [re-frame.db :refer [app-db]][0m
+  [36m 5[0m  [36m            cljsjs.jquery))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m($ js/jQuery "#org-map")[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var eckersdorf.repl/$[0m
+  [36m 8[0m  [36m(js-keys js/jQuery)[0m
+  [36m 9[0m  [36m(js/$ "#org-map")[0m
+  [36m10[0m  [36m(->[0m
+  [36m11[0m  [36m  (js/$ "#org-map")[0m
+  [36m12[0m  [36m  (.orgchart))[0m
+
+[36m----  Compiler Warning : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.821 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.719 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.629 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.756 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.525 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.786 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.531 seconds.[0m
+[36m----  Could not Read  env/dev/cljs/eckersdorf/repl.cljs   line:7 ----[0m
+
+  [1m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+
+  [36m 5[0m  [36m            cljsjs.jquery))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m'name': 'Lao Lao',[0m
+  [0m  [0m  [33m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+  [36m 8[0m  [36m'title': 'general manager',[0m
+  [36m 9[0m  [36m'children': [[0m
+  [36m10[0m  [36m             {'name': 'Bo Miao', 'title': 'department manager'},[0m
+
+[36m----  Reader Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.082 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.529 seconds.[0m
+[36m----  Could not Read  env/dev/cljs/eckersdorf/repl.cljs   line:7 ----[0m
+
+  [1m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+
+  [36m 5[0m  [36m            cljsjs.jquery))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m'name': 'Lao Lao',[0m
+  [0m  [0m  [33m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+  [36m 8[0m  [36m'title': 'general manager',[0m
+  [36m 9[0m  [36m'children': [[0m
+  [36m10[0m  [36m             {'name': 'Bo Miao', 'title': 'department manager'},[0m
+
+[36m----  Reader Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 3.021 seconds.[0m
+[36m----  Could not Read  env/dev/cljs/eckersdorf/repl.cljs   line:7 ----[0m
+
+  [1m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+
+  [36m 5[0m  [36m            cljsjs.jquery))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m'name': 'Lao Lao',[0m
+  [0m  [0m  [33m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+  [36m 8[0m  [36m'title': 'general manager',[0m
+  [36m 9[0m  [36m'children': [[0m
+  [36m10[0m  [36m             {'name': 'Bo Miao', 'title': 'department manager'},[0m
+
+[36m----  Reader Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 2.258 seconds.[0m
+[36m----  Could not Read  env/dev/cljs/eckersdorf/repl.cljs   line:7 ----[0m
+
+  [1m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+
+  [36m 5[0m  [36m            cljsjs.jquery))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m'name': 'Lao Lao',[0m
+  [0m  [0m  [33m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+  [36m 8[0m  [36m'title': 'general manager',[0m
+  [36m 9[0m  [36m'children': [[0m
+  [36m10[0m  [36m             {'name': 'Bo Miao', 'title': 'department manager'},[0m
+
+[36m----  Reader Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "resources/public/js/app.js" in 0.568 seconds.[0m
+[36m----  Could not Read  env/dev/cljs/eckersdorf/repl.cljs   line:7 ----[0m
+
+  [1m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+
+  [36m 5[0m  [36m            cljsjs.jquery))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m'name': 'Lao Lao',[0m
+  [0m  [0m  [33m/home/huxley/data/code/Clojure/eckersdorf/env/dev/cljs/eckersdorf/repl.cljs [line 7, col 8] Invalid symbol: name':.[0m
+  [36m 8[0m  [36m'title': 'general manager',[0m
+  [36m 9[0m  [36m'children': [[0m
+  [36m10[0m  [36m             {'name': 'Bo Miao', 'title': 'department manager'},[0m
+
+[36m----  Reader Error : Please see env/dev/cljs/eckersdorf/repl.cljs  ----[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.522 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.699 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.747 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.365 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.979 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.764 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.894 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.954 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.527 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.716 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.754 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 3.081 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.69 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.954 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/eckersdorf/repl.js

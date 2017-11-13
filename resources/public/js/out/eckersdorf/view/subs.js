@@ -22,4 +22,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword("view","scroll-content?","
 return new cljs.core.Keyword("view","scroll-content?","view/scroll-content?",2031747859).cljs$core$IFn$_invoke$arity$1(db);
 }));
 
-//# sourceMappingURL=subs.js.map?rel=1510602140181
+//# sourceMappingURL=subs.js.map?rel=1510609292216

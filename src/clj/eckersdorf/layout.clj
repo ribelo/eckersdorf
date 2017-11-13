@@ -25,10 +25,15 @@
 
                       "}
     "Loading App..."]
-   (page/include-css "css/eckersdorf.css")
+   (page/include-css "/css/eckersdorf.css")
    (page/include-css "https://cdnjs.cloudflare.com/ajax/libs/antd/2.12.3/antd.min.css")
+   (page/include-js "https://code.jquery.com/jquery-3.2.1.min.js")
    (page/include-css "/assets/font-awesome/css/font-awesome.min.css")
    (page/include-js "/js/app.js")
+
+   (page/include-css "/css/jquery.orgchart.min.css")
+   (page/include-js "/js/jquery.orgchart.min.js")
+   ;(page/include-js "$(function() {\n    var datascource = {\n      'name': 'Lao Lao',\n      'title': 'general manager',\n      'children': [\n        { 'name': 'Bo Miao', 'title': 'department manager' },\n        { 'name': 'Su Miao', 'title': 'department manager',\n          'children': [\n            { 'name': 'Tie Hua', 'title': 'senior engineer' },\n            { 'name': 'Hei Hei', 'title': 'senior engineer',\n              'children': [\n                { 'name': 'Pang Pang', 'title': 'engineer' },\n                { 'name': 'Xiang Xiang', 'title': 'UE engineer' }\n              ]\n            }\n          ]\n        },\n        { 'name': 'Yu Jie', 'title': 'department manager' },\n        { 'name': 'Yu Li', 'title': 'department manager' },\n        { 'name': 'Hong Miao', 'title': 'department manager' },\n        { 'name': 'Yu Wei', 'title': 'department manager' },\n        { 'name': 'Chun Miao', 'title': 'department manager' },\n        { 'name': 'Yu Tie', 'title': 'department manager' }\n      ]\n    };\n    $('#chart-container').orgchart({\n      'data' : datascource,\n      'depth': 2,\n      'nodeContent': 'title'\n    });\n  });")
    ])
 (base-body)
 

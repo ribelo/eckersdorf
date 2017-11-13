@@ -9,4 +9,4 @@ figwheel.client.watch_and_reload.call(null,new cljs.core.Keyword(null,"websocket
 devtools.core.install_BANG_.call(null);
 eckersdorf.core.init_BANG_.call(null);
 
-//# sourceMappingURL=app.js.map?rel=1510602157028
+//# sourceMappingURL=app.js.map?rel=1510609389943

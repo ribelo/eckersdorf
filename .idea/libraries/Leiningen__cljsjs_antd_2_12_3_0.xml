@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: cljsjs/antd:2.12.3-0">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/cljsjs/antd/2.12.3-0/antd-2.12.3-0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -41,6 +41,9 @@
              [:span (str
                       (str/title (:user/first-name @personal-data)) " "
                       (str/title (:user/last-name @personal-data)))]]
+            [ant/menu-item {:key :organization}
+             [ant/icon {:type :fork}]
+             [:span "struktura"]]
             [ant/menu-item {:key :contacts}
              [ant/icon {:type :book}]
              [:span "kontakty"]]
@@ -59,6 +62,7 @@
                                         :overflow :auto}}
             (case @panel
               :user [:div "pusto jeszcze"]
+              :organization [:div#org-chart "organizacja"]
               :contacts [contacts.ui/contacts-view]
               :workplaces [workplaces.ui/workplaces-view]
               :workers [workers.ui/workers-view]

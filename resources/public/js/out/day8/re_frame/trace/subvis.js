@@ -30,12 +30,12 @@ if((min_val <= max_val)){
 throw (new Error("Assert failed: (<= min-val max-val)"));
 }
 
-var x__30874__auto__ = min_val;
-var y__30875__auto__ = (function (){var x__30881__auto__ = x;
-var y__30882__auto__ = max_val;
-return ((x__30881__auto__ < y__30882__auto__) ? x__30881__auto__ : y__30882__auto__);
+var x__30875__auto__ = min_val;
+var y__30876__auto__ = (function (){var x__30882__auto__ = x;
+var y__30883__auto__ = max_val;
+return ((x__30882__auto__ < y__30883__auto__) ? x__30882__auto__ : y__30883__auto__);
 })();
-return ((x__30874__auto__ > y__30875__auto__) ? x__30874__auto__ : y__30875__auto__);
+return ((x__30875__auto__ > y__30876__auto__) ? x__30875__auto__ : y__30876__auto__);
 });
 day8.re_frame.trace.subvis.render_subvis = (function day8$re_frame$trace$subvis$render_subvis(traces_ratom){
 var color_a = cljs.core.atom.call(null,null);
@@ -53,8 +53,8 @@ var svg = cljs.core.reset_BANG_.call(null,svg_a,d3.select("#d3cmp"));
 cljs.core.reset_BANG_.call(null,color_a,d3.scaleOrdinal(d3.schemeCategory20));
 
 cljs.core.reset_BANG_.call(null,simulation_a,d3.forceSimulation().force("link",d3.forceLink().id(((function (svg,color_a,svg_a,simulation_a){
-return (function (p1__53191_SHARP_){
-return p1__53191_SHARP_.id;
+return (function (p1__53192_SHARP_){
+return p1__53192_SHARP_.id;
 });})(svg,color_a,svg_a,simulation_a))
 ).distance(cljs.core.constantly.call(null,(100)))).force("charge",d3.forceManyBody().strength(cljs.core.constantly.call(null,(-100)))).force("center",d3.forceCenter((day8.re_frame.trace.subvis.width / (2)),(day8.re_frame.trace.subvis.height / (2)))));
 
@@ -102,8 +102,8 @@ return d.fy = null;
 });})(simulation,color,svg,graph__$1,nodes,links,drag_started,dragged,old_g,graph,color_a,svg_a,simulation_a))
 ;
 var link = svg.select("g.links").selectAll("line").data(links,((function (simulation,color,svg,graph__$1,nodes,links,drag_started,dragged,drag_ended,old_g,graph,color_a,svg_a,simulation_a){
-return (function (p1__53192_SHARP_){
-return p1__53192_SHARP_.id;
+return (function (p1__53193_SHARP_){
+return p1__53193_SHARP_.id;
 });})(simulation,color,svg,graph__$1,nodes,links,drag_started,dragged,drag_ended,old_g,graph,color_a,svg_a,simulation_a))
 );
 var enter_link = link.enter().append("line").attr("stroke-width",((function (simulation,color,svg,graph__$1,nodes,links,drag_started,dragged,drag_ended,link,old_g,graph,color_a,svg_a,simulation_a){
@@ -114,8 +114,8 @@ return Math.sqrt(d.value);
 var merged_link = enter_link.merge(link);
 var _ = link.exit().remove("line");
 var node = svg.select("g.nodes").selectAll(".node").data(nodes,((function (simulation,color,svg,graph__$1,nodes,links,drag_started,dragged,drag_ended,link,enter_link,merged_link,_,old_g,graph,color_a,svg_a,simulation_a){
-return (function (p1__53193_SHARP_){
-return p1__53193_SHARP_.id;
+return (function (p1__53194_SHARP_){
+return p1__53194_SHARP_.id;
 });})(simulation,color,svg,graph__$1,nodes,links,drag_started,dragged,drag_ended,link,enter_link,merged_link,_,old_g,graph,color_a,svg_a,simulation_a))
 );
 var enter_node = node.enter().append("g").attr("class","node").call(d3.drag().on("start",drag_started).on("drag",dragged).on("end",drag_ended));
@@ -216,4 +216,4 @@ return null;
 ;})(color_a,svg_a,simulation_a))
 });
 
-//# sourceMappingURL=subvis.js.map?rel=1510602166452
+//# sourceMappingURL=subvis.js.map?rel=1510609306435
