@@ -4,6 +4,7 @@
             [schema.core :as schema]
             [yada.yada :as yada]
             [monger.collection :as mc]
+            [eckersdorf.routes.services.contacts :as services.contacts]
             [eckersdorf.routes.services.users :as services.users]
             [eckersdorf.routes.services.workers :as services.workers]
             [eckersdorf.routes.services.workplaces :as services.workplaces]
@@ -22,6 +23,7 @@
    [
     ["/1.0"
      [
+      (services.contacts/contacts-routes db)
       (services.users/users-routes db)
       (services.workplaces/workplaces-routes db)
       (services.workers/workers-routes db)

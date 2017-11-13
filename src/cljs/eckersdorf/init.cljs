@@ -1,7 +1,8 @@
 (ns eckersdorf.init
-  (:require [taoensso.timbre :as timbre]
+  (:require [eckersdorf.specs]
+
+            [taoensso.timbre :as timbre]
             [day8.re-frame.http-fx]
-            [eckersdorf.db.specs]
             [eckersdorf.events]
             [eckersdorf.routes.events]
             [eckersdorf.db.events]
@@ -22,6 +23,9 @@
             [eckersdorf.user.login.db]
             [eckersdorf.user.login.events]
             [eckersdorf.user.login.subs]
+            [eckersdorf.contacts.db]
+            [eckersdorf.contacts.events]
+            [eckersdorf.contacts.subs]
             [eckersdorf.workplaces.db]
             [eckersdorf.workplaces.events]
             [eckersdorf.workplaces.subs]

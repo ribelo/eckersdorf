@@ -60,27 +60,31 @@
 
 
 (rf/reg-sub-raw
-  :work-schedule/get
+  :work-schedule/get-work
   (fn [db [_ {:keys [work-schedule/worker-id
                      work-schedule/workplace-id
                      work-schedule/datetime]}]]
-    (let [schedule (reaction (:work-schedule/schedule @db))
-          by-id (reaction (->> @schedule
-                               (filter (fn [m] (and (= worker-id (:work-schedule/worker-id m))
-                                                    (= workplace-id (:work-schedule/workplace-id m)))))))]
-      (reaction (->> @by-id (filter (fn [m] (dt/equal? datetime (:work-schedule/datetime m)))) (first))))))
+    (reaction (->> (get-in @db [:work-schedule/schedule worker-id])
+                   (filter #(dt/equal? datetime (:work-schedule/datetime %)))
+                   (first)))))
 
+(rf/reg-sub-raw
+  :work-schedule/get-work-day
+  (fn [db [_ {:keys [work-schedule/worker-id
+                     work-schedule/workplace-id
+                     work-schedule/datetime]}]]
+    (let [begin-datetime (dt/minus datetime (dt/hour datetime))
+          end-datetime (dt/date-midnight (dt/minus datetime (dt/hour datetime)))
+          works (reaction (get-in @db [:work-schedule/schedule worker-id]))]
+      (reaction (->> @works (filter (fn [m] (dt/equal? datetime (:work-schedule/datetime m)))) (first))))))
 
 
 (rf/reg-sub-raw
   :work-schedule/is-holiday?
-  (fn [db [_ {:keys [work-schedule/worker-id
-                     work-schedule/workplace-id
+  (fn [db [_ {:keys [work-schedule/workplace-id
                      work-schedule/datetime]}]]
-    (let [schedule (reaction (:work-schedule/schedule @db))
-          by-id (reaction (->> @schedule
-                               (filter (fn [m] (= workplace-id (:work-schedule/workplace-id m))))))]
-      (reaction (->> @by-id
+    (let [works (reaction (-> (get @db :work-schedule/schedule) (vals) (first)))]
+      (reaction (->> @works
                      (filter (fn [m] (dt/equal? (dt/plus (dt/minus datetime (dt/hours (dt/hour datetime))) (dt/hours 6))
                                                 (:work-schedule/datetime m))))
                      (first)
@@ -93,16 +97,40 @@
   (fn [db [_ {:keys [work-schedule/worker-id
                      work-schedule/workplace-id
                      work-schedule/datetime]}]]
-    (let [schedule (reaction (:work-schedule/schedule @db))
-          by-id (reaction (->> @schedule
-                               (filter (fn [m] (and (= workplace-id (:work-schedule/workplace-id m))
-                                                    (= worker-id (:work-schedule/worker-id m)))))))]
-      (reaction (->> @by-id
+    (let [works (reaction (get-in @db [:work-schedule/schedule worker-id]))]
+      (reaction (->> @works
                      (filter (fn [m] (dt/equal? (dt/plus (dt/minus datetime (dt/hours (dt/hour datetime))) (dt/hours 6))
                                                 (:work-schedule/datetime m))))
                      (first)
                      :work-schedule/work-type
                      (= "vacation"))))))
+
+
+(rf/reg-sub-raw
+  :work-schedule/is-break?
+  (fn [db [_ {:keys [work-schedule/worker-id
+                     work-schedule/workplace-id
+                     work-schedule/datetime]}]]
+    (let [works (reaction (get-in @db [:work-schedule/schedule worker-id]))]
+      (reaction (->> @works
+                     (filter (fn [m] (dt/equal? (dt/plus (dt/minus datetime (dt/hours (dt/hour datetime))) (dt/hours 6))
+                                                (:work-schedule/datetime m))))
+                     (first)
+                     :work-schedule/work-type
+                     (= "break"))))))
+
+
+(rf/reg-sub
+  :work-schedule/all-working-days
+  (fn [db _]
+    (get-in db [:work-schedule/stats :all-working-days])))
+
+
+(rf/reg-sub
+  :work-schedule/all-working-hours
+  :<- [:work-schedule/all-working-days]
+  (fn [days _]
+    (* days 8)))
 
 
 (rf/reg-sub
@@ -151,23 +179,23 @@
   :work-schedule/print-data-source
   (fn [db _]
     (let [datetime (reaction (:work-schedule/main-date @db))
+          schedule (reaction (:work-schedule/schedule @db))
           workplace-id (reaction (:work-schedule/selected-workplace-id @db))
           all-workers (reaction (:workers/list @db))
-          workers (reaction (workers.utils/workers-by-id @all-workers workplace-id))
-          begin-time (dt/first-day-of-the-month datetime)
+          workers (reaction (workers.utils/workers-by-id @all-workers @workplace-id))
+          begin-time (dt/first-day-of-the-month @datetime)
           end-time (dt/plus (dt/last-day-of-the-month begin-time) (dt/days 1))]
       (reaction
-        (doall
-          (for [date (dtp/periodic-seq begin-time end-time (dt/days 1))
-                worker workers
-                :let [{:keys [mongo/object-id]} worker
-                      [begin end type] (utils/worker-working-hours db object-id (dt/day date))]]
-            {:work/datetime   date
-             :work/worker-id  object-id
-             :work/begin-hour begin
-             :work/end-hour   end
-             :work/work-type  type}))))))
-
+        (flatten
+          (mapv (fn [datetime]
+                  (reduce merge (mapv (fn [{:keys [mongo/object-id] :as worker}]
+                                        (let [[begin end work-type day-of-weak] (utils/worker-working-hours (get @schedule object-id) (dt/day datetime))]
+                                          {:datetime datetime
+                                           object-id [begin end work-type day-of-weak]}))
+                                      @workers)))
+                (dtp/periodic-seq begin-time end-time (dt/days 1))))))))
+;(rf/clear-subscription-cache!)
+;@(rf/subscribe [:work-schedule/print-data-source])
 
 ;(rf/reg-sub
 ;  :work-schedule/get

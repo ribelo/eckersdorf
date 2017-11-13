@@ -1,5 +1,6 @@
 (ns eckersdorf.core
-  (:require [goog.events :as events]
+  (:require
+            [goog.events :as events]
             [goog.history.EventType :as HistoryEventType]
             [reagent.core :as r]
             [re-frame.core :as rf]

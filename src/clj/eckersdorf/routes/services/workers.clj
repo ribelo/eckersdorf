@@ -4,7 +4,6 @@
             [schema.core :as schema]
             [yada.yada :as yada]
             [monger.collection :as mc]
-            [eckersdorf.db.workers :as eckersdorf.db.workers]
             [taoensso.timbre :as timbre]
             [taoensso.encore :as encore :refer [assoc-some]]
             [manifold.deferred :as d]
@@ -27,7 +26,7 @@
                                          (reduce (fn [r [k v]]
                                                    (assoc r k {"$regex"   v
                                                                "$options" "i"})) {}))]
-                           {:data (db.workers/workers-list db opts)}))}
+                           {:data (db.workers/find-workers db opts)}))}
             :post
             {:produces   #{"application/json" "text/plain"}
              :consumes   #{"application/json" "application/x-www-form-urlencoded"}
@@ -36,7 +35,7 @@
                            (let [worker (-> (get-in ctx [:parameters :body])
                                             (add-ns :worker))]
                              (if-let [response (db.workers/create-worker db worker)]
-                               {:data (db.workers/workers-list db)}
+                               {:data (db.workers/find-workers db)}
                                (assoc (:response ctx) :status 404))))}}})]
     [["/" :id] (yada/resource
                  {:methods
@@ -52,7 +51,7 @@
                                                    (update :worker/address add-ns :address))]
                                     (if-let [response (db.workers/update-worker-by-id
                                                         db object-id worker)]
-                                      {:data (db.workers/workers-list db)}
+                                      {:data (db.workers/find-workers db)}
                                       (assoc (:response ctx) :status 404))))}
                    :delete
                    {:produces   #{"application/json" "text/plain"}
@@ -61,5 +60,5 @@
                     :response   (fn [ctx]
                                   (let [id (get-in ctx [:parameters :path :id])]
                                     (db.workers/remove-worker-by-id db id)
-                                    {:data (db.workers/workers-list db)}))}}})]
+                                    {:data (db.workers/find-workers db)}))}}})]
     ]])

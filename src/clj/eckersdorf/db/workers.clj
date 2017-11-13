@@ -25,7 +25,7 @@
 
 
 (defn drop-workers-collection [db]
-  (mc/remove db "workers"))
+  (mc/drop db "workers"))
 
 
 (defn reset-workers-collection [db]
@@ -57,12 +57,12 @@
   (some? (mc/find-one-as-map db "workers" {:worker/email-address email-address} [:worker/email-address])))
 
 
-(defn workers-list
+(defn find-workers
   ([db opts]
    {:post [(s/valid? (s/* :worker/worker) %)]}
    (mc/find-maps db "workers" opts))
   ([db]
-   (workers-list db {})))
+   (find-workers db {})))
 
 
 (defn create-worker [db worker]

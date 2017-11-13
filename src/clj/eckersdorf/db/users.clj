@@ -21,12 +21,12 @@
   (when-not (mc/exists? db "users")
     (mc/create db "users" {})
     (mc/create-index db "users" {:user/email-address 1} {:unique true})
-    (mc/create-index db "users" {:product/second-name 1})
+    (mc/create-index db "users" {:user/last-name 1})
     (mc/create-index db "users" {:user/expire-at 1} {:expireAfterSeconds 0})))
 
 
 (defn drop-users-collection [db]
-  (mc/remove db "users"))
+  (mc/drop db "users"))
 
 
 (defn reset-users-collection [db]
@@ -58,7 +58,7 @@
 
 
 (defn users-list [db]
-  {:post [(s/valid? (s/* :user/base) %)]}
+  ;{:post [(s/valid? (s/* :user/base) %)]}
   (mc/find-maps db "users" {} {:user/password 0}))
 
 
@@ -68,9 +68,7 @@
   (clojure.set/rename-keys
     (mc/insert-and-return db "users"
                           (-> user
-                              (clojure.core/update :user/password hashers/derive)
-                              (assoc :user/roles #{"user"}
-                                     :user/expire-at (t/plus (t/now) (t/hours 24)))))
+                              (clojure.core/update :user/password hashers/derive)))
     {:_id :mongo/object-id}))
 
 
@@ -80,8 +78,7 @@
   (clojure.set/rename-keys
     (mc/insert-and-return db "users" (-> user
                                          (clojure.core/update :user/password hashers/derive)
-                                         (assoc :user/roles #{"admin"}
-                                                :user/expire-at nil)))
+                                         (assoc :user/roles ["admin"])))
     {:_id :mongo/object-id}))
 
 

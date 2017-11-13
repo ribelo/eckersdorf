@@ -2,6 +2,7 @@
   (:require [clojure.spec.alpha :as s]
             [clojure.java.io :as io]
             [com.stuartsierra.component :as component]
+            [clojure.data.csv :as csv]
             [aero.core :as aero]
             [taoensso.encore :as encore]
             [taoensso.timbre :as timbre]
@@ -15,7 +16,6 @@
             [eckersdorf.db.workplaces :as db.workplaces]
             [eckersdorf.db.work-schedule :as db.work-schedule]
             [cuerdas.core :as str]
-            [clojure.spec.alpha :as s]
             [buddy.sign.jwt :as jwt]
             [buddy.hashers :as hashers]
             [clj-time.core :as t]
@@ -59,17 +59,16 @@
 (go-system)
 (reset-system)
 (stop-system)
-
 (users/users-list tmp-db)
+(s/explain :user/base (second (users/users-list tmp-db)))
+(users/remove-user-by-email tmp-db "j.jabczuga@teas.com.pl")
+(mc/remove-by-id tmp-db "users" (ObjectId. "59f6da37fe1b230996326d07"))
 
-(s/explain :user/admin {:user/first-name "rafał"
-                        :user/last-name  "krzyważnia"
-                        :user/password   "K9aafCv."})
-
-(users/create-admin tmp-db {:user/first-name    "rafał"
-                            :user/last-name     "krzyważnia"
-                            :user/password      "K9aafCv."
-                            :user/email-address "r.krzywaznia@teas.com.pl"})
+(users/create-user tmp-db {:user/first-name    "jolanta"
+                           :user/last-name     "pazur"
+                           :user/password      "Teas.Firma95!"
+                           :user/email-address "j.pazur@teas.com.pl"
+                           :user/roles         ["hr"]})
 
 (users/correct-user-password? tmp-db "r.krzywaznia@teas.com.pl" "K9aafCv.")
 
@@ -82,9 +81,9 @@
                                   :worker/address       nil
                                   })
 
-(db.workers/workers-list tmp-db)
-(db.workers/reset-workers-collection tmp-db)
-
+;(db.workers/workers-list tmp-db)
+;(db.workers/reset-workers-collection tmp-db)
+(s/explain :workplace/object-id "sex")
 
 (timetable/create-timetable-collection tmp-db)
 (timetable/reset-timetable-collection tmp-db)
@@ -103,7 +102,7 @@
 
 
 (first (db.workplaces/workplaces-list tmp-db))
-(first (db.workers/workers-list tmp-db))
+(first (db.workers/find-workers tmp-db))
 (db.work-schedule/schedule-work tmp-db
                                 {:work-schedule/workplace-id "59cd4fc48466bc2056615d66"
                                  :work-schedule/worker-id    "59ed11e7fe1b232a5593a5a4"
@@ -113,18 +112,58 @@
 (mc/find-maps tmp-db "work-schedule")
 (db.work-schedule/reset-work-schedule-collection tmp-db)
 
-(db.work-schedule/remove-month tmp-db {:work-schedule/workplace-id (ObjectId. "59cd4fc48466bc2056615d66")
-                                       :work-schedule/datetime})
+(db.work-schedule/remove-month tmp-db {:work-schedule/workplace-id (ObjectId. "59dea213fe1b232ebfb50d07")
+                                       :work-schedule/datetime     (dt/date-time 2017 1)})
 
 (db.work-schedule/month-query tmp-db
-                              {:work-schedule/workplace-id "59cd4fc48466bc2056615d66"
-                               :work-schedule/datetime     (dt/date-time 2017 9)})
+                              {:work-schedule/workplace-id "59dea213fe1b232ebfb50d07"
+                               :work-schedule/datetime     (dt/date-time 2017 11)})
 
-(mc/indexes-on tmp-db "work-schedule")
-(mc/drop tmp-db "work-schedule")
-(mc/insert tmp-db "work-schedule"
-           {
-            ;:mongo/object-id            (ObjectId. "59f5dd198466bc769ed36a85"),
-            ;:work-schedule/workplace-id (ObjectId. "59cd4fc48466bc2056615d66"),
-            :work-schedule/datetime     (dtc/from-string "2017-09-01T12:00:00.000+02:00"),
-            :work-schedule/work-type    "seller"})
+(count (mc/find-maps tmp-db "work-schedule" {:work-schedule/datetime {"$gte" (dt/date-time 2017 11 30 0)
+                                                                      "$lte" (dt/date-time 2017 11 30 23)}}))
+
+(db.workplaces/workplaces-list tmp-db)
+
+(eckersdorf.db.contacts/create-contact tmp-db
+                                       {:contact/first-name    "stanisław"
+                                        :contact/last-name     "krzyważnia"
+                                        :contact/phone-number  "508343454"
+                                        :contact/email-address "s.krzywaznia@teas.com.pl"
+                                        :contact/company       "teas"
+                                        :contact/title         "właściciel"
+                                        :contact/description   nil})
+
+(eckersdorf.db.contacts/find-contacts tmp-db)
+
+(s/explain :contact/contact {:contact/first-name    "stanisław"
+                             :contact/last-name     "krzyważnia"
+                             :contact/phone-number  "508343450"
+                             :contact/email-address "s.krzywaznia@teas.com.pl"
+                             :contact/company       "teas"
+                             :contact/title         "właściciel"})
+
+(let [data (csv/read-csv (io/reader "/home/huxley/Downloads/contacts.csv" :encoding "windows-1250"), / "")]
+  (->> (map zipmap
+            (->> (first data)
+                 (map (comp keyword str/kebab))
+                 (repeat))
+            (rest data))
+       (map #(select-keys % [:mobile-phone :first-name :last-name :title :company :e-mail-address]))
+       (map (fn [m] (-> m
+                        (update :mobile-phone #(if-not (empty? %) (str/replace % #"\+48|\s" "") nil))
+                        (update :first-name #(if-not (empty? %) (str/lower %) nil))
+                        (update :last-name #(if-not (empty? %) (str/lower %) nil))
+                        (update :title #(if-not (empty? %) (str/lower %) nil))
+                        (update :company #(if-not (empty? %) (str/lower %) nil))
+                        (update :e-mail-address #(if-not (empty? %) (str/lower %) nil))
+                        (assoc :contact/description nil))))
+       (map (fn [m] (clojure.set/rename-keys m
+                                             {:mobile-phone   :contact/phone-number
+                                              :first-name     :contact/first-name
+                                              :last-name      :contact/last-name
+                                              :e-mail-address :contact/email-address
+                                              :company        :contact/company
+                                              :title          :contact/title})))
+       (mapv (fn [contact]
+               (println (s/explain :contact/contact contact))
+               (eckersdorf.db.contacts/create-contact tmp-db contact)))))

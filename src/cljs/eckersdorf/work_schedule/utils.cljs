@@ -6,42 +6,32 @@
 
 
 (defn remove-work [db {:keys [work-schedule/worker-id
-                              work-schedule/workplace-id
                               work-schedule/datetime]}]
-  (let [schedule (:work-schedule/schedule db)]
-    (assoc db :work-schedule/schedule
-              (->> schedule
+  (let [works (get-in db [:work-schedule/schedule worker-id])]
+    (assoc-in db [:work-schedule/schedule worker-id]
+              (->> works
                    (remove (fn [work]
-                             (and (= worker-id (:work-schedule/worker-id work))
-                                  (= workplace-id (:work-schedule/workplace-id work))
-                                  (dt/equal? datetime (:work-schedule/datetime work)))))
-                   (distinct)
-                   (into [])))))
+                             (dt/equal? datetime (:work-schedule/datetime work))))))))
 
 
-(defn remove-multiple-work [db works]
-  (let [schedule (:work-schedule/schedule db)]
-    (assoc db :work-schedule/schedule
-              (->> schedule
+(defn remove-multiple-work [db new-works]
+  (let [worker-id (-> new-works (first) :work-schedule/worker-id)
+        works (get-in db [:work-schedule/schedule worker-id])]
+    (assoc-in db [:work-schedule/schedule worker-id]
+              (->> works
                    (remove (fn [work]
-                             (some (fn [{:keys [work-schedule/worker-id
-                                                work-schedule/workplace-id
-                                                work-schedule/datetime]}]
-                                     (and (= worker-id (:work-schedule/worker-id work))
-                                          (= workplace-id (:work-schedule/workplace-id work))
-                                          (dt/equal? datetime (:work-schedule/datetime work))))
-                                   works)))
-                   (distinct)
-                   (into [])))))
+                             (some (fn [{:keys [work-schedule/datetime]}]
+                                     (dt/equal? datetime (:work-schedule/datetime work)))
+                                   new-works)))))))
 
 
-(defn worker-working-hours [db worker-id day]
-  (->> db
-       :work-schedule/schedule
-       (filter #(and (= day (dt/day (:work-schedule/datetime %)))
-                     (= worker-id (:work-schedule/worker-id %))))
+(defn worker-working-hours [works day]
+  (->> works
+       (filter #(= day (dt/day (:work-schedule/datetime %))))
+       (remove #(or (empty? %) (nil? %)))
        (sort-by :work-schedule/datetime
                 (fn [d1 d2] (dt/before? d1 d2)))
-       ((juxt #(->> % first :work-schedule/datetime dt/hour)
-              #(->> % last :work-schedule/datetime dt/hour)
-              #(->> % first :work-schedule/work-type)))))
+       ((juxt #(-> % first :work-schedule/datetime ((fn [datetime] (when datetime (dt/hour datetime)))))
+              #(-> % last :work-schedule/datetime ((fn [datetime] (when datetime (inc (dt/hour datetime))))))
+              #(-> % first :work-schedule/work-type)
+              #(-> % first :work-schedule/datetime ((fn [datetime] (when datetime (dt/day-of-week datetime)))))))))

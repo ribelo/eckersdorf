@@ -46,10 +46,12 @@
   [db {:keys [work-schedule/workplace-id
               work-schedule/datetime] :as doc}]
   (let [begin-datetime (-> datetime (dt/with-time-at-start-of-day) (dt/first-day-of-the-month))
-        end-datetime (-> datetime (dt/with-time-at-start-of-day) (dt/last-day-of-the-month))]
-    (mc/find-maps db "work-schedule" {:work-schedule/workplace-id workplace-id
-                                      :work-schedule/datetime     {"$gte" begin-datetime
-                                                                   "$lte" end-datetime}})))
+        end-datetime (-> datetime (dt/with-time-at-start-of-day) (dt/last-day-of-the-month)
+                         (dt/plus (dt/days 1)))]
+    (->> (mc/find-maps db "work-schedule" {:work-schedule/workplace-id workplace-id
+                                           :work-schedule/datetime     {"$gte" begin-datetime
+                                                                        "$lte" end-datetime}})
+         (group-by :work-schedule/worker-id))))
 
 (defmethod month-query [String DateTime]
   [db {:keys [work-schedule/workplace-id
@@ -66,7 +68,8 @@
   [db {:keys [work-schedule/workplace-id
               work-schedule/datetime] :as m}]
   (let [begin-datetime (-> datetime (dt/with-time-at-start-of-day) (dt/first-day-of-the-month))
-        end-datetime (-> datetime (dt/with-time-at-start-of-day) (dt/last-day-of-the-month))]
+        end-datetime (-> datetime (dt/with-time-at-start-of-day) (dt/last-day-of-the-month)
+                         (dt/plus (dt/days 1)))]
     (mc/remove db "work-schedule" {:work-schedule/workplace-id workplace-id
                                    :work-schedule/datetime     {"$gte" begin-datetime
                                                                 "$lte" end-datetime}})))
@@ -92,6 +95,6 @@
 
 (defmethod save-month [String DateTime]
   [db works]
-  (save-month db (mapv (fn [work] (clojure.core/update work
-                                    :work-schedule/workplace-id #(ObjectId. ^String %)))
+  (save-month db (mapv (fn [work]
+                         (clojure.core/update work :work-schedule/workplace-id #(ObjectId. ^String %)))
                        works)))

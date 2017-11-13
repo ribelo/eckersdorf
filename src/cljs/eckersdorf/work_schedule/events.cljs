@@ -7,8 +7,8 @@
             [taoensso.encore :as ec :refer [path]]
             [ajax.core :as ajax]
             [eckersdorf.db.core :refer [->local-storage]]
-
-            [eckersdorf.work-schedule.utils :as utils]))
+            [eckersdorf.work-schedule.utils :as utils]
+            [eckersdorf.workers.utils :as workers.utils]))
 
 
 
@@ -42,11 +42,11 @@
 (rf/reg-event-fx
   :work-schedule/set-date
   [->local-storage]
-  (fn [{db :db} [_ date]]
-    (let [days (dtp/periodic-seq (dt/first-day-of-the-month date)
-                                 (dt/plus (dt/last-day-of-the-month date) (dt/days 1))
+  (fn [{db :db} [_ datetime]]
+    (let [days (dtp/periodic-seq (dt/first-day-of-the-month datetime)
+                                 (dt/plus (dt/last-day-of-the-month datetime) (dt/days 1))
                                  (dt/days 1))]
-      {:db         (assoc db :work-schedule/main-date date
+      {:db         (assoc db :work-schedule/main-date datetime
                              :work-schedule/days days)
        :dispatch-n [[:work-schedule/calculate-all-working-days-in-month]
                     [:work-schedule/ajax.get-work-schedule]]})))
@@ -69,95 +69,130 @@
   (fn [db _]
     (let [datetime (:work-schedule/main-date db)
           begin-time (dt/first-day-of-the-month datetime)
-          end-time (dt/plus (dt/last-day-of-the-month begin-time) (dt/days 1))]
-      (assoc-in db [:work-schedule/stats :all-working-days]
-                (->> (dtp/periodic-seq begin-time end-time (dt/days 1))
-                     (filter #(dtpred/weekday? %))
-                     (count))))))
+          end-time (dt/plus (dt/last-day-of-the-month begin-time) (dt/days 1))
+          works (first (vals (:work-schedule/schedule db)))
+          working-days (->> (dtp/periodic-seq begin-time end-time (dt/days 1))
+                            (filter #(dtpred/weekday? %))
+                            (count))
+          holidays (->> works
+                        (filter (fn [work]
+                                  (= "holiday" (:work-schedule/work-type work))))
+                        (map #(dt/day (:work-schedule/datetime %)))
+                        (distinct)
+                        (count))]
+      (assoc-in db [:work-schedule/stats :all-working-days] (- working-days holidays)))))
+
 
 
 (rf/reg-event-db
   :work-schedule/calculate-hours-worked-in-month
-  (fn [db [_ {:keys [work-schedule/worker-id
-                     work-schedule/datetime]}]]
-    (let [begin-time (dt/first-day-of-the-month datetime)
-          end-time (dt/plus (dt/last-day-of-the-month begin-time) (dt/days 1))
-          hours-worked (->> (:work-schedule/schedule db)
-                            (filter #(and (= worker-id (:work-schedule/worker-id %))
-                                          (#{"seller" "butcher"} (:work-schedule/work-type %))))
-                            (count))]
-      (assoc-in db [:work-schedule/stats worker-id :hours-worked-in-month] hours-worked))))
+  (fn [db [_ {:keys [work-schedule/worker-id]}]]
+    (let [calculate-fn (fn [db worker-id]
+                         (->> (get-in db [:work-schedule/schedule worker-id])
+                              (filter #(#{"seller" "butcher"} (:work-schedule/work-type %)))
+                              (count)))]
+      (if worker-id
+        (assoc-in db [:work-schedule/stats worker-id :hours-worked-in-month] (calculate-fn db worker-id))
+        (let [workers (workers.utils/workers-by-id (:workers/list db) (:work-schedule/selected-workplace-id db))]
+          (reduce (fn [db {:keys [mongo/object-id]}]
+                    (assoc-in db [:work-schedule/stats object-id :hours-worked-in-month] (calculate-fn db object-id)))
+                  db workers))))))
 
 
 (rf/reg-event-db
   :work-schedule/calculate-days-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id]}]]
-    (let [hours-worked (->> (:work-schedule/schedule db)
-                            (filter #(and (= worker-id (:work-schedule/worker-id %))
-                                          (#{"seller" "butcher"} (:work-schedule/work-type %))))
-                            (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
-                            (distinct)
-                            (count))]
-      (assoc-in db [:work-schedule/stats worker-id :days-worked-in-month] hours-worked))))
+    (let [calculate-fn (fn [db worker-id]
+                         (->> (get-in db [:work-schedule/schedule worker-id])
+                              (filter #(#{"seller" "butcher"} (:work-schedule/work-type %)))
+                              (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                              (count)))]
+      (if worker-id
+        (assoc-in db [:work-schedule/stats worker-id :days-worked-in-month] (calculate-fn db worker-id))
+        (let [workers (workers.utils/workers-by-id (:workers/list db) (:work-schedule/selected-workplace-id db))]
+          (reduce (fn [db {:keys [mongo/object-id]}]
+                    (assoc-in db [:work-schedule/stats object-id :days-worked-in-month] (calculate-fn db object-id)))
+                  db workers))))))
 
 
 (rf/reg-event-db
   :work-schedule/calculate-saturdays-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id]}]]
-    (let [c (->> (:work-schedule/schedule db)
-                 (filter #(and (= worker-id (:work-schedule/worker-id %))
-                               (#{"seller" "butcher"} (:work-schedule/work-type %))
-                               (dtpred/saturday? (:work-schedule/datetime %))))
-                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
-                 (distinct)
-                 (count))]
-      (assoc-in db [:work-schedule/stats worker-id :saturdays-worked-in-month] c))))
+    (let [calculate-fn (fn [db worker-id]
+                         (->> (get-in db [:work-schedule/schedule worker-id])
+                              (filter #(and (#{"seller" "butcher"} (:work-schedule/work-type %))
+                                            (dtpred/saturday? (:work-schedule/datetime %))))
+                              (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                              (distinct)
+                              (count)))]
+      (if worker-id
+        (assoc-in db [:work-schedule/stats worker-id :saturdays-worked-in-month] (calculate-fn db worker-id))
+        (let [workers (workers.utils/workers-by-id (:workers/list db) (:work-schedule/selected-workplace-id db))]
+          (reduce (fn [db {:keys [mongo/object-id]}]
+                    (assoc-in db [:work-schedule/stats object-id :saturdays-worked-in-month] (calculate-fn db object-id)))
+                  db workers))))))
 
 
 (rf/reg-event-db
   :work-schedule/calculate-sundays-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id]}]]
-    (let [c (->> (:work-schedule/schedule db)
-                 (filter #(and (= worker-id (:work-schedule/worker-id %))
-                               (#{"seller" "butcher"} (:work-schedule/work-type %))
-                               (dtpred/sunday? (:work-schedule/datetime %))))
-                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
-                 (distinct)
-                 (count))]
-      (assoc-in db [:work-schedule/stats worker-id :sundays-worked-in-month] c))))
+    (let [calculate-fn (fn [db worker-id]
+                         (->> (get-in db [:work-schedule/schedule worker-id])
+                              (filter #(and (#{"seller" "butcher"} (:work-schedule/work-type %))
+                                            (dtpred/sunday? (:work-schedule/datetime %))))
+                              (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                              (distinct)
+                              (count)))]
+      (if worker-id
+        (assoc-in db [:work-schedule/stats worker-id :sundays-worked-in-month] (calculate-fn db worker-id))
+        (let [workers (workers.utils/workers-by-id (:workers/list db) (:work-schedule/selected-workplace-id db))]
+          (reduce (fn [db {:keys [mongo/object-id]}]
+                    (assoc-in db [:work-schedule/stats object-id :sundays-worked-in-month] (calculate-fn db object-id)))
+                  db workers))))))
 
 
 (rf/reg-event-db
   :work-schedule/calculate-first-changes-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id]}]]
-    (let [c (->> (:work-schedule/schedule db)
-                 (filter #(and (= worker-id (:work-schedule/worker-id %))
-                               (#{"seller" "butcher"} (:work-schedule/work-type %))
-                               (= 6 (dt/hour (:work-schedule/datetime %)))))
-                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
-                 (distinct)
-                 (count))]
-      (assoc-in db [:work-schedule/stats worker-id :first-changes-worked-in-month] c))))
+    (let [calculate-fn (fn [db worker-id]
+                         (->> (get-in db [:work-schedule/schedule worker-id])
+                              (filter #(and (#{"seller" "butcher"} (:work-schedule/work-type %))
+                                            (= 6 (dt/hour (:work-schedule/datetime %)))))
+                              (map (fn [{:keys [work-schedule/datetime]}]
+                                     (dt/day datetime)))
+                              (distinct)
+                              (count)))]
+      (if worker-id
+        (assoc-in db [:work-schedule/stats worker-id :first-changes-worked-in-month] (calculate-fn db worker-id))
+        (let [workers (workers.utils/workers-by-id (:workers/list db) (:work-schedule/selected-workplace-id db))]
+          (reduce (fn [db {:keys [mongo/object-id]}]
+                    (assoc-in db [:work-schedule/stats object-id :first-changes-worked-in-month] (calculate-fn db object-id)))
+                  db workers))))))
 
 
 (rf/reg-event-db
   :work-schedule/calculate-second-changes-worked-in-month
   (fn [db [_ {:keys [work-schedule/worker-id]}]]
-    (let [c (->> (:work-schedule/schedule db)
-                 (filter #(and (= worker-id (:work-schedule/worker-id %))
-                               (#{"seller" "butcher"} (:work-schedule/work-type %))
-                               (= 20 (dt/hour (:work-schedule/datetime %)))))
-                 (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
-                 (distinct)
-                 (count))]
-      (assoc-in db [:work-schedule/stats worker-id :second-changes-worked-in-month] c))))
+    (let [calculate-fn (fn [db worker-id]
+                         (->> (get-in db [:work-schedule/schedule worker-id])
+                              (filter #(and (#{"seller" "butcher"} (:work-schedule/work-type %))
+                                            (= 20 (dt/hour (:work-schedule/datetime %)))))
+                              (map (fn [{:keys [work-schedule/datetime]}] (dt/day datetime)))
+                              (distinct)
+                              (count)))]
+      (if worker-id
+        (assoc-in db [:work-schedule/stats worker-id :second-changes-worked-in-month] (calculate-fn db worker-id))
+        (let [workers (workers.utils/workers-by-id (:workers/list db) (:work-schedule/selected-workplace-id db))]
+          (reduce (fn [db {:keys [mongo/object-id]}]
+                    (assoc-in db [:work-schedule/stats object-id :second-changes-worked-in-month] (calculate-fn db object-id)))
+                  db workers))))))
 
 
 (rf/reg-event-fx
   :work-schedule/schedule-work
-  (fn [{db :db} [_ work]]
-    (let [schedule (:work-schedule/schedule db)]
-      {:db         (assoc db :work-schedule/schedule (distinct (conj schedule work)))
+  (fn [{db :db} [_ {:keys [work-schedule/worker-id] :as work}]]
+    (let [works (get-in db [:work-schedule/schedule worker-id])]
+      {:db         (assoc-in db [:work-schedule/schedule worker-id] (conj works work))
        :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
                     [:work-schedule/calculate-days-worked-in-month work]
                     [:work-schedule/calculate-saturdays-worked-in-month work]
@@ -169,9 +204,10 @@
 
 (rf/reg-event-fx
   :work-schedule/schedule-multiple-work
-  (fn [{db :db} [_ works]]
-    (let [schedule (:work-schedule/schedule db)]
-      {:db         (assoc db :work-schedule/schedule (distinct (into schedule works)))
+  (fn [{db :db} [_ new-works]]
+    (let [worker-id (-> new-works (first) :work-schedule/worker-id)
+          works (get-in db [:work-schedule/schedule worker-id])]
+      {:db         (assoc-in db [:work-schedule/schedule worker-id] (into works new-works))
        :dispatch-n [[:work-schedule/calculate-hours-worked-in-month (first works)]
                     [:work-schedule/calculate-days-worked-in-month (first works)]
                     [:work-schedule/calculate-saturdays-worked-in-month (first works)]
@@ -228,8 +264,7 @@
   (fn [{db :db} [_ {:keys [work-schedule/worker-id
                            work-schedule/workplace-id
                            work-schedule/datetime] :as work}]]
-    (let [datetime datetime
-          zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
+    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
           works (mapv (fn [datetime]
                         (assoc work :work-schedule/datetime datetime))
                       (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
@@ -250,15 +285,16 @@
   (fn [{db :db} [_ {:keys [work-schedule/worker-id
                            work-schedule/workplace-id
                            work-schedule/datetime] :as work}]]
-    (let [datetime datetime
-          zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
-          works (mapv (fn [datetime]
-                        (assoc work :work-schedule/datetime datetime
-                                    :work-schedule/work-type "vacation"))
-                      (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
-                                        (dt/plus zero-time (dt/hours 21))
-                                        (dt/hours 1)))]
-      {:db         (-> db (utils/remove-multiple-work works) (update :work-schedule/schedule (fn [schedule] (distinct (into schedule works)))))
+    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
+          new-works (mapv (fn [datetime]
+                            (assoc work :work-schedule/datetime datetime
+                                        :work-schedule/work-type "vacation"))
+                          (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
+                                            (dt/plus zero-time (dt/hours 21))
+                                            (dt/hours 1)))]
+      {:db         (-> db
+                       (utils/remove-multiple-work new-works)
+                       (update-in [:work-schedule/schedule worker-id] (fn [works] (into works new-works))))
        :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
                     [:work-schedule/calculate-days-worked-in-month work]
                     [:work-schedule/calculate-saturdays-worked-in-month work]
@@ -269,17 +305,20 @@
 
 
 (rf/reg-event-fx
-  :work-schedule/remove-vacation
+  :work-schedule/set-break
   (fn [{db :db} [_ {:keys [work-schedule/worker-id
                            work-schedule/workplace-id
                            work-schedule/datetime] :as work}]]
     (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
-          works (mapv (fn [datetime]
-                        (assoc work :work-schedule/datetime datetime))
-                      (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
-                                        (dt/plus zero-time (dt/hours 21))
-                                        (dt/hours 1)))]
-      {:db         (-> db (utils/remove-multiple-work works))
+          new-works (mapv (fn [datetime]
+                            (assoc work :work-schedule/datetime datetime
+                                        :work-schedule/work-type "break"))
+                          (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
+                                            (dt/plus zero-time (dt/hours 21))
+                                            (dt/hours 1)))]
+      {:db         (-> db
+                       (utils/remove-multiple-work new-works)
+                       (update-in [:work-schedule/schedule worker-id] (fn [works] (into works new-works))))
        :dispatch-n [[:work-schedule/calculate-hours-worked-in-month work]
                     [:work-schedule/calculate-days-worked-in-month work]
                     [:work-schedule/calculate-saturdays-worked-in-month work]
@@ -292,51 +331,61 @@
 (rf/reg-event-fx
   :work-schedule/set-holiday
   (fn [{db :db} [_ workplace-id workers datetime]]
-    (let [datetime datetime
-          zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
-          works (doall (for [{:keys [mongo/object-id
-                                     worker/first-name
-                                     worker/last-name
-                                     worker/working-hours]} workers
-                             datetime (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
-                                                        (dt/plus zero-time (dt/hours 21))
-                                                        (dt/hours 1))]
-                         {:work-schedule/workplace-id workplace-id
-                          :work-schedule/worker-id    object-id
-                          :work-schedule/datetime     datetime
-                          :work-schedule/work-type    "holiday"}))]
-      {:db         (-> db (utils/remove-multiple-work works) (update :work-schedule/schedule (fn [schedule] (distinct (into schedule works)))))
-       :dispatch-n [[:work-schedule/calculate-hours-worked-in-month (first works)]
-                    [:work-schedule/calculate-days-worked-in-month (first works)]
-                    [:work-schedule/calculate-saturdays-worked-in-month (first works)]
-                    [:work-schedule/calculate-sundays-worked-in-month (first works)]
-                    [:work-schedule/calculate-first-changes-worked-in-month (first works)]
-                    [:work-schedule/calculate-second-changes-worked-in-month (first works)]
+    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
+          works (reduce (fn [m {:keys [mongo/object-id]}]
+                          (assoc m object-id
+                                   (mapv (fn [datetime]
+                                           {:work-schedule/workplace-id workplace-id
+                                            :work-schedule/worker-id    object-id
+                                            :work-schedule/datetime     datetime
+                                            :work-schedule/work-type    "holiday"})
+                                         (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
+                                                           (dt/plus zero-time (dt/hours 21))
+                                                           (dt/hours 1)))))
+                        {} workers)]
+      {:db         (as-> db $
+                         (reduce (fn [r w]
+                                   (utils/remove-multiple-work r w))
+                                 $ (vals works))
+                         (reduce (fn [r w]
+                                   (let [worker-id (-> w (first) :work-schedule/worker-id)]
+                                     (update-in r [:work-schedule/schedule worker-id] (fn [works] (into works w)))))
+                                 $ (vals works)))
+       :dispatch-n [[:work-schedule/calculate-all-working-days-in-month]
+                    [:work-schedule/calculate-hours-worked-in-month]
+                    [:work-schedule/calculate-days-worked-in-month]
+                    [:work-schedule/calculate-saturdays-worked-in-month]
+                    [:work-schedule/calculate-sundays-worked-in-month]
+                    [:work-schedule/calculate-first-changes-worked-in-month]
+                    [:work-schedule/calculate-second-changes-worked-in-month]
                     [:work-schedule/set-edited]]})))
 
 
 (rf/reg-event-fx
   :work-schedule/remove-holiday
   (fn [{db :db} [_ workplace-id workers datetime]]
-    (let [datetime datetime
-          zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
-          works (doall (for [{:keys [mongo/object-id
-                                     worker/first-name
-                                     worker/last-name
-                                     worker/working-hours]} workers
-                             datetime (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
-                                                        (dt/plus zero-time (dt/hours 21))
-                                                        (dt/hours 1))]
-                         {:work-schedule/workplace-id workplace-id
-                          :work-schedule/worker-id    object-id
-                          :work-schedule/datetime     datetime}))]
-      {:db         (-> db (utils/remove-multiple-work works))
-       :dispatch-n [[:work-schedule/calculate-hours-worked-in-month (first works)]
-                    [:work-schedule/calculate-days-worked-in-month (first works)]
-                    [:work-schedule/calculate-saturdays-worked-in-month (first works)]
-                    [:work-schedule/calculate-sundays-worked-in-month (first works)]
-                    [:work-schedule/calculate-first-changes-worked-in-month (first works)]
-                    [:work-schedule/calculate-second-changes-worked-in-month (first works)]
+    (let [zero-time (dt/minus datetime (dt/hours (dt/hour datetime)))
+          works (reduce (fn [m {:keys [mongo/object-id]}]
+                          (assoc m object-id
+                                   (mapv (fn [datetime]
+                                           {:work-schedule/workplace-id workplace-id
+                                            :work-schedule/worker-id    object-id
+                                            :work-schedule/datetime     datetime})
+                                         (dtp/periodic-seq (dt/plus zero-time (dt/hours 6))
+                                                           (dt/plus zero-time (dt/hours 21))
+                                                           (dt/hours 1)))))
+                        {} workers)]
+      {:db         (as-> db $
+                         (reduce (fn [r w]
+                                   (utils/remove-multiple-work r w))
+                                 $ (vals works)))
+       :dispatch-n [[:work-schedule/calculate-all-working-days-in-month]
+                    [:work-schedule/calculate-hours-worked-in-month]
+                    [:work-schedule/calculate-days-worked-in-month]
+                    [:work-schedule/calculate-saturdays-worked-in-month]
+                    [:work-schedule/calculate-sundays-worked-in-month]
+                    [:work-schedule/calculate-first-changes-worked-in-month]
+                    [:work-schedule/calculate-second-changes-worked-in-month]
                     [:work-schedule/set-edited]]})))
 
 
@@ -363,12 +412,21 @@
 (rf/reg-event-fx
   :work-schedule/ajax.get-work-schedule-success
   (fn [{db :db} [_ {:keys [data]}]]
-    {:db      (assoc db :work-schedule/schedule
-                        (->> data
-                             (mapv (fn [work] (update work :work-schedule/datetime dtc/from-string)))))
-     :message {:content  "poprawnie pobrano harmonogram pracy"
-               :type     :success
-               :duration 1.5}}))
+    {:db         (assoc db :work-schedule/schedule
+                           (reduce (fn [r [k v]]
+                                     (assoc r (name k)
+                                              (map (fn [m] (update m :work-schedule/datetime dtc/from-string)) v)))
+                                   {} data))
+     :dispatch-n [[:work-schedule/calculate-all-working-days-in-month]
+                  [:work-schedule/calculate-hours-worked-in-month]
+                  [:work-schedule/calculate-days-worked-in-month]
+                  [:work-schedule/calculate-saturdays-worked-in-month]
+                  [:work-schedule/calculate-sundays-worked-in-month]
+                  [:work-schedule/calculate-first-changes-worked-in-month]
+                  [:work-schedule/calculate-second-changes-worked-in-month]]
+     :message    {:content  "poprawnie pobrano harmonogram pracy"
+                  :type     :success
+                  :duration 1.5}}))
 
 
 (rf/reg-event-fx
@@ -384,21 +442,25 @@
 (rf/reg-event-fx
   :work-schedule/ajax.post-work-schedule
   (fn [{db :db} _]
-    (let [schedule (:work-schedule/schedule db)]
+    (let [works (-> db :work-schedule/schedule (vals) (flatten))]
       {:http-xhrio {:method          :post
                     :uri             (path "/api/1.0/work-schedule")
-                    :params          schedule
+                    :params          works
                     :format          (ajax/json-request-format)
                     :response-format (ajax/json-response-format {:keywords? true})
                     :on-success      [:work-schedule/ajax.post-work-schedule-success]
                     :on-failure      [:work-schedule/ajax.post-work-schedule-failure]}})))
 
+
+
 (rf/reg-event-fx
   :work-schedule/ajax.post-work-schedule-success
   (fn [{db :db} [_ {:keys [data]}]]
     {:db       (assoc db :work-schedule/schedule
-                         (->> data
-                              (mapv (fn [work] (update work :work-schedule/datetime dtc/from-string)))))
+                         (reduce (fn [r [k v]]
+                                   (assoc r (name k)
+                                            (map (fn [m] (update m :work-schedule/datetime dtc/from-string)) v)))
+                                 {} data))
      :dispatch [:work-schedule/unset-edited]
      :message  {:content  "poprawnie zapisano harmonogram pracy"
                 :type     :success
@@ -452,9 +514,8 @@
 (rf/reg-event-fx
   :work-schedule/sync
   (fn [{db :db} _]
-    (let [schedule (:work-schedule/schedule db)]
-      (println schedule)
-      {:dispatch (if-not (empty? schedule)
+    (let [works (-> db :work-schedule/schedule (vals) (flatten))]
+      {:dispatch (if-not (empty? works)
                    [:work-schedule/ajax.post-work-schedule]
                    [:work-schedule/ajax.delete-work-schedule])})))
 

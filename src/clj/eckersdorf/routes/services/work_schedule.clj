@@ -51,7 +51,6 @@
                            (let [work (-> (get-in ctx [:parameters :body])
                                           (update :datetime dtc/from-string)
                                           (add-ns :work-schedule))]
-                             (println work (get-in ctx [:parameters :body]))
                              (db.work-schedule/remove-month db work)
-                             {:data []}))}}})]
+                             {:data {}}))}}})]
     ]])

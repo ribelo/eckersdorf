@@ -4,7 +4,6 @@
     <option name="projectFiles">
       <list>
         <option value="file://$PROJECT_DIR$/project.clj" />
-        <option value="file://$USER_HOME$/data/code/Clojure/eckersdorf/project.clj" />
       </list>
     </option>
   </component>

@@ -1,14 +1,12 @@
 (ns eckersdorf.view.events
   (:require [re-frame.core :as rf]
             [goog.dom :as dom]
-    ;[bardo.transition :as transition]
-    ;[bardo.interpolate :as interpolate]
-            [cljs.core.async :refer [<! >!]])
-  (:require-macros [cljs.core.async.macros :refer [go-loop go]]))
+            [eckersdorf.db.core :refer [->local-storage]]))
 
 
 (rf/reg-event-db
   :view/set-active-panel
+  [->local-storage]
   (fn [db [_ panel]]
     (assoc db :view/active-panel panel)))
 

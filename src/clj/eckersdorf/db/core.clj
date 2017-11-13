@@ -9,7 +9,7 @@
             [taoensso.timbre :as timbre]
             [taoensso.encore :as encore]
             [cuerdas.core :as str]
-            [eckersdorf.db.specs])
+            [eckersdorf.specs])
   (:import [clojure.lang PersistentArrayMap Keyword]
            (com.mongodb DBObject)))
 

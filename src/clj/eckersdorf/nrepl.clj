@@ -9,10 +9,11 @@
   component/Lifecycle
   (start [component]
     (let [nrepl-port (:nrepl/port config)]
-      (timbre/info (str/format "Started nrepl-serwer on port %s" nrepl-port))
-      (assoc component :nrepl (nrepl/start-server :port nrepl-port))))
+      (when nrepl-port (timbre/info (str/format "Started nrepl-serwer on port %s" nrepl-port)))
+      (assoc component :nrepl (when nrepl-port (nrepl/start-server :port nrepl-port)))))
   (stop [component]
-    (assoc component :nrepl (nrepl/stop-server (:nrepl component)))))
+    (let [nrepl (:nrepl component)]
+      (assoc component :nrepl (when nrepl (nrepl/stop-server nrepl))))))
 
 
 (defn new-nrepl-server []
