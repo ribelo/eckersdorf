@@ -32,30 +32,38 @@
                              :on-collapse (fn []
                                             (rf/dispatch [:view/toggle-sider]))
                              :style       {:height "100vh"}}
-           [ant/menu {:theme         :dark
-                      :mode          :inline
-                      :on-click      (fn [e] (rf/dispatch [:view/set-active-panel (keyword (.-key e))]))
-                      :selected-keys [(name @panel)]}
-            [ant/menu-item {:key :user}
-             [ant/icon {:type :meh-o}]
-             [:span (str
-                      (str/title (:user/first-name @personal-data)) " "
-                      (str/title (:user/last-name @personal-data)))]]
-            [ant/menu-item {:key :organization}
-             [ant/icon {:type :fork}]
-             [:span "struktura"]]
-            [ant/menu-item {:key :contacts}
-             [ant/icon {:type :book}]
-             [:span "kontakty"]]
-            [ant/menu-item {:key :workplaces}
-             [ant/icon {:type :shopping-cart}]
-             [:span "sklepy"]]
-            [ant/menu-item {:key :workers}
-             [ant/icon {:type :usergroup-add}]
-             [:span "pracownicy"]]
-            [ant/menu-item {:key :work-schedule}
-             [ant/icon {:type :calendar}]
-             [:span "harmonogram pracy"]]]]
+           [flex/vbox {:size            1
+                       :height          "calc(100vh - 48px)"
+                       :justify-content :space-between}
+            [ant/menu {:theme         :dark
+                       :mode          :inline
+                       :on-click      (fn [e] (rf/dispatch [:view/set-active-panel (keyword (.-key e))]))
+                       :selected-keys [(name @panel)]}
+             [ant/menu-item {:key :user}
+              [ant/icon {:type :meh-o}]
+              [:span (str (str/title (:user/first-name @personal-data)) " "
+                          (str/title (:user/last-name @personal-data)))]]
+             [ant/menu-item {:key :organization}
+              [ant/icon {:type :fork}]
+              [:span "struktura"]]
+             [ant/menu-item {:key :contacts}
+              [ant/icon {:type :book}]
+              [:span "kontakty"]]
+             [ant/menu-item {:key :workplaces}
+              [ant/icon {:type :shopping-cart}]
+              [:span "sklepy"]]
+             [ant/menu-item {:key :workers}
+              [ant/icon {:type :usergroup-add}]
+              [:span "pracownicy"]]
+             [ant/menu-item {:key :work-schedule}
+              [ant/icon {:type :calendar}]
+              [:span "harmonogram pracy"]]]
+            [ant/menu {:theme    :dark
+                       :mode     :inline
+                       :on-click (fn [_] (rf/dispatch [:user/logout]))}
+             [ant/menu-item {:key :logout}
+              [ant/icon {:type :poweroff}]
+              [:span "wyloguj"]]]]]
           [ant/layout {:style {:padding "24px 24px 0px"
                                :height  "100%"}}
            [ant/layout-content {:style {:height   "calc(100vh - 48px)"

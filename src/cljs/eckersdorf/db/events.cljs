@@ -29,11 +29,11 @@
                     work-schedule-state)]
       db)))
 
+
 (rf/reg-event-db
   :db/load-storage
   (fn [db [_ force?]]
-    (let [storage (db/load-local-storage)
-          last-login (:user/last-login storage)]
+    (let [{:keys [user/last-login] :as storage} (db/load-local-storage)]
       (if (or force? (and last-login (t/before? (t/now) (t/plus last-login (t/months 1)))))
         (merge db storage)
         db))))

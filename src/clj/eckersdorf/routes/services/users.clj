@@ -159,10 +159,7 @@
                              {:consumes   "application/x-www-form-urlencoded"
                               :produces   #{"application/json" "text/plain"}
                               :parameters {:path {:id schema/Str}
-                                           :body {:first-name    schema/Str
-                                                  :last-name     schema/Str
-                                                  :email-address schema/Str
-                                                  :token         schema/Str}}
+                                           :body {schema/Keyword schema/Str}}
                               :response   (fn [ctx]
                                             (let [{:keys [id]} (get-in ctx [:parameters :path])
                                                   token (get-in ctx [:parameters :body :token])

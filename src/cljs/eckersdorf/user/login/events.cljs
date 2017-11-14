@@ -45,9 +45,8 @@
 
 (rf/reg-event-fx
   :login/request-login-success
-  [->local-storage]
   (fn [{db :db} [_ response]]
-    {:db         (merge db (-> response (update :user/expire-at tc/from-string) (clojure.set/rename-keys {:mongo/object-id :user/object-id})))
+    {:db         (merge db (-> response (clojure.set/rename-keys {:mongo/object-id :user/object-id})))
      :dispatch-n [[:process/set {:event :login/request-login}]
                   [:login/set-invalid-password false]
                   [:user/refresh-last-login]]}))

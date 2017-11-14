@@ -59,6 +59,8 @@
 (go-system)
 (reset-system)
 (stop-system)
+
+
 (users/users-list tmp-db)
 (s/explain :user/base (second (users/users-list tmp-db)))
 (users/remove-user-by-email tmp-db "j.jabczuga@teas.com.pl")

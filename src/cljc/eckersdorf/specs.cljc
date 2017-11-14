@@ -36,6 +36,7 @@
 (s/def :user/expire-at (s/nilable :datetime/datetime))
 (s/def :user/token string?)
 
+
 (s/def :user/base (s/keys :req [:user/email-address]
                           :opt [:user/first-name :user/last-name :user/roles :user/expire-at :user/token]))
 (s/def :user/full (s/keys :req [:user/first-name :user/last-name :user/email-address]

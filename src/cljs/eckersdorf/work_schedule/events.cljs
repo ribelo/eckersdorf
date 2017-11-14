@@ -33,7 +33,6 @@
 
 (rf/reg-event-fx
   :work-schedule/set-workplace
-  [->local-storage]
   (fn [{db :db} [_ workplace-id]]
     {:db       (assoc db :work-schedule/selected-workplace-id workplace-id)
      :dispatch [:work-schedule/ajax.get-work-schedule]}))
@@ -41,7 +40,6 @@
 
 (rf/reg-event-fx
   :work-schedule/set-date
-  [->local-storage]
   (fn [{db :db} [_ datetime]]
     (let [days (dtp/periodic-seq (dt/first-day-of-the-month datetime)
                                  (dt/plus (dt/last-day-of-the-month datetime) (dt/days 1))
