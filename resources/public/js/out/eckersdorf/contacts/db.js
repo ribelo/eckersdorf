@@ -1,0 +1,7 @@
+// Compiled by ClojureScript 1.9.946 {}
+goog.provide('eckersdorf.contacts.db');
+goog.require('cljs.core');
+eckersdorf.contacts.db.empty_contact = new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword("contact","first-name","contact/first-name",-365071315),null,new cljs.core.Keyword("contact","last-name","contact/last-name",-1539952766),null,new cljs.core.Keyword("contact","email-address","contact/email-address",-1363984584),null,new cljs.core.Keyword("contact","phone-number","contact/phone-number",-766137276),null,new cljs.core.Keyword("contact","company","contact/company",1357719325),null,new cljs.core.Keyword("contact","title","contact/title",-151426609),null,new cljs.core.Keyword("contact","description","contact/description",372033920),null], null);
+eckersdorf.contacts.db.contacts_state = new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("contacts","contacts","contacts/contacts",-170820681),null,new cljs.core.Keyword("contacts","show-dialog?","contacts/show-dialog?",679689273),false,new cljs.core.Keyword("contacts","concat-form","contacts/concat-form",94468221),eckersdorf.contacts.db.empty_contact,new cljs.core.Keyword("contacts","search-form","contacts/search-form",1073014637),null,new cljs.core.Keyword("contacts","temp-search-form","contacts/temp-search-form",-476585488),null,new cljs.core.Keyword("contacts","search-timeout","contacts/search-timeout",1756296026),null], null);
+
+//# sourceMappingURL=db.js.map?rel=1510703503364
